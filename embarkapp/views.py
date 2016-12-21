@@ -4,4 +4,4 @@ from django.http import HttpResponse
 
 
 def view_index(request):
-    return HttpResponse("Hey you made it!")
+    return HttpResponse("THIS IS THE HOME OF OUR APP!!!!")
