@@ -1,0 +1,37 @@
+Meeting notes, Dec 28th
+
+Base.html or different nav bars per page?
+Two nav bars on register, along top and a 
+
+login and register as sidebar
+
+1. Landing Page Login (option for register)
+		  	(Register (new page or just new sidebar?))
+2. Splash (side bar for manually choosing industry)
+	Saving input from either quiz info, or 3 radio buttons on sidebar
+	(PATCH Data for industry prefs)
+	(GET Data for industry prefs)
+	(Table for quiz, using answers to industry preference)
+3. Industry Page (Shows blurbs of info about each industry) (either from choosing or quiz)
+4. Culture/Values (Sidebar for locations)
+	Sliders giving ‘top 3’ culture preferences
+	PATCH Data searched by culture preferences
+	PATCH Data searched by industry preferences
+	LOCATION TO ZIP CODE (New API request for city to zip code for GET request)
+5. Profile page (set up for search) showing database information
+6. Results Page
+	(Indeed GET request)
+	(GET requests for Industry)
+		Each industry (top job searches for each industry)
+	(GET requests for Culture)
+	(Location)
+		HTML links to indeed job posting
+7. Job Progression page
+	GET Requests by Job & Job Progression
+	(resource materials each industry)
+
+8. Dashboard for return user. (Login redirect)
+	Links to each section of the process
+	Database requests
+
+
