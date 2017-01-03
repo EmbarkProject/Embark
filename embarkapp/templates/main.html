@@ -25,13 +25,19 @@
         <a href='/embark/title' id="titleButton">Title</a>
         <br>
         <a href='/embark/dashboard' id="dashboardButton">Dashboard</a>
+
+        <div id='handlebars'></div>
         {% verbatim %}
         <script id="post-template" type="text/x-handlebars-template">
-        {{#each this}}
-    <p>{{this.id}}</p>
+        {{#each .}}
+        <h4>Job Name: {{this.name}}</h4>
+        <h5>Overall Rating: {{this.overallRating}}</h5>
         {{/each}}
         {% endverbatim %}
         </script>
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="{% static 'embark/js/main.js' %}"></script>
