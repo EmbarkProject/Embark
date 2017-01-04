@@ -10,6 +10,3 @@ function list_jobs(){
    })
 }
 list_jobs()
-
-
-http://api.glassdoor.com/api/api.htm?t.p=5317&t.k=n07aR34Lk3Y&userip=0.0.0.0&useragent=&format=json&v=1&action=jobs-prog&countryId=1&jobTitle=cashier

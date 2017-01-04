@@ -11,9 +11,6 @@ function list_jobs(){
    })
 }
 
-http://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&action=jobs-prog&countryId=1&jobTitle=cashier
-
-
 
 function js_test() {
     console.log("JS is linked correctly!")
