@@ -11,7 +11,7 @@ p {
 
 .quizHero {
   clear: both;
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/quizHeroImage.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("https://s3.us-east-2.amazonaws.com/embarkproject/heroImg1.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
