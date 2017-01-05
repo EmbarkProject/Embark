@@ -23,8 +23,8 @@ def view_review(request):
     return render(request, 'review.html')
 
 
-def view_results(request):
-    return render(request, 'results.html')
+def view_jobslist(request):
+    return render(request, 'jobslist.html')
 
 
 def view_title(request):

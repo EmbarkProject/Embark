@@ -5,26 +5,85 @@
     <head>
         <meta charset="utf-8">
         <title>EMBARK!!</title>
-        <link rel="stylesheet" href="{% static 'embark/css/main.css' %}">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'embark/css/style.css' %}">
     </head>
     <body>
-        HEY THIS IS WHERE THINGS SHOULD BE
-        <br>
-        <a href='/embark/main' id="mainButton">Main</a>
-        <br>
-        <a href='/embark/quiz' id="quizButton">Quiz</a>
-        <br>
-        <a href='/embark/industries' id="industriesButton">Industries</a>
-        <br>
-        <a href='/embark/culture' id="cultureButton">Culture</a>
-        <br>
-        <a href='/embark/review' id="reviewButton">Review</a>
-        <br>
-        <a href='/embark/results' id="resultsButton">Results</a>
-        <br>
-        <a href='/embark/title' id="titleButton">Title</a>
-        <br>
-        <a href='/embark/dashboard' id="dashboardButton">Dashboard</a>
+
+            <div class="landingLeft">
+
+              <div class="landingHero">
+                <div class="landingHeroOverlay">
+                  <div class="landingHeroTitle">
+                    <img src="images/embarktitlewhite.png">
+                    <!-- <p class="landingBlurb">Ready to change careers?</p> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="landingSummary">
+                <p class="landingMarketing">These days, changing a career many times is common. But it can be scary, too. With millions of job titles and possibilities, it can even feel like there are too many options. Built by career-changers, Embark! is here to help you decide what direction to take.</p>
+              </div>
+
+              <div class="landingFeatures">
+                <div class="landingFeatureItem">
+                  <i class="fa fa-4x fa-cogs" aria-hidden="true"></i>
+                  <p class="landingFeatureText">Not even sure what industry you’re interested in? We know exactly how you feel. We’ll take you through a short quiz to narrow down your options.</p>
+                </div>
+                <div class="landingFeatureItem landingFeatureMiddle">
+                  <i class="fa fa-4x fa-comments" aria-hidden="true"></i>
+                  <p class="landingFeatureText">Care about company culture? Know that equal work/life balance is a must? We’ll help you find companies that have the culture you’re looking for.</p>
+                </div>
+                <div class="landingFeatureItem">
+                  <img src="images/shipiconblue.png">
+                  <p class="landingFeatureText">By making the decision to change your career, you’re already halfway there. Let us help you take charge of your own path and get ready to Embark!</p>
+                </div>
+              </div>
+
+            </div>
+            <!-- end of left column -->
+
+            <div class="landingRight">
+
+              <div class="landingLogin">
+                <p>New to Embark? <a href="#">Register</a></p>
+
+                <div class="landingLoginForm">
+                <h2>Login</h2>
+                <form>
+                    <input class="name" type="text" id="username" name="user_name" placeholder="username"/>
+
+                    <input class="password" type="password" id="password" name="password" placeholder="password"/>
+
+                    <button class="loginButton" type="submit">submit</button>
+                </form>
+              </div>
+            </div>
+
+              <div class="landingRegister">
+                <h2>Register</h2>
+                <div class="landingInput">
+                  <form>
+                    username: <input type="text" name="user_id" />
+                    <br>
+                    email: <input type="email" name="email" />
+                    <br>
+                    password: <input type="password" name="password" />
+                    <br>
+                    retype password: <input type="password" name="password" />
+                    <br>
+                    username: <input type="text" name="title" />
+                  </form>
+                  <button class="submit">submit</button>
+                </div>
+              </div>
+
+            </div>
+
 
         <div id='handlebars'></div>
         {% verbatim %}

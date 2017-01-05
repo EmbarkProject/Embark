@@ -11,12 +11,12 @@
         <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'embark/css/style.css' %}">
     </head>
-    <body class="industriesBody">
+    <body class="jobslistBody">
 
-        <div class="industriesTitle">
+        <div class="jobslistTitle">
           <a href="index.html"><img class="quizEmbarkLogo" src="images/embarkTitle.png"></a>
-            <div class="industriesTitle">
-              <h1>First Name, your top industry matches are:</h1>
+            <div class="jobslistTitle">
+              <h1>Based on your preferences, here are job listings that will help you understand who’s hiring</h1>
             </div>
         </div>
 
@@ -39,13 +39,26 @@
         </div>
 
         <div class="nextSteps">
-          <p class="nextStepsText">Continue onto culture and location preferences</p>
+          <p class="nextStepsText">Now that you know what job titles might be a good fit, let’s take a look at what other people with your current job have done next.</p>
           <button class="nextButton">next</button>
         </div>
 
 
+
+        <div id='handlebars'></div>
+        {% verbatim %}
+        <script id="post-template" type="text/x-handlebars-template">
+        {{#each this}}
+        <h5>JOB LISTING: {{{displayLink this}}}</h5>
+        {{/each}}
+        {% endverbatim %}
+        </script>
+
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="{% static 'embark/js/industries.js' %}"></script>
+    <script type="text/javascript" src="{% static 'embark/js/jobslist.js' %}"></script>
     </body>
 </html>
