@@ -1,0 +1,232 @@
+$font: 'Montserrat', sans-serif;
+$fontbody:'Karla', sans-serif;
+$red: #FF5A5F;
+$grey: #2B303A;
+$blue: #5299D3;
+
+
+
+
+.quizEmbarkLogo {
+  height: 70px;
+  padding: 3%;
+  padding-top: 2%;
+}
+
+.quizBody {
+  background-color: #ededed;
+}
+
+p {
+  font-size: 17px;
+}
+
+.quizHero {
+  clear: both;
+  background: linear-gradient(
+                     rgba(255,255,255, .2),
+                     rgba(255,255,255, .2)),
+                     url("../images/quizHeroImage.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+    .quizTitle {
+      padding: 0;
+      margin: 0;
+      h1 {
+      color: #2b303a;
+      padding: 0 8%;
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+      }
+      .quizBlurb {
+        color: #2b303a;
+        text-align: justify;
+        padding: 0 8%;
+      }
+    }
+  }
+
+
+.quizLeft {
+  float: left;
+  width: 73%;
+  .quizLeftInstructions {
+    background-color: #5299d3;
+    padding: 1%;
+    p {
+      color: white;
+      text-align: center;
+      font-size: 15px;
+    }
+  }
+  .quizQuestions {
+    font-size: 25px;
+    padding-left: 26.5%;
+    padding-top: 2%;
+
+
+// ENTIRE QUIZ ITEM
+    .quizItem {
+      font-size: 20px;
+    .quizItemText {
+      padding-left: 0;
+      font-size: 30px;
+      margin: 1%;
+    }
+      input[type="radio"]{
+        display: none;
+    }
+// YES AND NO BUTTONS
+
+    .container {
+      padding-left: 8.5%;
+      padding-top: 1%;
+    }
+    .container label {
+      position: relative;
+      }
+      .container span::before,
+      .container span::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .container span.radio:hover {
+        cursor: pointer;
+      }
+      .container span.radio::before {
+        left: -52px;
+        width: 45px;
+        height: 25px;
+        background-color: #2b303a;
+        border-radius: 50px;
+      }
+      .container span.radio::after {
+        left: -49px;
+        width: 17px;
+        height: 17px;
+        border-radius: 10px;
+        background-color: #6C788A;
+        transition: left .25s, background-color .25s;
+      }
+      input[type="radio"]:checked + label span.radio::after {
+        left: -27px;
+        background-color: #5299d3;
+      }
+    }
+    .q1 {
+      display: block;
+    }
+    .q2 {
+      display: none;
+    }
+    .q3 {
+      display: none;
+    }
+    .q4 {
+      display: none;
+    }
+    .q5 {
+      display: none;
+    }
+    .q6 {
+      display: none;
+    }
+    .q7 {
+      display: none;
+    }
+  }
+  .quizButton {
+    font-size: 15px;
+    font-family: $font;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    // background-color: #5299d3;
+    background-color: #ff5a5f;
+    border: none;
+    margin-left: 43%;
+    margin-top: 2%;
+  }
+  .quizButton:hover {
+    background-color: #ffffff;
+    color: #ff5a5f;
+    box-sizing: border-box;
+  }
+}
+
+.quizRight {
+  float: right;
+  width: 27%;
+  height: 720px;
+  background-color: #2b303a;
+  .quizRightInstructions {
+    width: 70%;
+    padding-top: 48%;
+    padding-left: 15%;
+    p{
+      color: white;
+      text-align: justify;
+    }
+  }
+  .nav {
+    ul {
+      li {
+        float: right;
+        padding-right: 14%;
+        list-style: none;
+        a {
+          color: $red;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 15px;
+          text-align: center;
+          padding: .5%;
+        }
+        a:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+// SELECTABLE LIST
+  select {
+    width: 70%;
+    margin-top: 12%;
+    margin-left: 16%;
+  }
+
+  // INSIDE SCROLLING LIST BAR
+  .quizChooseList {
+    select {
+      option {
+        font-family: $font;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .quizButton {
+    font-size: 15px;
+    font-family: $font;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: #ff5a5f;
+    border: none;
+    margin-left: 33%;
+    margin-top: 22%;
+  }
+  .quizButton:hover {
+    background-color: #ffffff;
+    color: #ff5a5f;
+    box-sizing: border-box;
+  }
+}

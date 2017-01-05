@@ -1,0 +1,54 @@
+.jobslistBody {
+  background-color: $greybackground;
+}
+
+.jobslistTitle {
+  margin-bottom: 6%;
+  .quizEmbarkLogo {
+    padding: 2% 2%;
+  }
+  .jobslistTitle {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+.industriesItem {
+  // height: 520px;
+  // border-bottom: 20px solid $coral;
+  .industriesText {
+    color: $charcoal;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  // .jobslistItem {
+  //   margin-left: 9%;
+  // }
+}
+
+.nextSteps {
+  clear: both;
+  margin: 3% 10%;
+  margin-top: 43%;
+  text-align: center;
+  .nextStepsText {
+    color: $charcoal
+  }
+  .nextButton {
+    font-size: 15px;
+    font-family: $font;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: #ff5a5f;
+    border: none;
+    margin: 0 auto;
+    margin-top: 1%;
+    // margin-bottom: 3%;
+  }
+  .nextButton:hover {
+    color: #ff5a5f;
+    background-color: white;
+  }
+}
