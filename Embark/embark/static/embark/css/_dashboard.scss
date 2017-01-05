@@ -1,0 +1,76 @@
+
+@import "variables";
+
+.dashboardBody {
+  background-image: url("../images/dashboardHero3.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quizEmbarkLogo {
+  padding: 2% 2%;
+}
+
+.dashboardTitle {
+  text-align: center;
+  height: 150px;
+  }
+
+
+.dashboardTopLists{
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 250px;
+  .dashboardListItem {
+    width: 350px;
+    height: 230px;
+    background-color: $charcoal;
+    border-radius: 5px;
+    margin: 4px 20px;
+    p {
+      text-align: center;
+      color: white;
+    }
+  }
+}
+
+.dashboardInterfaceText {
+  background-color: $greybackground;
+  border-top: 25px solid $coral;
+  h2 {
+    color: $charcoal;
+    text-align: center;
+    padding-top: 2%;
+  }
+  .dashboardButtons {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 60%;
+  }
+  .dashboardButtonsItem {
+      .dashboardButton {
+        width: 200px;
+        height: 100px;
+        font-size: 20px;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0 25px;
+        background-color: $sky;
+        border: none;
+        margin: 10%;
+      }
+      .dashboardButton:hover {
+        background-color: #ffffff;
+        color: $sky;
+        box-sizing: border-box;
+      }
+  }
+}
