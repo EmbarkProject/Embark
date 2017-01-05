@@ -190,7 +190,7 @@ p, a {
 
 .landingHero {
   clear: both;
-  background-image: url("../images/heroImg1.jpg");
+  background-image: url("https://s3.us-east-2.amazonaws.com/embarkproject/heroImg1.jpg");
   background-size: cover;
   background-position: contain;
   background-repeat: no-repeat;
