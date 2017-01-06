@@ -2,47 +2,58 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>EMBARK!!</title>
-        <link rel="stylesheet" href="{% static 'embark/css/style.css' %}">
-    </head>
-    <body>
-        THIS IS WHERE WE HAVE A QUIZ SPECIALLY MADE FOR YOU
-        <br>
-        <a href='/embark/main' id="mainButton">Main</a>
-        <br>
-        <a href='/embark/quiz' id="quizButton">Quiz</a>
-        <br>
-        <a href='/embark/industries' id="industriesButton">Industries</a>
-        <br>
-        <a href='/embark/culture' id="cultureButton">Culture</a>
-        <br>
-        <a href='/embark/review' id="reviewButton">Review</a>
-        <br>
-        <a href='/embark/results' id="resultsButton">Results</a>
-        <br>
-        <a href='/embark/title' id="titleButton">Title</a>
-        <br>
-        <a href='/embark/dashboard' id="dashboardButton">Dashboard</a>
+   <head>
+       <meta charset="utf-8">
+       <title>EMBARK!!</title>
+       <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+       <link rel="stylesheet" href="{% static 'embark/css/style.css' %}">
+   </head>
+   <body class="templateBody">
 
-        Search by your job title: <input type="text" id="searchInput" name="searchInput"><br>
-                                   <input type="button" id="submit" value="Submit">
+     <div class="templateLeft">
+       <div class="templateHero">
+          <a href="index.html"><img class="quizEmbarkLogo" src="https://s3.us-east-2.amazonaws.com/embarkproject/embarkTitle.png"></a>
+           <div class="templateTitle">
+             <h1>Career-Changers Like You</h1>
+             <p class="templateBlurb">The world is your oyster and you can decide your own path! But when you're thinking about making a career change, it can be helpful to know what people like you have done before. The chart below displays what those with your job title have gone on to do. </p>
+           </div>
+       </div>
 
-        <div id='handlebars'></div>
-        {% verbatim %}
-        <script id="post-template" type="text/x-handlebars-template">
-        <h1>{{this.jobTitle}}</h1>
-        {{#each this}}
-        <h4>Next Job Title: {{this.nextJobTitle}}</h4>
-        <h5>Frequency Percent: {{this.frequencyPercent}}</h5>
-        {{/each}}
-        {% endverbatim %}
-        </script>
+       <div class="templateMainBody">
+         <p id="titleJobTitle">JOB TITLE ENTERED BY EMBARKER</p>
+         <button class="templateButton">Next</button>
+       </div>
 
+     </div>
+     <!-- end of left column -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="{% static 'embark/js/title.js' %}"></script>
-    </body>
+     <div class="templateRight">
+       <div class="nav">
+         <ul>
+           <li><a href="#">Dashboard</a></li>
+         </ul>
+       </div>
+
+       <div class="templateText">
+         <p>Inspired and ready to get started on your journey?
+            Below are some relevant resources.</p>
+       </div>
+
+     </div>
+     <!-- end of right column -->
+
+       {% verbatim %}
+       <script id="post-template" type="text/x-handlebars-template">
+       {{#each .}}
+       <h4>Job Name: {{this.name}}</h4>
+       <h5>Overall Rating: {{this.overallRating}}</h5>
+       {{/each}}
+       {% endverbatim %}
+       </script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+   <script type="text/javascript" src="{% static 'embark/js/culture.js' %}"></script>
+   </body>
 </html>
