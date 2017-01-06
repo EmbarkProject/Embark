@@ -1,93 +1,93 @@
-.templateBody {
-  background-color: #ededed;
-}
-
-.templateHero {
-  clear: both;
-  height: 350px;
-  width: 100%;
-    .templateTitle {
-      padding: 0;
-      margin: 0;
-      h1 {
-      color: #2b303a;
-      padding: 0 8%;
-      font-weight: 700;
-      text-align: center;
-      margin: 0;
-      }
-      .templateBlurb {
-        color: #2b303a;
-        text-align: justify;
-        padding: 0 8%;
-      }
-    }
-  }
-
-
-.templateLeft {
-  float: left;
-  width: 73%;
-  .templateMainBody {
-    background-color: #5299d3;
-    padding: 1%;
-    p {
-      color: white;
-      text-align: center;
-      font-size: 15px;
-    }
-    .templateButton {
-      font-size: 15px;
-      font-family: $font;
-      color: #ffffff;
-      border-radius: 5px;
-      padding: 10px 25px;
-      // background-color: #5299d3;
-      background-color: #ff5a5f;
-      border: none;
-      margin-left: 43%;
-      margin-top: 2%;
-    }
-    .templateButton:hover {
-      background-color: #ffffff;
-      color: #ff5a5f;
-      box-sizing: border-box;
-    }
-  }
-}
-
-.templateRight {
-  float: right;
-  width: 27%;
-  height: 720px;
-  background-color: #2b303a;
-  .nav {
-    ul {
-      li {
-        float: right;
-        padding-right: 14%;
-        list-style: none;
-        a {
-          color: $red;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-size: 15px;
-          text-align: center;
-          padding: .5%;
-        }
-        a:hover {
-          color: white;
-        }
-      }
-    }
-  }
-  .templateText {
-    width: 70%;
-    padding-top: 48%;
-    padding-left: 15%;
-    p{
-      color: white;
-      text-align: justify;
-    }
-  }
-}
+// .templateBody {
+//   background-color: #ededed;
+// }
+//
+// .templateHero {
+//   clear: both;
+//   height: 350px;
+//   width: 100%;
+//     .templateTitle {
+//       padding: 0;
+//       margin: 0;
+//       h1 {
+//       color: #2b303a;
+//       padding: 0 8%;
+//       font-weight: 700;
+//       text-align: center;
+//       margin: 0;
+//       }
+//       .templateBlurb {
+//         color: #2b303a;
+//         text-align: justify;
+//         padding: 0 8%;
+//       }
+//     }
+//   }
+//
+//
+// .templateLeft {
+//   float: left;
+//   width: 73%;
+//   .templateMainBody {
+//     background-color: #5299d3;
+//     padding: 1%;
+//     p {
+//       color: white;
+//       text-align: center;
+//       font-size: 15px;
+//     }
+//     .templateButton {
+//       font-size: 15px;
+//       font-family: $font;
+//       color: #ffffff;
+//       border-radius: 5px;
+//       padding: 10px 25px;
+//       // background-color: #5299d3;
+//       background-color: #ff5a5f;
+//       border: none;
+//       margin-left: 43%;
+//       margin-top: 2%;
+//     }
+//     .templateButton:hover {
+//       background-color: #ffffff;
+//       color: #ff5a5f;
+//       box-sizing: border-box;
+//     }
+//   }
+// }
+//
+// .templateRight {
+//   float: right;
+//   width: 27%;
+//   height: 720px;
+//   background-color: #2b303a;
+//   .nav {
+//     ul {
+//       li {
+//         float: right;
+//         padding-right: 14%;
+//         list-style: none;
+//         a {
+//           color: $red;
+//           text-decoration: none;
+//           text-transform: uppercase;
+//           font-size: 15px;
+//           text-align: center;
+//           padding: .5%;
+//         }
+//         a:hover {
+//           color: white;
+//         }
+//       }
+//     }
+//   }
+//   .templateText {
+//     width: 70%;
+//     padding-top: 48%;
+//     padding-left: 15%;
+//     p{
+//       color: white;
+//       text-align: justify;
+//     }
+//   }
+// }

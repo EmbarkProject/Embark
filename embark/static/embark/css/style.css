@@ -468,7 +468,7 @@
   height: 720px; }
   .templateLeft .templateHero {
     clear: both;
-    height: 35%;
+    height: 37%;
     width: 100%; }
     .templateLeft .templateHero .templateTitle {
       margin: 0; }
@@ -484,7 +484,9 @@
         padding: 0 8%; }
   .templateLeft .templateMainBody {
     background-color: #5299D3;
-    height: 65%; }
+    height: 63%;
+    margin: 0;
+    padding: 0; }
     .templateLeft .templateMainBody p {
       color: white;
       text-align: center;
@@ -529,78 +531,6 @@
   .templateRight .templateText {
     width: 70%;
     padding-top: 20%;
-    padding-left: 15%; }
-    .templateRight .templateText p {
-      color: white;
-      text-align: justify; }
-
-.templateBody {
-  background-color: #ededed; }
-
-.templateHero {
-  clear: both;
-  height: 350px;
-  width: 100%; }
-  .templateHero .templateTitle {
-    padding: 0;
-    margin: 0; }
-    .templateHero .templateTitle h1 {
-      color: #2b303a;
-      padding: 0 8%;
-      font-weight: 700;
-      text-align: center;
-      margin: 0; }
-    .templateHero .templateTitle .templateBlurb {
-      color: #2b303a;
-      text-align: justify;
-      padding: 0 8%; }
-
-.templateLeft {
-  float: left;
-  width: 73%; }
-  .templateLeft .templateMainBody {
-    background-color: #5299d3;
-    padding: 1%; }
-    .templateLeft .templateMainBody p {
-      color: white;
-      text-align: center;
-      font-size: 15px; }
-    .templateLeft .templateMainBody .templateButton {
-      font-size: 15px;
-      font-family: "Montserrat", sans-serif;
-      color: #ffffff;
-      border-radius: 5px;
-      padding: 10px 25px;
-      background-color: #ff5a5f;
-      border: none;
-      margin-left: 43%;
-      margin-top: 2%; }
-    .templateLeft .templateMainBody .templateButton:hover {
-      background-color: #ffffff;
-      color: #ff5a5f;
-      box-sizing: border-box; }
-
-.templateRight {
-  float: right;
-  width: 27%;
-  height: 720px;
-  background-color: #2b303a; }
-  .templateRight .nav ul li {
-    float: right;
-    padding-right: 14%;
-    list-style: none; }
-    .templateRight .nav ul li a {
-      color: #FF5A5F;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 15px;
-      text-align: center;
-      padding: .5%; }
-    .templateRight .nav ul li a:hover {
-      color: white; }
-  .templateRight .templateText {
-    width: 70%;
-    padding-top: 48%;
     padding-left: 15%; }
     .templateRight .templateText p {
       color: white;

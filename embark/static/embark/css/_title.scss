@@ -14,54 +14,57 @@
  height: 720px;
  .templateHero {
   clear: both;
-  height: 35%;
+  height: 37%;
   width: 100%;
-    .templateTitle {
-      margin: 0;
-      h1 {
+  .templateTitle {
+    margin: 0;
+    h1 {
+    color: #2b303a;
+    padding: 0 8%;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    }
+    .templateBlurb {
       color: #2b303a ;
+      text-align: justify;
       padding: 0 8%;
-      font-weight: 700;
-      text-align: center;
-      margin: 0;
-      }
-      .templateBlurb {
-        color: #2b303a ;
-        text-align: justify;
-        padding: 0 8%;
-      }
     }
   }
- .templateMainBody {
-   background-color: $sky;
-   height: 65%;
-   p {
-     color: white;
-     text-align: center;
-     font-size: 15px;
-     margin: 0;
-     padding-top: 5%;
-   }
- .templateButton {
-   font-size: 15px;
-   font-family: $font;
-   color: #ffffff;
-   border-radius: 5px;
-   padding: 10px 25px;
-   background-color: #5299d3 ;
-   background-color: #ff5a5f ;
-   border: none;
-   display: block;
-   margin: 0 auto;
-   margin-top: 2%;
- }
- .templateButton:hover {
-   background-color: #ffffff ;
-   color: #ff5a5f ;
-   box-sizing: border-box;
-  }
- }
 }
+  .templateMainBody {
+   background-color: $sky;
+   height: 63%;
+   margin: 0;
+   padding: 0;
+     p {
+       color: white;
+       text-align: center;
+       font-size: 15px;
+       margin: 0;
+       padding-top: 5%;
+     }
+    .templateButton {
+     font-size: 15px;
+     font-family: $font;
+     color: #ffffff;
+     border-radius: 5px;
+     padding: 10px 25px;
+     background-color: #5299d3 ;
+     background-color: #ff5a5f ;
+     border: none;
+     display: block;
+     margin: 0 auto;
+     margin-top: 2%;
+    }
+    .templateButton:hover {
+     background-color: #ffffff ;
+     color: #ff5a5f ;
+     box-sizing: border-box;
+    }
+  }
+}
+
 
 .templateRight {
  float: right;
