@@ -5,8 +5,11 @@
 @import "jobslist";
 @import "dashboard";
 @import "overview";
+<<<<<<< HEAD
 @import "title";
+=======
 @import "culture";
+>>>>>>> c10ea9dc94c952c022f10c043990aba8b3344f77
 
 /* GLOBAL PAGE STYLING*/
 html, body {

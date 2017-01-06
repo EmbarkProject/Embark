@@ -5,28 +5,55 @@
     <head>
         <meta charset="utf-8">
         <title>EMBARK!!</title>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
         <link rel="stylesheet" href="{% static 'embark/css/style.css' %}">
     </head>
-    <body>
-        THIS IS WHERE WE SHOW YOUR CULTURE PREFERENCES
-        <br>
-        <a href='/embark/main' id="mainButton">Main</a>
-        <br>
-        <a href='/embark/quiz' id="quizButton">Quiz</a>
-        <br>
-        <a href='/embark/industries' id="industriesButton">Industries</a>
-        <br>
-        <a href='/embark/culture' id="cultureButton">Culture</a>
-        <br>
-        <a href='/embark/review' id="reviewButton">Review</a>
-        <br>
-        <a href='/embark/results' id="resultsButton">Results</a>
-        <br>
-        <a href='/embark/title' id="titleButton">Title</a>
-        <br>
-        <a href='/embark/dashboard' id="dashboardButton">Dashboard</a>
+    <body class="templateBody">
+
+      <div class="templateLeft">
+        <div class="templateHero">
+            <div class="templateTitle">
+              <h1>Welcome, First Name!</h1>
+              <p class="templateBlurb">Starting out on a new career path is exciting, but can be overwhelming. There are many industries, jobs, and paths you can take! As a start, take our short quiz to help you narrow down your industry options to learn more about what might be a good fit.</p>
+            </div>
+        </div>
+
+        <div class="templateMainBody">
+          <p>Ready to find your new career? Answer 'Yes' or 'No' depending on how you feel about the statement. </p>
+          <button class="templateButton">Next</button>
+        </div>
+
+      </div>
+      <!-- end of left column -->
+
+      <div class="templateRight">
+        <div class="nav">
+          <ul>
+            <li><a href="#">Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="templateText">
+          <p>Already know the direction you're headed?
+            Skip the quiz and select your
+            top three industry choices.</p>
+        </div>
+
+      </div>
+      <!-- end of right column -->
+
+        {% verbatim %}
+        <script id="post-template" type="text/x-handlebars-template">
+        {{#each .}}
+        <h4>Job Name: {{this.name}}</h4>
+        <h5>Overall Rating: {{this.overallRating}}</h5>
+        {{/each}}
+        {% endverbatim %}
+        </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="{% static 'embark/js/culture.js' %}"></script>
     </body>
 </html>
