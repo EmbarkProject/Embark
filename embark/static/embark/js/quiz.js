@@ -12,7 +12,8 @@ $(document).ready(function() {
   });
 });
 
-function js_test() {
-    console.log("JS is linked correctly!")
+function print_selections() {
+    console.log($('#industrySelection').val())
 }
-js_test()
+
+$("#manualIndustry").click(print_selections())
