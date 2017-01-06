@@ -1,7 +1,0 @@
-__pycache__
-.DS_Store
-.envrc
-.cache
-.direnv
-*.pyc
-.sass-cache
