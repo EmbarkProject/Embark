@@ -1,559 +1,63 @@
-.landingLeft {
-  float: left;
-  width: 78%; }
+/*
+Error: File to import not found or unreadable: overview.
+       Load path: /Users/linabreslav/Desktop/Embark/embark/static/embark/css
+        on line 7 of embark/static/embark/css/style.scss
 
-.landingRight {
-  float: right;
-  width: 22%;
-  height: 1100px;
-  background-color: #2b303a; }
+2: @import "landing";
+3: @import "quiz";
+4: @import "industries";
+5: @import "jobslist";
+6: @import "dashboard";
+7: @import "overview";
+8: @import "title";
+9: @import "culture";
+10: 
+11: /* GLOBAL PAGE STYLING*\/
+12: html, body {
 
-.landingHero {
-  clear: both;
-  background-image: url("https://s3.us-east-2.amazonaws.com/embarkproject/heroImg1.jpg");
-  background-size: cover;
-  background-position: contain;
-  background-repeat: no-repeat;
-  height: 500px;
-  width: 100%;
-  border-bottom: 25px solid #5299d3; }
-  .landingHero .landingHeroOverlay {
-    height: 500px;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.3); }
-    .landingHero .landingHeroOverlay .landingHeroTitle {
-      width: 45%;
-      padding: 2% 2%;
-      padding-left: 1%;
-      padding-top: 25%; }
-      .landingHero .landingHeroOverlay .landingHeroTitle img {
-        height: 70%;
-        width: 80%;
-        display: block;
-        margin: 0 auto; }
-
-.landingSummary {
-  margin: 5% 10%;
-  margin-bottom: 8%; }
-
-.landingFeatures {
-  margin: 5% 10%; }
-  .landingFeatures .landingFeatureItem {
-    float: left;
-    width: 20%;
-    padding: 1%;
-    padding-left: 3%;
-    padding-right: 3%;
-    background-color: #f7f7f7;
-    border-radius: 5px; }
-    .landingFeatures .landingFeatureItem .fa {
-      display: block;
-      text-align: center;
-      margin-top: 7%;
-      color: #5299d3; }
-    .landingFeatures .landingFeatureItem img {
-      height: 63px;
-      width: 63px;
-      margin-left: 30%;
-      margin-top: 5%; }
-    .landingFeatures .landingFeatureItem .landingFeatureText {
-      margin-top: 15%;
-      font-size: 15px;
-      text-align: left; }
-  .landingFeatures .landingFeatureMiddle {
-    margin-right: 11%;
-    margin-left: 11%; }
-
-.landingLogin {
-  clear: both; }
-  .landingLogin p {
-    text-align: center;
-    color: white;
-    font-size: 16px; }
-    .landingLogin p a {
-      text-decoration: none;
-      font-weight: bolder;
-      color: #ff5a5f; }
-  .landingLogin .landingLoginForm {
-    margin: 10% 10%;
-    margin-top: 50%;
-    text-align: center; }
-    .landingLogin .landingLoginForm h2 {
-      color: white; }
-    .landingLogin .landingLoginForm form .name, .landingLogin .landingLoginForm form .password {
-      margin-top: 15%;
-      padding: 10px 25px;
-      width: 60%;
-      border-radius: 5px;
-      border-bottom: 5px solid #5299d3; }
-    .landingLogin .landingLoginForm form .loginButton {
-      font-size: 15px;
-      font-family: "Montserrat", sans-serif;
-      color: #ffffff;
-      border-radius: 5px;
-      padding: 10px 25px;
-      background-color: #ff5a5f;
-      border: none;
-      margin: 0 auto;
-      margin-top: 28%; }
-    .landingLogin .landingLoginForm form .loginButton:hover {
-      color: #ff5a5f;
-      background-color: white; }
-
-.landingRegister {
-  display: none; }
-
-.quizEmbarkLogo {
-  height: 70px;
-  padding: 3%;
-  padding-top: 2%; }
-
-.quizBody {
-  background-color: #ededed; }
-
-.quizHero {
-  clear: both;
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("https://s3.us-east-2.amazonaws.com/embarkproject/quizHeroImage.jpg");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  height: 350px;
-  width: 100%; }
-  .quizHero .quizTitle {
-    padding: 0;
-    margin: 0; }
-    .quizHero .quizTitle h1 {
-      color: #2b303a;
-      padding: 0 8%;
-      font-weight: 700;
-      text-align: center;
-      margin: 0; }
-    .quizHero .quizTitle .quizBlurb {
-      color: #2b303a;
-      text-align: justify;
-      padding: 0 8%; }
-
-.quizLeft {
-  float: left;
-  width: 73%; }
-  .quizLeft .quizLeftInstructions {
-    background-color: #5299d3;
-    padding: 1%; }
-    .quizLeft .quizLeftInstructions p {
-      color: white;
-      text-align: center;
-      font-size: 15px; }
-  .quizLeft .quizQuestions {
-    font-size: 25px;
-    padding-left: 26.5%;
-    padding-top: 2%; }
-    .quizLeft .quizQuestions .quizItem {
-      font-size: 20px; }
-      .quizLeft .quizQuestions .quizItem .quizItemText {
-        padding-left: 0;
-        font-size: 30px;
-        margin: 1%; }
-      .quizLeft .quizQuestions .quizItem input[type="radio"] {
-        display: none; }
-      .quizLeft .quizQuestions .quizItem .container {
-        padding-left: 8.5%;
-        padding-top: 1%; }
-      .quizLeft .quizQuestions .quizItem .container label {
-        position: relative; }
-      .quizLeft .quizQuestions .quizItem .container span::before,
-      .quizLeft .quizQuestions .quizItem .container span::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto; }
-      .quizLeft .quizQuestions .quizItem .container span.radio:hover {
-        cursor: pointer; }
-      .quizLeft .quizQuestions .quizItem .container span.radio::before {
-        left: -52px;
-        width: 45px;
-        height: 25px;
-        background-color: #2b303a;
-        border-radius: 50px; }
-      .quizLeft .quizQuestions .quizItem .container span.radio::after {
-        left: -49px;
-        width: 17px;
-        height: 17px;
-        border-radius: 10px;
-        background-color: #6C788A;
-        transition: left .25s, background-color .25s; }
-      .quizLeft .quizQuestions .quizItem input[type="radio"]:checked + label span.radio::after {
-        left: -27px;
-        background-color: #5299d3; }
-    .quizLeft .quizQuestions .q1 {
-      display: block; }
-    .quizLeft .quizQuestions .q2 {
-      display: none; }
-    .quizLeft .quizQuestions .q3 {
-      display: none; }
-    .quizLeft .quizQuestions .q4 {
-      display: none; }
-    .quizLeft .quizQuestions .q5 {
-      display: none; }
-    .quizLeft .quizQuestions .q6 {
-      display: none; }
-    .quizLeft .quizQuestions .q7 {
-      display: none; }
-  .quizLeft .quizButton {
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif;
-    color: #ffffff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    background-color: #ff5a5f;
-    border: none;
-    display: block;
-    margin: 0 auto;
-    margin-top: 2%; }
-  .quizLeft .quizButton:hover {
-    background-color: #ffffff;
-    color: #ff5a5f;
-    box-sizing: border-box; }
-
-.quizRight {
-  float: right;
-  width: 27%;
-  height: 720px;
-  background-color: #2b303a; }
-  .quizRight .quizRightInstructions {
-    width: 70%;
-    padding-top: 48%;
-    padding-left: 15%; }
-    .quizRight .quizRightInstructions p {
-      color: white;
-      text-align: justify; }
-  .quizRight .nav ul li {
-    float: right;
-    padding-right: 14%;
-    list-style: none; }
-    .quizRight .nav ul li a {
-      color: #FF5A5F;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 15px;
-      text-align: center;
-      padding: .5%; }
-    .quizRight .nav ul li a:hover {
-      color: white; }
-  .quizRight select {
-    width: 70%;
-    margin-top: 12%;
-    margin-left: 16%; }
-  .quizRight .quizChooseList select option {
-    font-family: "Montserrat", sans-serif;
-    font-size: 12px; }
-  .quizRight .quizButton {
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif;
-    color: #ffffff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    background-color: #ff5a5f;
-    border: none;
-    margin-left: 33%;
-    margin-top: 22%; }
-  .quizRight .quizButton:hover {
-    background-color: #ffffff;
-    color: #ff5a5f;
-    box-sizing: border-box; }
-
-.industriesBody {
-  background-color: #EDEDED; }
-
-.industriesTitle .quizEmbarkLogo {
-  padding: 2% 2%; }
-.industriesTitle .industriesTitle {
-  margin-left: 10%; }
-
-.industriesItem {
-  height: 350px;
-  border-bottom: 20px solid #ff5A5F; }
-  .industriesItem .industriesText {
-    color: #2B303A;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center; }
-
-.nextSteps {
-  clear: both;
-  margin-top: 40%;
-  text-align: center; }
-  .nextSteps .nextStepsText {
-    color: #2B303A; }
-  .nextSteps .nextButton {
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif;
-    color: #ffffff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    background-color: #ff5a5f;
-    border: none;
-    margin: 0 auto;
-    margin-top: 1%;
-    margin-bottom: 3%; }
-  .nextSteps .nextButton:hover {
-    color: #ff5a5f;
-    background-color: white; }
-
-.jobslistBody {
-  background-color: #EDEDED; }
-
-.jobslistTitle {
-  margin-bottom: 6%; }
-  .jobslistTitle .quizEmbarkLogo {
-    padding: 2% 2%; }
-  .jobslistTitle .jobslistTitle {
-    margin-left: 10%;
-    margin-right: 10%; }
-
-.industriesItem .industriesText {
-  color: #2B303A;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center; }
-
-.nextSteps {
-  clear: both;
-  margin: 3% 10%;
-  margin-top: 43%;
-  text-align: center; }
-  .nextSteps .nextStepsText {
-    color: #2B303A; }
-  .nextSteps .nextButton {
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif;
-    color: #ffffff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    background-color: #ff5a5f;
-    border: none;
-    margin: 0 auto;
-    margin-top: 1%; }
-  .nextSteps .nextButton:hover {
-    color: #ff5a5f;
-    background-color: white; }
-
-.dashboardBody {
-  background-image: url("../images/dashboardBackground.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.quizEmbarkLogo {
-  padding: 2% 2%; }
-
-.dashboardTitle {
-  text-align: center;
-  height: 150px; }
-
-.dashboardTopLists {
-  display: flex;
-  flex-direction: row;
-  align-content: space-around;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 250px; }
-  .dashboardTopLists .dashboardListItem {
-    width: 350px;
-    height: 230px;
-    background-color: #2B303A;
-    border-radius: 5px;
-    margin: 4px 20px; }
-    .dashboardTopLists .dashboardListItem p {
-      text-align: center;
-      color: white; }
-
-.dashboardInterfaceText {
-  background-color: #EDEDED;
-  border-top: 25px solid #ff5A5F; }
-  .dashboardInterfaceText h2 {
-    color: #2B303A;
-    text-align: center;
-    padding-top: 2%; }
-  .dashboardInterfaceText .dashboardButtons {
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 60%; }
-  .dashboardInterfaceText .dashboardButtonsItem .dashboardButton {
-    width: 200px;
-    height: 100px;
-    font-size: 20px;
-    color: #ffffff;
-    border-radius: 5px;
-    padding: 0 25px;
-    background-color: #5299D3;
-    border: none;
-    margin: 10%; }
-  .dashboardInterfaceText .dashboardButtonsItem .dashboardButton:hover {
-    background-color: #ffffff;
-    color: #5299D3;
-    box-sizing: border-box; }
-
-.overviewBody {
-  background-image: url("../images/overviewHero3.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.quizEmbarkLogo {
-  padding: 2% 2%; }
-
-.overviewTitle {
-  text-align: center;
-  height: 150px; }
-
-.overviewTopLists {
-  display: flex;
-  flex-direction: row;
-  align-content: space-around;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 250px; }
-  .overviewTopLists .overviewListItem {
-    width: 350px;
-    height: 230px;
-    background-color: #2B303A;
-    border-radius: 5px;
-    margin: 4px 20px; }
-    .overviewTopLists .overviewListItem p {
-      text-align: center;
-      color: white; }
-
-.overviewInterfaceText {
-  background-color: #EDEDED;
-  border-top: 25px solid #ff5A5F; }
-  .overviewInterfaceText h2 {
-    color: #2B303A;
-    text-align: center;
-    padding-top: 2%; }
-  .overviewInterfaceText .overviewButtons {
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 60%; }
-  .overviewInterfaceText .overviewButtonsItem .overviewButton {
-    width: 200px;
-    height: 100px;
-    font-size: 20px;
-    color: #ffffff;
-    border-radius: 5px;
-    padding: 0 25px;
-    background-color: #5299D3;
-    border: none;
-    margin: 10%; }
-  .overviewInterfaceText .overviewButtonsItem .overviewButton:hover {
-    background-color: #ffffff;
-    color: #5299D3;
-    box-sizing: border-box; }
-
-.quizEmbarkLogo {
-  height: 70px;
-  padding: 2% 3% 0 3%; }
-
-.templateLeft {
-  float: left;
-  width: 73%;
-  height: 720px; }
-  .templateLeft .templateHero {
-    clear: both;
-    height: 37%;
-    width: 100%; }
-    .templateLeft .templateHero .templateTitle {
-      margin: 0; }
-      .templateLeft .templateHero .templateTitle h1 {
-        color: #2b303a;
-        padding: 0 8%;
-        font-weight: 700;
-        text-align: center;
-        margin: 0; }
-      .templateLeft .templateHero .templateTitle .templateBlurb {
-        color: #2b303a;
-        text-align: justify;
-        padding: 0 8%; }
-  .templateLeft .templateMainBody {
-    background-color: #5299D3;
-    height: 63%;
-    margin: 0;
-    padding: 0; }
-    .templateLeft .templateMainBody p {
-      color: white;
-      text-align: center;
-      font-size: 15px;
-      margin: 0;
-      padding-top: 5%; }
-    .templateLeft .templateMainBody .templateButton {
-      font-size: 15px;
-      font-family: "Montserrat", sans-serif;
-      color: #ffffff;
-      border-radius: 5px;
-      padding: 10px 25px;
-      background-color: #5299d3;
-      background-color: #ff5a5f;
-      border: none;
-      display: block;
-      margin: 0 auto;
-      margin-top: 2%; }
-    .templateLeft .templateMainBody .templateButton:hover {
-      background-color: #ffffff;
-      color: #ff5a5f;
-      box-sizing: border-box; }
-
-.templateRight {
-  float: right;
-  width: 27%;
-  height: 720px;
-  background-color: #2b303a; }
-  .templateRight .nav ul li {
-    float: right;
-    padding-right: 14%;
-    list-style: none; }
-    .templateRight .nav ul li a {
-      color: #ff5A5F;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 15px;
-      text-align: center;
-      padding: .5%; }
-    .templateRight .nav ul li a:hover {
-      color: white; }
-  .templateRight .templateText {
-    width: 70%;
-    padding-top: 20%;
-    padding-left: 15%; }
-    .templateRight .templateText p {
-      color: white;
-      text-align: justify; }
-
-/* GLOBAL PAGE STYLING*/
-html, body {
-  width: 100%;
-  margin: 0; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  line-height: 1.5;
-  letter-spacing: 0.05em;
-  color: #2b303a;
-  text-transform: uppercase; }
-
-p, a {
-  font-size: 17px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #2b303a; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+embark/static/embark/css/style.scss:7
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: overview.\A        Load path: /Users/linabreslav/Desktop/Embark/embark/static/embark/css\A         on line 7 of embark/static/embark/css/style.scss\A \A 2: @import \"landing\";\A 3: @import \"quiz\";\A 4: @import \"industries\";\A 5: @import \"jobslist\";\A 6: @import \"dashboard\";\A 7: @import \"overview\";\A 8: @import \"title\";\A 9: @import \"culture\";\A 10: \A 11: /* GLOBAL PAGE STYLING*/\A 12: html, body {"; }
