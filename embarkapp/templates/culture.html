@@ -1,4 +1,4 @@
-<!-- {% load static %}
+{% load static %}
 
 <!DOCTYPE html>
 <html>
@@ -12,6 +12,7 @@
 
       <div class="templateLeft">
         <div class="templateHero">
+          <a href="index.html"><img class="quizEmbarkLogo" src="https://s3.us-east-2.amazonaws.com/embarkproject/embarkTitle.png"></a>
             <div class="templateTitle">
               <h1>Welcome, First Name!</h1>
               <p class="templateBlurb">Starting out on a new career path is exciting, but can be overwhelming. There are many industries, jobs, and paths you can take! As a start, take our short quiz to help you narrow down your industry options to learn more about what might be a good fit.</p>
@@ -26,7 +27,7 @@
       </div>
       <!-- end of left column -->
 
-      <!-- <div class="templateRight">
+      <div class="templateRight">
         <div class="nav">
           <ul>
             <li><a href="#">Dashboard</a></li>
@@ -37,23 +38,23 @@
           <p>Already know the direction you're headed?
             Skip the quiz and select your
             top three industry choices.</p>
-        </div> -->
+        </div>
 
-      <!-- </div> -->
+      </div>
       <!-- end of right column -->
 
-        <!-- {% verbatim %}
+        {% verbatim %}
         <script id="post-template" type="text/x-handlebars-template">
         {{#each .}}
         <h4>Job Name: {{this.name}}</h4>
         <h5>Overall Rating: {{this.overallRating}}</h5>
         {{/each}}
         {% endverbatim %}
-        </script> -->
+        </script>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="{% static 'embark/js/culture.js' %}"></script>
     </body>
-</html> --> -->
+</html>
