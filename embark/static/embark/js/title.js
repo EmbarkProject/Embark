@@ -31,12 +31,13 @@ $(function () {
         plotOptions: {
             pie: {
                 dataLabels: {
+                    borderWidth: 0,
                     enabled: true,
-                    distance: 40,
+                    distance: 0,
                     style: {
                         fontWeight: 'bold',
                         color: 'white',
-                        fontFamily: 'arial',
+                        fontFamily: '$font',
                         fontSize: 15
                     }
                 },
@@ -50,11 +51,11 @@ $(function () {
             name: 'Browser share',
             innerSize: '50%',
             data: [
-                ['Firefox',   10.38],
-                ['IE',       56.33],
-                ['Chrome', 24.03],
-                ['Safari',    4.77],
-                ['Opera',     0.91],
+                ['title1',   10.38],
+                ['title2',       56.33],
+                ['title3', 24.03],
+                ['title4',    4.77],
+                ['title5',     0.91],
                 {
                     name: 'Proprietary or Undetectable',
                     y: 0.2,

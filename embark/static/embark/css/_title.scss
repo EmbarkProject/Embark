@@ -1,0 +1,38 @@
+// INSIDE SCROLLING LIST BAR
+.titleChooseList {
+  select {
+    margin-left: 15%;
+    margin-top: 5%;
+    option {
+      font-family: $font;
+      font-size: 12px;
+    }
+  }
+}
+
+
+.titleButton {
+  font-size: 15px;
+  font-family: $font;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  background-color: #ff5a5f;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  margin-top: 12%;
+}
+.titleButton:hover {
+  background-color: #ffffff;
+  color: #ff5a5f;
+  box-sizing: border-box;
+}
+
+.titleResources {
+  margin-left: 15%;
+  margin-top: 10%;
+  p {
+  color: white;
+  }
+}

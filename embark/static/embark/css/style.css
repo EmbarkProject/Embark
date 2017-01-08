@@ -109,21 +109,18 @@
   padding-top: 2%; }
 
 .quizBody {
-  background-color: #ededed; }
+  background-color: #5299D3; }
 
 .quizHero {
   clear: both;
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("https://s3.us-east-2.amazonaws.com/embarkproject/quizHeroImage.jpg");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  height: 350px;
+  background: white;
+  height: 265px;
   width: 100%; }
   .quizHero .quizTitle {
     padding: 0;
     margin: 0; }
     .quizHero .quizTitle h1 {
-      color: #2b303a;
+      color: #2B303A;
       padding: 0 8%;
       font-weight: 700;
       text-align: center;
@@ -148,16 +145,20 @@
     padding-left: 26.5%;
     padding-top: 2%; }
     .quizLeft .quizQuestions .quizItem {
-      font-size: 20px; }
+      font-size: 20px;
+      margin: 0 auto;
+      display: block; }
       .quizLeft .quizQuestions .quizItem .quizItemText {
         padding-left: 0;
         font-size: 30px;
-        margin: 1%; }
+        margin: 1%;
+        color: white; }
       .quizLeft .quizQuestions .quizItem input[type="radio"] {
         display: none; }
       .quizLeft .quizQuestions .quizItem .container {
         padding-left: 8.5%;
-        padding-top: 1%; }
+        padding-top: 1%;
+        color: white; }
       .quizLeft .quizQuestions .quizItem .container label {
         position: relative; }
       .quizLeft .quizQuestions .quizItem .container span::before,
@@ -184,7 +185,7 @@
         transition: left .25s, background-color .25s; }
       .quizLeft .quizQuestions .quizItem input[type="radio"]:checked + label span.radio::after {
         left: -27px;
-        background-color: #5299d3; }
+        background-color: #ff5A5F; }
     .quizLeft .quizQuestions .q1 {
       display: block; }
     .quizLeft .quizQuestions .q2 {
@@ -209,7 +210,7 @@
     border: none;
     display: block;
     margin: 0 auto;
-    margin-top: 2%; }
+    margin-top: 5%; }
   .quizLeft .quizButton:hover {
     background-color: #ffffff;
     color: #ff5a5f;
@@ -222,7 +223,7 @@
   background-color: #2b303a; }
   .quizRight .quizRightInstructions {
     width: 70%;
-    padding-top: 48%;
+    padding-top: 21%;
     padding-left: 15%; }
     .quizRight .quizRightInstructions p {
       color: white;
@@ -255,8 +256,9 @@
     padding: 10px 25px;
     background-color: #ff5a5f;
     border: none;
-    margin-left: 33%;
-    margin-top: 22%; }
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%; }
   .quizRight .quizButton:hover {
     background-color: #ffffff;
     color: #ff5a5f;
@@ -406,8 +408,8 @@
     box-sizing: border-box; }
 
 .overviewBody {
-  background-image: url("../images/reviewHero.jpg");
-  background-position: bottom;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../images/reviewHero.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -424,13 +426,14 @@
   align-content: space-around;
   justify-content: center;
   flex-wrap: wrap;
-  height: 220px; }
+  height: 220px;
+  background-color: #2B303A; }
   .overviewTopLists .overviewListItem {
     width: 350px;
     height: 210px;
-    background-color: #2B303A;
     border-radius: 5px;
-    margin: 4px 20px; }
+    margin: 4px 20px;
+    padding-top: 2%; }
     .overviewTopLists .overviewListItem p {
       text-align: center;
       color: white; }
@@ -438,10 +441,10 @@
 .overviewInterface {
   height: 200px; }
   .overviewInterface .overviewInterfaceText {
-    background-color: #EDEDED;
+    background-color: #2B303A;
     border-top: 25px solid #ff5A5F; }
     .overviewInterface .overviewInterfaceText h2 {
-      color: #2B303A;
+      color: white;
       text-align: center;
       padding-top: 2%; }
     .overviewInterface .overviewInterfaceText .overviewButtons {
@@ -544,6 +547,36 @@
     .templateRight .templateText p {
       color: white;
       text-align: justify; }
+
+.titleChooseList select {
+  margin-left: 15%;
+  margin-top: 5%; }
+  .titleChooseList select option {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px; }
+
+.titleButton {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  background-color: #ff5a5f;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  margin-top: 12%; }
+
+.titleButton:hover {
+  background-color: #ffffff;
+  color: #ff5a5f;
+  box-sizing: border-box; }
+
+.titleResources {
+  margin-left: 15%;
+  margin-top: 10%; }
+  .titleResources p {
+    color: white; }
 
 /* GLOBAL PAGE STYLING*/
 html, body {
