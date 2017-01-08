@@ -339,40 +339,46 @@
     background-color: white; }
 
 .dashboardBody {
-  background-image: url("../images/dashboardBackground.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../images/dashboardHero.jpg");
+  background-position: center;
   background-size: cover; }
 
 .quizEmbarkLogo {
   padding: 2% 2%; }
 
 .dashboardTitle {
-  text-align: center;
-  height: 150px; }
+  text-align: center; }
+  .dashboardTitle .dashboardHeadingText h1 {
+    font-size: 100px;
+    margin: 1%;
+    color: #2B303A; }
+  .dashboardTitle .dashboardHeadingText h2 {
+    margin: 1%;
+    color: #2B303A; }
 
 .dashboardTopLists {
   display: flex;
   flex-direction: row;
-  align-content: space-around;
+  align-content: center;
   justify-content: center;
   flex-wrap: wrap;
-  height: 250px; }
+  height: 220px; }
   .dashboardTopLists .dashboardListItem {
-    width: 350px;
-    height: 230px;
+    width: 300px;
+    height: 200px;
     background-color: #2B303A;
     border-radius: 5px;
-    margin: 4px 20px; }
+    margin: 4px 15px;
+    opacity: .9; }
     .dashboardTopLists .dashboardListItem p {
       text-align: center;
       color: white; }
 
 .dashboardInterfaceText {
-  background-color: #EDEDED;
-  border-top: 25px solid #ff5A5F; }
+  background-color: #2B303A;
+  border-top: 25px solid #5299D3; }
   .dashboardInterfaceText h2 {
-    color: #2B303A;
+    color: white;
     text-align: center;
     padding-top: 2%; }
   .dashboardInterfaceText .dashboardButtons {
@@ -382,9 +388,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: 60%; }
+    width: 75%;
+    padding-bottom: 5%; }
   .dashboardInterfaceText .dashboardButtonsItem .dashboardButton {
-    width: 200px;
+    width: 300px;
     height: 100px;
     font-size: 20px;
     color: #ffffff;
@@ -392,14 +399,14 @@
     padding: 0 25px;
     background-color: #5299D3;
     border: none;
-    margin: 10%; }
+    margin-bottom: 20%; }
   .dashboardInterfaceText .dashboardButtonsItem .dashboardButton:hover {
     background-color: #ffffff;
     color: #5299D3;
     box-sizing: border-box; }
 
 .overviewBody {
-  background-image: url("../images/overviewHero3.jpg");
+  background-image: url("../images/reviewHero.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover; }
