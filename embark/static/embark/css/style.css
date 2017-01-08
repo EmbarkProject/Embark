@@ -25,10 +25,16 @@
       width: 45%;
       padding: 2% 2%;
       padding-left: 1%;
-      padding-top: 25%; }
-      .landingHero .landingHeroOverlay .landingHeroTitle img {
-        height: 70%;
-        width: 80%;
+      padding-top: 20%; }
+      .landingHero .landingHeroOverlay .landingHeroTitle .tossing {
+        height: 150px;
+        padding-top: 4.5%;
+        padding-left: 15%;
+        position: absolute; }
+      .landingHero .landingHeroOverlay .landingHeroTitle .whiteTitle {
+        height: 200px;
+        width: auto;
+        padding-top: 32%;
         display: block;
         margin: 0 auto; }
 
@@ -74,6 +80,8 @@
       text-decoration: none;
       font-weight: bolder;
       color: #ff5a5f; }
+    .landingLogin p a:hover {
+      color: white; }
   .landingLogin .landingLoginForm {
     margin: 10% 10%;
     margin-top: 50%;
@@ -574,7 +582,7 @@
 
 .titleResources {
   margin-left: 15%;
-  margin-top: 10%; }
+  margin-top: 15%; }
   .titleResources p {
     color: white; }
 
