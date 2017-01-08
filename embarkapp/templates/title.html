@@ -21,7 +21,8 @@
 
        <div class="templateMainBody">
          <p>JOB TITLE ENTERED BY EMBARKER</p>
-         <button class="templateButton">Next</button>
+         <div id="chartContainer" style="min-width: 310px; height: 300px; max-width: 600px; margin: 0 auto"></div>
+         <button class="templateButton">Dashboard</button>
        </div>
 
      </div>
@@ -51,9 +52,11 @@
        {% endverbatim %}
        </script>
 
+   <script src="https://code.highcharts.com/highcharts.js"></script>
+   <script src="https://code.highcharts.com/modules/exporting.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-   <script type="text/javascript" src="{% static 'embark/js/culture.js' %}"></script>
+   <script type="text/javascript" src="{% static 'embark/js/title.js' %}"></script>
    </body>
 </html>
