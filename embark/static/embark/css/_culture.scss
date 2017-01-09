@@ -1,6 +1,6 @@
 .cultureMainBody {
  background-color: $greybackground;
- height: 93%;
+ height: 85%;
  margin: 0;
  padding: 0;
   .cultureMainBodyInstructions {
@@ -19,24 +19,24 @@
      margin-left: 40%;
      padding-top: 5%;
    }
-  .cultureButton {
-   font-size: 15px;
-   font-family: $font;
-   color: #ffffff;
-   border-radius: 5px;
-   padding: 10px 25px;
-   background-color: #5299d3 ;
-   background-color: #ff5a5f ;
-   border: none;
-   display: block;
-   margin: 0 auto;
-   margin-top: 6%;
-  }
-  .cultureButton:hover {
-   background-color: #ffffff ;
-   color: #ff5a5f ;
-   box-sizing: border-box;
-  }
+  // .cultureButton {
+  //  font-size: 15px;
+  //  font-family: $font;
+  //  color: #ffffff;
+  //  border-radius: 5px;
+  //  padding: 10px 25px;
+  //  background-color: #5299d3 ;
+  //  background-color: #ff5a5f ;
+  //  border: none;
+  //  display: block;
+  //  margin: 0 auto;
+  //  margin-top: 6%;
+  // }
+  // .cultureButton:hover {
+  //  background-color: #ffffff ;
+  //  color: #ff5a5f ;
+  //  box-sizing: border-box;
+  // }
 }
 
 label {
@@ -60,7 +60,7 @@ label {
 }
 
 .cultureRight {
-  height: 958px;
+  height: 900px;
 }
 .cultureLocationText {
   color: white;
