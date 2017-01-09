@@ -6,7 +6,7 @@
 .landingRight {
   float: right;
   width: 22%;
-  height: 1100px;
+  height: 1090px;
   background-color: #2b303a;
 }
 
@@ -18,7 +18,7 @@
   background-repeat: no-repeat;
   height: 500px;
   width: 100%;
-  border-bottom: 25px solid #5299d3;
+  // border-bottom: 25px solid #5299d3;
   .landingHeroOverlay {
     height: 500px;
     width: 100%;
@@ -51,12 +51,19 @@
 }
 
 .landingSummary {
-  margin: 5% 10%;
-  margin-bottom: 8%;
+  width: 100%;
+  background-color: $sky;
+  p {
+    color: white;
+    margin: 0 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
 }
 
 .landingFeatures {
-  margin: 5% 10%;
+  margin: 6% 10%;
+  padding-bottom: 5%;
   // display: flex;
   // flex-direction: row;
   // flex-wrap: wrap;
@@ -64,33 +71,37 @@
   // align-items: center;
   .landingFeatureItem {
     float: left;
+    height: 315px;
     width: 20%;
     padding: 1%;
     padding-left: 3%;
     padding-right: 3%;
     background-color: #f7f7f7;
+    border-bottom: 20px solid $coral;
     border-radius: 5px;
     .fa {
-      // margin-left: 25%;
       display: block;
       text-align: center;
-      margin-top: 7%;
-      // color: #2b303a;
+      margin-top: 9%;
       color: #5299d3;
     }
-    .fa-comments {
-      // margin-left: 30%;
-    }
     img {
-      height: 63px;
-      width: 63px;
-      margin-left: 30%;
-      margin-top: 5%;
+      height: 67px;
+      width: 67px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 9%;
     }
     .landingFeatureText {
       margin-top: 15%;
+      margin-left: 4%;
+      margin-right: 4%;
       font-size: 15px;
       text-align: left;
+    }
+    .landingFeatureShipText {
+      position: relative;
+      top: -3px;
     }
   }
   .landingFeatureMiddle {

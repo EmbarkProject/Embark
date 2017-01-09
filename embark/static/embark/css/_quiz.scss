@@ -27,7 +27,7 @@ $blue: #5299D3;
   // background-size: cover;
   // background-position: top;
   // background-repeat: no-repeat;
-  height: 265px;
+  height: 288px;
   width: 100%;
     .quizTitle {
       padding: 0;
@@ -54,6 +54,7 @@ $blue: #5299D3;
   .quizLeftInstructions {
     background-color: #5299d3;
     padding: 1%;
+    margin-top: 1%;
     p {
       color: white;
       text-align: center;
@@ -154,7 +155,7 @@ $blue: #5299D3;
     border: none;
     display: block;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 3%;
   }
   .quizButton:hover {
     background-color: #ffffff;
@@ -170,7 +171,7 @@ $blue: #5299D3;
   background-color: #2b303a;
   .quizRightInstructions {
     width: 70%;
-    padding-top: 21%;
+    padding-top: 36%;
     padding-left: 15%;
     p{
       color: white;
@@ -225,7 +226,7 @@ $blue: #5299D3;
     border: none;
     display: block;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 20%;
   }
   .quizButton:hover {
     background-color: #ffffff;

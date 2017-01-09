@@ -1,8 +1,14 @@
+
 @import "variables";
 
 .overviewBody {
-  background-image: url("../images/overviewHero3.jpg");
-  background-position: top;
+  background-image:
+  linear-gradient(
+    rgba(white, 0.3),
+    rgba(white, 0.3)
+    ),
+    url("../images/reviewHero.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -23,13 +29,14 @@
   align-content: space-around;
   justify-content: center;
   flex-wrap: wrap;
-  height: 250px;
+  height: 220px;
+  background-color: $charcoal;
   .overviewListItem {
     width: 350px;
-    height: 230px;
-    background-color: $charcoal;
+    height: 210px;
     border-radius: 5px;
     margin: 4px 20px;
+    padding-top: 2%;
     p {
       text-align: center;
       color: white;
@@ -41,7 +48,7 @@
   height: 200px;
   .overviewInterfaceText {
     background-color: $charcoal;
-    border-top: 25px solid $sky;
+    border-top: 25px solid $coral;
     h2 {
       color: white;
       text-align: center;
@@ -74,10 +81,5 @@
           box-sizing: border-box;
         }
       }
-      .overviewButton:hover {
-        background-color: #ffffff;
-        color: $sky;
-        box-sizing: border-box;
-      }
+    }
   }
-}

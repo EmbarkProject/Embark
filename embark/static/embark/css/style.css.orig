@@ -1,48 +1,735 @@
-/*
-Error: Invalid CSS after "@import "title"": expected "{", was ";"
-        on line 9 of embark/static/embark/css/style.scss
+.landingLeft {
+  float: left;
+  width: 78%; }
 
-4: @import "industries";
-5: @import "jobslist";
-6: @import "dashboard";
-7: @import "overview";
-8: <<<<<<< HEAD
-9: @import "title";
-10: =======
-11: @import "culture";
-12: >>>>>>> c10ea9dc94c952c022f10c043990aba8b3344f77
-13: 
-14: /* GLOBAL PAGE STYLING*\/
+.landingRight {
+  float: right;
+  width: 22%;
+  height: 1090px;
+  background-color: #2b303a; }
 
-Backtrace:
-embark/static/embark/css/style.scss:9
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:656:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"@import \"title\"\": expected \"{\", was \";\"\A         on line 9 of embark/static/embark/css/style.scss\A \A 4: @import \"industries\";\A 5: @import \"jobslist\";\A 6: @import \"dashboard\";\A 7: @import \"overview\";\A 8: <<<<<<< HEAD\A 9: @import \"title\";\A 10: =======\A 11: @import \"culture\";\A 12: >>>>>>> c10ea9dc94c952c022f10c043990aba8b3344f77\A 13: \A 14: /* GLOBAL PAGE STYLING*/"; }
+.landingHero {
+  clear: both;
+  background-image: url("https://s3.us-east-2.amazonaws.com/embarkproject/heroImg1.jpg");
+  background-size: cover;
+  background-position: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%; }
+  .landingHero .landingHeroOverlay {
+    height: 500px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3); }
+    .landingHero .landingHeroOverlay .landingHeroTitle {
+      width: 45%;
+      padding: 2% 2%;
+      padding-left: 1%;
+      padding-top: 20%; }
+      .landingHero .landingHeroOverlay .landingHeroTitle .tossing {
+        height: 150px;
+        padding-top: 4.5%;
+        padding-left: 15%;
+        position: absolute; }
+      .landingHero .landingHeroOverlay .landingHeroTitle .whiteTitle {
+        height: 200px;
+        width: auto;
+        padding-top: 32%;
+        display: block;
+        margin: 0 auto; }
+
+.landingSummary {
+  width: 100%;
+  background-color: #5299D3; }
+  .landingSummary p {
+    color: white;
+    margin: 0 10%;
+    padding-top: 3%;
+    padding-bottom: 3%; }
+
+.landingFeatures {
+  margin: 6% 10%;
+  padding-bottom: 5%; }
+  .landingFeatures .landingFeatureItem {
+    float: left;
+    height: 315px;
+    width: 20%;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #f7f7f7;
+    border-bottom: 20px solid #ff5A5F;
+    border-radius: 5px; }
+    .landingFeatures .landingFeatureItem .fa {
+      display: block;
+      text-align: center;
+      margin-top: 9%;
+      color: #5299d3; }
+    .landingFeatures .landingFeatureItem img {
+      height: 67px;
+      width: 67px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 9%; }
+    .landingFeatures .landingFeatureItem .landingFeatureText {
+      margin-top: 15%;
+      margin-left: 4%;
+      margin-right: 4%;
+      font-size: 15px;
+      text-align: left; }
+    .landingFeatures .landingFeatureItem .landingFeatureShipText {
+      position: relative;
+      top: -3px; }
+  .landingFeatures .landingFeatureMiddle {
+    margin-right: 11%;
+    margin-left: 11%; }
+
+.landingLogin {
+  clear: both; }
+  .landingLogin p {
+    text-align: center;
+    color: white;
+    font-size: 16px; }
+    .landingLogin p a {
+      text-decoration: none;
+      font-weight: bolder;
+      color: #ff5a5f; }
+    .landingLogin p a:hover {
+      color: white; }
+  .landingLogin .landingLoginForm {
+    margin: 10% 10%;
+    margin-top: 50%;
+    text-align: center; }
+    .landingLogin .landingLoginForm h2 {
+      color: white; }
+    .landingLogin .landingLoginForm form .name, .landingLogin .landingLoginForm form .password {
+      margin-top: 15%;
+      padding: 10px 25px;
+      width: 60%;
+      border-radius: 5px;
+      border-bottom: 5px solid #5299d3; }
+    .landingLogin .landingLoginForm form .loginButton {
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+      color: #ffffff;
+      border-radius: 5px;
+      padding: 10px 25px;
+      background-color: #ff5a5f;
+      border: none;
+      margin: 0 auto;
+      margin-top: 28%; }
+    .landingLogin .landingLoginForm form .loginButton:hover {
+      color: #ff5a5f;
+      background-color: white; }
+
+.landingRegister {
+  display: none; }
+
+.quizEmbarkLogo {
+  height: 70px;
+  padding: 3%;
+  padding-top: 2%; }
+
+.quizBody {
+  background-color: #EDEDED; }
+
+.quizHero {
+  clear: both;
+  background: white;
+  height: 288px;
+  width: 100%; }
+  .quizHero .quizTitle {
+    padding: 0;
+    margin: 0; }
+    .quizHero .quizTitle h1 {
+      color: #2B303A;
+      padding: 0 8%;
+      font-weight: 700;
+      text-align: center;
+      margin: 0; }
+    .quizHero .quizTitle .quizBlurb {
+      color: #2b303a;
+      text-align: justify;
+      padding: 0 8%; }
+
+.quizLeft {
+  float: left;
+  width: 73%; }
+  .quizLeft .quizLeftInstructions {
+    background-color: #5299d3;
+    padding: 1%;
+    margin-top: 1%; }
+    .quizLeft .quizLeftInstructions p {
+      color: white;
+      text-align: center;
+      font-size: 15px; }
+  .quizLeft .quizQuestions {
+    font-size: 25px;
+    padding-left: 26.5%;
+    padding-top: 2%; }
+    .quizLeft .quizQuestions .quizItem {
+      font-size: 20px;
+      margin: 0 auto;
+      display: block; }
+      .quizLeft .quizQuestions .quizItem .quizItemText {
+        padding-left: 0;
+        font-size: 30px;
+        margin: 1%;
+        color: #2B303A; }
+      .quizLeft .quizQuestions .quizItem input[type="radio"] {
+        display: none; }
+      .quizLeft .quizQuestions .quizItem .container {
+        padding-left: 8.5%;
+        padding-top: 1%;
+        color: #2B303A; }
+      .quizLeft .quizQuestions .quizItem .container label {
+        position: relative; }
+      .quizLeft .quizQuestions .quizItem .container span::before,
+      .quizLeft .quizQuestions .quizItem .container span::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto; }
+      .quizLeft .quizQuestions .quizItem .container span.radio:hover {
+        cursor: pointer; }
+      .quizLeft .quizQuestions .quizItem .container span.radio::before {
+        left: -52px;
+        width: 45px;
+        height: 25px;
+        background-color: #2b303a;
+        border-radius: 50px; }
+      .quizLeft .quizQuestions .quizItem .container span.radio::after {
+        left: -49px;
+        width: 17px;
+        height: 17px;
+        border-radius: 10px;
+        background-color: #6C788A;
+        transition: left .25s, background-color .25s; }
+      .quizLeft .quizQuestions .quizItem input[type="radio"]:checked + label span.radio::after {
+        left: -27px;
+        background-color: #ff5A5F; }
+    .quizLeft .quizQuestions .q1 {
+      display: block; }
+    .quizLeft .quizQuestions .q2 {
+      display: none; }
+    .quizLeft .quizQuestions .q3 {
+      display: none; }
+    .quizLeft .quizQuestions .q4 {
+      display: none; }
+    .quizLeft .quizQuestions .q5 {
+      display: none; }
+    .quizLeft .quizQuestions .q6 {
+      display: none; }
+    .quizLeft .quizQuestions .q7 {
+      display: none; }
+  .quizLeft .quizButton {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: #ff5a5f;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3%; }
+  .quizLeft .quizButton:hover {
+    background-color: #ffffff;
+    color: #ff5a5f;
+    box-sizing: border-box; }
+
+.quizRight {
+  float: right;
+  width: 27%;
+  height: 720px;
+  background-color: #2b303a; }
+  .quizRight .quizRightInstructions {
+    width: 70%;
+    padding-top: 36%;
+    padding-left: 15%; }
+    .quizRight .quizRightInstructions p {
+      color: white;
+      text-align: justify; }
+  .quizRight .nav ul li {
+    float: right;
+    padding-right: 14%;
+    list-style: none; }
+    .quizRight .nav ul li a {
+      color: #FF5A5F;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 15px;
+      text-align: center;
+      padding: .5%; }
+    .quizRight .nav ul li a:hover {
+      color: white; }
+  .quizRight select {
+    width: 70%;
+    margin-top: 12%;
+    margin-left: 16%; }
+  .quizRight .quizChooseList select option {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px; }
+  .quizRight .quizButton {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: #ff5a5f;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20%; }
+  .quizRight .quizButton:hover {
+    background-color: #ffffff;
+    color: #ff5a5f;
+    box-sizing: border-box; }
+
+.industriesBody {
+  background-color: #EDEDED; }
+
+.industriesTitle {
+  height: 20%;
+  background-color: white;
+  border-bottom: 13px solid #5299d3; }
+  .industriesTitle .quizEmbarkLogo {
+    padding: 2% 2%; }
+  .industriesTitle .industriesTitle {
+    margin: 0; }
+    .industriesTitle .industriesTitle h1 {
+      margin: 0;
+      position: relative;
+      top: -10px;
+      padding-bottom: 3%;
+      text-align: center; }
+
+.industryFeatures {
+  margin: 5% 10%; }
+  .industryFeatures .industryItem {
+    float: left;
+    height: 370px;
+    width: 20%;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #f7f7f7;
+    border-bottom: 20px solid #ff5A5F;
+    border-radius: 5px; }
+    .industryFeatures .industryItem .fa {
+      display: block;
+      text-align: center;
+      margin-top: 9%;
+      color: #5299d3; }
+    .industryFeatures .industryItem .industriesText {
+      color: #2B303A;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center; }
+    .industryFeatures .industryItem .industryFeatureText {
+      margin-top: 10%;
+      margin-left: 4%;
+      margin-right: 4%;
+      font-size: 15px;
+      text-align: left; }
+    .industryFeatures .industryItem .industryFeatureTextShort {
+      position: relative;
+      top: 35px; }
+  .industryFeatures .industryMiddle {
+    margin-right: 11%;
+    margin-left: 11%; }
+
+.nextSteps {
+  clear: both;
+  margin-top: 42%;
+  margin-bottom: 1%;
+  text-align: center; }
+  .nextSteps .nextStepsText {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    color: #2B303A; }
+  .nextSteps .nextButton {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: #ff5a5f;
+    border: none;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 1%; }
+  .nextSteps .nextButton:hover {
+    color: #ff5a5f;
+    background-color: white; }
+
+.jobslistBody {
+  background-color: #EDEDED; }
+
+.jobslistTitle {
+  height: 20%;
+  width: 100%;
+  background-color: white;
+  border-bottom: 13px solid #5299d3; }
+  .jobslistTitle .quizEmbarkLogo {
+    padding: 2% 2%; }
+  .jobslistTitle .jobslistTitle h1 {
+    width: 80%;
+    position: relative;
+    top: -10px;
+    margin: 0;
+    margin-left: 10%;
+    padding-bottom: 3%; }
+
+.jobslistFeatures {
+  margin: 5% 10%; }
+  .jobslistFeatures .jobslistItem {
+    float: left;
+    height: 370px;
+    width: 20%;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #f7f7f7;
+    border-bottom: 20px solid #ff5A5F;
+    border-radius: 5px; }
+    .jobslistFeatures .jobslistItem .fa {
+      display: block;
+      text-align: center;
+      margin-top: 9%;
+      color: #5299d3; }
+    .jobslistFeatures .jobslistItem .jobslistText {
+      color: #2B303A;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center; }
+    .jobslistFeatures .jobslistItem .jobsListing {
+      margin-top: 10%;
+      margin-left: 4%;
+      margin-right: 4%;
+      font-size: 15px;
+      text-align: center; }
+    .jobslistFeatures .jobslistItem .jobslistingShort {
+      position: relative;
+      top: 35px; }
+  .jobslistFeatures .jobslistFeatureMiddle {
+    margin-right: 11%;
+    margin-left: 11%; }
+
+.dashboardBody {
+  background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../images/dashboardHero.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.quizEmbarkLogo {
+  padding: 2% 2%; }
+
+.dashboardTitle {
+  text-align: center; }
+  .dashboardTitle .dashboardHeadingText h1 {
+    font-size: 100px;
+    margin: 1%;
+    color: #2B303A; }
+  .dashboardTitle .dashboardHeadingText h2 {
+    margin: 1%;
+    color: #2B303A; }
+
+.dashboardTopLists {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 220px; }
+  .dashboardTopLists .dashboardListItem {
+    width: 300px;
+    height: 200px;
+    background-color: #2B303A;
+    border-radius: 5px;
+    margin: 4px 15px;
+    opacity: .9; }
+    .dashboardTopLists .dashboardListItem p {
+      text-align: center;
+      color: white; }
+
+.dashboardInterfaceText {
+  background-color: #2B303A;
+  border-top: 25px solid #ff5A5F; }
+  .dashboardInterfaceText h2 {
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 1%; }
+  .dashboardInterfaceText .dashboardButtons {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 75%;
+    padding-bottom: 2%; }
+  .dashboardInterfaceText .dashboardButtonsItem .dashboardButton {
+    width: 300px;
+    height: 100px;
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0 25px;
+    background-color: #5299D3;
+    border: none;
+    margin-bottom: 15%; }
+  .dashboardInterfaceText .dashboardButtonsItem .dashboardButton:hover {
+    background-color: #ffffff;
+    color: #5299D3;
+    box-sizing: border-box; }
+
+.overviewBody {
+  background-image: url("../images/overviewHero3.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.quizEmbarkLogo {
+  padding: 2% 2%; }
+
+.overviewTitle {
+  text-align: center;
+  height: 150px; }
+
+.overviewTopLists {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 250px; }
+  .overviewTopLists .overviewListItem {
+    width: 350px;
+    height: 230px;
+    background-color: #2B303A;
+    border-radius: 5px;
+    margin: 4px 20px; }
+    .overviewTopLists .overviewListItem p {
+      text-align: center;
+      color: white; }
+
+.overviewInterface {
+  height: 200px; }
+  .overviewInterface .overviewInterfaceText {
+    background-color: #2B303A;
+    border-top: 25px solid #5299D3; }
+    .overviewInterface .overviewInterfaceText h2 {
+      color: white;
+      text-align: center;
+      padding-top: 2%; }
+    .overviewInterface .overviewInterfaceText .overviewButtons {
+      display: flex;
+      flex-direction: row;
+      align-content: space-around;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      width: 60%; }
+    .overviewInterface .overviewInterfaceText .overviewButtonsItem .overviewButton {
+      width: 200px;
+      height: 100px;
+      font-size: 20px;
+      color: #ffffff;
+      border-radius: 5px;
+      padding: 0 25px;
+      background-color: #5299D3;
+      border: none;
+      margin: 10%; }
+    .overviewInterface .overviewInterfaceText .overviewButtonsItem .overviewButton:hover {
+      background-color: #ffffff;
+      color: #5299D3;
+      box-sizing: border-box; }
+    .overviewInterface .overviewInterfaceText .overviewButton:hover {
+      background-color: #ffffff;
+      color: #5299D3;
+      box-sizing: border-box; }
+
+.quizEmbarkLogo {
+  height: 70px;
+  padding: 2% 3% 0 3%; }
+
+.templateLeft {
+  float: left;
+  width: 73%;
+  height: 720px; }
+  .templateLeft .templateHero {
+    clear: both;
+    height: 40%;
+    width: 100%; }
+    .templateLeft .templateHero .templateTitle {
+      margin: 0; }
+      .templateLeft .templateHero .templateTitle h1 {
+        color: #2b303a;
+        padding: 0 8%;
+        font-weight: 700;
+        text-align: center;
+        margin: 0; }
+      .templateLeft .templateHero .templateTitle .templateBlurb {
+        color: #2b303a;
+        text-align: justify;
+        padding: 0 8%; }
+  .templateLeft .templateMainBody {
+    background-color: #5299D3;
+    height: 63%;
+    margin: 0;
+    padding: 0; }
+    .templateLeft .templateMainBody p {
+      color: white;
+      text-align: center;
+      font-size: 15px;
+      margin: 0;
+      padding-top: 5%; }
+    .templateLeft .templateMainBody .templateButton {
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+      color: #ffffff;
+      border-radius: 5px;
+      padding: 10px 25px;
+      background-color: #5299d3;
+      background-color: #ff5a5f;
+      border: none;
+      display: block;
+      margin: 0 auto;
+      margin-top: 2%; }
+    .templateLeft .templateMainBody .templateButton:hover {
+      background-color: #ffffff;
+      color: #ff5a5f;
+      box-sizing: border-box; }
+
+.templateRight {
+  float: right;
+  width: 27%;
+  height: 745px;
+  background-color: #2b303a; }
+  .templateRight .nav ul li {
+    float: right;
+    padding-right: 14%;
+    list-style: none; }
+    .templateRight .nav ul li a {
+      color: #ff5A5F;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 15px;
+      text-align: center;
+      padding: .5%; }
+    .templateRight .nav ul li a:hover {
+      color: white; }
+  .templateRight .templateText {
+    width: 70%;
+    padding-top: 19%;
+    padding-left: 15%; }
+    .templateRight .templateText p {
+      color: white;
+      text-align: justify; }
+
+label {
+  margin-top: 0; }
+
+.amount {
+  background-color: #5299D3;
+  border: 0;
+  color: white;
+  font-size: .9rem; }
+
+.slider {
+  background-color: #2B303A;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1%; }
+
+.cultureRight {
+  height: 900px; }
+
+.cultureLocationText {
+  color: white; }
+
+.locationForm {
+  margin: 0;
+  text-align: center; }
+  .locationForm form .location {
+    margin-top: 8%;
+    padding: 10px 25px;
+    width: 80%;
+    border-radius: 5px;
+    border-bottom: 5px solid #5299d3; }
+  .locationForm form .noLocation {
+    margin-top: 15%; }
+  .locationForm form label {
+    font-size: 1.35em;
+    color: white;
+    margin: 10px 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear; }
+  .locationForm form .locationButton {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: #ff5a5f;
+    border: none;
+    margin: 0 auto;
+    margin-top: 22%; }
+  .locationForm form .locationButton:hover {
+    color: #ff5a5f;
+    background-color: white; }
+
+.titleChooseList select {
+  margin-left: 15%;
+  margin-top: 5%; }
+  .titleChooseList select option {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px; }
+
+.titleButton {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  background-color: #ff5a5f;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  margin-top: 12%; }
+
+.titleButton:hover {
+  background-color: #ffffff;
+  color: #ff5a5f;
+  box-sizing: border-box; }
+
+.titleResources {
+  margin-left: 15%;
+  margin-top: 15%; }
+  .titleResources p {
+    color: white; }
+
+/* GLOBAL PAGE STYLING*/
+html, body {
+  width: 100%;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: #2b303a;
+  text-transform: uppercase; }
+
+p, a {
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #2b303a; }
+
+/*# sourceMappingURL=style.css.map */
