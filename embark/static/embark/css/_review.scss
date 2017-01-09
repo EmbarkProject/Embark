@@ -47,37 +47,60 @@
       text-align: center;
       padding-top: 2%;
     }
-    .overviewButtons {
-      display: flex;
-      flex-direction: row;
-      align-content: space-around;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      width: 60%;
+    .reviewButtonSection {
+      display: block;
+      text-align: center;
+      margin-top: 5%;
+      padding-bottom: 3%;
+      p {
+        text-align: center;
+        padding-bottom: 1%;
+      }
+      .reviewButton {
+        font-size: 15px;
+        font-family: $font;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        background-color: #ff5a5f;
+        border: none;
+      }
+      .reviewButton:hover {
+        color: #ff5a5f;
+        background-color: white;
+      }
     }
-    .overviewButtonsItem {
-        .overviewButton {
-          width: 200px;
-          height: 100px;
-          font-size: 20px;
-          color: #ffffff;
-          border-radius: 5px;
-          padding: 0 25px;
-          background-color: $sky;
-          border: none;
-          margin: 10%;
-        }
-        .overviewButton:hover {
-          background-color: #ffffff;
-          color: $sky;
-          box-sizing: border-box;
-        }
-      }
-      .overviewButton:hover {
-        background-color: #ffffff;
-        color: $sky;
-        box-sizing: border-box;
-      }
+    // .overviewButtons {
+    //   display: flex;
+    //   flex-direction: row;
+    //   align-content: space-around;
+    //   justify-content: space-between;
+    //   flex-wrap: wrap;
+    //   margin: 0 auto;
+    //   width: 60%;
+    // }
+    // .overviewButtonsItem {
+    //     .overviewButton {
+    //       width: 200px;
+    //       height: 100px;
+    //       font-size: 20px;
+    //       color: #ffffff;
+    //       border-radius: 5px;
+    //       padding: 0 25px;
+    //       background-color: $sky;
+    //       border: none;
+    //       margin: 10%;
+    //     }
+    //     .overviewButton:hover {
+    //       background-color: #ffffff;
+    //       color: $sky;
+    //       box-sizing: border-box;
+    //     }
+    //   }
+    //   .overviewButton:hover {
+    //     background-color: #ffffff;
+    //     color: $sky;
+    //     box-sizing: border-box;
+    //   }
   }
 }

@@ -3,6 +3,7 @@
 // }
 // js_test()
 
+// company culture slider
 $( function() {
   $( "#slider-range-max" ).slider({
     range: "max",

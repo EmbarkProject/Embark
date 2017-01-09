@@ -523,32 +523,25 @@
       color: #2B303A;
       text-align: center;
       padding-top: 2%; }
-    .overviewInterface .overviewInterfaceText .overviewButtons {
-      display: flex;
-      flex-direction: row;
-      align-content: space-around;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      width: 60%; }
-    .overviewInterface .overviewInterfaceText .overviewButtonsItem .overviewButton {
-      width: 200px;
-      height: 100px;
-      font-size: 20px;
-      color: #ffffff;
-      border-radius: 5px;
-      padding: 0 25px;
-      background-color: #5299D3;
-      border: none;
-      margin: 10%; }
-    .overviewInterface .overviewInterfaceText .overviewButtonsItem .overviewButton:hover {
-      background-color: #ffffff;
-      color: #5299D3;
-      box-sizing: border-box; }
-    .overviewInterface .overviewInterfaceText .overviewButton:hover {
-      background-color: #ffffff;
-      color: #5299D3;
-      box-sizing: border-box; }
+    .overviewInterface .overviewInterfaceText .reviewButtonSection {
+      display: block;
+      text-align: center;
+      margin-top: 5%;
+      padding-bottom: 3%; }
+      .overviewInterface .overviewInterfaceText .reviewButtonSection p {
+        text-align: center;
+        padding-bottom: 1%; }
+      .overviewInterface .overviewInterfaceText .reviewButtonSection .reviewButton {
+        font-size: 15px;
+        font-family: "Montserrat", sans-serif;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        background-color: #ff5a5f;
+        border: none; }
+      .overviewInterface .overviewInterfaceText .reviewButtonSection .reviewButton:hover {
+        color: #ff5a5f;
+        background-color: white; }
 
 .quizEmbarkLogo {
   height: 70px;
