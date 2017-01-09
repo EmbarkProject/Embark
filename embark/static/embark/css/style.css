@@ -249,19 +249,21 @@
     .quizRight .quizRightInstructions p {
       color: white;
       text-align: justify; }
-  .quizRight .nav ul li {
-    float: right;
-    padding-right: 14%;
-    list-style: none; }
-    .quizRight .nav ul li a {
-      color: #FF5A5F;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 15px;
-      text-align: center;
-      padding: .5%; }
-    .quizRight .nav ul li a:hover {
-      color: white; }
+  .quizRight .nav {
+    padding-right: 14%; }
+    .quizRight .nav ul li {
+      float: right;
+      padding-left: 10%;
+      list-style: none; }
+      .quizRight .nav ul li a {
+        color: #ff5A5F;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        text-align: center;
+        padding: .5%; }
+      .quizRight .nav ul li a:hover {
+        color: white; }
   .quizRight select {
     width: 70%;
     margin-top: 12%;

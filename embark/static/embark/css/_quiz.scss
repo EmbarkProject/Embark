@@ -178,13 +178,14 @@ $blue: #5299D3;
     }
   }
   .nav {
+    padding-right: 14%;
     ul {
       li {
         float: right;
-        padding-right: 14%;
+        padding-left: 10%;
         list-style: none;
         a {
-          color: $red;
+          color: $coral;
           text-decoration: none;
           text-transform: uppercase;
           font-size: 15px;
