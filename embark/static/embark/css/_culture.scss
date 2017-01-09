@@ -1,40 +1,66 @@
-// .cultureLeft {
-//   height: 900px;
-// }
-
-// .cultureHero {
-//   height: 30%;
-// }
-//
-// .cultureMainBody {
-//   background-color: $sky;
-//   height: 700px;
-//  }
+.cultureMainBody {
+ background-color: $greybackground;
+ height: 93%;
+ margin: 0;
+ padding: 0;
+  .cultureMainBodyInstructions {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    padding: 3% 0;
+    background-color: $sky;
+  }
+   p {
+     color: white;
+     text-align: left;
+     font-size: 15px;
+     margin: 0;
+     margin-left: 40%;
+     padding-top: 5%;
+   }
+  .cultureButton {
+   font-size: 15px;
+   font-family: $font;
+   color: #ffffff;
+   border-radius: 5px;
+   padding: 10px 25px;
+   background-color: #5299d3 ;
+   background-color: #ff5a5f ;
+   border: none;
+   display: block;
+   margin: 0 auto;
+   margin-top: 6%;
+  }
+  .cultureButton:hover {
+   background-color: #ffffff ;
+   color: #ff5a5f ;
+   box-sizing: border-box;
+  }
+}
 
 label {
   margin-top: 0;
+  // margin-left: 5%;
+  color: $charcoal;
 }
 .amount {
-  background-color: $sky;
+  background-color: $greybackground;
   border: 0;
-  color: white;
+  color: $charcoal;
   font-size: .9rem;
 }
 .slider {
   background-color: $charcoal;
-  // border: 2px solid $charcoal;
+  // border: 1px solid $coral;
   width: 70%;
   display: block;
   margin: 0 auto;
   margin-top: 1%;
 }
 
-// .cultureButton {
-//   padding-bottom: 20px;
-// }
-
 .cultureRight {
-  height: 900px;
+  height: 958px;
 }
 .cultureLocationText {
   color: white;
