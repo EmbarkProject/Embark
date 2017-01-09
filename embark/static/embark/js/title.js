@@ -14,7 +14,7 @@ function list_jobs(){
 $(function () {
     Highcharts.chart('chartContainer', {
         chart: {
-            backgroundColor: '#5299D3',
+            backgroundColor: '#ededed',
             plotBackgroundColor: null,
             plotBorderWidth: 0,
             plotShadow: false

@@ -40,10 +40,10 @@
 .overviewInterface {
   height: 200px;
   .overviewInterfaceText {
-    background-color: $charcoal;
+    background-color: $greybackground;
     border-top: 25px solid $sky;
     h2 {
-      color: white;
+      color: $charcoal;
       text-align: center;
       padding-top: 2%;
     }

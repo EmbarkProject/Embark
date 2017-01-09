@@ -33,10 +33,18 @@
   }
 }
   .templateMainBody {
-   background-color: $sky;
+   background-color: $greybackground;
    height: 63%;
    margin: 0;
    padding: 0;
+    .templateMainBodyInstructions {
+      color: white;
+      text-align: center;
+      font-size: 15px;
+      margin: 0;
+      padding: 3% 0;
+      background-color: $sky;
+    }
      p {
        color: white;
        text-align: center;

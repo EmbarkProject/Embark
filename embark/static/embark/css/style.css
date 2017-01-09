@@ -5,7 +5,7 @@
 .landingRight {
   float: right;
   width: 22%;
-  height: 1100px;
+  height: 1090px;
   background-color: #2b303a; }
 
 .landingHero {
@@ -156,8 +156,7 @@
   width: 73%; }
   .quizLeft .quizLeftInstructions {
     background-color: #5299d3;
-    padding: 1%;
-    margin-top: 1%; }
+    padding: 2%; }
     .quizLeft .quizLeftInstructions p {
       color: white;
       text-align: center;
@@ -518,10 +517,10 @@
 .overviewInterface {
   height: 200px; }
   .overviewInterface .overviewInterfaceText {
-    background-color: #2B303A;
+    background-color: #EDEDED;
     border-top: 25px solid #5299D3; }
     .overviewInterface .overviewInterfaceText h2 {
-      color: white;
+      color: #2B303A;
       text-align: center;
       padding-top: 2%; }
     .overviewInterface .overviewInterfaceText .overviewButtons {
@@ -543,6 +542,10 @@
       border: none;
       margin: 10%; }
     .overviewInterface .overviewInterfaceText .overviewButtonsItem .overviewButton:hover {
+      background-color: #ffffff;
+      color: #5299D3;
+      box-sizing: border-box; }
+    .overviewInterface .overviewInterfaceText .overviewButton:hover {
       background-color: #ffffff;
       color: #5299D3;
       box-sizing: border-box; }
@@ -572,10 +575,17 @@
         text-align: justify;
         padding: 0 8%; }
   .templateLeft .templateMainBody {
-    background-color: #5299D3;
+    background-color: #EDEDED;
     height: 63%;
     margin: 0;
     padding: 0; }
+    .templateLeft .templateMainBody .templateMainBodyInstructions {
+      color: white;
+      text-align: center;
+      font-size: 15px;
+      margin: 0;
+      padding: 3% 0;
+      background-color: #5299D3; }
     .templateLeft .templateMainBody p {
       color: white;
       text-align: center;
