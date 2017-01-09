@@ -130,7 +130,7 @@
 .quizHero {
   clear: both;
   background: white;
-  height: 290px;
+  height: 288px;
   width: 100%; }
   .quizHero .quizTitle {
     padding: 0;
@@ -360,37 +360,57 @@
   background-color: #EDEDED; }
 
 .jobslistTitle {
-  margin-bottom: 6%; }
+  height: 20%;
+  width: 100%;
+  background-color: white;
+  border-bottom: 13px solid #5299d3; }
   .jobslistTitle .quizEmbarkLogo {
     padding: 2% 2%; }
-  .jobslistTitle .jobslistTitle {
+  .jobslistTitle .jobslistTitle h1 {
+    width: 80%;
+    position: relative;
+    top: -10px;
+    margin: 0;
     margin-left: 10%;
-    margin-right: 10%; }
+    padding-bottom: 3%; }
 
-.industriesItem .industriesText {
-  color: #2B303A;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center; }
+.jobslistFeatures {
+  margin: 5% 10%; }
+  .jobslistFeatures .jobslistItem {
+    float: left;
+    height: 370px;
+    width: 20%;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #f7f7f7;
+    border-bottom: 20px solid #ff5A5F;
+    border-radius: 5px; }
+    .jobslistFeatures .jobslistItem .fa {
+      display: block;
+      text-align: center;
+      margin-top: 9%;
+      color: #5299d3; }
+    .jobslistFeatures .jobslistItem .jobslistText {
+      color: #2B303A;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center; }
+    .jobslistFeatures .jobslistItem .jobsListing {
+      margin-top: 10%;
+      margin-left: 4%;
+      margin-right: 4%;
+      font-size: 15px;
+      text-align: center; }
+    .jobslistFeatures .jobslistItem .jobslistingShort {
+      position: relative;
+      top: 35px; }
+  .jobslistFeatures .jobslistFeatureMiddle {
+    margin-right: 11%;
+    margin-left: 11%; }
 
-.nextSteps {
-  clear: both;
-  text-align: center; }
-  .nextSteps .nextStepsText {
-    color: #2B303A; }
-  .nextSteps .nextButton {
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif;
-    color: #ffffff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    background-color: #ff5a5f;
-    border: none;
-    margin: 0 auto;
-    margin-top: 1%; }
-  .nextSteps .nextButton:hover {
-    color: #ff5a5f;
-    background-color: white; }
+.nextStepsJobslist {
+  width: 70%; }
 
 .dashboardBody {
   background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../images/dashboardHero.jpg");
@@ -532,7 +552,7 @@
   height: 720px; }
   .templateLeft .templateHero {
     clear: both;
-    height: 37%;
+    height: 40%;
     width: 100%; }
     .templateLeft .templateHero .templateTitle {
       margin: 0; }
