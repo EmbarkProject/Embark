@@ -36,7 +36,7 @@ $(function () {
                     distance: 0,
                     style: {
                         fontWeight: 'bold',
-                        color: 'white',
+                        color: '$charcoal',
                         fontFamily: '$font',
                         fontSize: 15
                     }
