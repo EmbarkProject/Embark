@@ -72,9 +72,12 @@
 .nextSteps {
   clear: both;
   margin-top: 42%;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   text-align: center;
   .nextStepsText {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
     color: $charcoal
   }
   .nextButton {
@@ -86,8 +89,8 @@
     background-color: #ff5a5f;
     border: none;
     margin: 0 auto;
-    margin-top: 1%;
-    margin-bottom: 3%;
+    margin-top: 2%;
+    margin-bottom: 1%;
   }
   .nextButton:hover {
     color: #ff5a5f;
