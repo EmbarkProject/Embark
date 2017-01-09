@@ -80,10 +80,11 @@
  height: 745px;
  background-color: #2b303a ;
  .nav {
+   padding-right: 14%;
    ul {
      li {
        float: right;
-       padding-right: 14%;
+       padding-left: 10%;
        list-style: none;
        a {
          color: $coral;

@@ -609,19 +609,21 @@
   width: 27%;
   height: 745px;
   background-color: #2b303a; }
-  .templateRight .nav ul li {
-    float: right;
-    padding-right: 14%;
-    list-style: none; }
-    .templateRight .nav ul li a {
-      color: #ff5A5F;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 15px;
-      text-align: center;
-      padding: .5%; }
-    .templateRight .nav ul li a:hover {
-      color: white; }
+  .templateRight .nav {
+    padding-right: 14%; }
+    .templateRight .nav ul li {
+      float: right;
+      padding-left: 10%;
+      list-style: none; }
+      .templateRight .nav ul li a {
+        color: #ff5A5F;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        text-align: center;
+        padding: .5%; }
+      .templateRight .nav ul li a:hover {
+        color: white; }
   .templateRight .templateText {
     width: 70%;
     padding-top: 19%;
