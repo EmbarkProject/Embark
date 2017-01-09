@@ -130,7 +130,7 @@
 .quizHero {
   clear: both;
   background: white;
-  height: 265px;
+  height: 290px;
   width: 100%; }
   .quizHero .quizTitle {
     padding: 0;
@@ -151,7 +151,8 @@
   width: 73%; }
   .quizLeft .quizLeftInstructions {
     background-color: #5299d3;
-    padding: 1%; }
+    padding: 1%;
+    margin-top: 1%; }
     .quizLeft .quizLeftInstructions p {
       color: white;
       text-align: center;
@@ -226,7 +227,7 @@
     border: none;
     display: block;
     margin: 0 auto;
-    margin-top: 5%; }
+    margin-top: 3%; }
   .quizLeft .quizButton:hover {
     background-color: #ffffff;
     color: #ff5a5f;
@@ -239,7 +240,7 @@
   background-color: #2b303a; }
   .quizRight .quizRightInstructions {
     width: 70%;
-    padding-top: 21%;
+    padding-top: 36%;
     padding-left: 15%; }
     .quizRight .quizRightInstructions p {
       color: white;
@@ -274,7 +275,7 @@
     border: none;
     display: block;
     margin: 0 auto;
-    margin-top: 10%; }
+    margin-top: 20%; }
   .quizRight .quizButton:hover {
     background-color: #ffffff;
     color: #ff5a5f;
