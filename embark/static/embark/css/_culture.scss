@@ -1,0 +1,80 @@
+// .cultureLeft {
+//   height: 900px;
+// }
+
+// .cultureHero {
+//   height: 30%;
+// }
+//
+// .cultureMainBody {
+//   background-color: $sky;
+//   height: 700px;
+//  }
+
+label {
+  margin-top: 0;
+}
+.amount {
+  background-color: $sky;
+  border: 0;
+  color: white;
+  font-size: .9rem;
+}
+.slider {
+  background-color: $charcoal;
+  // border: 2px solid $charcoal;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1%;
+}
+
+// .cultureButton {
+//   padding-bottom: 20px;
+// }
+
+.cultureRight {
+  height: 900px;
+}
+.cultureLocationText {
+  color: white;
+}
+
+.locationForm {
+  margin: 0;
+  text-align: center;
+  form {
+    .location {
+      margin-top: 8%;
+      padding: 10px 25px;
+      width: 80%;
+      border-radius: 5px;
+      border-bottom: 5px solid #5299d3;
+    }
+    .noLocation {
+      margin-top: 15%;
+    }
+    label{
+      font-size: 1.35em;
+      color: white;
+      margin: 10px 10px;
+      cursor: pointer;
+      -webkit-transition: all 0.25s linear;
+}
+    .locationButton {
+      font-size: 15px;
+      font-family: $font;
+      color: #ffffff;
+      border-radius: 5px;
+      padding: 10px 25px;
+      background-color: #ff5a5f;
+      border: none;
+      margin: 0 auto;
+      margin-top: 22%;
+    }
+    .locationButton:hover {
+      color: #ff5a5f;
+      background-color: white;
+    }
+  }
+}

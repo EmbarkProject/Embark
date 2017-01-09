@@ -603,7 +603,7 @@
 .templateRight {
   float: right;
   width: 27%;
-  height: 720px;
+  height: 745px;
   background-color: #2b303a; }
   .templateRight .nav ul li {
     float: right;
@@ -620,11 +620,64 @@
       color: white; }
   .templateRight .templateText {
     width: 70%;
-    padding-top: 20%;
+    padding-top: 19%;
     padding-left: 15%; }
     .templateRight .templateText p {
       color: white;
       text-align: justify; }
+
+label {
+  margin-top: 0; }
+
+.amount {
+  background-color: #5299D3;
+  border: 0;
+  color: white;
+  font-size: .9rem; }
+
+.slider {
+  background-color: #2B303A;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1%; }
+
+.cultureRight {
+  height: 900px; }
+
+.cultureLocationText {
+  color: white; }
+
+.locationForm {
+  margin: 0;
+  text-align: center; }
+  .locationForm form .location {
+    margin-top: 8%;
+    padding: 10px 25px;
+    width: 80%;
+    border-radius: 5px;
+    border-bottom: 5px solid #5299d3; }
+  .locationForm form .noLocation {
+    margin-top: 15%; }
+  .locationForm form label {
+    font-size: 1.35em;
+    color: white;
+    margin: 10px 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear; }
+  .locationForm form .locationButton {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: #ff5a5f;
+    border: none;
+    margin: 0 auto;
+    margin-top: 22%; }
+  .locationForm form .locationButton:hover {
+    color: #ff5a5f;
+    background-color: white; }
 
 .titleChooseList select {
   margin-left: 15%;
