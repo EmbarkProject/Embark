@@ -1,14 +1,8 @@
-
 @import "variables";
 
 .overviewBody {
-  background-image:
-  linear-gradient(
-    rgba(white, 0.3),
-    rgba(white, 0.3)
-    ),
-    url("../images/reviewHero.jpg");
-  background-position: center;
+  background-image: url("../images/overviewHero3.jpg");
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -29,14 +23,13 @@
   align-content: space-around;
   justify-content: center;
   flex-wrap: wrap;
-  height: 220px;
-  background-color: $charcoal;
+  height: 250px;
   .overviewListItem {
     width: 350px;
-    height: 210px;
+    height: 230px;
+    background-color: $charcoal;
     border-radius: 5px;
     margin: 4px 20px;
-    padding-top: 2%;
     p {
       text-align: center;
       color: white;
@@ -44,42 +37,39 @@
   }
 }
 
-.overviewInterface {
-  height: 200px;
-  .overviewInterfaceText {
-    background-color: $charcoal;
-    border-top: 25px solid $coral;
-    h2 {
-      color: white;
-      text-align: center;
-      padding-top: 2%;
-    }
-    .overviewButtons {
-      display: flex;
-      flex-direction: row;
-      align-content: space-around;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      width: 60%;
-    }
-    .overviewButtonsItem {
-        .overviewButton {
-          width: 200px;
-          height: 100px;
-          font-size: 20px;
-          color: #ffffff;
-          border-radius: 5px;
-          padding: 0 25px;
-          background-color: $sky;
-          border: none;
-          margin: 10%;
-        }
-        .overviewButton:hover {
-          background-color: #ffffff;
-          color: $sky;
-          box-sizing: border-box;
-        }
-      }
-    }
+.overviewInterfaceText {
+  background-color: $greybackground;
+  border-top: 25px solid $sky;
+  h2 {
+    color: $charcoal;
+    text-align: center;
+    padding-top: 2%;
   }
+  .overviewButtons {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 60%;
+  }
+  .overviewButtonsItem {
+      .overviewButton {
+        width: 200px;
+        height: 100px;
+        font-size: 20px;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0 25px;
+        background-color: $sky;
+        border: none;
+        margin: 10%;
+      }
+      .overviewButton:hover {
+        background-color: #ffffff;
+        color: $sky;
+        box-sizing: border-box;
+      }
+  }
+}

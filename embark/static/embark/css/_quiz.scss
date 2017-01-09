@@ -14,7 +14,7 @@ $blue: #5299D3;
 }
 
 .quizBody {
-  background-color: $sky;
+  background-color: $greybackground;
 }
 
 .quizHero {
@@ -75,7 +75,7 @@ $blue: #5299D3;
       padding-left: 0;
       font-size: 30px;
       margin: 1%;
-      color: white;
+      color: $charcoal;
     }
       input[type="radio"]{
         display: none;
@@ -85,7 +85,7 @@ $blue: #5299D3;
     .container {
       padding-left: 8.5%;
       padding-top: 1%;
-      color: white;
+      color: $charcoal;
     }
     .container label {
       position: relative;
