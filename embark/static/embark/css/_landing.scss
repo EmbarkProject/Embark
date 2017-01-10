@@ -97,7 +97,7 @@
       margin-left: 4%;
       margin-right: 4%;
       font-size: 15px;
-      text-align: left;
+      text-align: justify;
     }
     .landingFeatureShipText {
       position: relative;
@@ -159,6 +159,40 @@
   }
 }
 
+
 .landingRegister {
+  clear: both;
   display: none;
+  .landingRegisterForm {
+    margin: 5% 10%;
+    margin-top: 50%;
+    text-align: center;
+    h2 {
+      color: white;
+    }
+    form {
+      .firstname, .lastname, .email, .password, .jobtitle {
+        margin-top: 5%;
+        padding: 10px 25px;
+        width: 60%;
+        border-radius: 5px;
+        border-bottom: 5px solid #5299d3;
+      }
+      .registerButton {
+        font-size: 15px;
+        font-family: $font;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        background-color: #ff5a5f;
+        border: none;
+        margin: 0 auto;
+        margin-top: 28%;
+      }
+      .registerButton:hover {
+        color: #ff5a5f;
+        background-color: white;
+      }
+    }
+  }
 }
