@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 class EmbarkerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Embarker
-        fields = ['id', 'user', 'industryPrefs', 'culturePrefs', 'location']
+        fields = ['id', 'user', 'industryPrefs', 'culturePrefs', 'locationPrefs']
 
 
 class UserSerializer(serializers.ModelSerializer):

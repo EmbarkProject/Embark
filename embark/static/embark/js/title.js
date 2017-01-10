@@ -1,3 +1,4 @@
+
 function list_jobs(){
     var search = document.getElementById("searchInput").value
     var url = 'http://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&action=jobs-prog&countryId=1&jobTitle=' + search
@@ -12,6 +13,10 @@ function list_jobs(){
 }
 
 $(function () {
+    var url = 'http://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&action=jobs-prog&countryId=1&jobTitle=teacher'
+    $.getJSON(url, function (jobs) {
+        var jobs = jobs.response.results
+        console.log(jobs)
     Highcharts.chart('chartContainer', {
         chart: {
             backgroundColor: '#ededed',
@@ -51,11 +56,11 @@ $(function () {
             name: 'Browser share',
             innerSize: '50%',
             data: [
-                ['title1',   10.38],
-                ['title2',       56.33],
-                ['title3', 24.03],
-                ['title4',    4.77],
-                ['title5',     0.91],
+                [jobs[0].nextJobTitle, jobs[0].frequencyPercent],
+                [jobs[1].nextJobTitle, jobs[1].frequencyPercent],
+                [jobs[2].nextJobTitle, jobs[2].frequencyPercent],
+                [jobs[3].nextJobTitle, jobs[3].frequencyPercent],
+                [jobs[4].nextJobTitle, jobs[4].frequencyPercent],
                 {
                     name: 'Proprietary or Undetectable',
                     y: 0.2,
@@ -66,7 +71,7 @@ $(function () {
             ]
         }]
     });
-});
+})});
 
 
 

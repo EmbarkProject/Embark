@@ -445,72 +445,67 @@
     margin-left: 11%; }
 
 .dashboardBody {
-  background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../images/dashboardHero.jpg");
-  background-position: center;
-  background-size: cover; }
+  background-color: #2B303A; }
 
 .quizEmbarkLogo {
   padding: 2% 2%; }
 
-.dashboardTitle {
-  text-align: center; }
-  .dashboardTitle .dashboardHeadingText h1 {
-    font-size: 100px;
+.dashboardHeadingText {
+  padding-bottom: 2%; }
+  .dashboardHeadingText h1 {
+    font-size: 65px;
+    text-align: center;
     margin: 1%;
-    color: #2B303A; }
-  .dashboardTitle .dashboardHeadingText h2 {
-    margin: 1%;
-    color: #2B303A; }
+    color: white; }
+  .dashboardHeadingText hr {
+    border: 5px solid #ff5A5F;
+    width: 56%; }
 
-.dashboardTopLists {
+.dashboardFullButtonWrapper h2 {
+  color: white;
+  text-align: center; }
+.dashboardFullButtonWrapper .dashboardButtonContainer {
   display: flex;
   flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 220px; }
-  .dashboardTopLists .dashboardListItem {
-    width: 300px;
-    height: 200px;
-    background-color: #2B303A;
-    border-radius: 5px;
-    margin: 4px 15px;
-    opacity: .9; }
-    .dashboardTopLists .dashboardListItem p {
-      text-align: center;
-      color: white; }
-
-.dashboardInterfaceText {
-  background-color: #2B303A;
-  border-top: 25px solid #ff5A5F; }
-  .dashboardInterfaceText h2 {
-    color: white;
-    text-align: center;
-    padding-top: 2%;
-    padding-bottom: 1%; }
-  .dashboardInterfaceText .dashboardButtons {
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 75%;
-    padding-bottom: 2%; }
-  .dashboardInterfaceText .dashboardButtonsItem .dashboardButton {
-    width: 300px;
-    height: 100px;
-    font-size: 20px;
+  align-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .dashboardFullButtonWrapper .dashboardButtonContainer .dashboardButton {
+    width: 170px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: bold;
     color: #ffffff;
     border-radius: 5px;
-    padding: 0 25px;
     background-color: #5299D3;
     border: none;
-    margin-bottom: 15%; }
-  .dashboardInterfaceText .dashboardButtonsItem .dashboardButton:hover {
+    margin-bottom: 3%; }
+  .dashboardFullButtonWrapper .dashboardButtonContainer .dashboardButton:hover {
     background-color: #ffffff;
     color: #5299D3;
     box-sizing: border-box; }
+
+.dashboardFullPreferencesWrapper h2 {
+  color: white;
+  text-align: center; }
+
+.dashboardJobListingWrapper h2 {
+  color: white;
+  text-align: center; }
+
+.dashboardGraphWrapper h2 {
+  color: white;
+  text-align: center; }
+
+.leftColumn {
+  float: left;
+  width: 30%;
+  padding-left: 5%; }
+
+.rightColumn {
+  float: right;
+  width: 30%;
+  padding-right: 5%; }
 
 .overviewBody {
   background-image: url("../images/overviewHero3.jpg");
@@ -525,51 +520,53 @@
   text-align: center;
   height: 150px; }
 
-.overviewTopLists {
-  display: flex;
-  flex-direction: row;
-  align-content: space-around;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 250px; }
-  .overviewTopLists .overviewListItem {
-    width: 350px;
-    height: 230px;
-    background-color: #2B303A;
-    border-radius: 5px;
-    margin: 4px 20px; }
-    .overviewTopLists .overviewListItem p {
-      text-align: center;
-      color: white; }
-
-.overviewInterface {
-  height: 200px; }
-  .overviewInterface .overviewInterfaceText {
-    background-color: #EDEDED;
-    border-top: 25px solid #5299D3; }
-    .overviewInterface .overviewInterfaceText h2 {
-      color: #2B303A;
-      text-align: center;
-      padding-top: 2%; }
-    .overviewInterface .overviewInterfaceText .reviewButtonSection {
-      display: block;
-      text-align: center;
-      margin-top: 5%;
-      padding-bottom: 3%; }
-      .overviewInterface .overviewInterfaceText .reviewButtonSection p {
+.overviewInterface .overviewInterfaceText {
+  background-color: #EDEDED;
+  border-top: 25px solid #5299D3; }
+  .overviewInterface .overviewInterfaceText .overviewTopLists {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 250px;
+    padding-top: 4%; }
+    .overviewInterface .overviewInterfaceText .overviewTopLists .overviewListItem {
+      width: 350px;
+      height: 230px;
+      background-color: white;
+      border-radius: 5px;
+      margin: 4px 20px;
+      border-bottom: 20px solid #ff5A5F; }
+      .overviewInterface .overviewInterfaceText .overviewTopLists .overviewListItem .overviewListItemTitle {
+        font-size: 1.5rem;
+        font-weight: bold; }
+      .overviewInterface .overviewInterfaceText .overviewTopLists .overviewListItem p {
         text-align: center;
-        padding-bottom: 1%; }
-      .overviewInterface .overviewInterfaceText .reviewButtonSection .reviewButton {
-        font-size: 15px;
-        font-family: "Montserrat", sans-serif;
-        color: #ffffff;
-        border-radius: 5px;
-        padding: 10px 25px;
-        background-color: #ff5a5f;
-        border: none; }
-      .overviewInterface .overviewInterfaceText .reviewButtonSection .reviewButton:hover {
-        color: #ff5a5f;
-        background-color: white; }
+        color: #2B303A; }
+  .overviewInterface .overviewInterfaceText h2 {
+    color: #2B303A;
+    text-align: center;
+    padding-top: 2%; }
+  .overviewInterface .overviewInterfaceText .reviewButtonSection {
+    display: block;
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 3%; }
+    .overviewInterface .overviewInterfaceText .reviewButtonSection p {
+      text-align: center;
+      padding-bottom: 1%; }
+    .overviewInterface .overviewInterfaceText .reviewButtonSection .reviewButton {
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+      color: #ffffff;
+      border-radius: 5px;
+      padding: 10px 25px;
+      background-color: #ff5a5f;
+      border: none; }
+    .overviewInterface .overviewInterfaceText .reviewButtonSection .reviewButton:hover {
+      color: #ff5a5f;
+      background-color: white; }
 
 .quizEmbarkLogo {
   height: 70px;
