@@ -710,6 +710,12 @@ label {
     font-family: "Montserrat", sans-serif;
     font-size: 12px; }
 
+.templateLeft .graphMainBody {
+  padding-bottom: 5%; }
+
+.graphRight {
+  padding-bottom: 3.4%; }
+
 .titleButton {
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
