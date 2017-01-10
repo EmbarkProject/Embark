@@ -2,91 +2,86 @@
 @import "variables";
 
 .dashboardBody {
-  background: linear-gradient(
-      rgba(white, 0.45),
-      rgba(white, 0.45)
-    ),
-    url("../images/dashboardHero.jpg");
-  background-position: center;
-  background-size: cover;
+  background-color: $charcoal;
 }
 
 .quizEmbarkLogo {
   padding: 2% 2%;
 }
 
-.dashboardTitle {
-  text-align: center;
-  .dashboardHeadingText {
-    h1 {
-      font-size: 100px;
-      margin: 1%;
-      color: $charcoal;
-    }
-    h2 {
-      margin: 1%;
-      color: $charcoal;
-    }
+
+.dashboardHeadingText {
+  padding-bottom: 2%;
+  h1 {
+    font-size: 65px;
+    text-align: center;
+    margin: 1%;
+    color: white;
+  }
+  hr {
+    border: 5px solid $coral;
+    width: 56%;
   }
 }
-
-
-.dashboardTopLists{
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 220px;
-  .dashboardListItem {
-    width: 300px;
-    height: 200px;
-    background-color: $charcoal;
-    border-radius: 5px;
-    margin: 4px 15px;
-    opacity: .9;
-    p {
-      text-align: center;
-      color: white;
-    }
-  }
-}
-
-.dashboardInterfaceText {
-  background-color: $charcoal;
-  border-top: 25px solid $coral;
+.dashboardFullButtonWrapper {
   h2 {
     color: white;
     text-align: center;
-    padding-top: 2%;
-    padding-bottom: 1%;
   }
-  .dashboardButtons {
+  .dashboardButtonContainer {
     display: flex;
     flex-direction: row;
     align-content: space-around;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 auto;
-    width: 75%;
-    padding-bottom: 2%;
+  .dashboardButton {
+    width: 170px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: $sky;
+    border: none;
+    margin-bottom: 3%;
   }
-  .dashboardButtonsItem {
-      .dashboardButton {
-        width: 300px;
-        height: 100px;
-        font-size: 20px;
-        color: #ffffff;
-        border-radius: 5px;
-        padding: 0 25px;
-        background-color: $sky;
-        border: none;
-        margin-bottom: 15%;
-      }
-      .dashboardButton:hover {
-        background-color: #ffffff;
-        color: $sky;
-        box-sizing: border-box;
-      }
+  .dashboardButton:hover {
+    background-color: #ffffff;
+    color: $sky;
+    box-sizing: border-box;
+    }
   }
+}
+
+.dashboardFullPreferencesWrapper {
+  h2 {
+    color: white;
+    text-align: center;
+  }
+}
+
+.dashboardJobListingWrapper {
+  h2 {
+    color: white;
+    text-align: center;
+  }
+}
+
+.dashboardGraphWrapper {
+  h2 {
+    color: white;
+    text-align: center;
+  }
+}
+
+.leftColumn {
+  float: left;
+  width: 30%;
+  padding-left: 5%;
+}
+
+.rightColumn {
+  float: right;
+  width: 30%;
+  padding-right: 5%;
 }
