@@ -533,8 +533,9 @@
   padding: 2% 2%; }
 
 .overviewTitle {
-  text-align: center;
   height: 150px; }
+  .overviewTitle .overviewHeadingText h1 {
+    text-align: center; }
 
 .overviewInterface .overviewInterfaceText {
   background-color: #EDEDED;
@@ -550,7 +551,7 @@
     .overviewInterface .overviewInterfaceText .overviewTopLists .overviewListItem {
       width: 350px;
       height: 230px;
-      background-color: white;
+      background-color: #2B303A;
       border-radius: 5px;
       margin: 4px 20px;
       border-bottom: 20px solid #ff5A5F; }
@@ -559,7 +560,7 @@
         font-weight: bold; }
       .overviewInterface .overviewInterfaceText .overviewTopLists .overviewListItem p {
         text-align: center;
-        color: #2B303A; }
+        color: white; }
   .overviewInterface .overviewInterfaceText h2 {
     color: #2B303A;
     text-align: center;
