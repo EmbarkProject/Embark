@@ -69,13 +69,13 @@ $( "#slider-range-5" ).slider({
 $( "#amount5" ).val( $( "#slider-range-5" ).slider( "value" ) );
 } );
 
-// var slidervalues = []
-// var test = document.getElementById('test');
-// test.onclick = function() {
-//     slidervalues.push($("#slider-range-max").slider("value"))
-//     slidervalues.push($("#slider-range-2").slider("value"))
-//     slidervalues.push($("#slider-range-3").slider("value"))
-//     slidervalues.push($("#slider-range-4").slider("value"))
-//     slidervalues.push($("#slider-range-5").slider("value"))
-//     console.log($(slidervalues));
-// }
+var slidervalues = []
+var test = document.getElementById('test');
+test.onclick = function() {
+    slidervalues.push($("#slider-range-max").slider("value"))
+    slidervalues.push($("#slider-range-2").slider("value"))
+    slidervalues.push($("#slider-range-3").slider("value"))
+    slidervalues.push($("#slider-range-4").slider("value"))
+    slidervalues.push($("#slider-range-5").slider("value"))
+    console.log($(slidervalues));
+}

@@ -28,7 +28,8 @@ $.ajaxSetup({
     }
 });
 
-function createUser(){
+function createUser(e){
+    e.preventDefault()
     var userName = $("#username").val()
     var userPassword = $("#password").val()
     var firstname = $("#firstname").val()
@@ -46,7 +47,7 @@ function createUser(){
         type: 'POST',
         data: context
     }).done(function(results){
-        console.log(results.id)
+        console.log(results)
         createEmbarker(results.id)
     })
 }
@@ -54,7 +55,7 @@ $("#createUser").click(createUser)
 
 
 function createEmbarker(id){
-    var jobTitle = $("#jobTitle").val()
+    var jobTitle = $("#jobtitle").val()
     var userId = id
     var context = {
         jobTitle: jobTitle,
@@ -71,7 +72,7 @@ function createEmbarker(id){
 }
 
 function linkLogin(){
-    url = '/login/'
+    url = '/embark/quiz/'
     window.location = url;
 }
 
