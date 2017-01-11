@@ -1,9 +1,31 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.contrib.auth import login
+from django.contrib.auth.models import User
+from rest_framework import viewsets
+from .forms import LoginForm
+from .models import Embarker
+from .serializers import EmbarkerSerializer
+from django.http import HttpResponseRedirect
+
 # Create your views here.
 
 
+class EmbarkerViewSet(viewsets.ModelViewSet):
+
+    queryset = Embarker.objects.all().order_by('id')
+    serializer_class = EmbarkerSerializer
+
+
+
+
+
 def view_main(request):
+    form = LoginForm(request.POST or None)
+    if request.POST and form.is_valid():
+        user = form.login(request)
+        if user:
+            login(request, user)
+            return HttpResponseRedirect("/embark/quiz")
     return render(request, 'main.html')
 
 

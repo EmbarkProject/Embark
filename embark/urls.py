@@ -15,8 +15,20 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from rest_framework import routers
+from embarkapp import views
+from django.views.generic import TemplateView
+from django.contrib.auth import views as auth_views
+
+
+router = routers.DefaultRouter()
+router.register(r'api/Embarker', views.EmbarkerViewSet)
 
 urlpatterns = [
     url(r'^embark/', include('embarkapp.urls')),
+    url(r'^logout/$', auth_views.logout, {'next_page': '/embark/login'}, name='logout'),
+    url('^', include('django.contrib.auth.urls')),
+    url(r'^', include(router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^admin/', admin.site.urls),
 ]

@@ -29,7 +29,7 @@
               </div>
 
               <div class="landingSummary">
-                <p class="landingMarketing">These days, changing a career many times is common. But it can be scary, too. With millions of job titles, it can even feel like there are too many options. Built by career-changers, Embark! is here to help you decide what direction to take.</p>
+                <p class="landingMarketing">Welcome {{user.email}}! These days, changing a career many times is common. But it can be scary, too. With millions of job titles, it can even feel like there are too many options. Built by career-changers, Embark! is here to help you decide what direction to take.</p>
               </div>
 
               <div class="landingFeatures">
@@ -57,12 +57,15 @@
 
                 <div class="landingLoginForm">
                 <h2>Login</h2>
-                <form>
-                    <input class="name" type="text" id="username" name="user_name" placeholder="username"/>
-
-                    <input class="password" type="password" id="password" name="password" placeholder="password"/>
-
-                    <button class="loginButton" type="submit">submit</button>
+                <form class ="loginform" action='/login/' name="LoginForm" method="POST">
+                    {% csrf_token %}
+                    <input class='loginfield' name="email" type="text" placeholder ="email"></input>
+                    <br>
+                    <br>
+                    <input class='loginfield' name="password" type="password" placeholder ="password"></input>
+                    <br>
+                    <br>
+                    <button class="loginbutton" type="submit">Login</button>
                 </form>
               </div>
             </div>
@@ -70,17 +73,15 @@
               <div class="landingRegister">
                 <h2>Register</h2>
                 <div class="landingInput">
-                  <form>
-                    username: <input type="text" name="user_id" />
+                    <form method="post" action="">
+                        {% csrf_token %}
+                        {{ user_form }}
+                        {{ Embarker_form }}
                     <br>
-                    email: <input type="email" name="email" />
+                    <input type="submit" value="Create new user account"<br>
+                    </div>
                     <br>
-                    password: <input type="password" name="password" />
-                    <br>
-                    retype password: <input type="password" name="password" />
-                    <br>
-                    username: <input type="text" name="title" />
-                  </form>
+                    </form>
                   <button class="submit">submit</button>
                 </div>
               </div>
