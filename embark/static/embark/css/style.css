@@ -674,7 +674,7 @@
 
 .cultureMainBody {
   background-color: #EDEDED;
-  height: 85%;
+  height: 80%;
   margin: 0;
   padding: 0; }
   .cultureMainBody .cultureMainBodyInstructions {
@@ -685,16 +685,20 @@
     padding: 3% 0;
     background-color: #5299D3; }
   .cultureMainBody p {
-    color: white;
     text-align: left;
     font-size: 15px;
     margin: 0;
-    margin-left: 40%;
-    padding-top: 5%; }
+    margin-left: 15%;
+    padding-top: 3%; }
+  .cultureMainBody .continueText {
+    margin-left: 34%;
+    margin-top: 3%; }
 
 label {
   margin-top: 0;
-  color: #2B303A; }
+  color: #2B303A;
+  font-size: 13px;
+  text-transform: uppercase; }
 
 .amount {
   background-color: #EDEDED;
@@ -703,14 +707,14 @@ label {
   font-size: .9rem; }
 
 .slider {
-  background-color: #2B303A;
+  background-color: #ff5A5F;
   width: 70%;
   display: block;
   margin: 0 auto;
   margin-top: 1%; }
 
 .cultureRight {
-  height: 900px; }
+  height: 864px; }
 
 .cultureLocationText {
   color: white; }
