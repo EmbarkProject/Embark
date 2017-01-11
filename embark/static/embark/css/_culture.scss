@@ -69,16 +69,26 @@ label {
       border-radius: 5px;
       border-bottom: 5px solid #5299d3;
     }
-    .noLocation {
-      margin-top: 15%;
-    }
     label{
       font-size: 1.35em;
       color: white;
       margin: 10px 10px;
       cursor: pointer;
       -webkit-transition: all 0.25s linear;
-}
+    }
+    .radioBox {
+      display: inline;
+      position: relative;
+      left: -38px;
+      .noLocation {
+        margin-top: 15%;
+      }
+      .radioLabel {
+        font-family: $font;
+        font-size: 1.1em;
+        text-transform: none;
+      }
+    }
     .locationButton {
       font-size: 15px;
       font-family: $font;

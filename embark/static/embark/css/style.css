@@ -728,14 +728,22 @@ label {
     width: 80%;
     border-radius: 5px;
     border-bottom: 5px solid #5299d3; }
-  .locationForm form .noLocation {
-    margin-top: 15%; }
   .locationForm form label {
     font-size: 1.35em;
     color: white;
     margin: 10px 10px;
     cursor: pointer;
     -webkit-transition: all 0.25s linear; }
+  .locationForm form .radioBox {
+    display: inline;
+    position: relative;
+    left: -38px; }
+    .locationForm form .radioBox .noLocation {
+      margin-top: 15%; }
+    .locationForm form .radioBox .radioLabel {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.1em;
+      text-transform: none; }
   .locationForm form .locationButton {
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
