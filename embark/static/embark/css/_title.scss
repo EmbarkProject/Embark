@@ -16,8 +16,14 @@
   }
 }
 
-.graphRight {
-  padding-bottom: 3.4%;
+.templateRight {
+  .graphRight {
+    padding-bottom: 3.4%;
+    .titleResources {
+      margin-left: 15%;
+      margin-top: 15%;
+    }
+  }
 }
 
 .titleButton {
@@ -36,12 +42,4 @@
   background-color: #ffffff;
   color: #ff5a5f;
   box-sizing: border-box;
-}
-
-.titleResources {
-  margin-left: 15%;
-  margin-top: 15%;
-  p {
-  color: white;
-  }
 }

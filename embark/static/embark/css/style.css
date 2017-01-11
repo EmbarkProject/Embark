@@ -739,8 +739,11 @@ label {
 .templateLeft .graphMainBody {
   padding-bottom: 5%; }
 
-.graphRight {
+.templateRight .graphRight {
   padding-bottom: 3.4%; }
+  .templateRight .graphRight .titleResources {
+    margin-left: 15%;
+    margin-top: 15%; }
 
 .titleButton {
   font-size: 15px;
@@ -758,12 +761,6 @@ label {
   background-color: #ffffff;
   color: #ff5a5f;
   box-sizing: border-box; }
-
-.titleResources {
-  margin-left: 15%;
-  margin-top: 15%; }
-  .titleResources p {
-    color: white; }
 
 /* GLOBAL PAGE STYLING*/
 html, body {
