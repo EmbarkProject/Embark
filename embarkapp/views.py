@@ -35,9 +35,6 @@ class EmbarkerViewSetPost(viewsets.ModelViewSet):
 
 def view_main(request):
     form = LoginForm(request.POST or None)
-    print(request)
-    print(form)
-    print("things")
     if request.POST and form.is_valid():
         user = form.login(request)
         if user:
