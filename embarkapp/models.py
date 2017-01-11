@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 
 
 class Embarker(models.Model):
+    jobTitle = models.CharField(max_length=255)
     industryPrefs = models.CharField(default='', max_length=255)
     culturePrefs = models.CharField(default='', max_length=255)
     locationPrefs = models.CharField(default='', max_length=255)

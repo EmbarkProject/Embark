@@ -29,7 +29,7 @@
               </div>
 
               <div class="landingSummary">
-                <p class="landingMarketing">Welcome {{user.email}}! These days, changing a career many times is common. But it can be scary, too. With millions of job titles, it can even feel like there are too many options. Built by career-changers, Embark! is here to help you decide what direction to take.</p>
+                <p class="landingMarketing">Welcome {{user.username}}! These days, changing a career many times is common. But it can be scary, too. With millions of job titles, it can even feel like there are too many options. Built by career-changers, Embark! is here to help you decide what direction to take.</p>
               </div>
 
               <div class="landingFeatures">
@@ -57,7 +57,7 @@
 
                 <div class="landingLoginForm">
                 <h2>Login</h2>
-                <form class ="loginform" action='/login/' name="LoginForm" method="POST">
+                <form class ="loginform" action='/embark/main' name="LoginForm" method="POST">
                     {% csrf_token %}
                     <input class='name loginfield' name="email" type="text" placeholder ="email"></input>
                     <br>
@@ -76,19 +76,22 @@
                 <div class="landingRegisterForm">
                   <h2>Register</h2>
                   <form>
-                    <input class="firstname" type="text" id="firstname" name="first_name" placeholder="first name"/>
+                    {% csrf_token %}
+                    <input class="firstname" type="text" id="firstname" name="first_name" placeholder="firstname"/>
 
                     <input class="lastname" type="text" id="lastname" name="last_name" placeholder="last name"/>
+
+                    <input class="lastname" type="text" id="username" name="username" placeholder="username"/>
 
                     <input class="email" type="email" id="email" name="email" placeholder="email"/>
 
                     <input class="password" type="password" id="password" name="password" placeholder="password"/>
 
+                    <input class="jobtitle" type="text" id="jobTitle" name="jobtitle" placeholder="current jobtitle"/>
+
                     <input class="password" type="password" id="password" name="password" placeholder="retype password"/>
 
-                    <input class="jobtitle" type="text" id="jobtitle" name="jobtitle" placeholder="current job title"/>
-
-                    <button class="registerButton" type="submit">submit</button>
+                  <button id="createUser" class="registerButton" type="submit">submit</button>
                   </form>
 
                 </div>

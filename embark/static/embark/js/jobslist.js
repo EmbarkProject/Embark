@@ -1,7 +1,7 @@
 function filter_jobs1(){
     var userid = 2
     $.ajax({
-        url: '/api/Embarker',
+        url: '/api/GetEmbarker',
         type: 'GET',
         datatype: 'jsonp',
     }).done(function(results){
