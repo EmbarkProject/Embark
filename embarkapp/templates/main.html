@@ -35,11 +35,11 @@
               <div class="landingFeatures">
                 <div class="landingFeatureItem">
                   <i class="fa fa-4x fa-cogs" aria-hidden="true"></i>
-                  <p class="landingFeatureText">Not even sure what industry you’re interested in? We know exactly how you feel. We’ll take you through a short quiz to narrow down your options.</p>
+                  <p class="landingFeatureText">Do you feel like there are almost too many options? We know exactly how you feel. We’ll take you through a short quiz to narrow down your industry choices.</p>
                 </div>
                 <div class="landingFeatureItem landingFeatureMiddle">
                   <i class="fa fa-4x fa-comments" aria-hidden="true"></i>
-                  <p class="landingFeatureText">Care about company culture? Know that equal work/life balance is a must? We’ll help you find companies that have the culture you’re looking for.</p>
+                  <p class="landingFeatureText">Do you care about company culture? Know that equal work/life balance is a must? We’ll help you find companies that have the culture you’re looking for.</p>
                 </div>
                 <div class="landingFeatureItem landingFeatureShip">
                   <img src="https://s3.us-east-2.amazonaws.com/embarkproject/shipiconblue.png">
@@ -53,7 +53,7 @@
             <div class="landingRight">
 
               <div class="landingLogin">
-                <p>New to Embark? <a href="#">Register</a></p>
+                <p>New to Embark? <a class="registerClick" href="#">Register</a></p>
 
                 <div class="landingLoginForm">
                 <h2>Login</h2>
@@ -71,18 +71,23 @@
             </div>
 
               <div class="landingRegister">
-                <h2>Register</h2>
-                <div class="landingInput">
-                    <form method="post" action="">
-                        {% csrf_token %}
-                        {{ user_form }}
-                        {{ Embarker_form }}
-                    <br>
-                    <input type="submit" value="Create new user account"<br>
-                    </div>
-                    <br>
-                    </form>
-                  <button class="submit">submit</button>
+                <div class="landingRegisterForm">
+                  <h2>Register</h2>
+                  <form>
+                    <input class="firstname" type="text" id="firstname" name="first_name" placeholder="firstname"/>
+
+                    <input class="lastname" type="text" id="lastname" name="last_name" placeholder="lastname"/>
+
+                    <input class="email" type="email" id="email" name="email" placeholder="email"/>
+
+                    <input class="password" type="password" id="password" name="password" placeholder="password"/>
+
+                    <input class="password" type="password" id="password" name="password" placeholder="retype password"/>
+
+                    <input class="jobtitle" type="text" id="jobtitle" name="jobtitle" placeholder="current jobtitle"/>
+
+                  </form>
+                  <button class="registerButton" type="submit">submit</button>
                 </div>
               </div>
 
