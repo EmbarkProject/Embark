@@ -22,11 +22,14 @@ from django.contrib.auth import views as auth_views
 
 
 router = routers.DefaultRouter()
-router.register(r'api/Embarker', views.EmbarkerViewSet)
+router.register(r'api/PostEmbarker', views.EmbarkerViewSetPost)
+router.register(r'api/GetEmbarker', views.EmbarkerViewSetGet)
+router.register(r'api/User', views.UserView, 'list')
 
 urlpatterns = [
     url(r'^embark/', include('embarkapp.urls')),
     url(r'^logout/$', auth_views.logout, {'next_page': '/embark/login'}, name='logout'),
+    # url(r'^login/$', views.view_main, name=)
     url('^', include('django.contrib.auth.urls')),
     url(r'^', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),

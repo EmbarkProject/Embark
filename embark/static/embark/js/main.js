@@ -1,16 +1,80 @@
-
-function list_jobs(){
-    var url = 'https://api.glassdoor.com/api/api.htm?v=1&format=json&t.p=112563&t.k=fKBkymF6I8W&callback=?&action=employers&q=it&userip=192.168.43.42&useragent=Chrome/%2F4.0'
-    $.getJSON(url, function (jobs) {
-        console.log(jobs.response.employers)
-        var source = $('#post-template').html();
-        var template = Handlebars.compile(source);
-        var html = template(jobs.response.employers);
-        console.log(html)
-        $('#handlebars').append(html)
-   })
+function getCookie(name) {
+   var cookieValue = null;
+   if (document.cookie && document.cookie !== '') {
+       var cookies = document.cookie.split(';');
+       for (var i = 0; i < cookies.length; i++) {
+           var cookie = jQuery.trim(cookies[i]);
+           if (cookie.substring(0, name.length + 1) === (name + '=')) {
+               cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+               break;
+           }
+       }
+   }
+   return cookieValue;
 }
-list_jobs()
+
+
+var csrftoken = getCookie('csrftoken');
+function csrfSafeMethod(method) {
+   return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+}
+
+
+$.ajaxSetup({
+    beforeSend: function(xhr, settings) {
+        if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+            xhr.setRequestHeader("X-CSRFToken", csrftoken);
+        }
+    }
+});
+
+function createUser(){
+    var userName = $("#username").val()
+    var userPassword = $("#password").val()
+    var firstname = $("#firstname").val()
+    var lastname = $("#lastname").val()
+    var emailAddress = $("#email").val()
+    var context = {
+        username: userName,
+        password: userPassword,
+        first_name: firstname,
+        last_name: lastname,
+        email: emailAddress,
+    }
+    $.ajax({
+        url: '/api/User/',
+        type: 'POST',
+        data: context
+    }).done(function(results){
+        console.log(results.id)
+        createEmbarker(results.id)
+    })
+}
+$("#createUser").click(createUser)
+
+
+function createEmbarker(id){
+    var jobTitle = $("#jobTitle").val()
+    var userId = id
+    var context = {
+        jobTitle: jobTitle,
+        user: userId,
+    }
+    console.log(context)
+    $.ajax({
+        url: '/api/PostEmbarker/',
+        type: 'POST',
+        data: context
+    }).done(function(results){
+        linkLogin()
+    })
+}
+
+function linkLogin(){
+    url = '/login/'
+    window.location = url;
+}
+
 
 $(document).ready(function(event){
   $(".landingRegister").hide();
