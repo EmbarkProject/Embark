@@ -24,19 +24,22 @@
           <div class="industryItem industriesItem">
             <i class="fa fa-4x fa-film" aria-hidden="true"></i>
             <p class="industriesText">Art / Design / Entertainment</p>
-            <p class="industryFeatureText">Not even sure what industry you’re interested in? We know exactly how you feel. We’ll take you through a short quiz to narrow down your options.</p>
+            <!-- <p class="industryFeatureText">Not even sure what industry you’re interested in? We know exactly how you feel. We’ll take you through a short quiz to narrow down your options.</p> -->
           </div>
           <div class="industryItem industryMiddle industriesItem">
             <i class="fa fa-4x fa-scissors" aria-hidden="true"></i>
             <p class="industriesText">Beauty / Wellness</p>
-            <p class="industryFeatureText">Care about company culture? Know that equal work/life balance is a must? We’ll help you find companies that have the culture you’re looking for.</p>
+            <!-- <p class="industryFeatureText">Care about company culture? Know that equal work/life balance is a must? We’ll help you find companies that have the culture you’re looking for.</p> -->
           </div>
           <div class="industryItem industriesItem">
             <i class="fa fa-4x fa-graduation-cap" aria-hidden="true"></i>
             <p class="industriesText">Education</p>
-            <p class="industryFeatureText industryFeatureTextShort">By making the decision to change your career, you’re already halfway there. Let us help you take charge of your own path and get ready to Embark!</p>
+            <!-- <p class="industryFeatureText industryFeatureTextShort">By making the decision to change your career, you’re already halfway there. Let us help you take charge of your own path and get ready to Embark!</p> -->
           </div>
         </div>
+
+        <!-- industry heat map -->
+        <div class="map" id="container" style="height: 650px; min-width: 310px; max-width: 750px; margin: 0 auto"></div>
 
         <div class="nextSteps">
           <p class="nextStepsText">Continue onto culture and location preferences</p>
@@ -46,6 +49,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
     <script type="text/javascript" src="{% static 'embark/js/industries.js' %}"></script>
     </body>
 </html>
