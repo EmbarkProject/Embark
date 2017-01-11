@@ -1,14 +1,10 @@
-// function js_test() {
-//     console.log("JS is linked correctly!")
-// }
-// js_test()
-
 // company culture slider
 $( function() {
   $( "#slider-range-max" ).slider({
     range: "max",
     min: 1,
     max: 5,
+    step: 0.25,
     value: 3,
     slide: function( event, ui ) {
       $( "#amount" ).val( ui.value );
@@ -22,6 +18,7 @@ $( function() {
     range: "max",
     min: 1,
     max: 5,
+    step: 0.25,
     value: 3,
     slide: function( event, ui ) {
       $( "#amount2" ).val( ui.value );
@@ -35,6 +32,7 @@ $( "#slider-range-3" ).slider({
   range: "max",
   min: 1,
   max: 5,
+  step: 0.25,
   value: 3,
   slide: function( event, ui ) {
     $( "#amount3" ).val( ui.value );
@@ -48,6 +46,7 @@ $( "#slider-range-4" ).slider({
   range: "max",
   min: 1,
   max: 5,
+  step: 0.25,
   value: 3,
   slide: function( event, ui ) {
     $( "#amount4" ).val( ui.value );
@@ -61,6 +60,7 @@ $( "#slider-range-5" ).slider({
   range: "max",
   min: 1,
   max: 5,
+  step: 0.25,
   value: 3,
   slide: function( event, ui ) {
     $( "#amount5" ).val( ui.value );
