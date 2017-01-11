@@ -1,19 +1,12 @@
 // INSIDE SCROLLING LIST BAR
-.titleChooseList {
-  select {
-    margin-left: 15%;
-    margin-top: 5%;
-    option {
-      font-family: $font;
-      font-size: 12px;
-    }
-  }
+.titleIndustryText {
+  color: white;
+  font-family: $font;
+  font-size: 13px;
 }
 
-.templateLeft{
-  .graphMainBody {
-    padding-bottom: 5%;
-  }
+.titleChooseList {
+  padding-left: 10%;
 }
 
 .templateRight {
@@ -22,6 +15,16 @@
     .titleResources {
       margin-left: 15%;
       margin-top: 15%;
+    }
+  }
+}
+
+.titleResources {
+  .titleResourceGroup{
+    display: none;
+    a {
+    color: white;
+    text-decoration: none;
     }
   }
 }

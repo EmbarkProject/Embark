@@ -758,21 +758,25 @@ label {
     color: #ff5a5f;
     background-color: white; }
 
-.titleChooseList select {
-  margin-left: 15%;
-  margin-top: 5%; }
-  .titleChooseList select option {
-    font-family: "Montserrat", sans-serif;
-    font-size: 12px; }
+.titleIndustryText {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px; }
 
-.templateLeft .graphMainBody {
-  padding-bottom: 5%; }
+.titleChooseList {
+  padding-left: 10%; }
 
 .templateRight .graphRight {
   padding-bottom: 3.4%; }
   .templateRight .graphRight .titleResources {
     margin-left: 15%;
     margin-top: 15%; }
+
+.titleResources .titleResourceGroup {
+  display: none; }
+  .titleResources .titleResourceGroup a {
+    color: white;
+    text-decoration: none; }
 
 .titleButton {
   font-size: 15px;

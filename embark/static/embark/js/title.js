@@ -73,9 +73,31 @@ $(function () {
     });
 })});
 
+$(document).ready(function(){
+    $('input[type="radio"]').click(function(){
+        if($(this).attr("value")=="1"){
+            $(".box").not(".red").hide();
+            $(".red").show();
+        }
+        if($(this).attr("value")=="green"){
+            $(".box").not(".green").hide();
+            $(".green").show();
+        }
+        if($(this).attr("value")=="blue"){
+            $(".box").not(".blue").hide();
+            $(".blue").show();
+        }
+    });
+});
 
+$(document).ready(function() {
+    $("input[name$='titleIndustry']").click(function() {
+        var test = $(this).val();
 
-
+        $("div.titleResourceGroup").hide();
+        $("#titleArtResources").show();
+    });
+});
 
 
 
