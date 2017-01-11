@@ -88,7 +88,7 @@
   .landingLogin p {
     text-align: center;
     color: white;
-    font-size: 16px; }
+    font-size: 13px; }
     .landingLogin p a {
       text-decoration: none;
       font-weight: bolder;
@@ -101,41 +101,57 @@
     text-align: center; }
     .landingLogin .landingLoginForm h2 {
       color: white; }
-    .landingLogin .landingLoginForm form .name, .landingLogin .landingLoginForm form .password {
-      margin-top: 15%;
-      padding: 10px 25px;
-      width: 60%;
-      border-radius: 5px;
-      border-bottom: 5px solid #5299d3; }
-    .landingLogin .landingLoginForm form .loginButton {
-      font-size: 15px;
-      font-family: "Montserrat", sans-serif;
-      color: #ffffff;
-      border-radius: 5px;
-      padding: 10px 25px;
-      background-color: #ff5a5f;
-      border: none;
-      margin: 0 auto;
-      margin-top: 28%; }
-    .landingLogin .landingLoginForm form .loginButton:hover {
-      color: #ff5a5f;
-      background-color: white; }
+    .landingLogin .landingLoginForm form {
+      margin-top: 15%; }
+      .landingLogin .landingLoginForm form .name, .landingLogin .landingLoginForm form .password {
+        margin-top: 5%;
+        padding: 10px 25px;
+        width: 60%;
+        border-radius: 5px;
+        border-bottom: 5px solid #5299d3; }
+      .landingLogin .landingLoginForm form .loginbutton {
+        font-size: 15px;
+        font-family: "Montserrat", sans-serif;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        background-color: #ff5a5f;
+        border: none;
+        margin: 0 auto;
+        margin-top: 22%; }
+      .landingLogin .landingLoginForm form .loginbutton:hover {
+        color: #ff5a5f;
+        background-color: white; }
 
 .landingRegister {
   clear: both;
   display: none; }
+  .landingRegister p {
+    text-align: right;
+    color: white;
+    font-size: 16px;
+    margin-right: 17%; }
+    .landingRegister p a {
+      text-decoration: none;
+      font-weight: bolder;
+      color: #ff5a5f; }
+    .landingRegister p a:hover {
+      color: white; }
   .landingRegister .landingRegisterForm {
     margin: 5% 10%;
-    margin-top: 50%;
+    margin-top: 35%;
     text-align: center; }
     .landingRegister .landingRegisterForm h2 {
-      color: white; }
+      color: white;
+      padding-bottom: 5%; }
     .landingRegister .landingRegisterForm form .firstname, .landingRegister .landingRegisterForm form .lastname, .landingRegister .landingRegisterForm form .email, .landingRegister .landingRegisterForm form .password, .landingRegister .landingRegisterForm form .jobtitle {
       margin-top: 5%;
       padding: 10px 25px;
       width: 60%;
       border-radius: 5px;
       border-bottom: 5px solid #5299d3; }
+    .landingRegister .landingRegisterForm form .lastname {
+      margin-bottom: 9%; }
     .landingRegister .landingRegisterForm form .registerButton {
       font-size: 15px;
       font-family: "Montserrat", sans-serif;
