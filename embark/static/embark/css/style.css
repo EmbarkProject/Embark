@@ -88,7 +88,7 @@
   .landingLogin p {
     text-align: center;
     color: white;
-    font-size: 16px; }
+    font-size: 13px; }
     .landingLogin p a {
       text-decoration: none;
       font-weight: bolder;
@@ -101,41 +101,57 @@
     text-align: center; }
     .landingLogin .landingLoginForm h2 {
       color: white; }
-    .landingLogin .landingLoginForm form .name, .landingLogin .landingLoginForm form .password {
-      margin-top: 15%;
-      padding: 10px 25px;
-      width: 60%;
-      border-radius: 5px;
-      border-bottom: 5px solid #5299d3; }
-    .landingLogin .landingLoginForm form .loginButton {
-      font-size: 15px;
-      font-family: "Montserrat", sans-serif;
-      color: #ffffff;
-      border-radius: 5px;
-      padding: 10px 25px;
-      background-color: #ff5a5f;
-      border: none;
-      margin: 0 auto;
-      margin-top: 28%; }
-    .landingLogin .landingLoginForm form .loginButton:hover {
-      color: #ff5a5f;
-      background-color: white; }
+    .landingLogin .landingLoginForm form {
+      margin-top: 15%; }
+      .landingLogin .landingLoginForm form .name, .landingLogin .landingLoginForm form .password {
+        margin-top: 5%;
+        padding: 10px 25px;
+        width: 60%;
+        border-radius: 5px;
+        border-bottom: 5px solid #5299d3; }
+      .landingLogin .landingLoginForm form .loginbutton {
+        font-size: 15px;
+        font-family: "Montserrat", sans-serif;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        background-color: #ff5a5f;
+        border: none;
+        margin: 0 auto;
+        margin-top: 22%; }
+      .landingLogin .landingLoginForm form .loginbutton:hover {
+        color: #ff5a5f;
+        background-color: white; }
 
 .landingRegister {
   clear: both;
   display: none; }
+  .landingRegister p {
+    text-align: right;
+    color: white;
+    font-size: 16px;
+    margin-right: 17%; }
+    .landingRegister p a {
+      text-decoration: none;
+      font-weight: bolder;
+      color: #ff5a5f; }
+    .landingRegister p a:hover {
+      color: white; }
   .landingRegister .landingRegisterForm {
     margin: 5% 10%;
-    margin-top: 50%;
+    margin-top: 35%;
     text-align: center; }
     .landingRegister .landingRegisterForm h2 {
-      color: white; }
+      color: white;
+      padding-bottom: 5%; }
     .landingRegister .landingRegisterForm form .firstname, .landingRegister .landingRegisterForm form .lastname, .landingRegister .landingRegisterForm form .email, .landingRegister .landingRegisterForm form .password, .landingRegister .landingRegisterForm form .jobtitle {
       margin-top: 5%;
       padding: 10px 25px;
       width: 60%;
       border-radius: 5px;
       border-bottom: 5px solid #5299d3; }
+    .landingRegister .landingRegisterForm form .lastname {
+      margin-bottom: 9%; }
     .landingRegister .landingRegisterForm form .registerButton {
       font-size: 15px;
       font-family: "Montserrat", sans-serif;
@@ -517,8 +533,9 @@
   padding: 2% 2%; }
 
 .overviewTitle {
-  text-align: center;
   height: 150px; }
+  .overviewTitle .overviewHeadingText h1 {
+    text-align: center; }
 
 .overviewInterface .overviewInterfaceText {
   background-color: #EDEDED;
@@ -534,7 +551,7 @@
     .overviewInterface .overviewInterfaceText .overviewTopLists .overviewListItem {
       width: 350px;
       height: 230px;
-      background-color: white;
+      background-color: #2B303A;
       border-radius: 5px;
       margin: 4px 20px;
       border-bottom: 20px solid #ff5A5F; }
@@ -543,7 +560,7 @@
         font-weight: bold; }
       .overviewInterface .overviewInterfaceText .overviewTopLists .overviewListItem p {
         text-align: center;
-        color: #2B303A; }
+        color: white; }
   .overviewInterface .overviewInterfaceText h2 {
     color: #2B303A;
     text-align: center;
@@ -657,7 +674,7 @@
 
 .cultureMainBody {
   background-color: #EDEDED;
-  height: 85%;
+  height: 80%;
   margin: 0;
   padding: 0; }
   .cultureMainBody .cultureMainBodyInstructions {
@@ -668,16 +685,20 @@
     padding: 3% 0;
     background-color: #5299D3; }
   .cultureMainBody p {
-    color: white;
     text-align: left;
     font-size: 15px;
     margin: 0;
-    margin-left: 40%;
-    padding-top: 5%; }
+    margin-left: 15%;
+    padding-top: 3%; }
+  .cultureMainBody .continueText {
+    margin-left: 34%;
+    margin-top: 3%; }
 
 label {
   margin-top: 0;
-  color: #2B303A; }
+  color: #2B303A;
+  font-size: 13px;
+  text-transform: uppercase; }
 
 .amount {
   background-color: #EDEDED;
@@ -686,14 +707,14 @@ label {
   font-size: .9rem; }
 
 .slider {
-  background-color: #2B303A;
+  background-color: #ff5A5F;
   width: 70%;
   display: block;
   margin: 0 auto;
   margin-top: 1%; }
 
 .cultureRight {
-  height: 900px; }
+  height: 864px; }
 
 .cultureLocationText {
   color: white; }
@@ -707,14 +728,22 @@ label {
     width: 80%;
     border-radius: 5px;
     border-bottom: 5px solid #5299d3; }
-  .locationForm form .noLocation {
-    margin-top: 15%; }
   .locationForm form label {
     font-size: 1.35em;
     color: white;
     margin: 10px 10px;
     cursor: pointer;
     -webkit-transition: all 0.25s linear; }
+  .locationForm form .radioBox {
+    display: inline;
+    position: relative;
+    left: -38px; }
+    .locationForm form .radioBox .noLocation {
+      margin-top: 15%; }
+    .locationForm form .radioBox .radioLabel {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.1em;
+      text-transform: none; }
   .locationForm form .locationButton {
     font-size: 15px;
     font-family: "Montserrat", sans-serif;

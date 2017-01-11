@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'embarkproject.herokuapp.com']
 
 INSTALLED_APPS = [
     'embarkapp.apps.EmbarkappConfig',
+    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -51,6 +52,11 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+AUTHENTICATION_BACKENDS = [
+        'django.contrib.auth.backends.ModelBackend',
+    ]
+
 
 ROOT_URLCONF = 'embark.urls'
 
@@ -107,7 +113,12 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+LOGIN_REDIRECT_URL = '/embark/quiz/'
 
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.AllowAny',),
+    'PAGE_SIZE': 10
+}
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 

@@ -115,7 +115,7 @@
   p {
     text-align: center;
     color: white;
-    font-size: 16px;
+    font-size: 13px;
     a {
       text-decoration: none;
       font-weight: bolder;
@@ -133,14 +133,15 @@
       color: white;
     }
     form {
+      margin-top: 15%;
       .name, .password {
-        margin-top: 15%;
+        margin-top: 5%;
         padding: 10px 25px;
         width: 60%;
         border-radius: 5px;
         border-bottom: 5px solid #5299d3;
       }
-      .loginButton {
+      .loginbutton {
         font-size: 15px;
         font-family: $font;
         color: #ffffff;
@@ -149,9 +150,9 @@
         background-color: #ff5a5f;
         border: none;
         margin: 0 auto;
-        margin-top: 28%;
+        margin-top: 22%;
       }
-      .loginButton:hover {
+      .loginbutton:hover {
         color: #ff5a5f;
         background-color: white;
       }
@@ -163,12 +164,27 @@
 .landingRegister {
   clear: both;
   display: none;
+  p {
+    text-align: right;
+    color: white;
+    font-size: 16px;
+    margin-right: 17%;
+    a {
+      text-decoration: none;
+      font-weight: bolder;
+      color: #ff5a5f;
+    }
+    a:hover {
+      color: white;
+    }
+  }
   .landingRegisterForm {
     margin: 5% 10%;
-    margin-top: 50%;
+    margin-top: 35%;
     text-align: center;
     h2 {
       color: white;
+      padding-bottom: 5%;
     }
     form {
       .firstname, .lastname, .email, .password, .jobtitle {
@@ -177,6 +193,9 @@
         width: 60%;
         border-radius: 5px;
         border-bottom: 5px solid #5299d3;
+      }
+      .lastname {
+        margin-bottom: 9%;
       }
       .registerButton {
         font-size: 15px;

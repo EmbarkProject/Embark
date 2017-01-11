@@ -12,8 +12,12 @@
 }
 
 .overviewTitle {
-  text-align: center;
   height: 150px;
+  .overviewHeadingText {
+    h1 {
+      text-align: center;
+    }
+  }
   }
 
 .overviewInterface {
@@ -31,7 +35,7 @@
     .overviewListItem {
       width: 350px;
       height: 230px;
-      background-color: white;
+      background-color: $charcoal;
       border-radius: 5px;
       margin: 4px 20px;
       border-bottom: 20px solid $coral;
@@ -41,7 +45,7 @@
       }
       p {
         text-align: center;
-        color: $charcoal;
+        color: white;
       }
     }
   }

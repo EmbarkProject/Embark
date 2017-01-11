@@ -5,9 +5,10 @@ from django.contrib.auth.models import User
 
 
 class Embarker(models.Model):
-    industryPrefs = models.IntegerField(default=0)
-    culturePrefs = models.IntegerField(default=0)
-    locationPrefs = models.IntegerField(default=0)
+    jobTitle = models.CharField(max_length=255)
+    industryPrefs = models.CharField(default='', max_length=255)
+    culturePrefs = models.CharField(default='', max_length=255)
+    locationPrefs = models.CharField(default='', max_length=255)
     user = models.OneToOneField(User)
 
     def __str__(self):
