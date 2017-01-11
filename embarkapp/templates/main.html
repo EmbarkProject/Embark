@@ -53,16 +53,16 @@
             <div class="landingRight">
 
               <div class="landingLogin">
-                <p>New to Embark? <a class="registerClick" href="#">Register</a></p>
+                <p>New to Embark? <a class="registerClick" href="#">REGISTER</a></p>
 
                 <div class="landingLoginForm">
                 <h2>Login</h2>
                 <form class ="loginform" action='/embark/main' name="LoginForm" method="POST">
                     {% csrf_token %}
-                    <input class='loginfield' name="username" type="text" placeholder ="username"></input>
+                    <input class='name loginfield' name="email" type="text" placeholder ="email"></input>
                     <br>
                     <br>
-                    <input class='loginfield' name="password" type="password" placeholder ="password"></input>
+                    <input class='password loginfield' name="password" type="password" placeholder ="password"></input>
                     <br>
                     <br>
                     <button class="loginbutton" type="submit">Login</button>
@@ -71,13 +71,15 @@
             </div>
 
               <div class="landingRegister">
+                <p><a class="loginClick" href="#">LOGIN</a></p>
+
                 <div class="landingRegisterForm">
                   <h2>Register</h2>
                   <form>
                     {% csrf_token %}
                     <input class="firstname" type="text" id="firstname" name="first_name" placeholder="firstname"/>
 
-                    <input class="lastname" type="text" id="lastname" name="last_name" placeholder="lastname"/>
+                    <input class="lastname" type="text" id="lastname" name="last_name" placeholder="last name"/>
 
                     <input class="lastname" type="text" id="username" name="username" placeholder="username"/>
 
@@ -87,8 +89,11 @@
 
                     <input class="jobtitle" type="text" id="jobTitle" name="jobtitle" placeholder="current jobtitle"/>
 
-                  </form>
+                    <input class="password" type="password" id="password" name="password" placeholder="retype password"/>
+
                   <button id="createUser" class="registerButton" type="submit">submit</button>
+                  </form>
+
                 </div>
               </div>
 

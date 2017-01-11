@@ -1,8 +1,9 @@
 .cultureMainBody {
  background-color: $greybackground;
- height: 85%;
+ height: 80%;
  margin: 0;
  padding: 0;
+ // padding-bottom: 2%;
   .cultureMainBodyInstructions {
     color: white;
     text-align: center;
@@ -12,37 +13,25 @@
     background-color: $sky;
   }
    p {
-     color: white;
      text-align: left;
      font-size: 15px;
      margin: 0;
-     margin-left: 40%;
-     padding-top: 5%;
+     margin-left: 15%;
+     padding-top: 3%;
    }
-  // .cultureButton {
-  //  font-size: 15px;
-  //  font-family: $font;
-  //  color: #ffffff;
-  //  border-radius: 5px;
-  //  padding: 10px 25px;
-  //  background-color: #5299d3 ;
-  //  background-color: #ff5a5f ;
-  //  border: none;
-  //  display: block;
-  //  margin: 0 auto;
-  //  margin-top: 6%;
-  // }
-  // .cultureButton:hover {
-  //  background-color: #ffffff ;
-  //  color: #ff5a5f ;
-  //  box-sizing: border-box;
-  // }
+   .continueText {
+     margin-left: 34%;
+     margin-top: 3%;
+    // text-align: center;
+   }
 }
 
 label {
   margin-top: 0;
   // margin-left: 5%;
   color: $charcoal;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 .amount {
   background-color: $greybackground;
@@ -51,16 +40,19 @@ label {
   font-size: .9rem;
 }
 .slider {
-  background-color: $charcoal;
+  background-color: $coral;
   // border: 1px solid $coral;
   width: 70%;
   display: block;
   margin: 0 auto;
   margin-top: 1%;
 }
+// .ui-state-default {
+//   border: 1px solid $charcoal;
+// }
 
 .cultureRight {
-  height: 900px;
+  height: 864px;
 }
 .cultureLocationText {
   color: white;
@@ -77,16 +69,26 @@ label {
       border-radius: 5px;
       border-bottom: 5px solid #5299d3;
     }
-    .noLocation {
-      margin-top: 15%;
-    }
     label{
       font-size: 1.35em;
       color: white;
       margin: 10px 10px;
       cursor: pointer;
       -webkit-transition: all 0.25s linear;
-}
+    }
+    .radioBox {
+      display: inline;
+      position: relative;
+      left: -38px;
+      .noLocation {
+        margin-top: 15%;
+      }
+      .radioLabel {
+        font-family: $font;
+        font-size: 1.1em;
+        text-transform: none;
+      }
+    }
     .locationButton {
       font-size: 15px;
       font-family: $font;
