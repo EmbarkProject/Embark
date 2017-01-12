@@ -1,13 +1,14 @@
 function filter_jobs1(){
-    var userid = 2
+    var id = document.getElementById('userId').value
     $.ajax({
-        url: '/api/GetEmbarker',
+        url: '/api/GetEmbarker/' + id + '/',
         type: 'GET',
         datatype: 'jsonp',
     }).done(function(results){
-    var embarker = results.results[userid-1]
-    var job = industry[results.results[userid-1].industryPrefs[0]-1]
-    console.log(embarker)
+        console.log(results)
+    var embarker = results
+    var job = industry[embarker.industryPrefs[0]]
+    console.log(job)
     var glassurl = 'http://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&ps=100&action=employers&q=' + job
     $.ajax({
     url: glassurl,

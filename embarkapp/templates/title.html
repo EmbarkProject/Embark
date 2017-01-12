@@ -180,9 +180,11 @@
        </div>
 
      <a href='/embark/dashboard'><button id="manualIndustry" class="titleButton">Dashboard</button></a>
+     <input id="userId" type='hidden' name='userId' value='{{ user.id }}'>
+
      </div>
      <!-- end of right column -->
-
+<!--
        {% verbatim %}
        <script id="post-template" type="text/x-handlebars-template">
        {{#each .}}
@@ -190,7 +192,7 @@
        <h5>Overall Rating: {{this.overallRating}}</h5>
        {{/each}}
        {% endverbatim %}
-       </script>
+       </script> -->
 
    <script src="https://code.highcharts.com/highcharts.js"></script>
    <script src="https://code.highcharts.com/modules/exporting.js"></script>
