@@ -1,8 +1,4 @@
-// function js_test() {
-//     console.log("JS is linked correctly!")
-// }
-// js_test()
-
+// industries heat map
 $(function () {
 
     $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=us-population-density.json&callback=?', function (data) {
