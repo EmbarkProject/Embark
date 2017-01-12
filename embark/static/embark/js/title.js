@@ -1,17 +1,3 @@
-
-function list_jobs(){
-    var search = document.getElementById("searchInput").value
-    var url = 'http://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=jsonp&v=1&action=jobs-prog&countryId=1&jobTitle=' + search
-    $.getJSON(url, function (jobs) {
-        console.log(jobs.response.results)
-        var source = $('#post-template').html();
-        var template = Handlebars.compile(source);
-        var html = template(jobs.response.results);
-        console.log(html)
-        $('#handlebars').append(html)
-   })
-}
-
 $(function () {
     id = document.getElementById('userId').value
     var url = '/api/GetEmbarker/' + id + '/'
@@ -19,10 +5,14 @@ $(function () {
         url: url,
         type: 'GET',
     }).done(function(results){
-        console.log(results)
         var jobTitle = results.jobTitle
+        console.log(jobTitle)
         var glassurl = 'http://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&action=jobs-prog&countryId=1&jobTitle=' + jobTitle
-        $.getJSON(glassurl, function (jobs) {
+        $.ajax({
+            url: glassurl,
+            type: 'GET',
+            dataType: 'jsonp'
+        }).done(function(jobs){
             var jobs = jobs.response.results
             Highcharts.chart('chartContainer', {
                 chart: {
@@ -120,14 +110,3 @@ $(document).ready(function() {
     $('#titleEducationResources').toggle(this.value == '3');
   });
 });
-
-
-
-
-
-function js_test() {
-    console.log("JS is linked correctly!")
-}
-js_test()
-
-$("#submit").click(list_jobs)

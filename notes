@@ -1,3 +1,19 @@
+
+Specifics for 1-5 ratings in culture
+Setting up hrefs inside the process
+Company name in the jobs listing
+Locations auto populate?
+
+
+
+
+
+
+
+
+
+
+
 1st Check In January 3rd
 
 Overview
@@ -18,7 +34,7 @@ To Do
 Meeting notes, Dec 28th
 
 Base.html or different nav bars per page?
-Two nav bars on register, along top and a 
+Two nav bars on register, along top and a
 
 login and register as sidebar
 
@@ -50,8 +66,3 @@ login and register as sidebar
 8. Dashboard for return user. (Login redirect)
 	Links to each section of the process
 	Database requests
-
-
-
-
-
