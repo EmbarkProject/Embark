@@ -5,5 +5,4 @@ __pycache__
 .direnv
 *.pyc
 .sass-cache
-.map
-.css.map
+*.map
