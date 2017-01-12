@@ -6,6 +6,7 @@ function filter_jobs1(){
         type: 'GET',
         datatype: 'json',
     }).done(function(results){
+        console.log(results)
     var embarker = results
     var industryList = results.industryPrefs.split(',');
     var job = industry[industryList[0]]
@@ -16,6 +17,7 @@ function filter_jobs1(){
     type: 'GET',
     dataType: 'jsonp',
     }).done(function(results){
+        console.log(results)
         var cultureList = embarker.culturePrefs.split(',');
         for (var j = 0; j < results.response.employers.length; j++){
             var ratingParse = results.response.employers[j]
@@ -42,6 +44,7 @@ function filter_jobs1(){
                         type: 'GET',
                         dataType: 'jsonp',
                     }).done(function(results){
+                        console.log(results)
                         var source = $('#post-template').html();
                         var template = Handlebars.compile(source);
                         var html = template(results.results);
