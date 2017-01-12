@@ -208,7 +208,7 @@
     padding-left: 26.5%;
     padding-top: 2%; }
     .quizLeft .quizQuestions .quizItem {
-      font-size: 20px;
+      font-size: 27px;
       margin: 0 auto;
       display: block; }
       .quizLeft .quizQuestions .quizItem .quizItemText {
@@ -764,10 +764,15 @@ label {
 .titleIndustryText {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 13px; }
+  font-size: 13px;
+  padding: 3%; }
 
 .titleChooseList {
-  padding-left: 10%; }
+  padding-left: 7%;
+  padding-top: 6.2%; }
+  .titleChooseList .titleResourceTitle {
+    padding-left: 9%;
+    padding-top: 0; }
 
 .templateRight .graphRight {
   padding-bottom: 3.4%; }
@@ -776,10 +781,14 @@ label {
     margin-top: 15%; }
 
 .titleResources .titleResourceGroup {
-  display: none; }
+  display: none;
+  padding-left: 15%; }
   .titleResources .titleResourceGroup a {
     color: white;
-    text-decoration: none; }
+    font-weight: 200;
+    font-size: 15px; }
+  .titleResources .titleResourceGroup a:hover {
+    color: #ff5A5F; }
 
 .titleButton {
   font-size: 15px;
@@ -789,9 +798,9 @@ label {
   padding: 10px 25px;
   background-color: #ff5a5f;
   border: none;
-  margin: 0 auto;
-  display: block;
-  margin-top: 12%; }
+  position: absolute;
+  bottom: 3%;
+  right: 8.5%; }
 
 .titleButton:hover {
   background-color: #ffffff;

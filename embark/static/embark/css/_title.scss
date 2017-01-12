@@ -3,11 +3,17 @@
   color: white;
   font-family: $font;
   font-size: 13px;
+  padding: 3%;
 }
 
 .titleChooseList {
-  padding-left: 10%;
-}
+  padding-left: 7%;
+  padding-top: 6.2%;
+  .titleResourceTitle {
+    padding-left: 9%;
+    padding-top: 0;
+  }
+ }
 
 .templateRight {
   .graphRight {
@@ -22,9 +28,14 @@
 .titleResources {
   .titleResourceGroup{
     display: none;
+    padding-left: 15%;
     a {
     color: white;
-    text-decoration: none;
+    font-weight: 200;
+    font-size: 15px;
+    }
+    a:hover{
+      color: $coral;
     }
   }
 }
@@ -37,9 +48,9 @@
   padding: 10px 25px;
   background-color: #ff5a5f;
   border: none;
-  margin: 0 auto;
-  display: block;
-  margin-top: 12%;
+  position: absolute;
+  bottom: 3%;
+  right: 8.5%;
 }
 .titleButton:hover {
   background-color: #ffffff;

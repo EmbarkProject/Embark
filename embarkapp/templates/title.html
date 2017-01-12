@@ -22,7 +22,7 @@
        <div class="templateMainBody graphMainBody">
          <p class="templateMainBodyInstructions">The graph below displays what people with your current job title have gone on to be.</p>
          <div id="chartContainer" style="min-width: 310px; height: 320px; max-width: 600px; margin: 0 auto"></div>
-         <button class="templateButton">Dashboard</button>
+         <!-- <button class="templateButton">Dashboard</button> -->
        </div>
 
      </div>
@@ -43,168 +43,103 @@
        </div>
 
        <div class="titleChooseList">
-            <input type="radio" id="artInd" value="1" name="titleIndustry"><label class="titleIndustryText">Art/Design/Entertainment<br></label></option>
-            <input type="radio" id="beautyInd" value="2" name="titleIndustry"><label class="titleIndustryText">Beauty/Wellness <br></label></option>
-            <input type="radio" id="educationInd" value="3" name="titleIndustry"><label class="titleIndustryText">Education<br></label></option>
-            <!-- <input type="radio" id="facilitiesInd" value="4" name="titleIndustry"><label class="titleIndustryText">Facilities/General Labor<br></label></option>
-            <input type="radio" id="hospitalityInd" value="5" name="titleIndustry"><label class="titleIndustryText">Hospitality <br></label></option>
-            <input type="radio" id="installationInd" value="6" name="titleIndustry"><label class="titleIndustryText">Installation/Maintenance/Repair<br></label></option>
-            <input type="radio" id="medicalInd" value="7" name="titleIndustry"><label class="titleIndustryText">Medical/Healthcare<br></label></option>
-            <input type="radio" id="restaurantInd" value="8" name="titleIndustry"><label class="titleIndustryText">Restaurant / Food Services<br></label></option>
-            <input type="radio" id="retailInd" value="9" name="titleIndustry"><label class="titleIndustryText">Retail<br></label></option>
-            <input type="radio" id="salesInd" value="10" name="titleIndustry"><label class="titleIndustryText">Sales / Customer Care<br></label></option>
-            <input type="radio" id="securityInd" value="11" name="titleIndustry"><label class="titleIndustryText">Security / Law Enforcement<br></label></option>
-            <input type="radio" id="skilledInd" value="12" name="titleIndustry"><label class="titleIndustryText">Skilled Trade<br></label></option>
-            <input type="radio" id="sportsInd" value="13" name="titleIndustry"><label class="titleIndustryText">Sports / Fitness<br></label></option>
-            <input type="radio" id="travelInd" value="14" name="titleIndustry"><label class="titleIndustryText">Travel / Transportation<br></label></option>
-            <input type="radio" id="administrativeInd" value="15" name="titleIndustry"><label class="titleIndustryText">Administrative<br></label></option>
-            <input type="radio" id="accountingInd" value="16" name="titleIndustry"><label class="titleIndustryText">Accounting / Finance<br></label></option>
-            <input type="radio" id="analystInd" value="17" name="titleIndustry"><label class="titleIndustryText">Analyst <br></label></option>
-            <input type="radio" id="architectureInd" value="18" name="titleIndustry"><label class="titleIndustryText">Architecture / Drafting<br></label></option>
-            <input type="radio" id="bankingInd" value="19" name="titleIndustry"><label class="titleIndustryText">Banking / Loan / Insurance<br></label></option>
-            <input type="radio" id="businessInd" value="20" name="titleIndustry"><label class="titleIndustryText">Business Development / Consulting<br></label></option>
-            <input type="radio" id="engineeringInd" value="21" name="titleIndustry"><label class="titleIndustryText">Engineering (Non-software)<br></label></option>
-            <input type="radio" id="humanInd" value="22" name="titleIndustry"><label class="titleIndustryText">Human Resources<br></label></option>
-            <input type="radio" id="legalInd" value="23" name="titleIndustry"><label class="titleIndustryText">Legal<br></label></option>
-            <input type="radio" id="manufactInd" value="24" name="titleIndustry"><label class="titleIndustryText">Manufact. / Product. / Construct.<br></label></option>
-            <input type="radio" id="marketingInd" value="25" name="titleIndustry"><label class="titleIndustryText">Marketing / Advertising / PR<br></label></option>
-            <input type="radio" id="nonprofitInd" value="26" name="titleIndustry"><label class="titleIndustryText">Non-Profit / Volunteering<br></label></option>
-            <input type="radio" id="productInd" value="27" name="titleIndustry"><label class="titleIndustryText">Product / Project Management<br></label></option>
-            <input type="radio" id="realestateInd" value="28" name="titleIndustry"><label class="titleIndustryText">Real Estate<br></label></option>
-            <input type="radio" id="scienceInd" value="29" name="titleIndustry"><label class="titleIndustryText">Science / Research<br></label></option>
-            <input type="radio" id="seniorInd" value="30" name="titleIndustry"><label class="titleIndustryText">Senior Management<br></label></option>
-            <input type="radio" id="softwareInd" value="31" name="titleIndustry"><label class="titleIndustryText">Software Development / IT<br></label></option>
-            <input type="radio" id="writingInd" value="32" name="titleIndustry"><label class="titleIndustryText">Writing / Editing / Publishing<br></label></option> -->
-         </select>
          <button id="manualIndustry" class="titleButton">submit</button>
        </div>
 
-       <div class= "titleResources">
-        <div class="titleResourceGroup" id="titleArtResources">
-         <a href="#">art link</a><br><br>
-         <a href="#">art link</a><br><br>
-         <a href="#">art link</a><br><br>
-        </div>
+<!-- RADIO BUTTONS -->
+        <input type="radio" id="artInd" value="1" name="titleIndustry"><label class="titleIndustryText">Art/Design/Entertainment<br><br></label></option>
+        <input type="radio" id="beautyInd" value="2" name="titleIndustry"><label class="titleIndustryText">Beauty/Wellness <br><br></label></option>
+        <input type="radio" id="educationInd" value="3" name="titleIndustry"><label class="titleIndustryText">Education<br><br></label></option>
+        <!-- <input type="radio" id="facilitiesInd" value="4" name="titleIndustry"><label class="titleIndustryText">Facilities/General Labor<br><br></label></option>
+        <input type="radio" id="hospitalityInd" value="5" name="titleIndustry"><label class="titleIndustryText">Hospitality <br><br></label></option>
+        <input type="radio" id="installationInd" value="6" name="titleIndustry"><label class="titleIndustryText">Installation/Maintenance/Repair<br><br></label></option>
+        <input type="radio" id="medicalInd" value="7" name="titleIndustry"><label class="titleIndustryText">Medical/Healthcare<br><br></label></option>
+        <input type="radio" id="restaurantInd" value="8" name="titleIndustry"><label class="titleIndustryText">Restaurant / Food Services<br><br></label></option>
+        <input type="radio" id="retailInd" value="9" name="titleIndustry"><label class="titleIndustryText">Retail<br><br></label></option>
+        <input type="radio" id="salesInd" value="10" name="titleIndustry"><label class="titleIndustryText">Sales / Customer Care<br><br></label></option>
+        <input type="radio" id="securityInd" value="11" name="titleIndustry"><label class="titleIndustryText">Security / Law Enforcement<br><br></label></option>
+        <input type="radio" id="skilledInd" value="12" name="titleIndustry"><label class="titleIndustryText">Skilled Trade<br><br></label></option>
+        <input type="radio" id="sportsInd" value="13" name="titleIndustry"><label class="titleIndustryText">Sports / Fitness<br><br></label></option>
+        <input type="radio" id="travelInd" value="14" name="titleIndustry"><label class="titleIndustryText">Travel / Transportation<br><br></label></option>
+        <input type="radio" id="administrativeInd" value="15" name="titleIndustry"><label class="titleIndustryText">Administrative<br><br></label></option>
+        <input type="radio" id="accountingInd" value="16" name="titleIndustry"><label class="titleIndustryText">Accounting / Finance<br><br></label></option>
+        <input type="radio" id="analystInd" value="17" name="titleIndustry"><label class="titleIndustryText">Analyst <br><br></label></option>
+        <input type="radio" id="architectureInd" value="18" name="titleIndustry"><label class="titleIndustryText">Architecture / Drafting<br><br></label></option>
+        <input type="radio" id="bankingInd" value="19" name="titleIndustry"><label class="titleIndustryText">Banking / Loan / Insurance<br><br></label></option>
+        <input type="radio" id="businessInd" value="20" name="titleIndustry"><label class="titleIndustryText">Business Development / Consulting<br><br></label></option>
+        <input type="radio" id="engineeringInd" value="21" name="titleIndustry"><label class="titleIndustryText">Engineering (Non-software)<br><br></label></option>
+        <input type="radio" id="humanInd" value="22" name="titleIndustry"><label class="titleIndustryText">Human Resources<br><br></label></option>
+        <input type="radio" id="legalInd" value="23" name="titleIndustry"><label class="titleIndustryText">Legal<br><br></label></option>
+        <input type="radio" id="manufactInd" value="24" name="titleIndustry"><label class="titleIndustryText">Manufact. / Product. / Construct.<br><br></label></option>
+        <input type="radio" id="marketingInd" value="25" name="titleIndustry"><label class="titleIndustryText">Marketing / Advertising / PR<br><br></label></option>
+        <input type="radio" id="nonprofitInd" value="26" name="titleIndustry"><label class="titleIndustryText">Non-Profit / Volunteering<br><br></label></option>
+        <input type="radio" id="productInd" value="27" name="titleIndustry"><label class="titleIndustryText">Product / Project Management<br><br></label></option>
+        <input type="radio" id="realestateInd" value="28" name="titleIndustry"><label class="titleIndustryText">Real Estate<br><br></label></option>
+        <input type="radio" id="scienceInd" value="29" name="titleIndustry"><label class="titleIndustryText">Science / Research<br><br></label></option>
+        <input type="radio" id="seniorInd" value="30" name="titleIndustry"><label class="titleIndustryText">Senior Management<br><br></label></option>
+        <input type="radio" id="softwareInd" value="31" name="titleIndustry"><label class="titleIndustryText">Software Development / IT<br><br></label></option>
+        <input type="radio" id="writingInd" value="32" name="titleIndustry"><label class="titleIndustryText">Writing / Editing / Publishing<br><br></label></option> -->
 
-        <div class="titleResourceGroup" id="titleBeautyResources">
-         <a href="#">beauty link</a><br><br>
-         <a href="#">beauty link</a><br><br>
-         <a href="#">beauty link</a><br><br>
-        </div>
-
-         <!-- <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p>
-         <p id="titleResource"><a href="#">Dashboard</a></p> -->
+<!-- RESOURCE RESULTS TITLE -->
+        <div class="templateText titleResourceTitle"><p>Resource Results</p></div>
        </div>
 
+
+<!-- RESOURCES LINKS AND TITLES -->
+       <div class= "titleResources">
+        <div class="titleResourceGroup" id="titleArtResources">
+         <a href="http://www.careers.org/occupations/field/27/arts-design-entertainment-sports-and-media" target="_blank">Arts Occupation Profiles</a><br><br>
+         <a href="https://www.bls.gov/soc/2010/soc270000.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
+         <a href="http://www.careeroverview.com/usa/art-design-entertainment-and-sports/" target="_blank">Career and Education Opportunities</a><br><br>
+        </div>
+        <div class="titleResourceGroup" id="titleBeautyResources">
+         <a href="http://beautypros.org/best-cosmetology-programs/" target="_blank">Best Cosmetology Programs</a><br><br>
+         <a href="https://www.getthegloss.com/career-home/health-and-beauty-jobs" target="_blank">Health and Beauty Jobs</a><br><br>
+         <a href="http://stylecaster.com/beauty/how-to-have-a-career-in-wellness/" target="_blank">How to Have a Career in Wellness</a><br><br>
+        </div>
+        <div class="titleResourceGroup" id="titleBeautyResources">
+         <a href="http://beautypros.org/best-cosmetology-programs/" target="_blank">Best Cosmetology Programs</a><br><br>
+         <a href="https://www.getthegloss.com/career-home/health-and-beauty-jobs" target="_blank">Health and Beauty Jobs</a><br><br>
+         <a href="http://stylecaster.com/beauty/how-to-have-a-career-in-wellness/" target="_blank">How to Have a Career in Wellness</a><br><br>
+        </div>
+        <div class="titleResourceGroup" id="titleEducationResources">
+         <a href="http://beautypros.org/best-cosmetology-programs/" target="_blank">Education Job Tips</a><br><br>
+         <a href="https://www.getthegloss.com/career-home/health-and-beauty-jobs" target="_blank">Pro Tips for Getting a Job in Education</a><br><br>
+         <a href="http://stylecaster.com/beauty/how-to-have-a-career-in-wellness/" target="_blank">Six Steps to Landing Your First Teaching Job</a><br><br>
+        </div>
+        <div class="titleResourceGroup" id="titleFacilitiesResources">
+         <a href="http://www.facilitiesnet.com/facilitiesmanagement/article/Succeeding-at-Your-First-FM-Job-Facilities-Management-Facilities-Management-Feature--9662" target="_blank">Your First FM Job</a><br><br>
+         <a href="http://www.iofficecorp.com/blog/6-things-facilities-managers-must-do-to-land-their-next-job" target="_blank">6 Things Facilities Managers Must Do </a><br><br>
+         <a href="https://www.bls.gov/oes/current/naics4_561200.htm" target="_blank">Employment and Wage Estimates</a><br><br>
+        </div>
+        <div class="titleResourceGroup" id="titleHospitalityResources">
+         <a href="https://www.bls.gov/iag/tgs/iag70.htm" target="_blank">Industries at a Glance</a><br><br>
+         <a href="https://www.hcareers.com/" target="_blank">Hospitality Jobs</a><br><br>
+         <a href="https://www.ihirehospitality.com/" target="_blank">Hospitality Hiring</a><br><br>
+        </div>
+        <div class="titleResourceGroup" id="titleInstallationResources">
+         <a href="https://www.bls.gov/ooh/installation-maintenance-and-repair/home.htm" target="_blank">Installation, Maintenance, and Repair Occupations</a><br><br>
+         <a href="http://www.careeroverview.com/repair-maintenance-careers.html" target="_blank">Jobs and Employment Information</a><br><br>
+         <a href="http://money.usnews.com/careers/best-jobs/rankings/best-maintenance-and-repair-jobs" target="_blank">Best Maintenance And Repair Jobs</a><br><br>
+        </div>
+        <div class="titleResourceGroup" id="titleMedicalResources">
+         <a href="https://www.bls.gov/ooh/healthcare/home.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
+         <a href="http://money.usnews.com/money/careers/slideshows/25-amazing-health-care-support-jobs-for-2016" target="_blank">25 Amazing Healthcare Support Jobs for 2016</a><br><br>
+         <a href="https://explorehealthcareers.org/health-career-resources/national-resources-health-career-education/" target="_blank">National Resources: Health Career Education</a><br><br>
+        </div>
+        <div class="titleResourceGroup" id="titleRestaurantResources">
+         <a href="https://www.bls.gov/iag/tgs/iag722.htm" target="_blank">Industries at a Glance</a><br><br>
+         <a href="http://www.restaurantcareers.com/" target="_blank">Restaurant Careers</a><br><br>
+         <a href="https://www.entrepreneur.com/article/73384/" target="_blank">How to Start a Restaurant</a><br><br>
+        </div>
+        <div class="titleResourceGroup" id="titleRestaurantResources">
+         <a href="https://www.bls.gov/iag/tgs/iag722.htm" target="_blank">Industries at a Glance</a><br><br>
+         <a href="http://www.restaurantcareers.com/" target="_blank">Restaurant Careers</a><br><br>
+         <a href="https://www.entrepreneur.com/article/73384/" target="_blank">How to Start a Restaurant</a><br><br>
+        </div>
+       </div>
+
+      <button id="manualIndustry" class="titleButton">Dashboard</button>
      </div>
      <!-- end of right column -->
 
