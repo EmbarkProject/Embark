@@ -125,13 +125,34 @@ culturePrefs.onclick = function(e) {
         traditional: true,
         type: 'PUT'
     }
-    console.log(ajaxdata)
     $.ajax(ajaxdata).done(function(results){
         reviewredirect()
     })
 })}
 
 function reviewredirect(){
+    id = document.getElementById('userId').value
+    var url = '/api/GetEmbarker/' + id + '/'
+    $.ajax({
+        url: url,
+        type: 'GET',
+    }).done(function(results){
+    var locations  = []
+    locations.push(document.getElementById('location1').value)
+    locations.push(document.getElementById('location2').value)
+    locations.push(document.getElementById('location3').value)
+    var locationPrefs = locations.toString();
+    var jobTitle = results.jobTitle
+    id = document.getElementById('userId').value
+    var newAjax = {
+        url: '/api/PostEmbarker/' + id + '/',
+        data: { "user": id, "locationPrefs": locationPrefs, "jobTitle": jobTitle},
+        dataType: 'json',
+        traditional: true,
+        type: 'PUT'
+    }
+    $.ajax(newAjax).done(function(results){
     url = '/embark/review'
     window.location = url;
+})})
 }

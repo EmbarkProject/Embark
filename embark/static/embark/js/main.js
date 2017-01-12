@@ -72,7 +72,7 @@ function createEmbarker(id){
 }
 
 function linkLogin(){
-    url = '/embark/quiz/'
+    url = '/embark/quiz'
     window.location = url;
 }
 

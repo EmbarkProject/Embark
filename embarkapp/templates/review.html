@@ -10,7 +10,7 @@
     </head>
 
       <body class="overviewBody">
-      <a href="index.html"><img class="quizEmbarkLogo" src="https://s3.us-east-2.amazonaws.com/embarkproject/embarkTitle.png"></a>
+      <a href="/embark/main"><img class="quizEmbarkLogo" src="https://s3.us-east-2.amazonaws.com/embarkproject/embarkTitle.png"></a>
 
           <div class="overviewTitle">
               <div class="overviewHeadingText">
@@ -22,33 +22,35 @@
           <div class="overviewTopLists">
             <div class="overviewListItem overviewIndustryList">
               <p class="overviewListItemTitle">INDUSTRY</p>
-              <p>list item number 1</p>
-              <p>list item number 2</p>
-              <p>list item number 3</p>
+              <p id='industry1'></p>
+              <p id='industry2'></p>
+              <p id='industry3'></p>
             </div>
             <div class="overviewListItem overviewCultureList">
               <p class="overviewListItemTitle">CULTURE</p>
-              <p>list item number 1</p>
-              <p>list item number 2</p>
-              <p>list item number 3</p>
+              <p id='culture1'></p>
+              <p id='culture2'></p>
+              <p id='culture3'></p>
+              <p id='culture4'></p>
+              <p id='culture5'></p>
             </div>
             <div class="overviewListItem overviewLocationList">
               <p class="overviewListItemTitle">LOCATION</p>
-              <p>list item number 1</p>
-              <p>list item number 2</p>
-              <p>list item number 3</p>
+              <p id='location1'></p>
+              <p id='location2'></p>
+              <p id='location3'></p>
             </div>
           </div>
       <div class=reviewButtonSection>
         <p>Search for jobs that match these preferences</p>
-        <button class="reviewButton">Next</button>
+        <a href='/embark/jobslist'><button class="reviewButton">Next</button></a>
       </div>
     </div>
   </div>
 
 
 
-
+  <input id="userId" type='hidden' name='userId' value='{{ user.id }}'>
         <div id='handlebars'></div>
         {% verbatim %}
         <script id="post-template" type="text/x-handlebars-template">
