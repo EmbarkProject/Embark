@@ -4,6 +4,7 @@
   font-family: $font;
   font-size: 13px;
   padding: 3%;
+  padding-left: 10%;
 }
 
 .titleChooseList {
@@ -16,6 +17,9 @@
  }
 
 .templateRight {
+  .titleResourceTitle{
+    padding-top: 2%;
+  }
   .graphRight {
     padding-bottom: 3.4%;
     .titleResources {
@@ -49,7 +53,7 @@
   background-color: #ff5a5f;
   border: none;
   position: absolute;
-  bottom: 3%;
+  bottom: 1%;
   right: 8.5%;
 }
 .titleButton:hover {

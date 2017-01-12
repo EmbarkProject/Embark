@@ -75,6 +75,44 @@ $(function () {
 
 
 
+$(document).ready(function() {
+  $('input[name=titleIndustry]').change(function(){
+    $('#titleArtResources').toggle(this.value == '1');
+    $('#titleBeautyResources').toggle(this.value == '2');
+    $('#titleIndustryResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+    $('#titleEducationResources').toggle(this.value == '3');
+  });
+});
+
+
 
 
 

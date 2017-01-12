@@ -765,7 +765,8 @@ label {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
-  padding: 3%; }
+  padding: 3%;
+  padding-left: 10%; }
 
 .titleChooseList {
   padding-left: 7%;
@@ -774,6 +775,8 @@ label {
     padding-left: 9%;
     padding-top: 0; }
 
+.templateRight .titleResourceTitle {
+  padding-top: 2%; }
 .templateRight .graphRight {
   padding-bottom: 3.4%; }
   .templateRight .graphRight .titleResources {
@@ -799,7 +802,7 @@ label {
   background-color: #ff5a5f;
   border: none;
   position: absolute;
-  bottom: 3%;
+  bottom: 1%;
   right: 8.5%; }
 
 .titleButton:hover {
