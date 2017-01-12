@@ -1,23 +1,47 @@
 // INSIDE SCROLLING LIST BAR
+.titleIndustryText {
+  color: white;
+  font-family: $font;
+  font-size: 13px;
+  padding: 3%;
+  padding-left: 10%;
+}
+
 .titleChooseList {
-  select {
-    margin-left: 15%;
-    margin-top: 5%;
-    option {
-      font-family: $font;
-      font-size: 12px;
+  padding-left: 7%;
+  padding-top: 6.2%;
+  .titleResourceTitle {
+    padding-left: 9%;
+    padding-top: 0;
+  }
+ }
+
+.templateRight {
+  .titleResourceTitle{
+    padding-top: 2%;
+  }
+  .graphRight {
+    padding-bottom: 3.4%;
+    .titleResources {
+      margin-left: 15%;
+      margin-top: 15%;
     }
   }
 }
 
-.templateLeft{
-  .graphMainBody {
-    padding-bottom: 5%;
+.titleResources {
+  .titleResourceGroup{
+    display: none;
+    padding-left: 15%;
+    a {
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    }
+    a:hover{
+      color: $coral;
+    }
   }
-}
-
-.graphRight {
-  padding-bottom: 3.4%;
 }
 
 .titleButton {
@@ -28,20 +52,12 @@
   padding: 10px 25px;
   background-color: #ff5a5f;
   border: none;
-  margin: 0 auto;
-  display: block;
-  margin-top: 12%;
+  position: absolute;
+  bottom: 1%;
+  right: 8.5%;
 }
 .titleButton:hover {
   background-color: #ffffff;
   color: #ff5a5f;
   box-sizing: border-box;
-}
-
-.titleResources {
-  margin-left: 15%;
-  margin-top: 15%;
-  p {
-  color: white;
-  }
 }

@@ -208,7 +208,7 @@
     padding-left: 26.5%;
     padding-top: 2%; }
     .quizLeft .quizQuestions .quizItem {
-      font-size: 20px;
+      font-size: 27px;
       margin: 0 auto;
       display: block; }
       .quizLeft .quizQuestions .quizItem .quizItemText {
@@ -348,39 +348,42 @@
       text-align: center; }
 
 .industryFeatures {
-  margin: 4% 3%;
+  margin: 5% 3%;
   margin-bottom: 5%;
   margin-left: 7%;
+  margin-top: 13%;
   float: left;
   width: 20%; }
   .industryFeatures .industryItem {
     width: 90%;
-    padding-left: 2%;
-    padding-right: 2%;
-    background-color: #f7f7f7;
-    border-bottom: 20px solid #ff5A5F;
+    padding: 3%;
+    background-color: white;
     border-radius: 5px; }
     .industryFeatures .industryItem .fa {
       display: block;
       text-align: center;
-      margin-top: 9%;
-      color: #5299d3; }
+      color: #ff5A5F; }
     .industryFeatures .industryItem .industriesText {
-      color: #2B303A;
-      font-size: 1.5rem;
-      font-weight: bold;
+      color: #ff5A5F;
+      font-size: 0.8rem;
+      margin: 0;
       text-align: center; }
-    .industryFeatures .industryItem .industryFeatureText {
-      margin-top: 10%;
-      margin-left: 4%;
-      margin-right: 4%;
-      font-size: 15px;
-      text-align: left; }
+  .industryFeatures .industryItem:hover {
+    background-color: #ff5A5F;
+    cursor: pointer; }
+    .industryFeatures .industryItem:hover .fa {
+      color: white; }
+    .industryFeatures .industryItem:hover .industriesText {
+      color: white; }
+  .industryFeatures .industriesItemMiddle {
+    margin-top: 15%;
+    margin-bottom: 15%; }
 
 .map {
   float: left;
   width: 80%;
-  padding-top: 5%; }
+  padding-top: 3%;
+  margin-left: 5% !important; }
 
 .nextSteps {
   clear: both;
@@ -758,18 +761,37 @@ label {
     color: #ff5a5f;
     background-color: white; }
 
-.titleChooseList select {
-  margin-left: 15%;
-  margin-top: 5%; }
-  .titleChooseList select option {
-    font-family: "Montserrat", sans-serif;
-    font-size: 12px; }
+.titleIndustryText {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  padding: 3%;
+  padding-left: 10%; }
 
-.templateLeft .graphMainBody {
-  padding-bottom: 5%; }
+.titleChooseList {
+  padding-left: 7%;
+  padding-top: 6.2%; }
+  .titleChooseList .titleResourceTitle {
+    padding-left: 9%;
+    padding-top: 0; }
 
-.graphRight {
+.templateRight .titleResourceTitle {
+  padding-top: 2%; }
+.templateRight .graphRight {
   padding-bottom: 3.4%; }
+  .templateRight .graphRight .titleResources {
+    margin-left: 15%;
+    margin-top: 15%; }
+
+.titleResources .titleResourceGroup {
+  display: none;
+  padding-left: 15%; }
+  .titleResources .titleResourceGroup a {
+    color: white;
+    font-weight: 200;
+    font-size: 15px; }
+  .titleResources .titleResourceGroup a:hover {
+    color: #ff5A5F; }
 
 .titleButton {
   font-size: 15px;
@@ -779,20 +801,14 @@ label {
   padding: 10px 25px;
   background-color: #ff5a5f;
   border: none;
-  margin: 0 auto;
-  display: block;
-  margin-top: 12%; }
+  position: absolute;
+  bottom: 1%;
+  right: 8.5%; }
 
 .titleButton:hover {
   background-color: #ffffff;
   color: #ff5a5f;
   box-sizing: border-box; }
-
-.titleResources {
-  margin-left: 15%;
-  margin-top: 15%; }
-  .titleResources p {
-    color: white; }
 
 /* GLOBAL PAGE STYLING*/
 html, body {
