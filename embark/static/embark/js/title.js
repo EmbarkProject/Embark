@@ -7,7 +7,7 @@ $(function () {
     }).done(function(results){
         var jobTitle = results.jobTitle
         console.log(jobTitle)
-        var glassurl = 'http://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&action=jobs-prog&countryId=1&jobTitle=' + jobTitle
+        var glassurl = 'https://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&action=jobs-prog&countryId=1&jobTitle=' + jobTitle
         $.ajax({
             url: glassurl,
             type: 'GET',
