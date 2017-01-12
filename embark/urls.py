@@ -28,7 +28,7 @@ router.register(r'api/User', views.UserView, 'list')
 
 urlpatterns = [
     url(r'^embark/', include('embarkapp.urls')),
-    url(r'^logout/$', auth_views.logout, {'next_page': '/embark/login'}, name='logout'),
+    url(r'^logout/$', auth_views.logout, {'next_page': '/embark/main'}, name='logout'),
     # url(r'^login/$', views.view_main, name=)
     url('^', include('django.contrib.auth.urls')),
     url(r'^', include(router.urls)),

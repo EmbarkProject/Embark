@@ -1,46 +1,66 @@
-function filter_jobs(){
-    var job = 'programmer'
-    var glassurl = 'http://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&ps=100&action=employers&q=' + job
+function industries(){
+    id = document.getElementById('userId').value
+    var url = '/api/GetEmbarker/' + id + '/'
     $.ajax({
-    url: glassurl,
-    type: 'GET',
+        url: url,
+        type: 'GET',
     }).done(function(results){
-        for (var j = 0; j < results.response.employers.length; j++){
-            var ratingParse = results.response.employers[j]
-            var careerRating = ratingParse.careerOpportunitiesRating
-            var careerInput = 3.0
-            var cultureRating = ratingParse.cultureAndValuesRating
-            var cultureInput = 3.0
-            var leadershipRating = ratingParse.seniorLeadershipRating
-            var leadershipInput = 3.0
-            var payRating = ratingParse.compensationAndBenefitsRating
-            var payInput = 3.0
-            var workLifeRating = ratingParse.workLifeBalanceRating
-            var workLifeInput = 3.0
-            if (careerRating >= careerInput &&
-                cultureRating >= cultureInput &&
-                leadershipRating >= leadershipInput &&
-                payRating >= payInput &&
-                workLifeRating >= workLifeInput){
-                    var company = ratingParse.name
-                    var indeedurl = 'http://api.indeed.com/ads/apisearch?publisher=291337585868709&q=' + company + '&l=raleigh%2C+nc&sort=&radius=&format=json&st=&jt=&start=&limit=10&fromage=&filter=&latlong=1&co=us&chnl=&userip=1.2.3.4&useragent=Chrome&v=2'
-                    $.ajax({
-                        url: indeedurl,
-                        type: 'GET',
-                    }).done(function(results){
-                        var source = $('#post-template').html();
-                        var template = Handlebars.compile(source);
-                        var html = template(results.results);
-                        $('#handlebars').append(html)
-                    })
-                }
-        }
+        var industryList = results.industryPrefs.split(',');
+        $('#industry1').html(industry[industryList[0]]) + $('#industry2').html(industry[industryList[1]]) + $('#industry3').html(industry[industryList[2]])
+        var cultureList = results.culturePrefs.split(',');
+        $('#culture1').html("Career Opportunities : " + cultureList[0]) +
+        $('#culture2').html("Culture and Values: " + cultureList[1]) +
+        $('#culture3').html("Senior Leadership: " + cultureList[2]) +
+        $('#culture4').html("Compensation & Benefits: " + cultureList[3]) +
+        $('#culture5').html("Work/Life Balance: " + cultureList[4])
+        var locationList = results.locationPrefs.split(',');
+        $('#location1').html(locationList[0] + ',' + locationList[1]) + $('#location2').html(locationList[2] + ',' + locationList[3]) + $('#location3').html(locationList[4] + ',' + locationList[5])
     })
 }
-filter_jobs()
+// var ratingParse = results.response.employers[j]
+// var careerRating = ratingParse.careerOpportunitiesRating
+// var careerInput = embarker.culturePrefs[0]
+// var cultureRating = ratingParse.cultureAndValuesRating
+// var cultureInput = embarker.culturePrefs[1]
+// var leadershipRating = ratingParse.seniorLeadershipRating
+// var leadershipInput = embarker.culturePrefs[2]
+// var payRating = ratingParse.compensationAndBenefitsRating
+// var payInput = embarker.culturePrefs[3]
+// var workLifeRating = ratingParse.workLifeBalanceRating
+// var workLifeInput = embarker.culturePrefs[4]
+industries()
 
-Handlebars.registerHelper('displayLink', function(title, url) {
-    newtitle = this.jobtitle
-    url = this.url
-    return '<a href=' + url + '>' + newtitle + '</a>';
-})
+var industry = {
+    "1" : "Art, Entertainment",
+    "2" : "Beauty, Wellness",
+    "3" : "Education",
+    "4" : "General Labor",
+    "5" : "Hospitality",
+    "6" : "Maintenance, Repair",
+    "7" : "Medical, Healthcare",
+    "8" : "Restaurant",
+    "9" : "Retail",
+    "10" : "Sales, Customer Service",
+    "11" : "Security",
+    "12" : "Skilled Trade",
+    "13" : "Fitness",
+    "14" : "Transportation",
+    "15" : "Administrative",
+    "16" : "Accounting",
+    "17" : "Analyst",
+    "18" : "Architecture",
+    "19" : "Insurance",
+    "20" : "Business Development",
+    "21" : "Engineering",
+    "22" : "Human Resources",
+    "23" : "Legal",
+    "24" : "Construction",
+    "25" : "Advertising",
+    "26" : "Non-Profit",
+    "27" : "Management",
+    "28" : "Real Estate",
+    "29" : "Science",
+    "30" : "Senior Management",
+    "31" : "IT",
+    "32" : "Writing"
+}
