@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Embarker
+from .models import Embarker, Industry
 from django.contrib.auth.models import User
 
 
@@ -37,3 +37,10 @@ class EmbarkerSerializerPost(serializers.ModelSerializer):
     class Meta:
         model = Embarker
         fields = ('user', 'jobTitle', 'industryPrefs', 'culturePrefs', 'locationPrefs')
+
+
+class IndustrySerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Industry
+        fields = ('title', 'searchid', 'searchname', 'icon', 'resources')

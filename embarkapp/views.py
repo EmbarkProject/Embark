@@ -4,13 +4,19 @@ from django.contrib.auth import login, authenticate
 from django.contrib.auth.models import User
 from rest_framework import viewsets
 from .forms import LoginForm
-from .serializers import UserSerializer
-from .models import Embarker
+from .serializers import UserSerializer, IndustrySerializer
+from .models import Embarker, Industry
 from .permissions import IsStaffOrTargetUser
 from .serializers import EmbarkerSerializerGet, EmbarkerSerializerPost
 from django.http import HttpResponseRedirect
 
 # Create your views here.
+
+
+class IndustryView(viewsets.ModelViewSet):
+    queryset = Industry.objects.all().order_by('id')
+    serializer_class = IndustrySerializer
+    model = Industry
 
 
 class UserView(viewsets.ModelViewSet):

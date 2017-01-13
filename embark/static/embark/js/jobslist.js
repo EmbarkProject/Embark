@@ -1,3 +1,24 @@
+function filter_headers1(){
+    var id = document.getElementById('userId').value
+    $.ajax({
+        url: '/api/GetEmbarker/' + id + '/',
+        type: 'GET',
+        datatype: 'json',
+    }).done(function(results){
+        var industryList = results.industryPrefs.split(',');
+        var jobid = industryList[0]
+        console.log(results)
+        $.ajax({
+            url: '/api/Industry/' + jobid + '/',
+            type: 'GET',
+            datatype: 'json',
+        }).done(function(results){
+            var source = $('#post-template1').html();
+            var template = Handlebars.compile(source);
+            var html = template(results);
+            $('#header1').append(html)
+        })})}
+
 
 function filter_jobs1(){
     var id = document.getElementById('userId').value
@@ -159,10 +180,10 @@ function filter_jobs3(){
     })
 })
 }
-
-filter_jobs1()
-filter_jobs2()
-filter_jobs3()
+filter_headers1()
+// filter_jobs1()
+// filter_jobs2()
+// filter_jobs3()
 
 Handlebars.registerHelper('displayLink', function(title, url) {
     newtitle = this.jobtitle

@@ -22,9 +22,7 @@
         </div>
 
         <div class="jobslistFeatures">
-          <div class="jobslistItem">
-            <i class="fa fa-4x fa-film" aria-hidden="true"></i>
-            <p class="jobslistText">Art / Design / Entertainment</p>
+          <div id="header1" class="jobslistItem">
             <p id="col1" class="jobsListing"></p>
           </div>
           <div class="jobslistItem jobslistFeatureMiddle">
@@ -47,12 +45,19 @@
 
 
 
-        <div id='handlebars'></div>
+
         {% verbatim %}
         <script id="post-template" type="text/x-handlebars-template">
         {{#each this}}
         <h5>JOB LISTING: {{{displayLink this}}}</h5>
         {{/each}}
+        {% endverbatim %}
+        </script>
+
+        {% verbatim %}
+        <script id="post-template1" type="text/x-handlebars-template">
+        <i class="fa fa-4x {{this.icon}}" aria-hidden="true"></i>
+        <p class="jobslistText">{{this.title}}</p>
         {% endverbatim %}
         </script>
 
