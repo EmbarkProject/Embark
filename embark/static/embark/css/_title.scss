@@ -12,20 +12,27 @@
   padding-top: 6.2%;
 }
 
-.templateRight {
+// .graphRight {
+//   padding-bottom: 3.4%;
+//     .titleResources {
+//       margin-left: 15%;
+//       margin-top: 15%;
+//     .titleResourceTitleText {
+//       color: white;
+//     }
+//   }
+// }
+
+.graphRight {
   .titleResourceTitle {
     padding-top: 2%;
-  }
-  .graphRight {
-    padding-bottom: 3.4%;
-    .titleResources {
-      margin-left: 15%;
-      margin-top: 15%;
+    .titleResourceTitleText {
+      padding-top: 2%;
+      color: $sky;
+      font-size: 17px;
+      font-family: $font;
+      }
     }
-  }
-}
-
-.titleResources {
   .titleResourceGroup{
     display: none;
     padding-left: 15%;
