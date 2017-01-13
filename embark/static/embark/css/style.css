@@ -166,6 +166,12 @@
       color: #ff5a5f;
       background-color: white; }
 
+.footer {
+  clear: both;
+  font-size: .7rem;
+  margin: 0 10%;
+  padding-top: 4%; }
+
 .quizEmbarkLogo {
   height: 70px;
   padding: 3%;
