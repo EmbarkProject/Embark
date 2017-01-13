@@ -6,16 +6,18 @@ function filter_jobs1(){
         type: 'GET',
         datatype: 'json',
     }).done(function(results){
+        console.log(results)
     var embarker = results
     var industryList = results.industryPrefs.split(',');
     var job = industry[industryList[0]]
-    var glassurl = 'http://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&ps=100&action=employers&q=' + job
+    var glassurl = 'https://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&ps=100&action=employers&q=' + job
     $.ajax({
     crossOrigin: true,
     url: glassurl,
     type: 'GET',
     dataType: 'jsonp',
     }).done(function(results){
+        console.log(results)
         var cultureList = embarker.culturePrefs.split(',');
         for (var j = 0; j < results.response.employers.length; j++){
             var ratingParse = results.response.employers[j]
@@ -35,13 +37,14 @@ function filter_jobs1(){
                 payRating >= payInput &&
                 workLifeRating >= workLifeInput){
                     var company = ratingParse.name
-                    var indeedurl = 'http://api.indeed.com/ads/apisearch?publisher=291337585868709&q=' + company + '&l=raleigh%2C+nc&sort=&radius=&format=json&st=&jt=&start=&limit=10&fromage=&filter=&latlong=1&co=us&chnl=&userip=1.2.3.4&useragent=Chrome&v=2'
+                    var indeedurl = 'https://api.indeed.com/ads/apisearch?publisher=291337585868709&q=' + company + '&l=raleigh%2C+nc&sort=&radius=&format=json&st=&jt=&start=&limit=10&fromage=&filter=&latlong=1&co=us&chnl=&userip=1.2.3.4&useragent=Chrome&v=2'
                     $.ajax({
                         crossOrigin: true,
                         url: indeedurl,
                         type: 'GET',
                         dataType: 'jsonp',
                     }).done(function(results){
+                        console.log(results)
                         var source = $('#post-template').html();
                         var template = Handlebars.compile(source);
                         var html = template(results.results);
@@ -62,7 +65,7 @@ function filter_jobs2(){
     var embarker = results
     var industryList = results.industryPrefs.split(',');
     var job = industry[industryList[1]]
-    var glassurl = 'http://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&ps=100&action=employers&q=' + job
+    var glassurl = 'https://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&ps=100&action=employers&q=' + job
     $.ajax({
     crossOrigin: true,
     url: glassurl,
@@ -87,7 +90,7 @@ function filter_jobs2(){
                 payRating >= payInput &&
                 workLifeRating >= workLifeInput){
                     var company = ratingParse.name
-                    var indeedurl = 'http://api.indeed.com/ads/apisearch?publisher=291337585868709&q=' + company + '&l=raleigh%2C+nc&sort=&radius=&callback=?&format=json&st=&jt=&start=&limit=10&fromage=&filter=&latlong=1&co=us&chnl=&userip=1.2.3.4&useragent=Chrome&v=2'
+                    var indeedurl = 'https://api.indeed.com/ads/apisearch?publisher=291337585868709&q=' + company + '&l=raleigh%2C+nc&sort=&radius=&callback=?&format=json&st=&jt=&start=&limit=10&fromage=&filter=&latlong=1&co=us&chnl=&userip=1.2.3.4&useragent=Chrome&v=2'
                     $.ajax({
                         crossOrigin: true,
                         url: indeedurl,
@@ -114,7 +117,7 @@ function filter_jobs3(){
     var embarker = results
     var industryList = results.industryPrefs.split(',');
     var job = industry[industryList[2]]
-    var glassurl = 'http://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&ps=100&action=employers&q=' + job
+    var glassurl = 'https://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&ps=100&action=employers&q=' + job
     $.ajax({
     crossOrigin: true,
     url: glassurl,
@@ -139,7 +142,7 @@ function filter_jobs3(){
                 payRating >= payInput &&
                 workLifeRating >= workLifeInput){
                     var company = ratingParse.name
-                    var indeedurl = 'http://api.indeed.com/ads/apisearch?publisher=291337585868709&q=' + company + '&l=raleigh%2C+nc&sort=&radius=&callback=?&format=json&st=&jt=&start=&limit=10&fromage=&filter=&latlong=1&co=us&chnl=&userip=1.2.3.4&useragent=Chrome&v=2'
+                    var indeedurl = 'https://api.indeed.com/ads/apisearch?publisher=291337585868709&q=' + company + '&l=raleigh%2C+nc&sort=&radius=&callback=?&format=json&st=&jt=&start=&limit=10&fromage=&filter=&latlong=1&co=us&chnl=&userip=1.2.3.4&useragent=Chrome&v=2'
                     $.ajax({
                         crossOrigin: true,
                         url: indeedurl,
