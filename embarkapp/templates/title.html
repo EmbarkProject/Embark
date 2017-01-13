@@ -6,6 +6,7 @@
        <meta charset="utf-8">
        <title>EMBARK!!</title>
        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        <link rel="stylesheet" href="{% static 'embark/css/style.css' %}">
    </head>
    <body class="templateBody">
@@ -46,277 +47,51 @@
          <button id="manualIndustry" class="titleButton">submit</button>
        </div>
 
-<!-- THESE ARE THE RADIO BUTTONS TO PRESS IN ORDER TO SEE THE RESOURCES APPEAR -->
-
-      <!-- <div class= "titleRadioButtons">
-        <input type="radio" id="artInd" value="1" name="titleIndustry"><label class="titleIndustryText">Art/Design/Entertainment<br><br></label></option>
-
-        <input type="radio" id="beautyInd" value="2" name="titleIndustry"><label class="titleIndustryText">Beauty/Wellness <br><br></label></option>
-
-        <input type="radio" id="educationInd" value="3" name="titleIndustry"><label class="titleIndustryText">Education<br><br></label></option>
-
-        <input type="radio" id="facilitiesInd" value="4" name="titleIndustry"><label class="titleIndustryText">Facilities/General Labor<br><br></label></option>
-
-        <input type="radio" id="hospitalityInd" value="5" name="titleIndustry"><label class="titleIndustryText">Hospitality <br><br></label></option>
-
-        <input type="radio" id="installationInd" value="6" name="titleIndustry"><label class="titleIndustryText">Installation/Maintenance/Repair<br><br></label></option>
-
-        <input type="radio" id="medicalInd" value="7" name="titleIndustry"><label class="titleIndustryText">Medical/Healthcare<br><br></label></option>
-
-        <input type="radio" id="restaurantInd" value="8" name="titleIndustry"><label class="titleIndustryText">Restaurant / Food Services<br><br></label></option>
-
-        <input type="radio" id="retailInd" value="9" name="titleIndustry"><label class="titleIndustryText">Retail<br><br></label></option>
-
-        <input type="radio" id="salesInd" value="10" name="titleIndustry"><label class="titleIndustryText">Sales / Customer Care<br><br></label></option>
-
-        <input type="radio" id="securityInd" value="11" name="titleIndustry"><label class="titleIndustryText">Security / Law Enforcement<br><br></label></option>
-
-        <input type="radio" id="skilledInd" value="12" name="titleIndustry"><label class="titleIndustryText">Skilled Trade<br><br></label></option>
-
-        <input type="radio" id="sportsInd" value="13" name="titleIndustry"><label class="titleIndustryText">Sports / Fitness<br><br></label></option>
-
-        <input type="radio" id="travelInd" value="14" name="titleIndustry"><label class="titleIndustryText">Travel / Transportation<br><br></label></option>
-
-        <input type="radio" id="administrativeInd" value="15" name="titleIndustry"><label class="titleIndustryText">Administrative<br><br></label></option>
-
-        <input type="radio" id="accountingInd" value="16" name="titleIndustry"><label class="titleIndustryText">Accounting / Finance<br><br></label></option>
-
-        <input type="radio" id="analystInd" value="17" name="titleIndustry"><label class="titleIndustryText">Analyst <br><br></label></option>
-
-        <input type="radio" id="architectureInd" value="18" name="titleIndustry"><label class="titleIndustryText">Architecture / Drafting<br><br></label></option>
-
-        <input type="radio" id="bankingInd" value="19" name="titleIndustry"><label class="titleIndustryText">Banking / Loan / Insurance<br><br></label></option>
-
-        <input type="radio" id="businessInd" value="20" name="titleIndustry"><label class="titleIndustryText">Business Development / Consulting<br><br></label></option>
-
-        <input type="radio" id="engineeringInd" value="21" name="titleIndustry"><label class="titleIndustryText">Engineering (Non-software)<br><br></label></option>
-
-        <input type="radio" id="humanInd" value="22" name="titleIndustry"><label class="titleIndustryText">Human Resources<br><br></label></option>
-
-        <input type="radio" id="legalInd" value="23" name="titleIndustry"><label class="titleIndustryText">Legal<br><br></label></option>
-
-        <input type="radio" id="manufactInd" value="24" name="titleIndustry"><label class="titleIndustryText">Manufact. / Product. / Construct.<br><br></label></option>
-
-        <input type="radio" id="marketingInd" value="25" name="titleIndustry"><label class="titleIndustryText">Marketing / Advertising / PR<br><br></label></option>
-
-        <input type="radio" id="nonprofitInd" value="26" name="titleIndustry"><label class="titleIndustryText">Non-Profit / Volunteering<br><br></label></option>
-
-        <input type="radio" id="productInd" value="27" name="titleIndustry"><label class="titleIndustryText">Product / Project Management<br><br></label></option>
-
-        <input type="radio" id="realestateInd" value="28" name="titleIndustry"><label class="titleIndustryText">Real Estate<br><br></label></option>
-
-        <input type="radio" id="scienceInd" value="29" name="titleIndustry"><label class="titleIndustryText">Science / Research<br><br></label></option> -->
-
-        <input type="radio" id="seniorInd" value="30" name="titleIndustry"><label class="titleIndustryText">Senior Management<br><br></label></option>
-
-        <input type="radio" id="softwareInd" value="31" name="titleIndustry"><label class="titleIndustryText">Software Development / IT<br><br></label></option>
-
-        <input type="radio" id="writingInd" value="32" name="titleIndustry"><label class="titleIndustryText">Writing / Editing / Publishing<br><br></label></option>
-
-
-       <div class="templateText titleResourceTitle"><p class="titleResourceTitleText">Helpful Resources</p></div>
-
-       <div class= "titleResources">
-        <div class="titleResourceGroup" id="titleArtResources">
-         <a href="http://www.careers.org/occupations/field/27/arts-design-entertainment-sports-and-media" target="_blank">Arts Occupation Profiles</a><br><br>
-         <a href="https://www.bls.gov/soc/2010/soc270000.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="http://www.careeroverview.com/usa/art-design-entertainment-and-sports/" target="_blank">Career and Education Opportunities</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleBeautyResources">
-         <a href="http://beautypros.org/best-cosmetology-programs/" target="_blank">Best Cosmetology Programs</a><br><br>
-         <a href="https://www.getthegloss.com/career-home/health-and-beauty-jobs" target="_blank">Health and Beauty Jobs</a><br><br>
-         <a href="http://stylecaster.com/beauty/how-to-have-a-career-in-wellness/" target="_blank">How to Have a Career in Wellness</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleEducationResources">
-         <a href="http://beautypros.org/best-cosmetology-programs/" target="_blank">Education Job Tips</a><br><br>
-         <a href="https://www.getthegloss.com/career-home/health-and-beauty-jobs" target="_blank">Pro Tips for Getting a Job in Education</a><br><br>
-         <a href="http://stylecaster.com/beauty/how-to-have-a-career-in-wellness/" target="_blank">Six Steps to Landing Your First Teaching Job</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleFacilitiesResources">
-         <a href="http://www.facilitiesnet.com/facilitiesmanagement/article/Succeeding-at-Your-First-FM-Job-Facilities-Management-Facilities-Management-Feature--9662" target="_blank">Your First FM Job</a><br><br>
-         <a href="http://www.iofficecorp.com/blog/6-things-facilities-managers-must-do-to-land-their-next-job" target="_blank">6 Things Facilities Managers Must Do </a><br><br>
-         <a href="https://www.bls.gov/oes/current/naics4_561200.htm" target="_blank">Employment and Wage Estimates</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleHospitalityResources">
-         <a href="https://www.bls.gov/iag/tgs/iag70.htm" target="_blank">Industries at a Glance</a><br><br>
-         <a href="https://www.hcareers.com/" target="_blank">Hospitality Jobs</a><br><br>
-         <a href="https://www.ihirehospitality.com/" target="_blank">Hospitality Hiring</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleInstallationResources">
-         <a href="https://www.bls.gov/ooh/installation-maintenance-and-repair/home.htm" target="_blank">Installation, Maintenance, and Repair Occupations</a><br><br>
-         <a href="http://www.careeroverview.com/repair-maintenance-careers.html" target="_blank">Jobs and Employment Information</a><br><br>
-         <a href="http://money.usnews.com/careers/best-jobs/rankings/best-maintenance-and-repair-jobs" target="_blank">Best Maintenance And Repair Jobs</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleMedicalResources">
-         <a href="https://www.bls.gov/ooh/healthcare/home.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="http://money.usnews.com/money/careers/slideshows/25-amazing-health-care-support-jobs-for-2016" target="_blank">25 Amazing Healthcare Support Jobs for 2016</a><br><br>
-         <a href="https://explorehealthcareers.org/health-career-resources/national-resources-health-career-education/" target="_blank">National Resources: Health Career Education</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleRestaurantResources">
-         <a href="https://www.bls.gov/iag/tgs/iag722.htm" target="_blank">Industries at a Glance</a><br><br>
-         <a href="http://www.restaurantcareers.com/" target="_blank">Restaurant Careers</a><br><br>
-         <a href="https://www.entrepreneur.com/article/73384/" target="_blank">How to Start a Restaurant</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleRetailResources">
-         <a href="https://www.bls.gov/ooh/sales/retail-sales-workers.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="http://careers.workopolis.com/advice/how-to-answer-retail-job-interview-questions/" target="_blank">How to answer retail job questions</a><br><br>
-         <a href="https://www.totaljobs.com/careers-advice/job-profile/retail-jobs" target="_blank">Retail Industry Job Descriptions</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleSalesResources">
-         <a href="https://www.bls.gov/ooh/sales/home.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="https://www.totaljobs.com/careers-advice/inside-careers/customer-services" target="_blank">Five Reasons to take a Customer Service Job</a><br><br>
-         <a href="https://www.monster.com/career-advice/article/highest-paying-sales-job" target="_blank">Eight High-paying Sales Jobs</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleSecurityResources">
-         <a href="https://www.bls.gov/ooh/sales/home.htm" target="_blank">BLS: Law Enforcement Articles </a><br><br>
-         <a href="http://www.criminaljusticedegreeschools.com/criminal-justice-careers/" target="_blank">Careers in Criminal Justices</a><br><br>
-         <a href="https://www.monster.com/career-advice/article/highest-paying-sales-job" target="_blank">Eight Fastest-Growing Law Enforcement Careers</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleSkilledResources">
-         <a href="http://www.career.org/news/shortage-of-skills-construction-skilled-trades" target="_blank">Shortage of Skilled Trades</a><br><br>
-         <a href="http://www.explorethetrades.org/blog/skilled-trade-pay-scales/" target="_blank">Skilled Trade Pay Scales</a><br><br>
-         <a href="https://www.monster.com/skilled-trades-careers" target="_blank">Careers in Skilled Trade</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleSportsResources">
-         <a href="https://www.bls.gov/ooh/personal-care-and-service/fitness-trainers-and-instructors.htm" target="_blank">Fitness Trainers and Instructors</a><br><br>
-         <a href="http://www.businessnewsdaily.com/6332-best-health-fitness-jobs.html" target="_blank">Best Health Fitness Jobs</a><br><br>
-         <a href="http://www.forbes.com/sites/susanadams/2013/02/04/the-10-best-careers-in-sports/#1cdc5c9d564b" target="_blank">The Ten Best Careers in Sports</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleTravelResources">
-         <a href="https://www.bls.gov/oes/current/oes434181.htm" target="_blank">Occupational Employment and Wages</a><br><br>
-         <a href="https://www.transportation.gov/womenandgirls/skilled-careers" target="_blank">Women and Skilled Careers in Transportation</a><br><br>
-         <a href="https://www.transportation.gov/careers" target="_blank">DOT Careers</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleAccountingResources">
-         <a href="https://www.bls.gov/ooh/business-and-financial/accountants-and-auditors.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="http://www.accountingjobstoday.com/" target="_blank">Accounting Jobs Today</a><br><br>
-         <a href="http://www.allbusinessschools.com/finance/job-description/" target="_blank">Job Description: Finance</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleAdministrativeResources">
-         <a href="https://www.bls.gov/ooh/management/administrative-services-managers.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="http://money.usnews.com/careers/best-jobs/administrative-assistant" target="_blank">Administrative Assistant Overview</a><br><br>
-         <a href=" http://administrativeassistantinterviewquestions.com/why-do-you-want-to-be-an-administrative-assistant/" target="_blank">Why Do You Want to be an Administrative Assistant?</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleAnalystResources">
-         <a href="https://www.bls.gov/ooh/business-and-financial/financial-analysts.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="http://www.howtobeananalyst.com/sample-page/" target="_blank">How to be an Analyst</a><br><br>
-         <a href=" http://www.modernanalyst.com/Resources/Articles/tabid/115/ID/300/So-you-want-to-be-a-Business-Analyst.aspx" target="_blank">So You Want to be a Business Analyst</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleArchitectureResources">
-         <a href="https://www.bls.gov/ooh/architecture-and-engineering/architects.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="http://www.lifeofanarchitect.com/do-you-want-to-be-an-architect/" target="_blank">Do You Want to be an Architect?</a><br><br>
-         <a href=" http://archinect.com/jobs" target="_blank">Architect Jobs</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleBankingResources">
-         <a href="https://www.bls.gov/ooh/business-and-financial/home.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="http://www.bankingcareersinfo.com/" target="_blank">Banking Career Info</a><br><br>
-         <a  href="http://www.greatinsurancejobs.com/article/career-path-of-an-insurance-broker-or-insurance-agent/" target="_blank">Path of an Insurance Broker of Insurance Agent</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleBusinessResources">
-         <a href="https://www.bls.gov/ooh/management/" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="http://news.efinancialcareers.com/us-en/careers-in-finance/219856/management-consulting-careers" target="_blank">Management Consulting Careers</a><br><br>
-         <a  href="http://money.usnews.com/careers/best-jobs/insurance-agent" target="_blank">Best Jobs: Insurance Agent</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleEngineeringResources">
-         <a href="https://www.bls.gov/ooh/architecture-and-engineering/home.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="http://www.discovere.org/discover-engineering/engineering-careers" target="_blank">Engineering Careers</a><br><br>
-         <a  href="http://typesofengineeringdegrees.org/highest-paid-engineering-jobs/" target="_blank">Highest Paid Engineering Jobs</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleHumanResources">
-         <a href="https://www.bls.gov/ooh/management/human-resources-managers.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="http://www.humanresourcesmba.net/careers/best-careers-for-human-resources-professionals/" target="_blank">Best Careers for Human Resources Proessionals </a><br><br>
-         <a  href="https://www.thebalance.com/so-you-think-you-want-a-career-in-human-resources-1918365" target="_blank">So You Want a Career in Human Resources?</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleLegalResources">
-         <a href="https://www.bls.gov/ooh/legal/home.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="http://legalcareerpath.com/legal-careers/" target="_blank">Legal Career Path</a><br><br>
-         <a  href="http://www.lawcrossing.com/browse-jobs/jobs.html" target="_blank">Law Jobs</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleManufacturingResources">
-         <a href="https://www.bls.gov/iag/tgs/iag23.htm" target="_blank">About the Construction Sector</a><br><br>
-         <a href="https://www.onetonline.org/find/career?c=13" target="_blank">Manufacturing Career Cluster</a><br><br>
-         <a  href="http://www.constructioncareers.org/" target="_blank">Construction Careers</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleMarketingResources">
-         <a href="https://www.bls.gov/ooh/management/advertising-promotions-and-marketing-managers.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="http://www.learnhowtobecome.org/finance-business-careers/marketing/" target="_blank">How to Become: Marketing</a><br><br>
-         <a  href="http://money.usnews.com/careers/best-jobs/public-relations-specialist" target="_blank">Public Relations Specialist</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleNonprofitResources">
-         <a href="https://www.bls.gov/bdm/nonprofits/nonprofits.htm" target="_blank">Research Data on the Nonprofit Sector</a><br><br>
-         <a href="http://www.learnhowtobecome.org/volunteer-and-nonprofit-careers/" target="_blank">Learn How to Become: Volunteer and Non-Profit</a><br><br>
-         <a  href="http://www.idealist.org/" target="_blank">Job search for do-gooders</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleProductResources">
-         <a href="https://www.bls.gov/careeroutlook/2006/summer/art03.pdf" target="_blank">Career Outlook: Product Managers</a><br><br>
-         <a href="https://www.pmi.org/about/learn-about-pmi/what-is-project-management" target="_blank">What is Project Management?</a><br><br>
-         <a  href="http://www.aha.io/roadmapping/guide/product-management/what-is-the-role-of-a-product-manager" target="_blank">What is the Role of a Product Manager?</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleRealestateResources">
-         <a href="https://www.bls.gov/ooh/sales/real-estate-brokers-and-sales-agents.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="http://www.nextavenue.org/so-you-want-be-real-estate-agent/" target="_blank">So You Want to be a Real Estate Agent?</a><br><br>
-         <a  href="http://www.investopedia.com/articles/personal-finance/040215/real-estate-broker-career-you.asp?lgl=bt1tn-no-widget" target="_blank">Real Estate Broker Careers</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleScienceResources">
-         <a href="https://www.bls.gov/ooh/life-physical-and-social-science/home.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="http://www.sciencemag.org/careers/2013/06/research-career-focus" target="_blank">Research Career Focus</a><br><br>
-         <a  href="http://www.sciencebuddies.org/science-engineering-careers" target="_blank">Science and Engineering Careers</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleSeniorResources">
-         <a href="https://www.bls.gov/ooh/management/top-executives.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="https://www.thebalance.com/senior-management-level-jobs-2275744" target="_blank">Senior Management Level Jobs</a><br><br>
-         <a  href="https://www.thebalance.com/understanding-the-role-and-scope-of-the-senior-manager-2276097" target="_blank">Understanding the Role and Scope of the Senior Manager</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleSoftwareResources">
-         <a href="https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="http://www.computerscienceonline.org/information-technology/" target="_blank">Informational Technology</a><br><br>
-         <a  href="http://www.itcareerfinder.com/it-careers.html" target="_blank">IT Careers</a><br><br>
-        </div>
-
-        <div class="titleResourceGroup" id="titleWritingResources">
-         <a href="https://www.bls.gov/ooh/media-and-communication/editors.htm" target="_blank">Occupational Outlook Handbook</a><br><br>
-         <a href="http://writingcareer.com/" target="_blank">Writing Careers</a><br><br>
-         <a  href="http://www.careeroverview.com/writing-careers.html" target="_blank">Career Overview: Writing Careers</a><br><br>
-        </div>
-
-       </div>
-     </div>
-     <a href='/embark/dashboard'><button id="manualIndustry" class="titleButton">Dashboard</button></a>
-     <input id="userId" type='hidden' name='userId' value='{{ user.id }}'>
+<!-- THESE ARE THE BUTTONS TO PRESS IN ORDER TO SEE THE RESOURCES APPEAR -->
+
+        <div class="titleFeatures">
+
+          <div class="titleItem titleItem titleItemMiddle">
+            <button id="button1" value="1" name="titleIndustry">
+              <i class="fa fa-1.5x fa-film" aria-hidden="true"></i>
+            <p class="titleText">Art / Design / Entertainment</p></button>
+          </div>
+
+          <div class ="titleLinkToggle">
+            <p>Link 1</p>
+            <p>Link 2</p>
+            <p>Link 3</p>
+          </div>
+
+          <div class="titleItem titleItem titleItemMiddle">
+           <button id="button2" value="2" name="titleIndustry">
+             <i class="fa fa-1.5x fa-scissors" aria-hidden="true"></i>
+             <p class="titleText">Beauty / Wellness</p>
+           </button>
+          </div>
+
+          <div class ="titleLinkToggle">
+            <p>Link 1</p>
+            <p>Link 2</p>
+            <p>Link 3</p>
+
+          <div class="titleItem titleItem titleItemMiddle">
+            <button id="button3" value="3" name="titleIndustry">
+              <i class="fa fa-1.5x fa-graduation-cap" aria-hidden="true"></i>
+            <p class="titleText">Education</p></button>
+          </div>
+
+          <div class ="titleLinkToggle">
+            <p>Link 1</p>
+            <p>Link 2</p>
+            <p>Link 3</p>
+          </div>
+
+       <a href='/embark/dashboard'><button id="manualIndustry" class="titleButton">Dashboard</button></a>
+       <input id="userId" type='hidden' name='userId' value='{{ user.id }}'>
 
      </div>
-     <!-- end of right column -->
-<!--
+
        {% verbatim %}
        <script id="post-template" type="text/x-handlebars-template">
        {{#each .}}
@@ -324,7 +99,7 @@
        <h5>Overall Rating: {{this.overallRating}}</h5>
        {{/each}}
        {% endverbatim %}
-       </script> -->
+       </script>
 
    <script src="https://code.highcharts.com/highcharts.js"></script>
    <script src="https://code.highcharts.com/modules/exporting.js"></script>
