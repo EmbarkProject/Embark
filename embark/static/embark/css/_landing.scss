@@ -6,7 +6,7 @@
 .landingRight {
   float: right;
   width: 22%;
-  height: 1090px;
+  height: 1125px;
   background-color: #2b303a;
 }
 
@@ -18,7 +18,6 @@
   background-repeat: no-repeat;
   height: 500px;
   width: 100%;
-  // border-bottom: 25px solid #5299d3;
   .landingHeroOverlay {
     height: 500px;
     width: 100%;
@@ -213,5 +212,17 @@
         background-color: white;
       }
     }
+  }
+}
+
+.footer {
+  clear: both;
+  font-size: .7rem;
+  padding-top: 5%;
+  text-align: center;
+  a {
+    text-decoration: none;
+    font-size: .7rem;
+
   }
 }
