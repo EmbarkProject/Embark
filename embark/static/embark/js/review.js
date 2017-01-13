@@ -17,17 +17,7 @@ function industries(){
         $('#location1').html(locationList[0] + ',' + locationList[1]) + $('#location2').html(locationList[2] + ',' + locationList[3]) + $('#location3').html(locationList[4] + ',' + locationList[5])
     })
 }
-// var ratingParse = results.response.employers[j]
-// var careerRating = ratingParse.careerOpportunitiesRating
-// var careerInput = embarker.culturePrefs[0]
-// var cultureRating = ratingParse.cultureAndValuesRating
-// var cultureInput = embarker.culturePrefs[1]
-// var leadershipRating = ratingParse.seniorLeadershipRating
-// var leadershipInput = embarker.culturePrefs[2]
-// var payRating = ratingParse.compensationAndBenefitsRating
-// var payInput = embarker.culturePrefs[3]
-// var workLifeRating = ratingParse.workLifeBalanceRating
-// var workLifeInput = embarker.culturePrefs[4]
+
 industries()
 
 var industry = {
