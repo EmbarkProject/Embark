@@ -18,6 +18,12 @@
   margin: 0 auto;
   padding-left: 10%;
   padding-top: 1%;
+  #titleLinkToggle1, #titleLinkToggle2, #titleLinkToggle3 {
+   display: none;
+   p {
+   color: white;
+    }
+  }
   .titleItem {
     button {
       border: none;

@@ -75,8 +75,16 @@ $(function () {
 
 
 $(document).ready(function() {
-  $( "#clickme" ).click(function() {
-    $( "#book" ).slideToggle( "slow", function() {
+  $( "#button1" ).click(function() {
+    $( "#titleLinkToggle1" ).slideToggle( "slow", function() {
+    });
+  });
+  $( "#button2" ).click(function() {
+    $( "#titleLinkToggle2" ).slideToggle( "slow", function() {
+    });
+  });
+  $( "#button3" ).click(function() {
+    $( "#titleLinkToggle3" ).slideToggle( "slow", function() {
     });
   });
 });

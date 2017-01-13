@@ -809,6 +809,10 @@ label {
   margin: 0 auto;
   padding-left: 10%;
   padding-top: 1%; }
+  .titleFeatures #titleLinkToggle1, .titleFeatures #titleLinkToggle2, .titleFeatures #titleLinkToggle3 {
+    display: none; }
+    .titleFeatures #titleLinkToggle1 p, .titleFeatures #titleLinkToggle2 p, .titleFeatures #titleLinkToggle3 p {
+      color: white; }
   .titleFeatures .titleItem button {
     border: none;
     text-align: left;
