@@ -770,26 +770,22 @@ label {
 .titleChooseList {
   padding-left: 7%;
   padding-top: 6.2%; }
-  .titleChooseList .titleResourceTitle {
-    padding-left: 9%;
-    padding-top: 0; }
 
-.templateRight .titleResourceTitle {
+.graphRight .titleResourceTitle {
   padding-top: 2%; }
-.templateRight .graphRight {
-  padding-bottom: 3.4%; }
-  .templateRight .graphRight .titleResources {
-    margin-left: 15%;
-    margin-top: 15%; }
-
-.titleResources .titleResourceGroup {
+  .graphRight .titleResourceTitle .titleResourceTitleText {
+    padding-top: 2%;
+    color: #5299D3;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif; }
+.graphRight .titleResourceGroup {
   display: none;
   padding-left: 15%; }
-  .titleResources .titleResourceGroup a {
+  .graphRight .titleResourceGroup a {
     color: white;
     font-weight: 200;
     font-size: 15px; }
-  .titleResources .titleResourceGroup a:hover {
+  .graphRight .titleResourceGroup a:hover {
     color: #ff5A5F; }
 
 .titleButton {
