@@ -361,23 +361,42 @@
     border-radius: 5px; }
     .industryFeatures .industryItem .fa {
       display: block;
-      text-align: center;
-      color: #ff5A5F; }
-    .industryFeatures .industryItem .industriesText {
-      color: #ff5A5F;
+      text-align: center; }
+    .industryFeatures .industryItem .industryText {
       font-size: 0.8rem;
       margin: 0;
       text-align: center; }
   .industryFeatures .industryItem:hover {
-    background-color: #ff5A5F;
     cursor: pointer; }
     .industryFeatures .industryItem:hover .fa {
       color: white; }
-    .industryFeatures .industryItem:hover .industriesText {
+  .industryFeatures .industryItemCoral .fa {
+    color: #ff5A5F; }
+  .industryFeatures .industryItemCoral .industryTextCoral {
+    color: #ff5A5F; }
+  .industryFeatures .industryItemCoral:hover {
+    background-color: #ff5A5F; }
+    .industryFeatures .industryItemCoral:hover .industryTextCoral {
       color: white; }
-  .industryFeatures .industriesItemMiddle {
+  .industryFeatures .industryItemSky {
     margin-top: 15%;
     margin-bottom: 15%; }
+    .industryFeatures .industryItemSky .fa {
+      color: #5299D3; }
+    .industryFeatures .industryItemSky .industryTextSky {
+      color: #5299D3; }
+  .industryFeatures .industryItemSky:hover {
+    background-color: #5299D3; }
+    .industryFeatures .industryItemSky:hover .industryTextSky {
+      color: white; }
+  .industryFeatures .industryItemCharcoal .fa {
+    color: #2B303A; }
+  .industryFeatures .industryItemCharcoal .industryTextCharcoal {
+    color: #2B303A; }
+  .industryFeatures .industryItemCharcoal:hover {
+    background-color: #2B303A; }
+    .industryFeatures .industryItemCharcoal:hover .industryTextCharcoal {
+      color: white; }
 
 .map {
   float: left;
