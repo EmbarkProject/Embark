@@ -1,3 +1,29 @@
+function filter_headers1(){
+    var id = document.getElementById('userId').value
+    $.ajax({
+        url: '/api/GetEmbarker/' + id + '/',
+        type: 'GET',
+        datatype: 'json',
+    }).done(function(results){
+        var industryList = results.industryPrefs.split(',');
+        var jobid = industryList[0]
+        $.ajax({
+            url: '/api/Industry/1/',
+            type: 'GET',
+            datatype: 'json',
+        }).done(function(results){
+            console.log(results)
+            var source = $('#post-template').html();
+            var template = Handlebars.compile(source);
+            var html = template(results);
+            console.log(html)
+            $('#resource1').append(html)
+        })})}
+
+filter_headers1()
+
+
+
 $(function () {
     id = document.getElementById('userId').value
     var url = '/api/GetEmbarker/' + id + '/'
