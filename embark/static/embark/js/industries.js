@@ -202,6 +202,7 @@ $(function () {
     });
 });
 
+// selecting an industry makes the corresponding map show
 $(document).ready(function(event){
   $("#container2").hide();
   $("#container3").hide();
@@ -209,15 +210,50 @@ $(document).ready(function(event){
     $("#container1").show();
     $("#container2").hide();
     $("#container3").hide();
+    $(".industryItemCoral").css("background-color", "#ff5A5F");
+    $(".iconCoral").css("color", "white");
+    $(".industryTextCoral").css("color", "white");
+
+    $(".industryItemSky").css("background-color", "white");
+    $(".iconSky").css("color", "#5299D3");
+    $(".industryTextSky").css("color", "#5299D3");
+
+    $(".industryItemCharcoal").css("background-color", "white");
+    $(".iconCharcoal").css("color", "#2B303A");
+    $(".industryTextCharcoal").css("color", "#2B303A");
   });
+
   $(".industryItemSky").click(function() {
     $("#container2").show();
     $("#container1").hide();
     $("#container3").hide();
+    $(".industryItemSky").css("background-color", "#5299D3");
+    $(".iconSky").css("color", "white");
+    $(".industryTextSky").css("color", "white");
+
+    $(".industryItemCoral").css("background-color", "white");
+    $(".iconCoral").css("color", "#ff5A5F");
+    $(".industryTextCoral").css("color", "#ff5A5F");
+
+    $(".industryItemCharcoal").css("background-color", "white");
+    $(".iconCharcoal").css("color", "#2B303A");
+    $(".industryTextCharcoal").css("color", "#2B303A");
+
   });
   $(".industryItemCharcoal").click(function() {
     $("#container3").show();
     $("#container1").hide();
     $("#container2").hide();
+    $(".industryItemCharcoal").css("background-color", "#2B303A");
+    $(".iconCharcoal").css("color", "white");
+    $(".industryTextCharcoal").css("color", "white");
+
+    $(".industryItemCoral").css("background-color", "white");
+    $(".iconCoral").css("color", "#ff5A5F");
+    $(".industryTextCoral").css("color", "#ff5A5F");
+
+    $(".industryItemSky").css("background-color", "white");
+    $(".iconSky").css("color", "#5299D3");
+    $(".industryTextSky").css("color", "#5299D3");
   });
 });
