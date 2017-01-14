@@ -7,22 +7,90 @@ function filter_headers1(){
     }).done(function(results){
         var industryList = results.industryPrefs.split(',');
         var jobid = industryList[0]
+        console.log(jobid)
         $.ajax({
-            url: '/api/Industry/1/',
+            url: '/api/Industry/' + jobid + '/',
             type: 'GET',
             datatype: 'json',
         }).done(function(results){
+            var resourceList = results.resources.split(',');
             console.log(results)
-            var source = $('#post-template').html();
+            var source = $('#post-template1').html();
             var template = Handlebars.compile(source);
             var html = template(results);
-            console.log(html)
-            $('#resource1').append(html)
-        })})}
+            console.log(resourceList[1])
+            $('#resource1').prepend(html)
+            $('#link1').html('<a href="' + resourceList[0] + '"><p>' + resourceList[1] + '</p></a>')
+            $('#link2').html('<a href="' + resourceList[2] + '"><p>' + resourceList[3] + '</p></a>')
+            $('#link3').html('<a href="' + resourceList[4] + '"><p>' + resourceList[5] + '</p></a>')
+            $("#button1").click(function(){$("#titleLinkToggle1").slideToggle("slow")});
+        })
+    })
+}
 
 filter_headers1()
 
+function filter_headers2(){
+    var id = document.getElementById('userId').value
+    $.ajax({
+        url: '/api/GetEmbarker/' + id + '/',
+        type: 'GET',
+        datatype: 'json',
+    }).done(function(results){
+        var industryList = results.industryPrefs.split(',');
+        var jobid = industryList[1]
+        $.ajax({
+            url: '/api/Industry/' + jobid + '/',
+            type: 'GET',
+            datatype: 'json',
+        }).done(function(results){
+            var resourceList = results.resources.split(',');
+            console.log(resourceList)
+            var source = $('#post-template2').html();
+            var template = Handlebars.compile(source);
+            var html = template(results);
+            console.log(resourceList[1])
+            $('#resource1').prepend(html)
+            $('#link4').html('<a href="' + resourceList[0] + '"><p>' + resourceList[1] + '</p></a>')
+            $('#link5').html('<a href="' + resourceList[2] + '"><p>' + resourceList[3] + '</p></a>')
+            $('#link6').html('<a href="' + resourceList[4] + '"><p>' + resourceList[5] + '</p></a>')
+            $("#button2").click(function(){$("#titleLinkToggle2").slideToggle("slow")});
+        })
+    })
+}
 
+filter_headers2()
+
+function filter_headers3(){
+    var id = document.getElementById('userId').value
+    $.ajax({
+        url: '/api/GetEmbarker/' + id + '/',
+        type: 'GET',
+        datatype: 'json',
+    }).done(function(results){
+        var industryList = results.industryPrefs.split(',');
+        var jobid = industryList[2]
+        $.ajax({
+            url: '/api/Industry/' + jobid + '/',
+            type: 'GET',
+            datatype: 'json',
+        }).done(function(results){
+            var resourceList = results.resources.split(',');
+            console.log(resourceList)
+            var source = $('#post-template3').html();
+            var template = Handlebars.compile(source);
+            var html = template(results);
+            console.log(resourceList[1])
+            $('#resource1').prepend(html)
+            $('#link7').html('<a href="' + resourceList[0] + '"><p>' + resourceList[1] + '</p></a>')
+            $('#link8').html('<a href="' + resourceList[2] + '"><p>' + resourceList[3] + '</p></a>')
+            $('#link9').html('<a href="' + resourceList[4] + '"><p>' + resourceList[5] + '</p></a>')
+            $("#button3").click(function(){$("#titleLinkToggle3").slideToggle("slow")});
+        })
+    })
+}
+
+filter_headers3()
 
 $(function () {
     id = document.getElementById('userId').value
@@ -106,8 +174,7 @@ $(document).ready(function() {
     });
   });
   $( "#button2" ).click(function() {
-    $( "#titleLinkToggle2" ).slideToggle( "slow", function() {
-    });
+    $( "#titleLinkToggle2" ).slideToggle( "slow" );
   });
   $( "#button3" ).click(function() {
     $( "#titleLinkToggle3" ).slideToggle( "slow", function() {

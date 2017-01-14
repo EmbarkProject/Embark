@@ -16,7 +16,7 @@ function filter_headers1(){
             var source = $('#post-template1').html();
             var template = Handlebars.compile(source);
             var html = template(results);
-            $('#header1').append(html)
+            $('#header1').append(html);
         })})}
 
 
