@@ -272,6 +272,8 @@
       display: none; }
     .quizLeft .quizQuestions .q7 {
       display: none; }
+    .quizLeft .quizQuestions .q8 {
+      display: none; }
   .quizLeft .quizButton {
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
@@ -282,7 +284,8 @@
     border: none;
     display: block;
     margin: 0 auto;
-    margin-top: 3%; }
+    margin-top: 5%;
+    margin-right: 65%; }
   .quizLeft .quizButton:hover {
     background-color: #ffffff;
     color: #ff5a5f;

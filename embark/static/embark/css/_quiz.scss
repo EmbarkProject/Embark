@@ -142,6 +142,9 @@ $blue: #5299D3;
     .q7 {
       display: none;
     }
+    .q8 {
+      display: none;
+    }
   }
   .quizButton {
     font-size: 15px;
@@ -154,7 +157,8 @@ $blue: #5299D3;
     border: none;
     display: block;
     margin: 0 auto;
-    margin-top: 3%;
+    margin-top: 5%;
+    margin-right: 65%;
   }
   .quizButton:hover {
     background-color: #ffffff;
