@@ -2,11 +2,6 @@
   float: left;
   width: 78%; }
 
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
 .landingRight {
   float: right;
   width: 22%;
@@ -45,11 +40,20 @@ ul {
 .landingSummary {
   width: 100%;
   background-color: #5299D3; }
+  .landingSummary a {
+    text-decoration: none; }
+    .landingSummary a .fa-angle-double-down {
+      color: white;
+      display: block;
+      text-align: center;
+      text-decoration: none; }
+    .landingSummary a .fa-angle-double-down:hover {
+      color: #2B303A; }
   .landingSummary p {
     color: white;
     margin: 0 10%;
-    padding-top: 3%;
-    padding-bottom: 3%; }
+    padding-top: 6%;
+    padding-bottom: 2%; }
 
 .landingFeatures {
   margin: 6% 10%;

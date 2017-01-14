@@ -76,6 +76,12 @@ function linkLogin(){
     window.location = url;
 }
 
+$("#landingMoveArrow").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#landingFeaturesId").offset().top
+    }, 1000);
+});
+
 $(document).ready(function(event){
   $(".landingRegister").hide();
   $(".registerClick").click(function() {
