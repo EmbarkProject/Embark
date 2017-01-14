@@ -1,4 +1,4 @@
-function filter_headers1(){
+function filter_headers1(e){
     var id = document.getElementById('userId').value
     $.ajax({
         url: '/api/GetEmbarker/' + id + '/',
@@ -16,9 +16,50 @@ function filter_headers1(){
             var source = $('#post-template1').html();
             var template = Handlebars.compile(source);
             var html = template(results);
-            $('#header1').append(html);
+            $('#col1').append(html);
         })})}
 
+function filter_headers2(){
+    var id = document.getElementById('userId').value
+    $.ajax({
+        url: '/api/GetEmbarker/' + id + '/',
+        type: 'GET',
+        datatype: 'json',
+    }).done(function(results){
+        var industryList = results.industryPrefs.split(',');
+        var jobid = industryList[1]
+        console.log(results)
+        $.ajax({
+            url: '/api/Industry/' + jobid + '/',
+            type: 'GET',
+            datatype: 'json',
+        }).done(function(results){
+            var source = $('#post-template1').html();
+            var template = Handlebars.compile(source);
+            var html = template(results);
+            $('#col2').append(html);
+        })})}
+
+function filter_headers3(){
+    var id = document.getElementById('userId').value
+    $.ajax({
+        url: '/api/GetEmbarker/' + id + '/',
+        type: 'GET',
+        datatype: 'json',
+    }).done(function(results){
+        var industryList = results.industryPrefs.split(',');
+        var jobid = industryList[2]
+        console.log(results)
+        $.ajax({
+            url: '/api/Industry/' + jobid + '/',
+            type: 'GET',
+            datatype: 'json',
+        }).done(function(results){
+            var source = $('#post-template1').html();
+            var template = Handlebars.compile(source);
+            var html = template(results);
+            $('#col3').append(html);
+        })})}
 
 function filter_jobs1(){
     var id = document.getElementById('userId').value
@@ -69,7 +110,7 @@ function filter_jobs1(){
                         var source = $('#post-template').html();
                         var template = Handlebars.compile(source);
                         var html = template(results.results);
-                        $('#col1').append(html)
+                        $('#col1').after(html)
                     })
                 }
         }
@@ -121,7 +162,7 @@ function filter_jobs2(){
                         var source = $('#post-template').html();
                         var template = Handlebars.compile(source);
                         var html = template(results.results);
-                        $('#col2').append(html)
+                        $('#col2').after(html)
                     })
                 }
         }
@@ -181,9 +222,11 @@ function filter_jobs3(){
 })
 }
 filter_headers1()
-// filter_jobs1()
-// filter_jobs2()
-// filter_jobs3()
+filter_headers2()
+filter_headers3()
+filter_jobs1()
+filter_jobs2()
+filter_jobs3()
 
 Handlebars.registerHelper('displayLink', function(title, url) {
     newtitle = this.jobtitle

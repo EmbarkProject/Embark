@@ -9,6 +9,13 @@ $(function () {
         });
 
         // Instanciate the map
+        var url = 'https://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&action=jobs-stats&returnStates=true&admLevelRequested=1'
+        $.ajax({
+            url: url,
+            type: 'GET',
+            dataType: 'jsonp',
+        }).done(function(results){
+            console.log(results)
         Highcharts.mapChart('container1', {
 
             chart: {
@@ -63,7 +70,7 @@ $(function () {
                 }
             }]
         });
-    });
+    })});
 });
 
 // industry2 heat map
@@ -124,6 +131,7 @@ $(function () {
                     enabled: true,
                     color: '#FFFFFF',
                     format: '{point.code}'
+
                 },
                 name: 'Population density',
                 tooltip: {

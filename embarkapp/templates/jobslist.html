@@ -22,19 +22,12 @@
         </div>
 
         <div class="jobslistFeatures">
-          <div id="header1" class="jobslistItem">
-            <p id="col1" class="jobsListing"></p>
-          </div>
-          <div class="jobslistItem jobslistFeatureMiddle">
-            <i class="fa fa-4x fa-scissors" aria-hidden="true"></i>
-            <p class="jobslistText">Beauty / Wellness</p>
-            <p id="col2" class="jobsListing"></p>
-          </div>
-          <div class="jobslistItem">
-            <i class="fa fa-4x fa-graduation-cap" aria-hidden="true"></i>
-            <p class="jobslistText">Education</p>
-            <p id="col3" class="jobsListing jobslistingShort"></p>
-          </div>
+            <div id="header1" class="jobslistItem">
+            <ul id ="col1"></ul></div>
+            <div id="header2" class="jobslistItem jobslistFeatureMiddle">
+            <ul id="col2"></ul></div>
+            <div id="header3" class="jobslistItem">
+            <ul id="col3"></ul></div>
         </div>
 
         <div class="nextSteps">
@@ -49,7 +42,7 @@
         {% verbatim %}
         <script id="post-template" type="text/x-handlebars-template">
         {{#each this}}
-        <h5>JOB LISTING: {{{displayLink this}}}</h5>
+        <h5>{{this.company}}:<br> {{{displayLink this}}}</h5>
         {{/each}}
         {% endverbatim %}
         </script>
