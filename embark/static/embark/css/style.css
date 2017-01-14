@@ -2,6 +2,11 @@
   float: left;
   width: 78%; }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 .landingRight {
   float: right;
   width: 22%;

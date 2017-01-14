@@ -13,3 +13,11 @@ class Embarker(models.Model):
 
     def __str__(self):
         return self.user.username
+
+
+class Industry(models.Model):
+    title = models.CharField(max_length=50)
+    searchid = models.IntegerField(default=0)
+    searchname = models.CharField(max_length=25)
+    icon = models.CharField(max_length=25)
+    resources = models.CharField(max_length=255)

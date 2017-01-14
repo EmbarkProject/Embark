@@ -25,6 +25,7 @@ router = routers.DefaultRouter()
 router.register(r'api/PostEmbarker', views.EmbarkerViewSetPost)
 router.register(r'api/GetEmbarker', views.EmbarkerViewSetGet)
 router.register(r'api/User', views.UserView, 'list')
+router.register(r'api/Industry', views.IndustryView)
 
 urlpatterns = [
     url(r'^embark/', include('embarkapp.urls')),

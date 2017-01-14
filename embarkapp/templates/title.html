@@ -25,7 +25,6 @@
          <div id="chartContainer" style="min-width: 310px; height: 320px; max-width: 900px; margin: 0 auto"></div>
          <!-- <button class="templateButton">Dashboard</button> -->
        </div>
-
      </div>
      <!-- end of left column -->
 
@@ -43,64 +42,71 @@
             Select an industry</p>
        </div>
 
-       <div class="titleChooseList">
-         <button id="manualIndustry" class="titleButton">submit</button>
-       </div>
+<!-- THESE ARE THE RADIO BUTTONS TO PRESS IN ORDER TO SEE THE RESOURCES APPEAR -->
+<div class="titleFeatures">
 
-<!-- THESE ARE THE BUTTONS TO PRESS IN ORDER TO SEE THE RESOURCES APPEAR -->
+    <div>
+    <div id='resource1'></div>
+    <div id="titleLinkToggle1">
+      <p id='link1'></p>
+      <p id='link2'></p>
+      <p id='link3'></p>
+    </div>
+    </div>
 
-        <div class="titleFeatures">
+    <div>
+    <div id='resource2'></div>
+    <div id="titleLinkToggle2">
+      <p id='link4'></p>
+      <p id='link5'></p>
+      <p id='link6'></p>
+    </div>
+</div>
 
-          <div class="titleItem titleItem titleItemMiddle">
-            <button id="button1" value="1" name="titleIndustry">
-              <i class="fa fa-1.5x fa-film" aria-hidden="true"></i>
-            <p class="titleText">Art / Design / Entertainment</p></button>
-          </div>
+    <div>
+    <div id='resource3'></div>
+    <div id="titleLinkToggle3">
+      <p id='link7'></p>
+      <p id='link8'></p>
+      <p id='link9'></p>
+    </div>
+</div>
 
-          <div id="titleLinkToggle1">
-            <p>Link 1</p>
-            <p>Link 2</p>
-            <p>Link 3</p>
-          </div>
+</div>
 
-          <div class="titleItem titleItem titleItemMiddle">
-           <button id="button2" value="2" name="titleIndustry">
-             <i class="fa fa-1.5x fa-scissors" aria-hidden="true"></i>
-             <p class="titleText">Beauty / Wellness</p>
-           </button>
-          </div>
 
-          <div id="titleLinkToggle2">
-            <p>Link 1</p>
-            <p>Link 2</p>
-            <p>Link 3</p>
-          </div>
 
-          <div class="titleItem titleItem titleItemMiddle">
-            <button id="button3" value="3" name="titleIndustry">
-              <i class="fa fa-1.5x fa-graduation-cap" aria-hidden="true"></i>
-            <p class="titleText">Education</p></button>
-          </div>
 
-          <div id="titleLinkToggle3">
-            <p>Link 1</p>
-            <p>Link 2</p>
-            <p>Link 3</p>
-          </div>
 
-       <a href='/embark/dashboard'><button id="manualIndustry" class="titleButton">Dashboard</button></a>
-       <input id="userId" type='hidden' name='userId' value='{{ user.id }}'>
+    {% verbatim %}
+    <script id="post-template1" type="text/x-handlebars-template">
+        <div class="titleItem titleItem titleItemMiddle doshit">
+            <button id="button1" value="{{this.searchid}}" name="titleIndustry">
+            <i class="fa fa-1.5x {{this.icon}}" aria-hidden="true"></i>
+            <p class="titleText">{{this.title}}</p></button>
+        </div>
+    {% endverbatim %}
+    </script>
+    {% verbatim %}
+    <script id="post-template2" type="text/x-handlebars-template">
+        <div class="titleItem titleItem titleItemMiddle doshit">
+            <button id="button2" value="{{this.searchid}}" name="titleIndustry">
+            <i class="fa fa-1.5x {{this.icon}}" aria-hidden="true"></i>
+            <p class="titleText">{{this.title}}</p></button>
+        </div>
+    {% endverbatim %}
+    </script>
+    {% verbatim %}
+    <script id="post-template3" type="text/x-handlebars-template">
+        <div class="titleItem titleItem titleItemMiddle doshit">
+            <button id="button3" value="{{this.searchid}}" name="titleIndustry">
+            <i class="fa fa-1.5x {{this.icon}}" aria-hidden="true"></i>
+            <p class="titleText">{{this.title}}</p></button>
+        </div>
+    {% endverbatim %}
+    </script>
 
-     </div>
-
-       {% verbatim %}
-       <script id="post-template" type="text/x-handlebars-template">
-       {{#each .}}
-       <h4>Job Name: {{this.name}}</h4>
-       <h5>Overall Rating: {{this.overallRating}}</h5>
-       {{/each}}
-       {% endverbatim %}
-       </script>
+    <input id="userId" type='hidden' name='userId' value='{{ user.id }}'>
 
    <script src="https://code.highcharts.com/highcharts.js"></script>
    <script src="https://code.highcharts.com/modules/exporting.js"></script>
