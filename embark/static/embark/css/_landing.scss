@@ -52,13 +52,26 @@
 .landingSummary {
   width: 100%;
   background-color: $sky;
+  a {
+    text-decoration: none;
+    .fa-angle-double-down {
+      color: white;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+    }
+    .fa-angle-double-down:hover {
+      color: $charcoal;
+    }
+  }
   p {
     color: white;
     margin: 0 10%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 6%;
+    padding-bottom: 2%;
   }
 }
+
 
 .landingFeatures {
   margin: 6% 10%;
