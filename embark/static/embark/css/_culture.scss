@@ -60,6 +60,7 @@ label {
 
 .locationForm {
   margin: 0;
+  margin-top: 10.5%;
   text-align: center;
   form {
     .location {
@@ -76,21 +77,21 @@ label {
       cursor: pointer;
       -webkit-transition: all 0.25s linear;
     }
-    .radioBox {
-      display: inline;
-      position: relative;
-      left: -38px;
-      .noLocation {
-        margin-top: 13%;
-      }
-      .radioLabel {
-        font-family: $font;
-        font-size: 1.1em;
-        text-transform: none;
-        position: relative;
-        top: 3px;
-      }
-    }
+    // .radioBox {
+    //   display: inline;
+    //   position: relative;
+    //   left: -38px;
+    //   .noLocation {
+    //     margin-top: 13%;
+    //   }
+    //   .radioLabel {
+    //     font-family: $font;
+    //     font-size: 1.1em;
+    //     text-transform: none;
+    //     position: relative;
+    //     top: 3px;
+    //   }
+    // }
     .locationButton {
       font-size: 15px;
       font-family: $font;
@@ -100,7 +101,7 @@ label {
       background-color: #ff5a5f;
       border: none;
       margin: 0 auto;
-      margin-top: 22%;
+      margin-top: 24%;
     }
     .locationButton:hover {
       color: #ff5a5f;

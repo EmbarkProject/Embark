@@ -380,49 +380,58 @@
   width: 20%; }
   .industryFeatures .industryInstructions {
     margin-bottom: 10%; }
-  .industryFeatures .industryItem {
+  .industryFeatures .industryButton {
     width: 90%;
     padding: 3%;
     background-color: white;
     border-radius: 5px; }
-    .industryFeatures .industryItem .fa {
+    .industryFeatures .industryButton .fa {
       display: block;
       text-align: center; }
-    .industryFeatures .industryItem .industryText {
+    .industryFeatures .industryButton .industryText {
       font-size: 0.8rem;
       margin: 0;
       text-align: center; }
-  .industryFeatures .industryItem:hover {
+  .industryFeatures .industryButton:hover {
     cursor: pointer; }
-    .industryFeatures .industryItem:hover .fa {
-      color: white; }
-  .industryFeatures .industryItemCoral .fa {
-    color: #ff5A5F; }
-  .industryFeatures .industryItemCoral .industryTextCoral {
-    color: #ff5A5F; }
-  .industryFeatures .industryItemCoral:hover {
+  .industryFeatures .industryButtonCoral {
     background-color: #ff5A5F; }
-    .industryFeatures .industryItemCoral:hover .industryTextCoral {
+    .industryFeatures .industryButtonCoral .fa {
       color: white; }
-  .industryFeatures .industryItemSky {
+    .industryFeatures .industryButtonCoral .industryTextCoral {
+      color: white; }
+  .industryFeatures .industryButtonCoral:hover {
+    background-color: white; }
+    .industryFeatures .industryButtonCoral:hover .fa {
+      color: #ff5A5F; }
+    .industryFeatures .industryButtonCoral:hover .industryTextCoral {
+      color: #ff5A5F; }
+  .industryFeatures .industryButtonSky {
+    background-color: #5299D3;
     margin-top: 13%;
     margin-bottom: 13%; }
-    .industryFeatures .industryItemSky .fa {
-      color: #5299D3; }
-    .industryFeatures .industryItemSky .industryTextSky {
-      color: #5299D3; }
-  .industryFeatures .industryItemSky:hover {
-    background-color: #5299D3; }
-    .industryFeatures .industryItemSky:hover .industryTextSky {
+    .industryFeatures .industryButtonSky .fa {
       color: white; }
-  .industryFeatures .industryItemCharcoal .fa {
-    color: #2B303A; }
-  .industryFeatures .industryItemCharcoal .industryTextCharcoal {
-    color: #2B303A; }
-  .industryFeatures .industryItemCharcoal:hover {
+    .industryFeatures .industryButtonSky .industryTextSky {
+      color: white; }
+  .industryFeatures .industryButtonSky:hover {
+    background-color: white; }
+    .industryFeatures .industryButtonSky:hover .fa {
+      color: #5299D3; }
+    .industryFeatures .industryButtonSky:hover .industryTextSky {
+      color: #5299D3; }
+  .industryFeatures .industryButtonCharcoal {
     background-color: #2B303A; }
-    .industryFeatures .industryItemCharcoal:hover .industryTextCharcoal {
+    .industryFeatures .industryButtonCharcoal .fa {
       color: white; }
+    .industryFeatures .industryButtonCharcoal .industryTextCharcoal {
+      color: white; }
+  .industryFeatures .industryButtonCharcoal:hover {
+    background-color: white; }
+    .industryFeatures .industryButtonCharcoal:hover .fa {
+      color: #2B303A; }
+    .industryFeatures .industryButtonCharcoal:hover .industryTextCharcoal {
+      color: #2B303A; }
 
 .map {
   float: left;
@@ -474,12 +483,12 @@
     padding-bottom: 3%; }
 
 .jobslistFeatures {
-  margin: 5% 10%; }
+  margin: 5% 6%; }
   .jobslistFeatures .selectLocation {
     float: left;
     height: 370px;
     width: 16%;
-    margin-right: 7%; }
+    margin-right: 5%; }
     .jobslistFeatures .selectLocation .locationButton {
       height: 13%;
       margin-top: 15%;
@@ -496,17 +505,18 @@
       .jobslistFeatures .selectLocation .locationButton:hover .locationText {
         color: #ff5A5F; }
     .jobslistFeatures .selectLocation .locationButtonTop {
-      margin-top: 65%; }
+      margin-top: 70%; }
   .jobslistFeatures .jobslistItem {
     float: left;
-    height: 370px;
-    width: 15%;
+    height: 450px;
+    width: 17%;
     padding: 1%;
     padding-left: 3%;
     padding-right: 3%;
     background-color: #f7f7f7;
     border-bottom: 20px solid #ff5A5F;
-    border-radius: 5px; }
+    border-radius: 5px;
+    overflow-y: scroll; }
     .jobslistFeatures .jobslistItem ul {
       padding: 0; }
     .jobslistFeatures .jobslistItem .fa {
@@ -529,11 +539,11 @@
       position: relative;
       top: 35px; }
   .jobslistFeatures .jobslistFeatureMiddle {
-    margin-right: 7%;
-    margin-left: 7%; }
+    margin-right: 5%;
+    margin-left: 5%; }
 
 .nextStepsJobslist {
-  margin-top: 41%; }
+  margin-top: 47.5%; }
 
 .dashboardBody {
   background-color: #2B303A; }
@@ -689,11 +699,11 @@
     height: 250px;
     padding-top: 4%; }
     .overviewInterface .overviewInterfaceText .overviewTopLists .overviewListItem {
-      width: 350px;
-      height: 230px;
+      width: 330px;
+      height: 290px;
       background-color: #2B303A;
       border-radius: 5px;
-      margin: 4px 20px;
+      margin: 4px 30px;
       border-bottom: 20px solid #ff5A5F; }
       .overviewInterface .overviewInterfaceText .overviewTopLists .overviewListItem .overviewListItemTitle {
         font-size: 1.5rem;
@@ -708,7 +718,7 @@
   .overviewInterface .overviewInterfaceText .reviewButtonSection {
     display: block;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 9%;
     padding-bottom: 3%; }
     .overviewInterface .overviewInterfaceText .reviewButtonSection p {
       text-align: center;
@@ -861,6 +871,7 @@ label {
 
 .locationForm {
   margin: 0;
+  margin-top: 10.5%;
   text-align: center; }
   .locationForm form .location {
     margin-top: 8%;
@@ -874,18 +885,6 @@ label {
     margin: 10px 10px;
     cursor: pointer;
     -webkit-transition: all 0.25s linear; }
-  .locationForm form .radioBox {
-    display: inline;
-    position: relative;
-    left: -38px; }
-    .locationForm form .radioBox .noLocation {
-      margin-top: 13%; }
-    .locationForm form .radioBox .radioLabel {
-      font-family: "Montserrat", sans-serif;
-      font-size: 1.1em;
-      text-transform: none;
-      position: relative;
-      top: 3px; }
   .locationForm form .locationButton {
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
@@ -895,7 +894,7 @@ label {
     background-color: #ff5a5f;
     border: none;
     margin: 0 auto;
-    margin-top: 22%; }
+    margin-top: 24%; }
   .locationForm form .locationButton:hover {
     color: #ff5a5f;
     background-color: white; }

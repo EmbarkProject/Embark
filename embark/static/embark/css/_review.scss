@@ -32,11 +32,11 @@
     height: 250px;
     padding-top: 4%;
     .overviewListItem {
-      width: 350px;
-      height: 230px;
+      width: 330px;
+      height: 290px;
       background-color: $charcoal;
       border-radius: 5px;
-      margin: 4px 20px;
+      margin: 4px 30px;
       border-bottom: 20px solid $coral;
       .overviewListItemTitle {
       font-size: 1.5rem;
@@ -56,7 +56,7 @@
     .reviewButtonSection {
       display: block;
       text-align: center;
-      margin-top: 5%;
+      margin-top: 9%;
       padding-bottom: 3%;
       p {
         text-align: center;
