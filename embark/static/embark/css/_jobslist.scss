@@ -24,10 +24,46 @@
 
 .jobslistFeatures {
   margin: 5% 10%;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // align-items: center;
+  .selectLocation {
+    float: left;
+    height: 370px;
+    width: 16%;
+    // padding: 1%;
+    margin-right: 7%;
+    // margin-top: 20%;
+    // background-color: $sky;
+    .locationButton {
+      height: 13%;
+      margin-top: 15%;
+      margin-bottom: 15%;
+      border-radius: 5px;
+      background-color: $coral;
+      .locationText {
+        color: white;
+        text-align: center;
+        padding-top: 6%;
+      }
+    }
+    .locationButton:hover {
+      background-color: white;
+      cursor: pointer;
+      .locationText {
+        color: $coral;
+      }
+    }
+    .locationButtonTop {
+      margin-top: 65%;
+    }
+  }
   .jobslistItem {
     float: left;
     height: 370px;
-    width: 20%;
+    width: 15%;
     padding: 1%;
     padding-left: 3%;
     padding-right: 3%;
@@ -62,14 +98,14 @@
     }
   }
   .jobslistFeatureMiddle {
-    margin-right: 11%;
-    margin-left: 11%;
+    margin-right: 7%;
+    margin-left: 7%;
   }
 }
 
-// .nextStepsJobslist {
-//     width: 70%;
-// }
+.nextStepsJobslist {
+    margin-top: 41%;
+}
 
 // .nextSteps {
 //   clear: both;

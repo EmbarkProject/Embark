@@ -223,7 +223,7 @@ $blue: #5299D3;
     }
   }
 
-  .quizButton {
+  .manualIndustryButton {
     font-size: 15px;
     font-family: $font;
     color: #ffffff;
@@ -233,11 +233,14 @@ $blue: #5299D3;
     border: none;
     display: block;
     margin: 0 auto;
-    margin-top: 20%;
+    margin-top: 28%;
   }
-  .quizButton:hover {
+  .manualIndustryButton:hover {
     background-color: #ffffff;
     color: #ff5a5f;
     box-sizing: border-box;
   }
+  // .manualIndustryButton {
+  //   margin-top:
+  // }
 }

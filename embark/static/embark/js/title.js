@@ -20,9 +20,9 @@ function filter_headers1(){
             var html = template(results);
             console.log(resourceList[1])
             $('#resource1').prepend(html)
-            $('#link1').after('<a href="' + resourceList[0] + '"><p>' + resourceList[1] + '</p></a>')
-            $('#link2').html('<a href="' + resourceList[2] + '"><p>' + resourceList[3] + '</p></a>')
-            $('#link3').html('<a href="' + resourceList[4] + '"><p>' + resourceList[5] + '</p></a>')
+            $('#link1').after('<a href="' + resourceList[0] + '"target="_blank"><p>' + resourceList[1] + '</p></a>')
+            $('#link2').html('<a href="' + resourceList[2] + '"target="_blank"><p>' + resourceList[3] + '</p></a>')
+            $('#link3').html('<a href="' + resourceList[4] + '"target="_blank"><p>' + resourceList[5] + '</p></a>')
             $("#button1").click(function(){$("#titleLinkToggle1").slideToggle("slow")});
         })
     })
@@ -51,9 +51,9 @@ function filter_headers2(){
             var html = template(results);
             console.log(resourceList[1])
             $('#resource1').prepend(html)
-            $('#link4').html('<a href="' + resourceList[0] + '"><p>' + resourceList[1] + '</p></a>')
-            $('#link5').html('<a href="' + resourceList[2] + '"><p>' + resourceList[3] + '</p></a>')
-            $('#link6').html('<a href="' + resourceList[4] + '"><p>' + resourceList[5] + '</p></a>')
+            $('#link4').html('<a href="' + resourceList[0] + '"target="_blank"><p>' + resourceList[1] + '</p></a>')
+            $('#link5').html('<a href="' + resourceList[2] + '"target="_blank"><p>' + resourceList[3] + '</p></a>')
+            $('#link6').html('<a href="' + resourceList[4] + '"target="_blank"><p>' + resourceList[5] + '</p></a>')
             $("#button2").click(function(){$("#titleLinkToggle2").slideToggle("slow")});
         })
     })
@@ -82,9 +82,9 @@ function filter_headers3(){
             var html = template(results);
             console.log(resourceList[1])
             $('#resource1').prepend(html)
-            $('#link7').prepend('<a href="' + resourceList[0] + '"><p>' + resourceList[1] + '</p></a>')
-            $('#link8').prepend('<a href="' + resourceList[2] + '"><p>' + resourceList[3] + '</p></a>')
-            $('#link9').prepend('<a href="' + resourceList[4] + '"><p>' + resourceList[5] + '</p></a>')
+            $('#link7').prepend('<a href="' + resourceList[0] + '"target="_blank"><p>' + resourceList[1] + '</p></a>')
+            $('#link8').prepend('<a href="' + resourceList[2] + '"target="_blank"><p>' + resourceList[3] + '</p></a>')
+            $('#link9').prepend('<a href="' + resourceList[4] + '"target="_blank"><p>' + resourceList[5] + '</p></a>')
             $("#button3").click(function(){$("#titleLinkToggle3").slideToggle("slow")});
         })
     })
@@ -115,11 +115,16 @@ $(function () {
                     plotBorderWidth: 0,
                     plotShadow: false
                 },
+                exporting: { enabled: false },
                 title: {
-                    text: '',
+                    text: jobTitle.toUpperCase().bold(),
                     align: 'center',
-                    verticalAlign: 'middle',
-                    y: 40
+                    verticalAlign: 'top',
+                    y: 300,
+                    style: {
+                        color: '#2B303A',
+                        fontSize:'25px'
+                    }
                 },
                 tooltip: {
                     pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -132,7 +137,7 @@ $(function () {
                             distance: 0,
                             style: {
                                 fontWeight: 'bold',
-                                color: '$charcoal',
+                                color: '#2B303A',
                                 fontFamily: '$font',
                                 fontSize: 15
                             }
@@ -144,14 +149,14 @@ $(function () {
                 },
                 series: [{
                     type: 'pie',
-                    name: 'Browser share',
+                    name: 'Distribution',
                     innerSize: '50%',
                     data: [
-                        [jobs[0].nextJobTitle, jobs[0].frequencyPercent],
-                        [jobs[1].nextJobTitle, jobs[1].frequencyPercent],
-                        [jobs[2].nextJobTitle, jobs[2].frequencyPercent],
-                        [jobs[3].nextJobTitle, jobs[3].frequencyPercent],
-                        [jobs[4].nextJobTitle, jobs[4].frequencyPercent],
+                        [jobs[0].nextJobTitle.toUpperCase(), jobs[0].frequencyPercent],
+                        [jobs[1].nextJobTitle.toUpperCase(), jobs[1].frequencyPercent],
+                        [jobs[2].nextJobTitle.toUpperCase(), jobs[2].frequencyPercent],
+                        [jobs[3].nextJobTitle.toUpperCase(), jobs[3].frequencyPercent],
+                        [jobs[4].nextJobTitle.toUpperCase(), jobs[4].frequencyPercent],
                         {
                             name: 'Proprietary or Undetectable',
                             y: 0.2,

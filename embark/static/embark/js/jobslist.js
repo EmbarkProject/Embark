@@ -231,7 +231,7 @@ filter_jobs3()
 Handlebars.registerHelper('displayLink', function(title, url) {
     newtitle = this.jobtitle
     url = this.url
-    return '<a href=' + url + '>' + newtitle + '</a>';
+    return '<a href=' + url + ' target="_blank"' + '>' + newtitle + '</a>';
 })
 
 var industry = {
