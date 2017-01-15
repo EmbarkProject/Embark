@@ -380,49 +380,58 @@
   width: 20%; }
   .industryFeatures .industryInstructions {
     margin-bottom: 10%; }
-  .industryFeatures .industryItem {
+  .industryFeatures .industryButton {
     width: 90%;
     padding: 3%;
     background-color: white;
     border-radius: 5px; }
-    .industryFeatures .industryItem .fa {
+    .industryFeatures .industryButton .fa {
       display: block;
       text-align: center; }
-    .industryFeatures .industryItem .industryText {
+    .industryFeatures .industryButton .industryText {
       font-size: 0.8rem;
       margin: 0;
       text-align: center; }
-  .industryFeatures .industryItem:hover {
+  .industryFeatures .industryButton:hover {
     cursor: pointer; }
-    .industryFeatures .industryItem:hover .fa {
-      color: white; }
-  .industryFeatures .industryItemCoral .fa {
-    color: #ff5A5F; }
-  .industryFeatures .industryItemCoral .industryTextCoral {
-    color: #ff5A5F; }
-  .industryFeatures .industryItemCoral:hover {
+  .industryFeatures .industryButtonCoral {
     background-color: #ff5A5F; }
-    .industryFeatures .industryItemCoral:hover .industryTextCoral {
+    .industryFeatures .industryButtonCoral .fa {
       color: white; }
-  .industryFeatures .industryItemSky {
+    .industryFeatures .industryButtonCoral .industryTextCoral {
+      color: white; }
+  .industryFeatures .industryButtonCoral:hover {
+    background-color: white; }
+    .industryFeatures .industryButtonCoral:hover .fa {
+      color: #ff5A5F; }
+    .industryFeatures .industryButtonCoral:hover .industryTextCoral {
+      color: #ff5A5F; }
+  .industryFeatures .industryButtonSky {
+    background-color: #5299D3;
     margin-top: 13%;
     margin-bottom: 13%; }
-    .industryFeatures .industryItemSky .fa {
-      color: #5299D3; }
-    .industryFeatures .industryItemSky .industryTextSky {
-      color: #5299D3; }
-  .industryFeatures .industryItemSky:hover {
-    background-color: #5299D3; }
-    .industryFeatures .industryItemSky:hover .industryTextSky {
+    .industryFeatures .industryButtonSky .fa {
       color: white; }
-  .industryFeatures .industryItemCharcoal .fa {
-    color: #2B303A; }
-  .industryFeatures .industryItemCharcoal .industryTextCharcoal {
-    color: #2B303A; }
-  .industryFeatures .industryItemCharcoal:hover {
+    .industryFeatures .industryButtonSky .industryTextSky {
+      color: white; }
+  .industryFeatures .industryButtonSky:hover {
+    background-color: white; }
+    .industryFeatures .industryButtonSky:hover .fa {
+      color: #5299D3; }
+    .industryFeatures .industryButtonSky:hover .industryTextSky {
+      color: #5299D3; }
+  .industryFeatures .industryButtonCharcoal {
     background-color: #2B303A; }
-    .industryFeatures .industryItemCharcoal:hover .industryTextCharcoal {
+    .industryFeatures .industryButtonCharcoal .fa {
       color: white; }
+    .industryFeatures .industryButtonCharcoal .industryTextCharcoal {
+      color: white; }
+  .industryFeatures .industryButtonCharcoal:hover {
+    background-color: white; }
+    .industryFeatures .industryButtonCharcoal:hover .fa {
+      color: #2B303A; }
+    .industryFeatures .industryButtonCharcoal:hover .industryTextCharcoal {
+      color: #2B303A; }
 
 .map {
   float: left;

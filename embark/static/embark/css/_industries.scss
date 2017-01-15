@@ -31,7 +31,7 @@
   .industryInstructions {
     margin-bottom: 10%;
   }
-  .industryItem {
+  .industryButton {
     width: 90%;
     padding: 3%;
     background-color: white;
@@ -46,16 +46,26 @@
       text-align: center;
     }
   }
-  .industryItem:hover {
+  .industryButton:hover {
     cursor: pointer;
-    .fa {
-      color: white;
-    }
+    // .fa {
+    //   color: white;
+    // }
     // .industriesText {
     //   color: white;
     // }
   }
-  .industryItemCoral {
+  .industryButtonCoral {
+    background-color: $coral;
+    .fa {
+      color: white;
+    }
+    .industryTextCoral {
+      color: white;
+    }
+  }
+  .industryButtonCoral:hover {
+    background-color: white;
     .fa {
       color: $coral;
     }
@@ -63,42 +73,44 @@
       color: $coral;
     }
   }
-  .industryItemCoral:hover {
-    background-color: $coral;
-    .industryTextCoral {
-      color: white;
-    }
-  }
 
-  .industryItemSky {
+  .industryButtonSky {
+    background-color: $sky;
     margin-top: 13%;
     margin-bottom: 13%;
     .fa {
-      color: $sky;
+      color: white;
     }
-    .industryTextSky {
-      color: $sky;
-    }
-  }
-  .industryItemSky:hover {
-    background-color: $sky;
     .industryTextSky {
       color: white;
     }
   }
+  .industryButtonSky:hover {
+    background-color: white;
+    .fa {
+      color: $sky;
+    }
+    .industryTextSky {
+      color: $sky;
+    }
+  }
 
-  .industryItemCharcoal {
+  .industryButtonCharcoal {
+    background-color: $charcoal;
+    .fa {
+      color: white;
+    }
+    .industryTextCharcoal {
+      color: white;
+    }
+  }
+  .industryButtonCharcoal:hover {
+    background-color: white;
     .fa {
       color: $charcoal;
     }
     .industryTextCharcoal {
       color: $charcoal;
-    }
-  }
-  .industryItemCharcoal:hover {
-    background-color: $charcoal;
-    .industryTextCharcoal {
-      color: white;
     }
   }
 
