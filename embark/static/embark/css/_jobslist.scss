@@ -24,11 +24,6 @@
 
 .jobslistFeatures {
   margin: 5% 10%;
-  // display: flex;
-  // flex-direction: row;
-  // flex-wrap: wrap;
-  // justify-content: center;
-  // align-items: center;
   .jobslistItem {
     float: left;
     height: 370px;
@@ -39,6 +34,9 @@
     background-color: #f7f7f7;
     border-bottom: 20px solid $coral;
     border-radius: 5px;
+    ul {
+      padding: 0;
+    }
     .fa {
       display: block;
       text-align: center;
