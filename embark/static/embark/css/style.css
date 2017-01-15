@@ -473,12 +473,12 @@
     padding-bottom: 3%; }
 
 .jobslistFeatures {
-  margin: 5% 10%; }
+  margin: 5% 6%; }
   .jobslistFeatures .selectLocation {
     float: left;
     height: 370px;
     width: 16%;
-    margin-right: 7%; }
+    margin-right: 5%; }
     .jobslistFeatures .selectLocation .locationButton {
       height: 13%;
       margin-top: 15%;
@@ -495,17 +495,18 @@
       .jobslistFeatures .selectLocation .locationButton:hover .locationText {
         color: #ff5A5F; }
     .jobslistFeatures .selectLocation .locationButtonTop {
-      margin-top: 65%; }
+      margin-top: 70%; }
   .jobslistFeatures .jobslistItem {
     float: left;
-    height: 370px;
-    width: 15%;
+    height: 450px;
+    width: 17%;
     padding: 1%;
     padding-left: 3%;
     padding-right: 3%;
     background-color: #f7f7f7;
     border-bottom: 20px solid #ff5A5F;
-    border-radius: 5px; }
+    border-radius: 5px;
+    overflow-y: scroll; }
     .jobslistFeatures .jobslistItem .fa {
       display: block;
       text-align: center;
@@ -526,11 +527,11 @@
       position: relative;
       top: 35px; }
   .jobslistFeatures .jobslistFeatureMiddle {
-    margin-right: 7%;
-    margin-left: 7%; }
+    margin-right: 5%;
+    margin-left: 5%; }
 
 .nextStepsJobslist {
-  margin-top: 41%; }
+  margin-top: 47.5%; }
 
 .dashboardBody {
   background-color: #2B303A; }
@@ -596,7 +597,6 @@
   padding-right: 5%; }
 
 .overviewBody {
-  background-image: url("../images/overviewHero3.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -621,11 +621,11 @@
     height: 250px;
     padding-top: 4%; }
     .overviewInterface .overviewInterfaceText .overviewTopLists .overviewListItem {
-      width: 350px;
-      height: 230px;
+      width: 330px;
+      height: 290px;
       background-color: #2B303A;
       border-radius: 5px;
-      margin: 4px 20px;
+      margin: 4px 30px;
       border-bottom: 20px solid #ff5A5F; }
       .overviewInterface .overviewInterfaceText .overviewTopLists .overviewListItem .overviewListItemTitle {
         font-size: 1.5rem;
@@ -640,7 +640,7 @@
   .overviewInterface .overviewInterfaceText .reviewButtonSection {
     display: block;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 9%;
     padding-bottom: 3%; }
     .overviewInterface .overviewInterfaceText .reviewButtonSection p {
       text-align: center;
@@ -793,6 +793,7 @@ label {
 
 .locationForm {
   margin: 0;
+  margin-top: 10.5%;
   text-align: center; }
   .locationForm form .location {
     margin-top: 8%;
@@ -806,18 +807,6 @@ label {
     margin: 10px 10px;
     cursor: pointer;
     -webkit-transition: all 0.25s linear; }
-  .locationForm form .radioBox {
-    display: inline;
-    position: relative;
-    left: -38px; }
-    .locationForm form .radioBox .noLocation {
-      margin-top: 13%; }
-    .locationForm form .radioBox .radioLabel {
-      font-family: "Montserrat", sans-serif;
-      font-size: 1.1em;
-      text-transform: none;
-      position: relative;
-      top: 3px; }
   .locationForm form .locationButton {
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
@@ -827,7 +816,7 @@ label {
     background-color: #ff5a5f;
     border: none;
     margin: 0 auto;
-    margin-top: 22%; }
+    margin-top: 24%; }
   .locationForm form .locationButton:hover {
     color: #ff5a5f;
     background-color: white; }
