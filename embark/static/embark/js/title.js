@@ -115,11 +115,16 @@ $(function () {
                     plotBorderWidth: 0,
                     plotShadow: false
                 },
+                exporting: { enabled: false },
                 title: {
                     text: jobTitle.toUpperCase().bold(),
                     align: 'center',
                     verticalAlign: 'top',
-                    y: 30
+                    y: 300,
+                    style: {
+                        color: '#2B303A',
+                        fontSize:'25px'
+                    }
                 },
                 tooltip: {
                     pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -132,7 +137,7 @@ $(function () {
                             distance: 0,
                             style: {
                                 fontWeight: 'bold',
-                                color: '$charcoal',
+                                color: '#2B303A',
                                 fontFamily: '$font',
                                 fontSize: 15
                             }
