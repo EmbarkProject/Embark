@@ -1,3 +1,14 @@
+locationPrefs = []
+function get_locations(){
+    var id = document.getElementById('userId').value
+    $.ajax({
+        url: '/api/GetEmbarker/' + id + '/',
+        type: 'GET',
+        datatype: 'json',
+    }).done(function(results){
+    console.log(results)
+})}
+
 function filter_headers1(e){
     var id = document.getElementById('userId').value
     $.ajax({
@@ -7,7 +18,6 @@ function filter_headers1(e){
     }).done(function(results){
         var industryList = results.industryPrefs.split(',');
         var jobid = industryList[0]
-        console.log(results)
         $.ajax({
             url: '/api/Industry/' + jobid + '/',
             type: 'GET',
@@ -28,7 +38,6 @@ function filter_headers2(){
     }).done(function(results){
         var industryList = results.industryPrefs.split(',');
         var jobid = industryList[1]
-        console.log(results)
         $.ajax({
             url: '/api/Industry/' + jobid + '/',
             type: 'GET',
@@ -49,7 +58,6 @@ function filter_headers3(){
     }).done(function(results){
         var industryList = results.industryPrefs.split(',');
         var jobid = industryList[2]
-        console.log(results)
         $.ajax({
             url: '/api/Industry/' + jobid + '/',
             type: 'GET',
@@ -61,14 +69,14 @@ function filter_headers3(){
             $('#col3').append(html);
         })})}
 
-function filter_jobs1(){
+function filter_jobs1(city, state){
+    console.log(city, state)
     var id = document.getElementById('userId').value
     $.ajax({
         url: '/api/GetEmbarker/' + id + '/',
         type: 'GET',
         datatype: 'json',
     }).done(function(results){
-        console.log(results)
     var embarker = results
     var industryList = results.industryPrefs.split(',');
     var job = industry[industryList[0]]
@@ -79,7 +87,6 @@ function filter_jobs1(){
     type: 'GET',
     dataType: 'jsonp',
     }).done(function(results){
-        console.log(results)
         var cultureList = embarker.culturePrefs.split(',');
         for (var j = 0; j < results.response.employers.length; j++){
             var ratingParse = results.response.employers[j]
@@ -106,11 +113,10 @@ function filter_jobs1(){
                         type: 'GET',
                         dataType: 'jsonp',
                     }).done(function(results){
-                        console.log(results)
                         var source = $('#post-template').html();
                         var template = Handlebars.compile(source);
                         var html = template(results.results);
-                        $('#col1').after(html)
+                        $('#col1').append(html)
                     })
                 }
         }
@@ -162,7 +168,7 @@ function filter_jobs2(){
                         var source = $('#post-template').html();
                         var template = Handlebars.compile(source);
                         var html = template(results.results);
-                        $('#col2').after(html)
+                        $('#col2').append(html)
                     })
                 }
         }
@@ -221,10 +227,32 @@ function filter_jobs3(){
     })
 })
 }
+
+$("#location1").click(function() {
+    console.log('location1')
+})
+
+$("#location2").click(function() {
+    console.log('location2')
+})
+
+$("#location3").click(function() {
+    console.log('location3')
+    $("#col1").html("");
+    $("#col2").html("");
+    $("#col3").html("");
+    filter_headers1()
+    filter_headers2()
+    filter_headers3()
+    filter_jobs1(5,6)
+    filter_jobs2()
+    filter_jobs3()
+})
+
 filter_headers1()
 filter_headers2()
 filter_headers3()
-filter_jobs1()
+filter_jobs1(0,1)
 filter_jobs2()
 filter_jobs3()
 
