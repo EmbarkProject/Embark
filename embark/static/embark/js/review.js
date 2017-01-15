@@ -1,10 +1,12 @@
 function industries(){
     id = document.getElementById('userId').value
     var url = '/api/GetEmbarker/' + id + '/'
+    console.log(url)
     $.ajax({
         url: url,
         type: 'GET',
     }).done(function(results){
+        console.log(results)
         var industryList = results.industryPrefs.split(',');
         $('#industry1').html(industry[industryList[0]]) + $('#industry2').html(industry[industryList[1]]) + $('#industry3').html(industry[industryList[2]])
         var cultureList = results.culturePrefs.split(',');
