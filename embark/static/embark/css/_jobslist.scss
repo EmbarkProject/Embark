@@ -22,6 +22,8 @@
   }
 }
 
+
+
 .jobslistFeatures {
   margin: 5% 10%;
   // display: flex;
@@ -70,6 +72,9 @@
     background-color: #f7f7f7;
     border-bottom: 20px solid $coral;
     border-radius: 5px;
+    ul{
+        padding-left:0;
+    }
     .fa {
       display: block;
       text-align: center;
