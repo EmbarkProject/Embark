@@ -18,6 +18,7 @@ from django.contrib import admin
 from rest_framework import routers
 from embarkapp import views
 from django.views.generic import TemplateView
+from django.views.generic import RedirectView
 from django.contrib.auth import views as auth_views
 
 
@@ -32,7 +33,7 @@ urlpatterns = [
     url(r'^logout/$', auth_views.logout, {'next_page': '/embark/main'}, name='logout'),
     # url(r'^login/$', views.view_main, name=)
     url('^', include('django.contrib.auth.urls')),
-    url(r'^', include('embarkapp.urls'), {'next_page': '/embark/main'}),
+    url(r'^', RedirectView.as_view(url='/embark/main')),
     url(r'^api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^admin/', admin.site.urls),
