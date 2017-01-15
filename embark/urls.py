@@ -18,21 +18,23 @@ from django.contrib import admin
 from rest_framework import routers
 from embarkapp import views
 from django.views.generic import TemplateView
+from django.views.generic import RedirectView
 from django.contrib.auth import views as auth_views
 
 
 router = routers.DefaultRouter()
-router.register(r'api/PostEmbarker', views.EmbarkerViewSetPost)
-router.register(r'api/GetEmbarker', views.EmbarkerViewSetGet)
-router.register(r'api/User', views.UserView, 'list')
-router.register(r'api/Industry', views.IndustryView)
+router.register(r'PostEmbarker', views.EmbarkerViewSetPost)
+router.register(r'GetEmbarker', views.EmbarkerViewSetGet)
+router.register(r'User', views.UserView, 'list')
+router.register(r'Industry', views.IndustryView)
 
 urlpatterns = [
     url(r'^embark/', include('embarkapp.urls')),
     url(r'^logout/$', auth_views.logout, {'next_page': '/embark/main'}, name='logout'),
     # url(r'^login/$', views.view_main, name=)
     url('^', include('django.contrib.auth.urls')),
-    url(r'^', include(router.urls)),
+    url(r'^', RedirectView.as_view(url='/embark/main')),
+    url(r'^api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^admin/', admin.site.urls),
 ]
