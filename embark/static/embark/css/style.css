@@ -974,7 +974,7 @@ label {
   background-color: #ff5a5f;
   border: none;
   position: absolute;
-  bottom: 1%;
+  bottom: 0.25%;
   right: 8.5%; }
 
 .titleButton:hover {
