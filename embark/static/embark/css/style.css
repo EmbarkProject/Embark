@@ -5,7 +5,7 @@
 .landingRight {
   float: right;
   width: 22%;
-  height: 1125px;
+  height: 1195px;
   background-color: #2b303a; }
 
 .landingHero {
@@ -336,7 +336,7 @@
   .quizRight .quizChooseList select option {
     font-family: "Montserrat", sans-serif;
     font-size: 12px; }
-  .quizRight .quizButton {
+  .quizRight .manualIndustryButton {
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
     color: #ffffff;
@@ -346,8 +346,8 @@
     border: none;
     display: block;
     margin: 0 auto;
-    margin-top: 20%; }
-  .quizRight .quizButton:hover {
+    margin-top: 28%; }
+  .quizRight .manualIndustryButton:hover {
     background-color: #ffffff;
     color: #ff5a5f;
     box-sizing: border-box; }
@@ -596,6 +596,7 @@
   padding-right: 5%; }
 
 .overviewBody {
+  background-image: url("../images/overviewHero3.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover; }
