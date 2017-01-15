@@ -21,23 +21,17 @@
             </div>
         </div>
 
-        <div class="industryFeatures">
-          <div class="industryInstructions">
-            <p>Select an industry to see the distribution of available jobs</p>
+          <div class="industryFeatures">
+            <div class="industryInstructions">
+              <p>Select an industry to see the distribution of available jobs</p>
+            </div>
+            <div id="industry1" class="industryItem industryItemCoral">
+            </div>
+            <div id="industry2" class="industryItem industryItemSky">
+            </div>
+            <div id="industry3" class="industryItem industryItemCharcoal">
+            </div>
           </div>
-          <div class="industryItem industryItemCoral">
-            <i class="fa fa-2x fa-film iconCoral" aria-hidden="true"></i>
-            <p class="industryText industryTextCoral">Art / Design / Entertainment</p>
-          </div>
-          <div class="industryItem industryItemSky">
-            <i class="fa fa-2x fa-scissors iconSky" aria-hidden="true"></i>
-            <p class="industryText industryTextSky">Beauty / Wellness</p>
-          </div>
-          <div class="industryItem industryItemCharcoal">
-            <i class="fa fa-2x fa-graduation-cap iconCharcoal" aria-hidden="true"></i>
-            <p class="industryText industryTextCharcoal">Education</p>
-          </div>
-        </div>
 
         <!-- industry1 heat map -->
         <div class="map" id="container1" style="height: 650px; min-width: 310px; max-width: 750px; margin: 0 auto"></div>
@@ -53,6 +47,27 @@
           <a href='/embark/culture'><button class="nextButton">next</button></a>
         </div>
 
+        <input id="userId" type='hidden' name='userId' value='{{ user.id }}'>
+
+
+        {% verbatim %}
+        <script id="post-template1" type="text/x-handlebars-template">
+              <i class="fa fa-2x {{this.icon}} iconCoral" aria-hidden="true"></i>
+              <p class="industryText industryTextCoral">{{this.title}}</p>
+        </script>
+        {% endverbatim %}
+        {% verbatim %}
+        <script id="post-template2" type="text/x-handlebars-template">
+            <i class="fa fa-2x {{this.icon}} iconSky" aria-hidden="true"></i>
+            <p class="industryText industryTextSky">{{this.title}}</p>
+        </script>
+        {% endverbatim %}
+        {% verbatim %}
+        <script id="post-template3" type="text/x-handlebars-template">
+            <i class="fa fa-2x {{this.icon}} iconCharcoal" aria-hidden="true"></i>
+            <p class="industryText industryTextCharcoal">{{this.title}}</p>
+        </script>
+        {% endverbatim %}
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
