@@ -18,26 +18,62 @@
                 <h1>{{user.first_name}}'S DASHBOARD</h1>
                 <hr>
               </div>
+
+          <div class="dashboardFullButtonWrapper">
+            <h2>Navigate</h2>
+            <div class="dashboardButtonContainer">
+                <a href="/embark/quiz"><button class="dashboardButton">Retake quiz or change industry preferences</button></a>
+                <a href="/embark/culture"><button class="dashboardButton">Change culture preferences</button></a>
+                <a href="/embark/dashboarddashboardJobslist"><button class="dashboardButton">See job listings</button></a>
+                <a href="/embark/title"><button class="dashboardButton">See industry resources</button></a>
+                <a href="/embark/review"><button class="dashboardButton">Review current preferences</button>
+                <a href="/logout"><button class="dashboardButton">Log out </button></a>
+            </div>
+          </div>
+
             <div class= "leftColumn">
-              <div class="dashboardFullButtonWrapper">
-                <h2>Navigate</h2>
-                <div class="dashboardButtonContainer">
-                    <a href="/embark/quiz"><button class="dashboardButton">Retake quiz or change industry preferences</button></a>
-                    <a href="/embark/culture"><button class="dashboardButton">Change culture preferences</button></a>
-                    <a href="/embark/jobslist"><button class="dashboardButton">See job listings</button></a>
-                    <a href="/embark/title"><button class="dashboardButton">See industry resources</button></a>
-                    <a href="/embark/review"><button class="dashboardButton">Review current preferences</button>
-                    <a href="/logout"><button class="dashboardButton">Log out </button></a>
-                </div>
-              </div>
               <div class="dashboardJobListingWrapper">
                 <h2>Job Listings</h2>
+              <div class="dashboardJobslistFeatures">
+                  <div id="header1" class="dashboardJobslistItem">
+                  <ul id ="col1"></ul></div>
+                  <div id="header2" class="dashboardJobslistItem dashboardJobslistFeatureMiddle">
+                  <ul id="col2"></ul></div>
+                  <div id="header3" class="dashboardJobslistItem">
+                  <ul id="col3"></ul></div>
               </div>
             </div>
+          </div>
 
             <div class="rightColumn">
               <div class="dashboardFullPreferencesWrapper">
                 <h2>Current Preferences</h2>
+                <div class="dashboardOverviewInterface">
+                  <div class="dashboardOverviewInterfaceText">
+                    <div class="dashboardOverviewTopLists">
+                      <div class="dashboardOverviewListItem dashboardOverviewIndustryList">
+                        <p class="dashboardOverviewListItemTitle">INDUSTRY</p>
+                        <p id='industry1'></p>
+                        <p id='industry2'></p>
+                        <p id='industry3'></p>
+                      </div>
+                      <div class="dashboardOverviewListItem dashboardOverviewCultureList">
+                        <p class="dashboardOverviewListItemTitle">CULTURE</p>
+                        <p id='culture1'></p>
+                        <p id='culture2'></p>
+                        <p id='culture3'></p>
+                        <p id='culture4'></p>
+                        <p id='culture5'></p>
+                      </div>
+                      <div class="dashboardOverviewListItem dashboardOverviewLocationList">
+                        <p class="dashboardOverviewListItemTitle">LOCATION</p>
+                        <p id='location1'></p>
+                        <p id='location2'></p>
+                        <p id='location3'></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="dashboardGraphWrapper">
                 <h2>Next Career Graph</h2>

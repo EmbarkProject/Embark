@@ -9,7 +9,6 @@
   padding: 2% 2%;
 }
 
-
 .dashboardHeadingText {
   padding-bottom: 2%;
   h1 {
@@ -20,13 +19,18 @@
   }
   hr {
     border: 5px solid $coral;
-    width: 56%;
+    width: 79%;
   }
 }
+
 .dashboardFullButtonWrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
   h2 {
     color: white;
-    text-align: center;
+    margin: 1.5% 0;
+    text-align: left;
   }
   .dashboardButtonContainer {
     display: flex;
@@ -34,15 +38,19 @@
     align-content: space-around;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: .5%;
+    padding-bottom: 5%;
   .dashboardButton {
-    width: 170px;
-    height: 60px;
-    font-size: 15px;
+    width: 150px;
+    height: 65px;
+    font-size: 13px;
     font-weight: bold;
     color: #ffffff;
+    text-transform: uppercase;
     border-radius: 5px;
     background-color: $sky;
     border: none;
+    line-height: 1.6;
     margin-bottom: 3%;
   }
   .dashboardButton:hover {
@@ -52,36 +60,102 @@
     }
   }
 }
-
-.dashboardFullPreferencesWrapper {
-  h2 {
-    color: white;
-    text-align: center;
-  }
-}
-
-.dashboardJobListingWrapper {
-  h2 {
-    color: white;
-    text-align: center;
-  }
-}
-
-.dashboardGraphWrapper {
-  h2 {
-    color: white;
-    text-align: center;
-  }
-}
-
 .leftColumn {
   float: left;
-  width: 30%;
-  padding-left: 5%;
-}
+  width: 40%;
+  padding-left: 10%;
+    .dashboardJobListingWrapper {
+      h2 {
+        color: white;
+        text-align: left;
+      }
+    .dashboardJobslistFeatures {
+      display: flex;
+      flex-direction: row;
+      align-content: left;
+      justify-content: left;
+      height: 60px;
+      .dashboardJobslistItem {
+        width: 160px;
+        height: 200px;
+        background-color: $greybackground;
+        border-radius: 5px;
+        margin: 0 .5%;
+        border-bottom: 20px solid $coral;
+        .fa {
+          display: block;
+          text-align: center;
+          margin-top: 9%;
+          color: #5299d3;
+        }
+        .dashboardJobslistText {
+          color: $charcoal;
+          font-size: 1.5rem;
+          font-weight: bold;
+          text-align: center;
+        }
+        .dashboardJobslisting {
+          margin-top: 10%;
+          margin-left: 4%;
+          margin-right: 4%;
+          font-size: 15px;
+          text-align: center;
+        }
+        .dashboardJobslistingShort {
+          position: relative;
+          top: 35px;
+        }
+       }
+      }
+     }
+    }
+
 
 .rightColumn {
   float: right;
-  width: 30%;
-  padding-right: 5%;
+  width: 40%;
+  padding-right: 10%;
+  .dashboardFullPreferencesWrapper {
+    h2 {
+      color: white;
+      text-align: left;
+    }
+    .dashboardOverviewInterface {
+      .dashboardOverviewInterfaceText {
+        height: 180px;
+        width: 500px;
+        margin: 0;
+        margin-bottom: 15%;
+      .dashboardOverviewTopLists{
+        display: flex;
+        flex-direction: row;
+        align-content: left;
+        justify-content: left;
+        height: 60px;
+        .dashboardOverviewListItem {
+          width: 160px;
+          height: 200px;
+          background-color: $greybackground;
+          border-radius: 5px;
+          margin: 0 .5%;
+          border-bottom: 20px solid $coral;
+          .dashboardOverviewListItemTitle {
+          font-size: 1.1rem;
+          font-weight: bold;
+          }
+          p {
+            text-align: center;
+            color: $charcoal;
+            }
+          }
+        }
+      }
+    }
+  }
+  .dashboardGraphWrapper {
+    h2 {
+      color: white;
+      text-align: left;
+    }
+  }
 }

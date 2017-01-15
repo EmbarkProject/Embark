@@ -5,7 +5,8 @@
 .landingRight {
   float: right;
   width: 22%;
-  height: 1125px;
+  height: 1200px;
+  height: 1195px;
   background-color: #2b303a; }
 
 .landingHero {
@@ -336,7 +337,7 @@
   .quizRight .quizChooseList select option {
     font-family: "Montserrat", sans-serif;
     font-size: 12px; }
-  .quizRight .quizButton {
+  .quizRight .manualIndustryButton {
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
     color: #ffffff;
@@ -346,8 +347,8 @@
     border: none;
     display: block;
     margin: 0 auto;
-    margin-top: 20%; }
-  .quizRight .quizButton:hover {
+    margin-top: 28%; }
+  .quizRight .manualIndustryButton:hover {
     background-color: #ffffff;
     color: #ff5a5f;
     box-sizing: border-box; }
@@ -506,6 +507,8 @@
     background-color: #f7f7f7;
     border-bottom: 20px solid #ff5A5F;
     border-radius: 5px; }
+    .jobslistFeatures .jobslistItem ul {
+      padding: 0; }
     .jobslistFeatures .jobslistItem .fa {
       display: block;
       text-align: center;
@@ -547,53 +550,115 @@
     color: white; }
   .dashboardHeadingText hr {
     border: 5px solid #ff5A5F;
-    width: 56%; }
+    width: 79%; }
 
-.dashboardFullButtonWrapper h2 {
-  color: white;
-  text-align: center; }
-.dashboardFullButtonWrapper .dashboardButtonContainer {
-  display: flex;
-  flex-direction: row;
-  align-content: space-around;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-  .dashboardFullButtonWrapper .dashboardButtonContainer .dashboardButton {
-    width: 170px;
-    height: 60px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #ffffff;
-    border-radius: 5px;
-    background-color: #5299D3;
-    border: none;
-    margin-bottom: 3%; }
-  .dashboardFullButtonWrapper .dashboardButtonContainer .dashboardButton:hover {
-    background-color: #ffffff;
-    color: #5299D3;
-    box-sizing: border-box; }
-
-.dashboardFullPreferencesWrapper h2 {
-  color: white;
-  text-align: center; }
-
-.dashboardJobListingWrapper h2 {
-  color: white;
-  text-align: center; }
-
-.dashboardGraphWrapper h2 {
-  color: white;
-  text-align: center; }
+.dashboardFullButtonWrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: block; }
+  .dashboardFullButtonWrapper h2 {
+    color: white;
+    margin: 1.5% 0;
+    text-align: left; }
+  .dashboardFullButtonWrapper .dashboardButtonContainer {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: .5%;
+    padding-bottom: 5%; }
+    .dashboardFullButtonWrapper .dashboardButtonContainer .dashboardButton {
+      width: 150px;
+      height: 65px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #ffffff;
+      text-transform: uppercase;
+      border-radius: 5px;
+      background-color: #5299D3;
+      border: none;
+      line-height: 1.6;
+      margin-bottom: 3%; }
+    .dashboardFullButtonWrapper .dashboardButtonContainer .dashboardButton:hover {
+      background-color: #ffffff;
+      color: #5299D3;
+      box-sizing: border-box; }
 
 .leftColumn {
   float: left;
-  width: 30%;
-  padding-left: 5%; }
+  width: 40%;
+  padding-left: 10%; }
+  .leftColumn .dashboardJobListingWrapper h2 {
+    color: white;
+    text-align: left; }
+  .leftColumn .dashboardJobListingWrapper .dashboardJobslistFeatures {
+    display: flex;
+    flex-direction: row;
+    align-content: left;
+    justify-content: left;
+    height: 60px; }
+    .leftColumn .dashboardJobListingWrapper .dashboardJobslistFeatures .dashboardJobslistItem {
+      width: 160px;
+      height: 200px;
+      background-color: #EDEDED;
+      border-radius: 5px;
+      margin: 0 .5%;
+      border-bottom: 20px solid #ff5A5F; }
+      .leftColumn .dashboardJobListingWrapper .dashboardJobslistFeatures .dashboardJobslistItem .fa {
+        display: block;
+        text-align: center;
+        margin-top: 9%;
+        color: #5299d3; }
+      .leftColumn .dashboardJobListingWrapper .dashboardJobslistFeatures .dashboardJobslistItem .dashboardJobslistText {
+        color: #2B303A;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center; }
+      .leftColumn .dashboardJobListingWrapper .dashboardJobslistFeatures .dashboardJobslistItem .dashboardJobslisting {
+        margin-top: 10%;
+        margin-left: 4%;
+        margin-right: 4%;
+        font-size: 15px;
+        text-align: center; }
+      .leftColumn .dashboardJobListingWrapper .dashboardJobslistFeatures .dashboardJobslistItem .dashboardJobslistingShort {
+        position: relative;
+        top: 35px; }
 
 .rightColumn {
   float: right;
-  width: 30%;
-  padding-right: 5%; }
+  width: 40%;
+  padding-right: 10%; }
+  .rightColumn .dashboardFullPreferencesWrapper h2 {
+    color: white;
+    text-align: left; }
+  .rightColumn .dashboardFullPreferencesWrapper .dashboardOverviewInterface .dashboardOverviewInterfaceText {
+    height: 180px;
+    width: 500px;
+    margin: 0;
+    margin-bottom: 15%; }
+    .rightColumn .dashboardFullPreferencesWrapper .dashboardOverviewInterface .dashboardOverviewInterfaceText .dashboardOverviewTopLists {
+      display: flex;
+      flex-direction: row;
+      align-content: left;
+      justify-content: left;
+      height: 60px; }
+      .rightColumn .dashboardFullPreferencesWrapper .dashboardOverviewInterface .dashboardOverviewInterfaceText .dashboardOverviewTopLists .dashboardOverviewListItem {
+        width: 160px;
+        height: 200px;
+        background-color: #EDEDED;
+        border-radius: 5px;
+        margin: 0 .5%;
+        border-bottom: 20px solid #ff5A5F; }
+        .rightColumn .dashboardFullPreferencesWrapper .dashboardOverviewInterface .dashboardOverviewInterfaceText .dashboardOverviewTopLists .dashboardOverviewListItem .dashboardOverviewListItemTitle {
+          font-size: 1.1rem;
+          font-weight: bold; }
+        .rightColumn .dashboardFullPreferencesWrapper .dashboardOverviewInterface .dashboardOverviewInterfaceText .dashboardOverviewTopLists .dashboardOverviewListItem p {
+          text-align: center;
+          color: #2B303A; }
+  .rightColumn .dashboardGraphWrapper h2 {
+    color: white;
+    text-align: left; }
 
 .overviewBody {
   background-position: top;
