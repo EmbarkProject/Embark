@@ -20,9 +20,9 @@ function filter_headers1(){
             var html = template(results);
             console.log(resourceList[1])
             $('#resource1').prepend(html)
-            $('#link1').after('<a href="' + resourceList[0] + '"><p>' + resourceList[1] + '</p></a>')
-            $('#link2').html('<a href="' + resourceList[2] + '"><p>' + resourceList[3] + '</p></a>')
-            $('#link3').html('<a href="' + resourceList[4] + '"><p>' + resourceList[5] + '</p></a>')
+            $('#link1').after('<a href="' + resourceList[0] + '"target="_blank"><p>' + resourceList[1] + '</p></a>')
+            $('#link2').html('<a href="' + resourceList[2] + '"target="_blank"><p>' + resourceList[3] + '</p></a>')
+            $('#link3').html('<a href="' + resourceList[4] + '"target="_blank"><p>' + resourceList[5] + '</p></a>')
             $("#button1").click(function(){$("#titleLinkToggle1").slideToggle("slow")});
         })
     })
@@ -51,9 +51,9 @@ function filter_headers2(){
             var html = template(results);
             console.log(resourceList[1])
             $('#resource1').prepend(html)
-            $('#link4').html('<a href="' + resourceList[0] + '"><p>' + resourceList[1] + '</p></a>')
-            $('#link5').html('<a href="' + resourceList[2] + '"><p>' + resourceList[3] + '</p></a>')
-            $('#link6').html('<a href="' + resourceList[4] + '"><p>' + resourceList[5] + '</p></a>')
+            $('#link4').html('<a href="' + resourceList[0] + '"target="_blank"><p>' + resourceList[1] + '</p></a>')
+            $('#link5').html('<a href="' + resourceList[2] + '"target="_blank"><p>' + resourceList[3] + '</p></a>')
+            $('#link6').html('<a href="' + resourceList[4] + '"target="_blank"><p>' + resourceList[5] + '</p></a>')
             $("#button2").click(function(){$("#titleLinkToggle2").slideToggle("slow")});
         })
     })
@@ -82,9 +82,9 @@ function filter_headers3(){
             var html = template(results);
             console.log(resourceList[1])
             $('#resource1').prepend(html)
-            $('#link7').prepend('<a href="' + resourceList[0] + '"><p>' + resourceList[1] + '</p></a>')
-            $('#link8').prepend('<a href="' + resourceList[2] + '"><p>' + resourceList[3] + '</p></a>')
-            $('#link9').prepend('<a href="' + resourceList[4] + '"><p>' + resourceList[5] + '</p></a>')
+            $('#link7').prepend('<a href="' + resourceList[0] + '"target="_blank"><p>' + resourceList[1] + '</p></a>')
+            $('#link8').prepend('<a href="' + resourceList[2] + '"target="_blank"><p>' + resourceList[3] + '</p></a>')
+            $('#link9').prepend('<a href="' + resourceList[4] + '"target="_blank"><p>' + resourceList[5] + '</p></a>')
             $("#button3").click(function(){$("#titleLinkToggle3").slideToggle("slow")});
         })
     })
