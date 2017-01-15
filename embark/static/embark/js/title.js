@@ -115,11 +115,16 @@ $(function () {
                     plotBorderWidth: 0,
                     plotShadow: false
                 },
+                exporting: { enabled: false },
                 title: {
-                    text: '',
+                    text: jobTitle.toUpperCase().bold(),
                     align: 'center',
-                    verticalAlign: 'middle',
-                    y: 40
+                    verticalAlign: 'top',
+                    y: 300,
+                    style: {
+                        color: '#2B303A',
+                        fontSize:'25px'
+                    }
                 },
                 tooltip: {
                     pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -132,7 +137,7 @@ $(function () {
                             distance: 0,
                             style: {
                                 fontWeight: 'bold',
-                                color: '$charcoal',
+                                color: '#2B303A',
                                 fontFamily: '$font',
                                 fontSize: 15
                             }
@@ -144,14 +149,14 @@ $(function () {
                 },
                 series: [{
                     type: 'pie',
-                    name: 'Browser share',
+                    name: 'Distribution',
                     innerSize: '50%',
                     data: [
-                        [jobs[0].nextJobTitle, jobs[0].frequencyPercent],
-                        [jobs[1].nextJobTitle, jobs[1].frequencyPercent],
-                        [jobs[2].nextJobTitle, jobs[2].frequencyPercent],
-                        [jobs[3].nextJobTitle, jobs[3].frequencyPercent],
-                        [jobs[4].nextJobTitle, jobs[4].frequencyPercent],
+                        [jobs[0].nextJobTitle.toUpperCase(), jobs[0].frequencyPercent],
+                        [jobs[1].nextJobTitle.toUpperCase(), jobs[1].frequencyPercent],
+                        [jobs[2].nextJobTitle.toUpperCase(), jobs[2].frequencyPercent],
+                        [jobs[3].nextJobTitle.toUpperCase(), jobs[3].frequencyPercent],
+                        [jobs[4].nextJobTitle.toUpperCase(), jobs[4].frequencyPercent],
                         {
                             name: 'Proprietary or Undetectable',
                             y: 0.2,
