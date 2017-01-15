@@ -81,12 +81,14 @@ label {
       position: relative;
       left: -38px;
       .noLocation {
-        margin-top: 15%;
+        margin-top: 13%;
       }
       .radioLabel {
         font-family: $font;
         font-size: 1.1em;
         text-transform: none;
+        position: relative;
+        top: 3px;
       }
     }
     .locationButton {

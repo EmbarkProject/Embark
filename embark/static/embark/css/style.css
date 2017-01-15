@@ -283,6 +283,8 @@
       display: none; }
     .quizLeft .quizQuestions .q8 {
       display: none; }
+    .quizLeft .quizQuestions .q10 {
+      display: none; }
   .quizLeft .quizButton {
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
@@ -569,6 +571,7 @@
   padding-right: 5%; }
 
 .overviewBody {
+  background-image: url("../images/overviewHero3.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -783,11 +786,13 @@ label {
     position: relative;
     left: -38px; }
     .locationForm form .radioBox .noLocation {
-      margin-top: 15%; }
+      margin-top: 13%; }
     .locationForm form .radioBox .radioLabel {
       font-family: "Montserrat", sans-serif;
       font-size: 1.1em;
-      text-transform: none; }
+      text-transform: none;
+      position: relative;
+      top: 3px; }
   .locationForm form .locationButton {
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
