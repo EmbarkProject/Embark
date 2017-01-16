@@ -483,12 +483,12 @@
     padding-bottom: 3%; }
 
 .jobslistFeatures {
-  margin: 5% 6%; }
+  margin: 5% 10%; }
   .jobslistFeatures .selectLocation {
     float: left;
     height: 370px;
     width: 16%;
-    margin-right: 5%; }
+    margin-right: 7%; }
     .jobslistFeatures .selectLocation .locationButton {
       height: 13%;
       margin-top: 15%;
@@ -505,18 +505,17 @@
       .jobslistFeatures .selectLocation .locationButton:hover .locationText {
         color: #ff5A5F; }
     .jobslistFeatures .selectLocation .locationButtonTop {
-      margin-top: 70%; }
+      margin-top: 65%; }
   .jobslistFeatures .jobslistItem {
     float: left;
-    height: 450px;
-    width: 17%;
+    height: 370px;
+    width: 15%;
     padding: 1%;
     padding-left: 3%;
     padding-right: 3%;
     background-color: #f7f7f7;
     border-bottom: 20px solid #ff5A5F;
-    border-radius: 5px;
-    overflow-y: scroll; }
+    border-radius: 5px; }
     .jobslistFeatures .jobslistItem ul {
       padding: 0; }
     .jobslistFeatures .jobslistItem .fa {
@@ -539,11 +538,11 @@
       position: relative;
       top: 35px; }
   .jobslistFeatures .jobslistFeatureMiddle {
-    margin-right: 5%;
-    margin-left: 5%; }
+    margin-right: 7%;
+    margin-left: 7%; }
 
 .nextStepsJobslist {
-  margin-top: 47.5%; }
+  margin-top: 41%; }
 
 .dashboardBody {
   background-color: #2B303A; }
