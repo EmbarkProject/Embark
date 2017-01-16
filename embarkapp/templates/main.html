@@ -38,7 +38,7 @@
               <div class="landingFeatures" id="landingFeaturesId">
                 <div class="landingFeatureItem">
                   <i class="fa fa-4x fa-cogs" aria-hidden="true"></i>
-                  <p class="landingFeatureText">Do you feel like there are almost too many options? We know exactly how you feel. We’ll take you through a short quiz to narrow down your industry choices.</p>
+                  <p class="landingFeatureText">Not even sure what industry you’re interested in? We know exactly how you feel. We’ll take you through a short quiz to narrow down your options.</p>
                 </div>
                 <div class="landingFeatureItem landingFeatureMiddle">
                   <i class="fa fa-4x fa-comments" aria-hidden="true"></i>
@@ -70,7 +70,7 @@
                     <input class='password loginfield' name="password" type="password" placeholder ="password"></input>
                     <br>
                     <br>
-                    <button class="loginbutton" type="submit">Login</button>
+                    <button class="loginbutton" type="submit">login</button>
                 </form>
               </div>
             </div>
@@ -82,17 +82,17 @@
                   <h2>Register</h2>
                   <form>
                     {% csrf_token %}
-                    <input class="firstname" type="text" id="firstname" name="first_name" placeholder="firstname"/>
+                    <input class="firstname" type="text" id="firstname" name="first_name" placeholder="first name"/>
 
                     <input class="lastname" type="text" id="lastname" name="last_name" placeholder="last name"/>
 
-                    <input class="lastname" type="text" id="username" name="username" placeholder="username"/>
+                    <input class="username" type="text" id="username" name="username" placeholder="username"/>
 
                     <input class="email" type="email" id="email" name="email" placeholder="email"/>
 
                     <input class="password" type="password" id="password" name="password" placeholder="password"/>
 
-                    <input class="jobtitle" type="text" id="jobtitle" name="jobtitle" placeholder="current jobtitle"/>
+                    <input class="jobtitle" type="text" id="jobtitle" name="jobtitle" placeholder="current job title"/>
 
                   <input id="createUser" class="registerButton" type="submit"></input>
                   </form>
