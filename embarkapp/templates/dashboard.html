@@ -85,7 +85,20 @@
               </div>
             </div>
 
+            {% verbatim %}
+            <script id="post-template" type="text/x-handlebars-template">
+            {{#each this}}
+            <h5>{{this.company}}:<br> {{{displayLink this}}}</h5>
+            {{/each}}
+            {% endverbatim %}
+            </script>
 
+            {% verbatim %}
+            <script id="post-template1" type="text/x-handlebars-template">
+            <i class="fa fa-4x {{this.icon}}" aria-hidden="true"></i>
+            <p class="jobslistText">{{this.title}}</p>
+            {% endverbatim %}
+            </script>
 
     <input id="userId" type='hidden' name='userId' value='{{ user.id }}'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
@@ -102,10 +115,10 @@
     <script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script> -->
 <!--
     <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="{% static 'embark/js/dashboard.js' %}"></script>
     </body>
 </html>

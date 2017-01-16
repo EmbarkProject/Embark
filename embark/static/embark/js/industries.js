@@ -123,56 +123,56 @@ $(function () {
                 animation: {
                     duration: 1000
                 },
-                data: [{code: "AL", value:state["Alabama"].score},
-                       {code: "AK", value:state["Alaska"].score},
-                       {code: "AZ", value:state["Arizona"].score},
-                       {code: "AR", value:state["Arkansas"].score},
-                       {code: "CA", value:state["California"].score},
-                       {code: "CO", value:state["Colorado"].score},
-                       {code: "CT", value:state["Connecticut"].score},
-                       {code: "DE", value:state["Delaware"].score},
-                       {code: "FL", value:state["Florida"].score},
-                       {code: "GA", value:state["Georgia"].score},
-                       {code: "HI", value:state["Hawaii"].score},
-                       {code: "ID", value:state["Idaho"].score},
-                       {code: "IL", value:state["Illinois"].score},
-                       {code: "IN", value:state["Indiana"].score},
-                       {code: "IA", value:state["Iowa"].score},
-                       {code: "KS", value:state["Kansas"].score},
-                       {code: "KY", value:state["Kentucky"].score},
-                       {code: "LA", value:state["Louisiana"].score},
-                       {code: "ME", value:state["Maine"].score},
-                       {code: "MD", value:state["Maryland"].score},
-                       {code: "MA", value:state["Massachusetts"].score},
-                       {code: "MI", value:state["Michigan"].score},
-                       {code: "MN", value:state["Minnesota"].score},
-                       {code: "MS", value:state["Mississippi"].score},
-                       {code: "MO", value:state["Missouri"].score},
-                       {code: "MT", value:state["Montana"].score},
-                       {code: "NE", value:state["Nebraska"].score},
-                       {code: "NV", value:state["Nevada"].score},
-                       {code: "NH", value:state["New Hampshire"].score},
-                       {code: "NJ", value:state["New Jersey"].score},
-                       {code: "NM", value:state["New Mexico"].score},
-                       {code: "NY", value:state["New York"].score},
-                       {code: "NC", value:state["North Carolina"].score},
-                       {code: "ND", value:state["North Dakota"].score},
-                       {code: "OH", value:state["Ohio"].score},
-                       {code: "OK", value:state["Oklahoma"].score},
-                       {code: "OR", value:state["Oregon"].score},
-                       {code: "PA", value:state["Pennsylvania"].score},
-                       {code: "RI", value:state["Rhode Island"].score},
-                       {code: "SC", value:state["South Carolina"].score},
-                       {code: "SD", value:state["South Dakota"].score},
-                       {code: "TN", value:state["Tennessee"].score},
-                       {code: "TX", value:state["Texas"].score},
-                       {code: "UT", value:state["Utah"].score},
-                       {code: "VT", value:state["Vermont"].score},
-                       {code: "VA", value:state["Virginia"].score},
-                       {code: "WA", value:state["Virginia"].score},
-                       {code: "WV", value:state["West Virginia"].score},
-                       {code: "WI", value:state["Wisconsin"].score},
-                       {code: "WY", value:state["Wyoming"].score}
+                data: [{code: "AL", value:state["Alabama"].numJobs},
+                       {code: "AK", value:state["Alaska"].numJobs},
+                       {code: "AZ", value:state["Arizona"].numJobs},
+                       {code: "AR", value:state["Arkansas"].numJobs},
+                       {code: "CA", value:state["California"].numJobs},
+                       {code: "CO", value:state["Colorado"].numJobs},
+                       {code: "CT", value:state["Connecticut"].numJobs},
+                       {code: "DE", value:state["Delaware"].numJobs},
+                       {code: "FL", value:state["Florida"].numJobs},
+                       {code: "GA", value:state["Georgia"].numJobs},
+                       {code: "HI", value:state["Hawaii"].numJobs},
+                       {code: "ID", value:state["Idaho"].numJobs},
+                       {code: "IL", value:state["Illinois"].numJobs},
+                       {code: "IN", value:state["Indiana"].numJobs},
+                       {code: "IA", value:state["Iowa"].numJobs},
+                       {code: "KS", value:state["Kansas"].numJobs},
+                       {code: "KY", value:state["Kentucky"].numJobs},
+                       {code: "LA", value:state["Louisiana"].numJobs},
+                       {code: "ME", value:state["Maine"].numJobs},
+                       {code: "MD", value:state["Maryland"].numJobs},
+                       {code: "MA", value:state["Massachusetts"].numJobs},
+                       {code: "MI", value:state["Michigan"].numJobs},
+                       {code: "MN", value:state["Minnesota"].numJobs},
+                       {code: "MS", value:state["Mississippi"].numJobs},
+                       {code: "MO", value:state["Missouri"].numJobs},
+                       {code: "MT", value:state["Montana"].numJobs},
+                       {code: "NE", value:state["Nebraska"].numJobs},
+                       {code: "NV", value:state["Nevada"].numJobs},
+                       {code: "NH", value:state["New Hampshire"].numJobs},
+                       {code: "NJ", value:state["New Jersey"].numJobs},
+                       {code: "NM", value:state["New Mexico"].numJobs},
+                       {code: "NY", value:state["New York"].numJobs},
+                       {code: "NC", value:state["North Carolina"].numJobs},
+                       {code: "ND", value:state["North Dakota"].numJobs},
+                       {code: "OH", value:state["Ohio"].numJobs},
+                       {code: "OK", value:state["Oklahoma"].numJobs},
+                       {code: "OR", value:state["Oregon"].numJobs},
+                       {code: "PA", value:state["Pennsylvania"].numJobs},
+                       {code: "RI", value:state["Rhode Island"].numJobs},
+                       {code: "SC", value:state["South Carolina"].numJobs},
+                       {code: "SD", value:state["South Dakota"].numJobs},
+                       {code: "TN", value:state["Tennessee"].numJobs},
+                       {code: "TX", value:state["Texas"].numJobs},
+                       {code: "UT", value:state["Utah"].numJobs},
+                       {code: "VT", value:state["Vermont"].numJobs},
+                       {code: "VA", value:state["Virginia"].numJobs},
+                       {code: "WA", value:state["Virginia"].numJobs},
+                       {code: "WV", value:state["West Virginia"].numJobs},
+                       {code: "WI", value:state["Wisconsin"].numJobs},
+                       {code: "WY", value:state["Wyoming"].numJobs}
                 ],
                 mapData: Highcharts.maps['countries/us/us-all'],
                 joinBy: ['postal-code', 'code'],
@@ -214,6 +214,7 @@ $(function () {
             dataType: 'jsonp',
         }).done(function(results){
             state = results.response.states
+            console.log((state["Alabama"].numJobs)/122122)
         // Instanciate the map
         Highcharts.mapChart('container2', {
 
@@ -255,56 +256,56 @@ $(function () {
                 animation: {
                     duration: 1000
                 },
-                data: [{code: "AL", value:state["Alabama"].score},
-                       {code: "AK", value:state["Alaska"].score},
-                       {code: "AZ", value:state["Arizona"].score},
-                       {code: "AR", value:state["Arkansas"].score},
-                       {code: "CA", value:state["California"].score},
-                       {code: "CO", value:state["Colorado"].score},
-                       {code: "CT", value:state["Connecticut"].score},
-                       {code: "DE", value:state["Delaware"].score},
-                       {code: "FL", value:state["Florida"].score},
-                       {code: "GA", value:state["Georgia"].score},
-                       {code: "HI", value:state["Hawaii"].score},
-                       {code: "ID", value:state["Idaho"].score},
-                       {code: "IL", value:state["Illinois"].score},
-                       {code: "IN", value:state["Indiana"].score},
-                       {code: "IA", value:state["Iowa"].score},
-                       {code: "KS", value:state["Kansas"].score},
-                       {code: "KY", value:state["Kentucky"].score},
-                       {code: "LA", value:state["Louisiana"].score},
-                       {code: "ME", value:state["Maine"].score},
-                       {code: "MD", value:state["Maryland"].score},
-                       {code: "MA", value:state["Massachusetts"].score},
-                       {code: "MI", value:state["Michigan"].score},
-                       {code: "MN", value:state["Minnesota"].score},
-                       {code: "MS", value:state["Mississippi"].score},
-                       {code: "MO", value:state["Missouri"].score},
-                       {code: "MT", value:state["Montana"].score},
-                       {code: "NE", value:state["Nebraska"].score},
-                       {code: "NV", value:state["Nevada"].score},
-                       {code: "NH", value:state["New Hampshire"].score},
-                       {code: "NJ", value:state["New Jersey"].score},
-                       {code: "NM", value:state["New Mexico"].score},
-                       {code: "NY", value:state["New York"].score},
-                       {code: "NC", value:state["North Carolina"].score},
-                       {code: "ND", value:state["North Dakota"].score},
-                       {code: "OH", value:state["Ohio"].score},
-                       {code: "OK", value:state["Oklahoma"].score},
-                       {code: "OR", value:state["Oregon"].score},
-                       {code: "PA", value:state["Pennsylvania"].score},
-                       {code: "RI", value:state["Rhode Island"].score},
-                       {code: "SC", value:state["South Carolina"].score},
-                       {code: "SD", value:state["South Dakota"].score},
-                       {code: "TN", value:state["Tennessee"].score},
-                       {code: "TX", value:state["Texas"].score},
-                       {code: "UT", value:state["Utah"].score},
-                       {code: "VT", value:state["Vermont"].score},
-                       {code: "VA", value:state["Virginia"].score},
-                       {code: "WA", value:state["Virginia"].score},
-                       {code: "WV", value:state["West Virginia"].score},
-                       {code: "WI", value:state["Wisconsin"].score},
-                       {code: "WY", value:state["Wyoming"].score}
+                data: [{code: "AL", value:((state["Alabama"].numJobs)/122122)*100},
+                       {code: "AK", value:(state["Alaska"].numJobs)/17288},
+                       {code: "AZ", value:(state["Arizona"].numJobs)/171051},
+                       {code: "AR", value:(state["Arkansas"].numJobs)/77408},
+                       {code: "CA", value:(state["California"].numJobs)/1084336},
+                       {code: "CO", value:(state["Colorado"].numJobs)/199493},
+                       {code: "CT", value:(state["Connecticut"].numJobs)/96333},
+                       {code: "DE", value:(state["Delaware"].numJobs)/27981},
+                       {code: "FL", value:(state["Florida"].numJobs)/467044},
+                       {code: "GA", value:(state["Georgia"].numJobs)/332733},
+                       {code: "HI", value:(state["Hawaii"].numJobs)/24160},
+                       {code: "ID", value:(state["Idaho"].numJobs)/34423},
+                       {code: "IL", value:(state["Illinois"].numJobs)/396218},
+                       {code: "IN", value:(state["Indiana"].numJobs)/208510},
+                       {code: "IA", value:(state["Iowa"].numJobs)/104466},
+                       {code: "KS", value:(state["Kansas"].numJobs)/89006},
+                       {code: "KY", value:(state["Kentucky"].numJobs)/118243},
+                       {code: "LA", value:(state["Louisiana"].numJobs)/101586},
+                       {code: "ME", value:(state["Maine"].numJobs)/33455},
+                       {code: "MD", value:(state["Maryland"].numJobs)/200772},
+                       {code: "MA", value:(state["Massachusetts"].numJobs)/265012},
+                       {code: "MI", value:(state["Michigan"].numJobs)/226374},
+                       {code: "MN", value:(state["Minnesota"].numJobs)/182113},
+                       {code: "MS", value:(state["Mississippi"].numJobs)/60534},
+                       {code: "MO", value:(state["Missouri"].numJobs)/191127},
+                       {code: "MT", value:(state["Montana"].numJobs)/21849},
+                       {code: "NE", value:(state["Nebraska"].numJobs)/57464},
+                       {code: "NV", value:(state["Nevada"].numJobs)/91192},
+                       {code: "NH", value:(state["New Hampshire"].numJobs)/43748},
+                       {code: "NJ", value:(state["New Jersey"].numJobs)/228018},
+                       {code: "NM", value:(state["New Mexico"].numJobs)/54813},
+                       {code: "NY", value:(state["New York"].numJobs)/429657},
+                       {code: "NC", value:(state["North Carolina"].numJobs)/266274},
+                       {code: "ND", value:(state["North Dakota"].numJobs)/24784},
+                       {code: "OH", value:(state["Ohio"].numJobs)/348061},
+                       {code: "OK", value:(state["Oklahoma"].numJobs)/94583},
+                       {code: "OR", value:(state["Oregon"].numJobs)/109514},
+                       {code: "PA", value:(state["Pennsylvania"].numJobs)/363335},
+                       {code: "RI", value:(state["Rhode Island"].numJobs)/30567},
+                       {code: "SC", value:(state["South Carolina"].numJobs)/125695},
+                       {code: "SD", value:(state["South Dakota"].numJobs)/23642},
+                       {code: "TN", value:(state["Tennessee"].numJobs)/186745},
+                       {code: "TX", value:(state["Texas"].numJobs)/678009},
+                       {code: "UT", value:(state["Utah"].numJobs)/77336},
+                       {code: "VT", value:(state["Vermont"].numJobs)/16424},
+                       {code: "VA", value:(state["Virginia"].numJobs)/300845},
+                       {code: "WA", value:(state["Washington"].numJobs)/226845},
+                       {code: "WV", value:(state["West Virginia"].numJobs)/47005},
+                       {code: "WI", value:(state["Wisconsin"].numJobs)/157936},
+                       {code: "WY", value:(state["Wyoming"].numJobs)/18141}
                 ],
                 mapData: Highcharts.maps['countries/us/us-all'],
                 joinBy: ['postal-code', 'code'],
@@ -388,56 +389,56 @@ $(function () {
                 animation: {
                     duration: 1000
                 },
-                data: [{code: "AL", value:state["Alabama"].score},
-                       {code: "AK", value:state["Alaska"].score},
-                       {code: "AZ", value:state["Arizona"].score},
-                       {code: "AR", value:state["Arkansas"].score},
-                       {code: "CA", value:state["California"].score},
-                       {code: "CO", value:state["Colorado"].score},
-                       {code: "CT", value:state["Connecticut"].score},
-                       {code: "DE", value:state["Delaware"].score},
-                       {code: "FL", value:state["Florida"].score},
-                       {code: "GA", value:state["Georgia"].score},
-                       {code: "HI", value:state["Hawaii"].score},
-                       {code: "ID", value:state["Idaho"].score},
-                       {code: "IL", value:state["Illinois"].score},
-                       {code: "IN", value:state["Indiana"].score},
-                       {code: "IA", value:state["Iowa"].score},
-                       {code: "KS", value:state["Kansas"].score},
-                       {code: "KY", value:state["Kentucky"].score},
-                       {code: "LA", value:state["Louisiana"].score},
-                       {code: "ME", value:state["Maine"].score},
-                       {code: "MD", value:state["Maryland"].score},
-                       {code: "MA", value:state["Massachusetts"].score},
-                       {code: "MI", value:state["Michigan"].score},
-                       {code: "MN", value:state["Minnesota"].score},
-                       {code: "MS", value:state["Mississippi"].score},
-                       {code: "MO", value:state["Missouri"].score},
-                       {code: "MT", value:state["Montana"].score},
-                       {code: "NE", value:state["Nebraska"].score},
-                       {code: "NV", value:state["Nevada"].score},
-                       {code: "NH", value:state["New Hampshire"].score},
-                       {code: "NJ", value:state["New Jersey"].score},
-                       {code: "NM", value:state["New Mexico"].score},
-                       {code: "NY", value:state["New York"].score},
-                       {code: "NC", value:state["North Carolina"].score},
-                       {code: "ND", value:state["North Dakota"].score},
-                       {code: "OH", value:state["Ohio"].score},
-                       {code: "OK", value:state["Oklahoma"].score},
-                       {code: "OR", value:state["Oregon"].score},
-                       {code: "PA", value:state["Pennsylvania"].score},
-                       {code: "RI", value:state["Rhode Island"].score},
-                       {code: "SC", value:state["South Carolina"].score},
-                       {code: "SD", value:state["South Dakota"].score},
-                       {code: "TN", value:state["Tennessee"].score},
-                       {code: "TX", value:state["Texas"].score},
-                       {code: "UT", value:state["Utah"].score},
-                       {code: "VT", value:state["Vermont"].score},
-                       {code: "VA", value:state["Virginia"].score},
-                       {code: "WA", value:state["Virginia"].score},
-                       {code: "WV", value:state["West Virginia"].score},
-                       {code: "WI", value:state["Wisconsin"].score},
-                       {code: "WY", value:state["Wyoming"].score}
+                data: [{code: "AL", value:state["Alabama"].numJobs},
+                       {code: "AK", value:state["Alaska"].numJobs},
+                       {code: "AZ", value:state["Arizona"].numJobs},
+                       {code: "AR", value:state["Arkansas"].numJobs},
+                       {code: "CA", value:state["California"].numJobs},
+                       {code: "CO", value:state["Colorado"].numJobs},
+                       {code: "CT", value:state["Connecticut"].numJobs},
+                       {code: "DE", value:state["Delaware"].numJobs},
+                       {code: "FL", value:state["Florida"].numJobs},
+                       {code: "GA", value:state["Georgia"].numJobs},
+                       {code: "HI", value:state["Hawaii"].numJobs},
+                       {code: "ID", value:state["Idaho"].numJobs},
+                       {code: "IL", value:state["Illinois"].numJobs},
+                       {code: "IN", value:state["Indiana"].numJobs},
+                       {code: "IA", value:state["Iowa"].numJobs},
+                       {code: "KS", value:state["Kansas"].numJobs},
+                       {code: "KY", value:state["Kentucky"].numJobs},
+                       {code: "LA", value:state["Louisiana"].numJobs},
+                       {code: "ME", value:state["Maine"].numJobs},
+                       {code: "MD", value:state["Maryland"].numJobs},
+                       {code: "MA", value:state["Massachusetts"].numJobs},
+                       {code: "MI", value:state["Michigan"].numJobs},
+                       {code: "MN", value:state["Minnesota"].numJobs},
+                       {code: "MS", value:state["Mississippi"].numJobs},
+                       {code: "MO", value:state["Missouri"].numJobs},
+                       {code: "MT", value:state["Montana"].numJobs},
+                       {code: "NE", value:state["Nebraska"].numJobs},
+                       {code: "NV", value:state["Nevada"].numJobs},
+                       {code: "NH", value:state["New Hampshire"].numJobs},
+                       {code: "NJ", value:state["New Jersey"].numJobs},
+                       {code: "NM", value:state["New Mexico"].numJobs},
+                       {code: "NY", value:state["New York"].numJobs},
+                       {code: "NC", value:state["North Carolina"].numJobs},
+                       {code: "ND", value:state["North Dakota"].numJobs},
+                       {code: "OH", value:state["Ohio"].numJobs},
+                       {code: "OK", value:state["Oklahoma"].numJobs},
+                       {code: "OR", value:state["Oregon"].numJobs},
+                       {code: "PA", value:state["Pennsylvania"].numJobs},
+                       {code: "RI", value:state["Rhode Island"].numJobs},
+                       {code: "SC", value:state["South Carolina"].numJobs},
+                       {code: "SD", value:state["South Dakota"].numJobs},
+                       {code: "TN", value:state["Tennessee"].numJobs},
+                       {code: "TX", value:state["Texas"].numJobs},
+                       {code: "UT", value:state["Utah"].numJobs},
+                       {code: "VT", value:state["Vermont"].numJobs},
+                       {code: "VA", value:state["Virginia"].numJobs},
+                       {code: "WA", value:state["Virginia"].numJobs},
+                       {code: "WV", value:state["West Virginia"].numJobs},
+                       {code: "WI", value:state["Wisconsin"].numJobs},
+                       {code: "WY", value:state["Wyoming"].numJobs}
                 ],
                 mapData: Highcharts.maps['countries/us/us-all'],
                 joinBy: ['postal-code', 'code'],
@@ -459,21 +460,10 @@ $(function () {
 $(document).ready(function(event){
   $("#container2").hide();
   $("#container3").hide();
-  $(".industryItemCoral").click(function() {
+  $(".industryButtonCoral").click(function() {
     $("#container1").show();
     $("#container2").hide();
     $("#container3").hide();
-    $(".industryItemCoral").css("background-color", "#ff5A5F");
-    $(".iconCoral").css("color", "white");
-    $(".industryTextCoral").css("color", "white");
-
-    $(".industryItemSky").css("background-color", "white");
-    $(".iconSky").css("color", "#5299D3");
-    $(".industryTextSky").css("color", "#5299D3");
-
-    $(".industryItemCharcoal").css("background-color", "white");
-    $(".iconCharcoal").css("color", "#2B303A");
-    $(".industryTextCharcoal").css("color", "#2B303A");
 });
 
 $(".industryButtonSky").click(function() {
@@ -481,31 +471,12 @@ $(".industryButtonSky").click(function() {
     $("#container2").show();
     $("#container1").hide();
     $("#container3").hide();
-    $(".industryItemSky").css("background-color", "#5299D3");
-    $(".iconSky").css("color", "white");
-    $(".industryTextSky").css("color", "white");
-    $(".industryItemCoral").css("background-color", "white");
-    $(".iconCoral").css("color", "#ff5A5F");
-    $(".industryTextCoral").css("color", "#ff5A5F");
-    $(".industryItemCharcoal").css("background-color", "white");
-    $(".iconCharcoal").css("color", "#2B303A");
-    $(".industryTextCharcoal").css("color", "#2B303A");
   });
   $(".industryButtonCharcoal").click(function() {
       console.log("b")
     $("#container3").show();
     $("#container1").hide();
     $("#container2").hide();
-    $(".industryItemCharcoal").css("background-color", "#2B303A");
-    $(".iconCharcoal").css("color", "white");
-    $(".industryTextCharcoal").css("color", "white");
 
-    $(".industryItemCoral").css("background-color", "white");
-    $(".iconCoral").css("color", "#ff5A5F");
-    $(".industryTextCoral").css("color", "#ff5A5F");
-
-    $(".industryItemSky").css("background-color", "white");
-    $(".iconSky").css("color", "#5299D3");
-    $(".industryTextSky").css("color", "#5299D3");
   });
 });
