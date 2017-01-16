@@ -560,16 +560,16 @@
     color: white; }
   .dashboardHeadingText hr {
     border: 5px solid #ff5A5F;
-    width: 79%; }
+    width: 89%; }
 
 .dashboardFullButtonWrapper {
-  width: 80%;
+  width: 89.5%;
   margin: 0 auto;
   display: block; }
   .dashboardFullButtonWrapper h2 {
     color: white;
     margin: 1.5% 0;
-    text-align: left; }
+    text-align: center; }
   .dashboardFullButtonWrapper .dashboardButtonContainer {
     display: flex;
     flex-direction: row;
@@ -577,9 +577,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: .5%;
-    padding-bottom: 5%; }
+    padding-bottom: 2%; }
     .dashboardFullButtonWrapper .dashboardButtonContainer .dashboardButton {
-      width: 150px;
+      width: 170px;
       height: 65px;
       font-size: 13px;
       font-weight: bold;
@@ -598,22 +598,23 @@
 .leftColumn {
   float: left;
   width: 40%;
-  padding-left: 10%; }
+  padding-left: 5%; }
   .leftColumn .dashboardJobListingWrapper h2 {
     color: white;
-    text-align: left; }
+    text-align: center; }
   .leftColumn .dashboardJobListingWrapper .dashboardJobslistFeatures {
     display: flex;
     flex-direction: row;
     align-content: left;
     justify-content: left;
-    height: 60px; }
+    height: 60px;
+    margin-bottom: 39%; }
     .leftColumn .dashboardJobListingWrapper .dashboardJobslistFeatures .dashboardJobslistItem {
-      width: 160px;
+      width: 155px;
       height: 200px;
       background-color: #EDEDED;
       border-radius: 5px;
-      margin: 0 .5%;
+      margin: 0 1%;
       border-bottom: 20px solid #ff5A5F; }
       .leftColumn .dashboardJobListingWrapper .dashboardJobslistFeatures .dashboardJobslistItem .fa {
         display: block;
@@ -634,14 +635,17 @@
       .leftColumn .dashboardJobListingWrapper .dashboardJobslistFeatures .dashboardJobslistItem .dashboardJobslistingShort {
         position: relative;
         top: 35px; }
+  .leftColumn .dashboardMapWrapper h2 {
+    color: white;
+    text-align: center; }
 
 .rightColumn {
   float: right;
   width: 40%;
-  padding-right: 10%; }
+  padding-right: 5%; }
   .rightColumn .dashboardFullPreferencesWrapper h2 {
     color: white;
-    text-align: left; }
+    text-align: center; }
   .rightColumn .dashboardFullPreferencesWrapper .dashboardOverviewInterface .dashboardOverviewInterfaceText {
     height: 180px;
     width: 500px;
@@ -654,11 +658,11 @@
       justify-content: left;
       height: 60px; }
       .rightColumn .dashboardFullPreferencesWrapper .dashboardOverviewInterface .dashboardOverviewInterfaceText .dashboardOverviewTopLists .dashboardOverviewListItem {
-        width: 160px;
+        width: 155px;
         height: 200px;
         background-color: #EDEDED;
         border-radius: 5px;
-        margin: 0 .5%;
+        margin: 0 1%;
         border-bottom: 20px solid #ff5A5F; }
         .rightColumn .dashboardFullPreferencesWrapper .dashboardOverviewInterface .dashboardOverviewInterfaceText .dashboardOverviewTopLists .dashboardOverviewListItem .dashboardOverviewListItemTitle {
           font-size: 1.1rem;
@@ -668,7 +672,7 @@
           color: #2B303A; }
   .rightColumn .dashboardGraphWrapper h2 {
     color: white;
-    text-align: left; }
+    text-align: center; }
 
 .overviewBody {
   background-position: top;

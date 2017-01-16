@@ -19,18 +19,18 @@
   }
   hr {
     border: 5px solid $coral;
-    width: 79%;
+    width: 89%;
   }
 }
 
 .dashboardFullButtonWrapper {
-  width: 80%;
+  width: 89.5%;
   margin: 0 auto;
   display: block;
   h2 {
     color: white;
     margin: 1.5% 0;
-    text-align: left;
+    text-align: center;
   }
   .dashboardButtonContainer {
     display: flex;
@@ -39,9 +39,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: .5%;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
   .dashboardButton {
-    width: 150px;
+    width: 170px;
     height: 65px;
     font-size: 13px;
     font-weight: bold;
@@ -63,11 +63,11 @@
 .leftColumn {
   float: left;
   width: 40%;
-  padding-left: 10%;
+  padding-left: 5%;
     .dashboardJobListingWrapper {
       h2 {
         color: white;
-        text-align: left;
+        text-align: center;
       }
     .dashboardJobslistFeatures {
       display: flex;
@@ -75,12 +75,13 @@
       align-content: left;
       justify-content: left;
       height: 60px;
+      margin-bottom: 39%;
       .dashboardJobslistItem {
-        width: 160px;
+        width: 155px;
         height: 200px;
         background-color: $greybackground;
         border-radius: 5px;
-        margin: 0 .5%;
+        margin: 0 1%;
         border-bottom: 20px solid $coral;
         .fa {
           display: block;
@@ -108,17 +109,24 @@
        }
       }
      }
-    }
+     .dashboardMapWrapper {
+       h2 {
+         color: white;
+         text-align: center;
+       }
+      }
+     }
+
 
 
 .rightColumn {
   float: right;
   width: 40%;
-  padding-right: 10%;
+  padding-right: 5%;
   .dashboardFullPreferencesWrapper {
     h2 {
       color: white;
-      text-align: left;
+      text-align: center;
     }
     .dashboardOverviewInterface {
       .dashboardOverviewInterfaceText {
@@ -133,11 +141,11 @@
         justify-content: left;
         height: 60px;
         .dashboardOverviewListItem {
-          width: 160px;
+          width: 155px;
           height: 200px;
           background-color: $greybackground;
           border-radius: 5px;
-          margin: 0 .5%;
+          margin: 0 1%;
           border-bottom: 20px solid $coral;
           .dashboardOverviewListItemTitle {
           font-size: 1.1rem;
@@ -155,7 +163,7 @@
   .dashboardGraphWrapper {
     h2 {
       color: white;
-      text-align: left;
+      text-align: center;
     }
   }
 }
