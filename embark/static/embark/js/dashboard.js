@@ -103,20 +103,27 @@ $(function () {
             console.log(state)
         Highcharts.mapChart('dashboardmap', {
             chart: {
-                backgroundColor: '#ededed',
-                borderWidth: 0
+                spacingTop: -170,
+                verticalAlign: 'top',
+                backgroundColor: '#2B303A',
+                borderWidth: 0,
             },
             title: {
-                text: 'US industry job density'
+                style: {
+                    color: '#5299d3',
+                    fontSize:'25px'
+                },
+                text: 'US INDUSTRY JOB NONO',
+                y: 210
             },
 
             legend: {
                 layout: 'horizontal',
                 borderWidth: 0,
-                backgroundColor: '#ededed',
+                backgroundColor: '#2B303A',
                 floating: true,
                 verticalAlign: 'top',
-                y: 25
+                y: 220
             },
 
             mapNavigation: {

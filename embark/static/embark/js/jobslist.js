@@ -201,7 +201,8 @@ function filter_jobs2(city, state){
                     var industry = results.response.employers[j].industry
                     var searchcity = locationList[0][city];
                     var searchstate = locationList[0][state];
-                    var indeedurl = 'https://api.indeed.com/ads/apisearch?publisher=291337585868709&as_and=' + company + '+' + industry + '&l=' + searchcity + '%2C+'+ searchstate + '&sort=&radius=&format=json&st=&jt=&start=&limit=5&fromage=&filter=&latlong=1&co=us&chnl=&userip=1.2.3.4&useragent=Chrome&v=2'
+                    var indeedurl = 'https://api.indeed.com/ads/apisearch?publisher=291337585868709&as_and=' + '"'  + company + '"' + '+' + '"' + industry + '"' + '&l=' + searchcity + '%2C+'+ searchstate + '&sort=&radius=&format=json&st=&jt=&start=&limit=5&fromage=&filter=&latlong=1&co=us&chnl=&userip=1.2.3.4&useragent=Chrome&v=2'
+                    console.log(indeedurl)
                     $.ajax({
                         crossOrigin: true,
                         url: indeedurl,
@@ -228,6 +229,7 @@ function filter_jobs3(city, state){
     var embarker = results
     var industryList = results.industryPrefs.split(',');
     var job = industry[industryList[2]]
+    console.log(job)
     var glassurl = 'https://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&ps=100&action=employers&q=' + job
     $.ajax({
     url: glassurl,
@@ -253,8 +255,10 @@ function filter_jobs3(city, state){
                 payRating >= payInput &&
                 workLifeRating >= workLifeInput){
                     var company = ratingParse.name
+                    var industry = results.response.employers[j].industry
                     var searchcity = locationList[0][city];
                     var searchstate = locationList[0][state];
+                    console.log(company)
                     var indeedurl = 'https://api.indeed.com/ads/apisearch?publisher=291337585868709&q=' + company + '&l=' + searchcity + '%2C+'+ searchstate + '&sort=&radius=&format=json&st=&jt=&start=&limit=5&fromage=&filter=&latlong=1&co=us&chnl=&userip=1.2.3.4&useragent=Chrome&v=2'
                     $.ajax({
                         crossOrigin: true,
