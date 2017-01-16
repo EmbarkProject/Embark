@@ -85,7 +85,7 @@
       margin-left: 4%;
       margin-right: 4%;
       font-size: 15px;
-      text-align: justify; }
+      text-align: center; }
     .landingFeatures .landingFeatureItem .landingFeatureShipText {
       position: relative;
       top: -3px; }
@@ -154,13 +154,13 @@
     .landingRegister .landingRegisterForm h2 {
       color: white;
       padding-bottom: 5%; }
-    .landingRegister .landingRegisterForm form .firstname, .landingRegister .landingRegisterForm form .lastname, .landingRegister .landingRegisterForm form .email, .landingRegister .landingRegisterForm form .password, .landingRegister .landingRegisterForm form .jobtitle {
+    .landingRegister .landingRegisterForm form .firstname, .landingRegister .landingRegisterForm form .lastname, .landingRegister .landingRegisterForm form .username, .landingRegister .landingRegisterForm form .email, .landingRegister .landingRegisterForm form .password, .landingRegister .landingRegisterForm form .jobtitle {
       margin-top: 5%;
       padding: 10px 25px;
       width: 60%;
       border-radius: 5px;
       border-bottom: 5px solid #5299d3; }
-    .landingRegister .landingRegisterForm form .lastname {
+    .landingRegister .landingRegisterForm form .lastname, .landingRegister .landingRegisterForm form .password {
       margin-bottom: 9%; }
     .landingRegister .landingRegisterForm form .registerButton {
       font-size: 15px;
