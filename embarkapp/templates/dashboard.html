@@ -45,6 +45,7 @@
             </div>
             <div class="dashboardMapWrapper">
               <h2>Job Distribution Map</h2>
+              <div class="map" id="dashboardmap" style="height: 650px; min-width: 310px; max-width: 750px; margin: 0 auto"></div>
             </div>
           </div>
 
@@ -80,13 +81,18 @@
               </div>
               <div class="dashboardGraphWrapper">
                 <h2>Next Career Graph</h2>
-                 <div id="chartContainer" style="min-width: 310px; height: 320px; max-width: 900px; margin: 0 auto"></div>
+                 <div id="chartContainer1" style="margin: 0 auto"></div>
               </div>
             </div>
 
 
 
-
+    <input id="userId" type='hidden' name='userId' value='{{ user.id }}'>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <!-- <script src="https://code.highcharts.com/maps/highmaps.js"></script> -->
+    <script src="http://code.highcharts.com/maps/modules/map.js"></script>
+    <script src="http://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="http://code.highcharts.com/mapdata/countries/cn/cn-all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="{% static 'embark/js/dashboard.js' %}"></script>

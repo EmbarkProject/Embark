@@ -179,27 +179,29 @@ function filter_jobs2(city, state){
     type: 'GET',
     dataType: 'jsonp',
     }).done(function(results){
+        var cultureList = embarker.culturePrefs.split(',');
         for (var j = 0; j < results.response.employers.length; j++){
             var ratingParse = results.response.employers[j]
             var careerRating = ratingParse.careerOpportunitiesRating
-            var careerInput = embarker.culturePrefs[0]
+            var careerInput = cultureList[0]
             var cultureRating = ratingParse.cultureAndValuesRating
-            var cultureInput = embarker.culturePrefs[1]
+            var cultureInput = cultureList[1]
             var leadershipRating = ratingParse.seniorLeadershipRating
-            var leadershipInput = embarker.culturePrefs[2]
+            var leadershipInput = cultureList[2]
             var payRating = ratingParse.compensationAndBenefitsRating
-            var payInput = embarker.culturePrefs[3]
+            var payInput = cultureList[3]
             var workLifeRating = ratingParse.workLifeBalanceRating
-            var workLifeInput = embarker.culturePrefs[4]
+            var workLifeInput = cultureList[4]
             if (careerRating >= careerInput &&
                 cultureRating >= cultureInput &&
                 leadershipRating >= leadershipInput &&
                 payRating >= payInput &&
                 workLifeRating >= workLifeInput){
                     var company = ratingParse.name
+                    var industry = results.response.employers[j].industry
                     var searchcity = locationList[0][city];
                     var searchstate = locationList[0][state];
-                    var indeedurl = 'https://api.indeed.com/ads/apisearch?publisher=291337585868709&q=' + company + '&l=' + searchcity + '%2C+'+ searchstate + '&sort=&radius=&format=json&st=&jt=&start=&limit=5&fromage=&filter=&latlong=1&co=us&chnl=&userip=1.2.3.4&useragent=Chrome&v=2'
+                    var indeedurl = 'https://api.indeed.com/ads/apisearch?publisher=291337585868709&as_and=' + company + '+' + industry + '&l=' + searchcity + '%2C+'+ searchstate + '&sort=&radius=&format=json&st=&jt=&start=&limit=5&fromage=&filter=&latlong=1&co=us&chnl=&userip=1.2.3.4&useragent=Chrome&v=2'
                     $.ajax({
                         crossOrigin: true,
                         url: indeedurl,
@@ -232,18 +234,19 @@ function filter_jobs3(city, state){
     type: 'GET',
     dataType: 'jsonp',
     }).done(function(results){
+        var cultureList = embarker.culturePrefs.split(',');
         for (var j = 0; j < results.response.employers.length; j++){
             var ratingParse = results.response.employers[j]
             var careerRating = ratingParse.careerOpportunitiesRating
-            var careerInput = embarker.culturePrefs[0]
+            var careerInput = cultureList[0]
             var cultureRating = ratingParse.cultureAndValuesRating
-            var cultureInput = embarker.culturePrefs[1]
+            var cultureInput = cultureList[1]
             var leadershipRating = ratingParse.seniorLeadershipRating
-            var leadershipInput = embarker.culturePrefs[2]
+            var leadershipInput = cultureList[2]
             var payRating = ratingParse.compensationAndBenefitsRating
-            var payInput = embarker.culturePrefs[3]
+            var payInput = cultureList[3]
             var workLifeRating = ratingParse.workLifeBalanceRating
-            var workLifeInput = embarker.culturePrefs[4]
+            var workLifeInput = cultureList[4]
             if (careerRating >= careerInput &&
                 cultureRating >= cultureInput &&
                 leadershipRating >= leadershipInput &&

@@ -476,7 +476,8 @@ $(document).ready(function(event){
     $(".industryTextCharcoal").css("color", "#2B303A");
 });
 
-$(".industryItemSky").click(function() {
+$(".industryButtonSky").click(function() {
+    console.log('Button 2')
     $("#container2").show();
     $("#container1").hide();
     $("#container3").hide();
@@ -490,7 +491,8 @@ $(".industryItemSky").click(function() {
     $(".iconCharcoal").css("color", "#2B303A");
     $(".industryTextCharcoal").css("color", "#2B303A");
   });
-  $(".industryItemCharcoal").click(function() {
+  $(".industryButtonCharcoal").click(function() {
+      console.log("b")
     $("#container3").show();
     $("#container1").hide();
     $("#container2").hide();
