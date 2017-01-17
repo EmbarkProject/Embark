@@ -95,6 +95,7 @@
           h5 {
             font-size: 11px;
             text-transform: uppercase;
+            padding-left: 10%;
           }
           a {
             font-size: 11px;
@@ -197,4 +198,8 @@
       padding-top: 5%;
     }
   }
+}
+.aboutButton{
+    position: absolute;
+    bottom: 10px;
 }

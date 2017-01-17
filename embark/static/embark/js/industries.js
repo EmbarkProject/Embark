@@ -91,16 +91,18 @@ $(function () {
                 borderWidth: 0
             },
             title: {
-                text: 'US industry job density'
+                text: 'JOB RATIOS'
             },
-
+            subtitle: {
+                text: 'Ratio of Jobs in Industry to Total Jobs in each State'
+            },
             legend: {
                 layout: 'horizontal',
                 borderWidth: 0,
                 backgroundColor: '#ededed',
                 floating: true,
                 verticalAlign: 'top',
-                y: 25
+                y: 40
             },
 
             mapNavigation: {
@@ -181,9 +183,9 @@ $(function () {
                     color: '#FFFFFF',
                     format: '{point.code}'
                 },
-                name: 'Job Distribution',
+                name: 'State',
                 tooltip: {
-                    pointFormat: '{point.code}: {point.value}'
+                    pointFormat: '{point.code}: {point.value}%'
                 }
             }]
         });
@@ -223,16 +225,18 @@ $(function () {
             },
 
             title: {
-                text: 'US industry job density'
+                text: 'JOB RATIOS'
             },
-
+            subtitle: {
+                text: 'Ratio of Jobs in Industry to Total Jobs in each State'
+            },
             legend: {
                 layout: 'horizontal',
                 borderWidth: 0,
                 backgroundColor: '#ededed',
                 floating: true,
                 verticalAlign: 'top',
-                y: 25
+                y: 40
             },
 
             mapNavigation: {
@@ -246,7 +250,7 @@ $(function () {
                 maxColor: '#01141E',
                 stops: [
                     [0, '#ffffff'],
-                    [0.67, '#5299D3'],
+                    [0.40, '#5299D3'],
                     [1, '#01141E']
                 ]
             },
@@ -314,9 +318,9 @@ $(function () {
                     format: '{point.code}'
 
                 },
-                name: 'Population density',
+                name: 'State',
                 tooltip: {
-                    pointFormat: '{point.code}: {point.value}'
+                    pointFormat: '{point.code}: {point.value}%'
                 }
             }]
         });
@@ -356,16 +360,18 @@ $(function () {
             },
 
             title: {
-                text: 'US industry job density (/km²)'
+                text: 'JOB RATIOS'
             },
-
+            subtitle: {
+                text: 'Ratio of Jobs in Industry to Total Jobs in each State'
+            },
             legend: {
                 layout: 'horizontal',
                 borderWidth: 0,
                 backgroundColor: '#ededed',
                 floating: true,
                 verticalAlign: 'top',
-                y: 25
+                y: 40
             },
 
             mapNavigation: {
@@ -376,11 +382,11 @@ $(function () {
                 min: .1,
                 max: .35,
                 minColor: '#ffffff',
-                maxColor: '#2B303A',
+                maxColor: '#0d0f11',
                 stops: [
                     [0, '#ffffff'],
-                    [0.67, '#767676'],
-                    [1, '#2B303A']
+                    [0.5, '#767676'],
+                    [1, '#0d0f11']
                 ]
             },
 
@@ -446,9 +452,9 @@ $(function () {
                     color: '#FFFFFF',
                     format: '{point.code}'
                 },
-                name: 'Population density',
+                name: 'State',
                 tooltip: {
-                    pointFormat: '{point.code}: {point.value}/km²'
+                    pointFormat: '{point.code}: {point.value}%'
                 }
             }]
         });
@@ -466,13 +472,11 @@ $(document).ready(function(event){
 });
 
 $(".industryButtonSky").click(function() {
-    console.log('Button 2')
     $("#container2").show();
     $("#container1").hide();
     $("#container3").hide();
   });
   $(".industryButtonCharcoal").click(function() {
-      console.log("b")
     $("#container3").show();
     $("#container1").hide();
     $("#container2").hide();
