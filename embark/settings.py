@@ -26,7 +26,7 @@ SECRET_KEY = '(+73^o!b4=^#m6-89j@cb$n9ze187ua-0a9k8(n&kwa^&ywde('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'embarkproject.herokuapp.com']
+ALLOWED_HOSTS = ['www.embarkproject.com', '0.0.0.0', '127.0.0.1', 'embarkproject.herokuapp.com', 'www.embarkproject.com.herokudns.com']
 
 
 # Application definition

@@ -665,7 +665,9 @@
       .leftColumn .dashboardJobListingWrapper .dashboardJobslistFeatures .dashboardJobslistItem ul {
         padding-left: 0; }
         .leftColumn .dashboardJobListingWrapper .dashboardJobslistFeatures .dashboardJobslistItem ul p {
-          font-weight: bold; }
+          font-weight: bold;
+          text-align: center;
+          text-transform: uppercase; }
         .leftColumn .dashboardJobListingWrapper .dashboardJobslistFeatures .dashboardJobslistItem ul h5 {
           font-size: 11px;
           text-transform: uppercase; }
@@ -1073,6 +1075,10 @@ label {
   background-color: #ffffff;
   color: #ff5a5f;
   box-sizing: border-box; }
+
+.aboutPage {
+  width: 100%;
+  height: 900px; }
 
 /* GLOBAL PAGE STYLING*/
 html, body {

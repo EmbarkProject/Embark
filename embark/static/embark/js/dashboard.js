@@ -126,15 +126,15 @@ function filter_jobs1(city, state){
         for (var j = 0; j < results.response.employers.length; j++){
             var ratingParse = results.response.employers[j]
             var careerRating = ratingParse.careerOpportunitiesRating
-            var careerInput = cultureList[0]
+            var careerInput = 0
             var cultureRating = ratingParse.cultureAndValuesRating
-            var cultureInput = cultureList[1]
+            var cultureInput = 0
             var leadershipRating = ratingParse.seniorLeadershipRating
-            var leadershipInput = cultureList[2]
+            var leadershipInput = 0
             var payRating = ratingParse.compensationAndBenefitsRating
-            var payInput = cultureList[3]
+            var payInput = 0
             var workLifeRating = ratingParse.workLifeBalanceRating
-            var workLifeInput = cultureList[4]
+            var workLifeInput = 0
             if (careerRating >= careerInput &&
                 cultureRating >= cultureInput &&
                 leadershipRating >= leadershipInput &&
@@ -183,15 +183,15 @@ function filter_jobs2(city, state){
         for (var j = 0; j < results.response.employers.length; j++){
             var ratingParse = results.response.employers[j]
             var careerRating = ratingParse.careerOpportunitiesRating
-            var careerInput = cultureList[0]
+            var careerInput = 0
             var cultureRating = ratingParse.cultureAndValuesRating
-            var cultureInput = cultureList[1]
+            var cultureInput = 0
             var leadershipRating = ratingParse.seniorLeadershipRating
-            var leadershipInput = cultureList[2]
+            var leadershipInput = 0
             var payRating = ratingParse.compensationAndBenefitsRating
-            var payInput = cultureList[3]
+            var payInput = 0
             var workLifeRating = ratingParse.workLifeBalanceRating
-            var workLifeInput = cultureList[4]
+            var workLifeInput = 0
             if (careerRating >= careerInput &&
                 cultureRating >= cultureInput &&
                 leadershipRating >= leadershipInput &&
@@ -240,15 +240,15 @@ function filter_jobs3(city, state){
         for (var j = 0; j < results.response.employers.length; j++){
             var ratingParse = results.response.employers[j]
             var careerRating = ratingParse.careerOpportunitiesRating
-            var careerInput = cultureList[0]
+            var careerInput = 0
             var cultureRating = ratingParse.cultureAndValuesRating
-            var cultureInput = cultureList[1]
+            var cultureInput = 0
             var leadershipRating = ratingParse.seniorLeadershipRating
-            var leadershipInput = cultureList[2]
+            var leadershipInput = 0
             var payRating = ratingParse.compensationAndBenefitsRating
-            var payInput = cultureList[3]
+            var payInput = 0
             var workLifeRating = ratingParse.workLifeBalanceRating
-            var workLifeInput = cultureList[4]
+            var workLifeInput = 0
             if (careerRating >= careerInput &&
                 cultureRating >= cultureInput &&
                 leadershipRating >= leadershipInput &&
@@ -392,7 +392,7 @@ $(function () {
                     fontSize:'25px',
                     fontWeight: 'bold'
                 },
-                text: 'INDUSTRY 1',
+                text: 'Writing / Editing / Publishing',
                 y: 220
             },
 
@@ -407,7 +407,7 @@ $(function () {
             },
 
             mapNavigation: {
-                enabled: true
+                enabled: false
             },
 
             colorAxis: {
