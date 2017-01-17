@@ -31,7 +31,7 @@
       border: none;
       text-align: left;
       width: 80%;
-      background-color: white;
+      background-color: $coral;
       border-radius: 5px;
       padding: 1%;
       margin-left: 6%;
@@ -40,10 +40,10 @@
         padding-top: 2%;
         padding-right: 1%;
         padding-left: 1%;
-        color: $coral;
+        color: white;
       }
       .titleText {
-        color: $coral;
+        color: white;
         display: inline;
         font-size: 12px;
         padding-left: 1%;
@@ -53,13 +53,13 @@
     }
   .titleItem:hover {
       button {
-      background-color: $coral;
+      background-color: white;
       cursor: pointer;
       .fa {
-        color: white;
+        color: $coral;
       }
       .titleText {
-        color: white;
+        color: $coral;
       }
     }
   }
@@ -103,8 +103,9 @@
   padding: 10px 25px;
   background-color: #ff5a5f;
   border: none;
-  margin-left: 22%;
-  margin-top: 80%;
+  position: absolute;
+  right: 8%;
+  top: 90%;
 }
 .titleButton:hover {
   background-color: #ffffff;
