@@ -745,6 +745,21 @@
     text-align: center;
     padding-top: 5%; }
 
+.aboutButton {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: #ff5A5F;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 1%;
+  border-radius: 5px; }
+
+.aboutButton:hover {
+  background-color: white;
+  color: #ff5A5F; }
+
 .overviewBody {
   background-position: top;
   background-repeat: no-repeat;
