@@ -18,7 +18,7 @@
     color: white;
   }
   hr {
-    border: 5px solid $coral;
+    border: 3px solid $coral;
     width: 89%;
   }
 }
@@ -51,7 +51,7 @@
     background-color: $sky;
     border: none;
     line-height: 1.6;
-    margin-bottom: 3%;
+    margin-bottom: 10%;
   }
   .dashboardButton:hover {
     background-color: #ffffff;
@@ -68,6 +68,7 @@
       h2 {
         color: white;
         text-align: center;
+        padding-top: 5%;
       }
     .dashboardJobslistFeatures {
       display: flex;
@@ -83,6 +84,20 @@
         border-radius: 5px;
         margin: 0 1%;
         border-bottom: 20px solid $coral;
+        overflow: scroll;
+        ul {
+          padding-left: 0;
+          p {
+            font-weight: bold;
+          }
+          h5 {
+            font-size: 11px;
+            text-transform: uppercase;
+          }
+          a {
+            font-size: 11px;
+          }
+        }
         .fa {
           display: block;
           text-align: center;
@@ -94,6 +109,9 @@
           font-size: 1.5rem;
           font-weight: bold;
           text-align: center;
+          h2 {
+            font-size: 11px;
+          }
         }
         .dashboardJobslisting {
           margin-top: 10%;
@@ -113,6 +131,7 @@
        h2 {
          color: white;
          text-align: center;
+         padding-top: 5%;
        }
       }
      }
@@ -132,6 +151,7 @@
     h2 {
       color: white;
       text-align: center;
+      padding-top: 5%;
     }
     .dashboardOverviewInterface {
       .dashboardOverviewInterfaceText {
@@ -152,6 +172,9 @@
           border-radius: 5px;
           margin: 0 1%;
           border-bottom: 20px solid $coral;
+          p {
+            font-size: 11px;
+          }
           .dashboardOverviewListItemTitle {
           font-size: 1.1rem;
           font-weight: bold;
@@ -169,6 +192,7 @@
     h2 {
       color: white;
       text-align: center;
+      padding-top: 5%;
     }
   }
 }

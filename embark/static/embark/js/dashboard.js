@@ -299,7 +299,7 @@ $(function () {
                     plotBackgroundColor: null,
                     plotBorderWidth: 0,
                     plotShadow: false,
-                    spacingTop: 10,
+                    spacingTop: 10
                 },
                 exporting: { enabled: false },
                 title: {
@@ -384,24 +384,26 @@ $(function () {
                 spacingTop: -170,
                 verticalAlign: 'top',
                 backgroundColor: '#2B303A',
-                borderWidth: 0,
+                borderWidth: 0
             },
             title: {
                 style: {
                     color: '#5299d3',
-                    fontSize:'25px'
+                    fontSize:'25px',
+                    fontWeight: 'bold'
                 },
-                text: 'US INDUSTRY JOB NONO',
-                y: 210
+                text: 'INDUSTRY 1',
+                y: 220
             },
 
             legend: {
+                enabled: false,
                 layout: 'horizontal',
                 borderWidth: 0,
                 backgroundColor: '#2B303A',
                 floating: true,
                 verticalAlign: 'top',
-                y: 220
+                y: 250
             },
 
             mapNavigation: {
