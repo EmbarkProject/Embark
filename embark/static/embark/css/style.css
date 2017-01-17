@@ -995,24 +995,27 @@ label {
   .titleFeatures #titleLinkToggle1, .titleFeatures #titleLinkToggle2, .titleFeatures #titleLinkToggle3 {
     display: none; }
     .titleFeatures #titleLinkToggle1 p, .titleFeatures #titleLinkToggle2 p, .titleFeatures #titleLinkToggle3 p {
-      color: white; }
+      color: white;
+      font-size: 12px;
+      padding-left: 5%; }
   .titleFeatures .titleItem button {
     border: none;
     text-align: left;
-    width: 90%;
+    width: 80%;
     background-color: white;
     border-radius: 5px;
-    padding: 2%; }
+    padding: 1%;
+    margin-left: 6%; }
     .titleFeatures .titleItem button .fa {
       display: inline;
       padding-top: 2%;
-      padding-right: 5%;
-      padding-left: 7%;
+      padding-right: 1%;
+      padding-left: 1%;
       color: #ff5A5F; }
     .titleFeatures .titleItem button .titleText {
       color: #ff5A5F;
       display: inline;
-      font-size: 0.8rem;
+      font-size: 12px;
       padding-left: 1%;
       margin: 0; }
   .titleFeatures .titleItem:hover button {
@@ -1052,8 +1055,8 @@ label {
   padding: 10px 25px;
   background-color: #ff5a5f;
   border: none;
-  bottom: 0.25%;
-  right: 8.5%; }
+  margin-left: 22%;
+  margin-top: 80%; }
 
 .titleButton:hover {
   background-color: #ffffff;

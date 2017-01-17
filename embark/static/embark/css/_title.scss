@@ -22,27 +22,30 @@
    display: none;
    p {
    color: white;
+   font-size: 12px;
+   padding-left: 5%;
     }
   }
   .titleItem {
     button {
       border: none;
       text-align: left;
-      width: 90%;
+      width: 80%;
       background-color: white;
       border-radius: 5px;
-      padding: 2%;
+      padding: 1%;
+      margin-left: 6%;
       .fa {
         display: inline;
         padding-top: 2%;
-        padding-right: 5%;
-        padding-left: 7%;
+        padding-right: 1%;
+        padding-left: 1%;
         color: $coral;
       }
       .titleText {
         color: $coral;
         display: inline;
-        font-size: 0.8rem;
+        font-size: 12px;
         padding-left: 1%;
         margin: 0;
         }
@@ -100,8 +103,8 @@
   padding: 10px 25px;
   background-color: #ff5a5f;
   border: none;
-  bottom: 0.25%;
-  right: 8.5%;
+  margin-left: 22%;
+  margin-top: 80%;
 }
 .titleButton:hover {
   background-color: #ffffff;
