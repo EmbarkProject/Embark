@@ -199,7 +199,19 @@
     }
   }
 }
+
 .aboutButton{
-    position: absolute;
-    bottom: 10px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: $coral;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 1%;
+  border-radius: 5px;
+}
+.aboutButton:hover {
+  background-color: white;
+  color: $coral;
 }
