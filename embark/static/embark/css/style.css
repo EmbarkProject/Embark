@@ -187,8 +187,7 @@
 
 .quizEmbarkLogo {
   height: 70px;
-  padding: 3%;
-  padding-top: 2%; }
+  padding: 20px; }
 
 .quizBody {
   background-color: #EDEDED; }
@@ -389,6 +388,12 @@
         .industriesTitle .industriesNav .industriesUl .industriesLi .industriesA:hover {
           color: #2B303A; }
 
+.industriesEmbarkLogo {
+  height: 70px;
+  padding: 1%;
+  padding-top: 0;
+  padding-left: 1.5%; }
+
 .industryFeatures {
   margin: 5% 3%;
   margin-bottom: 5%;
@@ -502,19 +507,22 @@
         .jobslistBody .jobslistNav .jobslistUl .jobslistLi .jobslistA:hover {
           color: #2B303A; }
 
-.jobslistTitle {
-  height: 20%;
+.jobslistHero {
+  height: 15%;
   width: 100%;
   background-color: white;
-  border-bottom: 13px solid #5299d3; }
-  .jobslistTitle .quizEmbarkLogo {
-    padding: 2% 2%; }
-  .jobslistTitle .jobslistTitle h1 {
+  border-bottom: 26px solid #5299d3; }
+  .jobslistHero .jobsEmbarkLogo {
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 20px; }
+  .jobslistHero .jobslistTitle h1 {
     text-align: center;
-    margin: 0; }
+    margin: 0;
+    padding-bottom: 4%; }
 
 .jobslistFeatures {
-  margin: 5% 10%; }
+  margin: 5% 6%; }
   .jobslistFeatures .selectLocation {
     float: left;
     height: 370px;
@@ -539,15 +547,15 @@
       margin-top: 65%; }
   .jobslistFeatures .jobslistItem {
     float: left;
-    height: 370px;
-    width: 15%;
+    height: 400px;
+    width: 17%;
     padding: 1%;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
     background-color: #f7f7f7;
     border-bottom: 20px solid #ff5A5F;
     border-radius: 5px;
-    overflow: scroll; }
+    overflow-y: scroll; }
     .jobslistFeatures .jobslistItem ul {
       padding: 0; }
     .jobslistFeatures .jobslistItem .fa {
@@ -577,7 +585,9 @@
     margin-left: 7%; }
 
 .nextStepsJobslist {
-  margin-top: 41%; }
+  margin-top: 43.5%; }
+  .nextStepsJobslist .nextStepsText {
+    width: 49%; }
 
 .dashboardBody {
   background-color: #2B303A; }
@@ -758,7 +768,7 @@
           color: #2B303A; }
 
 .quizEmbarkLogo {
-  padding: 2% 2%; }
+  padding: 20px; }
 
 .overviewTitle {
   height: 150px; }
@@ -813,9 +823,10 @@
       color: #ff5a5f;
       background-color: white; }
 
-.quizEmbarkLogo {
+.templateEmbarkLogo {
   height: 70px;
-  padding: 2% 3% 0 3%; }
+  padding: 2%;
+  padding-top: 2%; }
 
 .templateLeft {
   float: left;
