@@ -242,7 +242,10 @@
         padding-top: 1%;
         color: #2B303A; }
       .quizLeft .quizQuestions .quizItem .container label {
-        position: relative; }
+        position: relative;
+        font-weight: bold;
+        font-size: 20px;
+        color: #2B303A; }
       .quizLeft .quizQuestions .quizItem .container span::before,
       .quizLeft .quizQuestions .quizItem .container span::after {
         content: '';
@@ -507,12 +510,8 @@
   .jobslistTitle .quizEmbarkLogo {
     padding: 2% 2%; }
   .jobslistTitle .jobslistTitle h1 {
-    width: 80%;
-    position: relative;
-    top: -10px;
-    margin: 0;
-    margin-left: 10%;
-    padding-bottom: 3%; }
+    text-align: center;
+    margin: 0; }
 
 .jobslistFeatures {
   margin: 5% 10%; }
@@ -547,7 +546,8 @@
     padding-right: 3%;
     background-color: #f7f7f7;
     border-bottom: 20px solid #ff5A5F;
-    border-radius: 5px; }
+    border-radius: 5px;
+    overflow: scroll; }
     .jobslistFeatures .jobslistItem ul {
       padding: 0; }
     .jobslistFeatures .jobslistItem .fa {
@@ -557,9 +557,12 @@
       color: #5299d3; }
     .jobslistFeatures .jobslistItem .jobslistText {
       color: #2B303A;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: bold;
-      text-align: center; }
+      text-align: center;
+      padding-bottom: 10%; }
+      .jobslistFeatures .jobslistItem .jobslistText h5 {
+        font-size: 12px; }
     .jobslistFeatures .jobslistItem .jobsListing {
       margin-top: 10%;
       margin-left: 4%;

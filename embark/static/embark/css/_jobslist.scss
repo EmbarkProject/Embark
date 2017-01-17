@@ -34,12 +34,8 @@
   }
   .jobslistTitle {
     h1 {
-      width: 80%;
-      position: relative;
-      top: -10px;
+      text-align: center;
       margin: 0;
-      margin-left: 10%;
-      padding-bottom: 3%;
     }
   }
 }
@@ -92,6 +88,7 @@
     background-color: #f7f7f7;
     border-bottom: 20px solid $coral;
     border-radius: 5px;
+    overflow: scroll;
     ul {
       padding: 0;
     }
@@ -103,9 +100,13 @@
     }
     .jobslistText {
       color: $charcoal;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: bold;
       text-align: center;
+      padding-bottom: 10%;
+      h5 {
+        font-size: 12px;
+      }
     }
     .jobsListing {
       margin-top: 10%;
