@@ -76,3 +76,7 @@ def view_title(request):
 
 def view_dashboard(request):
     return render(request, 'dashboard.html')
+
+
+def view_about(request):
+    return render(request, 'about.html')

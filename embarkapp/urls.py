@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'^jobslist$', views.view_jobslist, name='results'),
     url(r'^title$', views.view_title, name='title'),
     url(r'^dashboard$', views.view_dashboard, name='dashboard'),
+    url(r'^about$', views.view_about, name='about')
 ]

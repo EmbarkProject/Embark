@@ -58,8 +58,8 @@
       <div class="templateRight cultureRight">
         <div class="nav">
           <ul>
-            <li><a href="#">SignOff</a></li>
-            <li><a href="#">Dashboard</a></li>
+            <li><a href="/logout">SignOff</a></li>
+            <li><a href="/embark/dashboard">Dashboard</a></li>
           </ul>
         </div>
 
@@ -97,6 +97,47 @@
         {{/each}}
         {% endverbatim %}
         </script>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <script>
+    $( function() {
+      var availableTags = [
+        "Raleigh, NC",
+        "Durham, NC",
+        "Atlanta, GA",
+        "Las Vegas, NV",
+        "Charlotte, NC",
+        "New Bern, NC",
+        "Houston, TX",
+        "Dallas, TX",
+        "San Francisco, CA",
+        "Pittsburgh, PA",
+        "Richmond, VA",
+        "Philadelphia, PA",
+        "New York City, NY",
+        "Apex, NC",
+        "Cary, NC",
+        "Chicago, IL",
+        "Perl",
+        "PHP",
+        "Python",
+        "Ruby",
+        "Scala",
+        "Scheme"
+      ];
+      $( "#location1" ).autocomplete({
+        source: availableTags
+      });
+      $( "#location2" ).autocomplete({
+        source: availableTags
+      });
+      $( "#location3" ).autocomplete({
+        source: availableTags
+      });
+    } );
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
