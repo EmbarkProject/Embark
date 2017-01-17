@@ -23,7 +23,8 @@ function filter_headers1(){
             $('#link1').html('<a href="' + resourceList[0] + '"target="_blank"><p>' + resourceList[1] + '</p></a>')
             $('#link2').html('<a href="' + resourceList[2] + '"target="_blank"><p>' + resourceList[3] + '</p></a>')
             $('#link3').html('<a href="' + resourceList[4] + '"target="_blank"><p>' + resourceList[5] + '</p></a>')
-            $("#button1").click(function(){$("#titleLinkToggle1").slideToggle("slow")});
+            $("#button1").click(function(){$("#titleLinkToggle1").slideToggle("slow")})
+            ;
         })
     })
 }

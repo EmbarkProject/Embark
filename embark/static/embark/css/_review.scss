@@ -4,6 +4,28 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  .overviewNav {
+    padding-right: 4%;
+    .overviewUl {
+      margin: 0;
+      padding-top: 1.2%;
+      .overviewLi {
+        float: right;
+        padding-left: 2%;
+        list-style: none;
+        .overviewA {
+          color: $coral;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 15px;
+          text-align: center;
+        }
+        .overviewA:hover {
+          color: $charcoal;
+        }
+      }
+    }
+  }
 }
 
 .quizEmbarkLogo {
@@ -15,8 +37,8 @@
   .overviewHeadingText {
     h1 {
       text-align: center;
+      }
     }
-  }
   }
 
 .overviewInterface {

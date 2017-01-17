@@ -15,11 +15,17 @@
     <body class="industriesBody">
 
         <div class="industriesTitle">
+          <div class="industriesNav">
+            <ul class="industriesUl">
+              <li class="industriesLi"><a class="industriesA" href="#">SignOff</a></li>
+              <li class="industriesLi"><a class="industriesA" href="#">Dashboard</a></li>
+            </ul>
+          </div>
             <a href="/embark/main"><img class="quizEmbarkLogo" src="https://s3.us-east-2.amazonaws.com/embarkproject/embarkTitle.png"></a>
             <div class="industriesTitle">
               <h1>{{user.first_name}}, your top industry matches are:</h1>
             </div>
-        </div>
+          </div>
 
           <div class="industryFeatures">
             <div class="industryInstructions">
@@ -68,7 +74,7 @@
             <p class="industryText industryTextCharcoal">{{this.title}}</p>
         </script>
         {% endverbatim %}
- 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://code.highcharts.com/maps/highmaps.js"></script>
