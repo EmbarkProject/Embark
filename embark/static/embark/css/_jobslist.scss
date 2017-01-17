@@ -24,24 +24,28 @@
   }
 }
 
-.jobslistTitle {
-  height: 20%;
+.jobslistHero {
+  height: 15%;
   width: 100%;
   background-color: white;
-  border-bottom: 13px solid #5299d3;
-  .quizEmbarkLogo {
-    padding: 2% 2%;
+  // padding-bottom: 1.25%;
+  border-bottom: 26px solid #5299d3;
+  .jobsEmbarkLogo {
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 20px;
   }
   .jobslistTitle {
     h1 {
       text-align: center;
       margin: 0;
+      padding-bottom: 4%;
     }
   }
 }
 
 .jobslistFeatures {
-  margin: 5% 10%;
+  margin: 5% 6%;
   // display: flex;
   // flex-direction: row;
   // flex-wrap: wrap;
@@ -80,15 +84,15 @@
   }
   .jobslistItem {
     float: left;
-    height: 370px;
-    width: 15%;
+    height: 400px;
+    width: 17%;
     padding: 1%;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
     background-color: #f7f7f7;
     border-bottom: 20px solid $coral;
     border-radius: 5px;
-    overflow: scroll;
+    overflow-y: scroll;
     ul {
       padding: 0;
     }
@@ -127,7 +131,10 @@
 }
 
 .nextStepsJobslist {
-    margin-top: 41%;
+    margin-top: 43.5%;
+    .nextStepsText {
+      width: 49%;
+    }
 }
 
 // .nextSteps {
