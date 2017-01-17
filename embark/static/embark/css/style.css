@@ -987,6 +987,9 @@ label {
     color: #ff5a5f;
     background-color: white; }
 
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  background: #2B303A; }
+
 .titleRadioButtons {
   padding-left: 15%; }
   .titleRadioButtons .titleTitleText {
