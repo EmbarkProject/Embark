@@ -1,3 +1,7 @@
+.mediaMessage {
+  display: none;
+}
+
 .landingLeft {
   float: left;
   width: 78%;
@@ -238,5 +242,23 @@
     text-decoration: none;
     font-size: .7rem;
 
+  }
+}
+
+@media (max-width: 630px) {
+.mediaMessage {
+  display: block;
+}
+.containerMainGone {
+    display: none;
+  }
+}
+
+@media (min-width: 631px) and (max-width: 1024px) {
+.mediaMessage {
+  display: block;
+}
+.containerMainGone {
+    display: none;
   }
 }
