@@ -5,8 +5,9 @@
 
 .templateEmbarkLogo {
   height: 70px;
-  padding: 2%;
-  padding-top: 2%;
+  position: relative;
+  top: 15px;
+  left: 20px;
 }
 
 .templateLeft {
@@ -15,7 +16,7 @@
  height: 720px;
  .templateHero {
   clear: both;
-  height: 40%;
+  // height: 35%;
   width: 100%;
   .templateTitle {
     margin: 0;
@@ -25,11 +26,14 @@
     font-weight: 700;
     text-align: center;
     margin: 0;
+    margin-top: 2.5%;
     }
     .templateBlurb {
       color: #2b303a ;
       text-align: justify;
       padding: 0 8%;
+      margin: 0;
+      margin-bottom: 4.5%;
     }
   }
 }
@@ -78,7 +82,7 @@
 .templateRight {
  float: right;
  width: 27%;
- height: 745px;
+ height: 737px;
  background-color: #2b303a ;
  .nav {
    padding-right: 14%;

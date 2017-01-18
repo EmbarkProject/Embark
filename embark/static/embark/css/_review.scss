@@ -28,15 +28,19 @@
   }
 }
 
-.quizEmbarkLogo {
-  padding: 20px;
+.reviewEmbarkLogo {
+  height: 70px;
+  position: relative;
+  top: 0;
+  left: 20px;
 }
 
 .overviewTitle {
-  height: 150px;
   .overviewHeadingText {
     h1 {
       text-align: center;
+      margin: 0;
+      margin-bottom: 3.5%;
       }
     }
   }
