@@ -1,3 +1,6 @@
+.mediaMessage {
+  display: none; }
+
 .landingLeft {
   float: left;
   width: 78%; }
@@ -185,6 +188,18 @@
     text-decoration: none;
     font-size: .7rem; }
 
+@media (max-width: 630px) {
+  .mediaMessage {
+    display: block; }
+
+  .containerMainGone {
+    display: none; } }
+@media (min-width: 631px) and (max-width: 1024px) {
+  .mediaMessage {
+    display: block; }
+
+  .containerMainGone {
+    display: none; } }
 .quizEmbarkLogo {
   height: 70px;
   padding: 0;
@@ -753,7 +768,18 @@
 
 .aboutButton {
   position: absolute;
-  bottom: 10px; }
+  top: 3%;
+  right: 5%;
+  background-color: #ff5A5F;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 1%;
+  border-radius: 5px; }
+
+.aboutButton:hover {
+  background-color: white;
+  color: #ff5A5F; }
 
 .overviewBody {
   background-position: top;
@@ -1120,5 +1146,12 @@ p, a {
   font-weight: 400;
   line-height: 1.5;
   color: #2b303a; }
+
+@media (max-width: 630px) {
+  body {
+    display: none; } }
+@media (min-width: 631px) and (max-width: 1024px) {
+  body {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

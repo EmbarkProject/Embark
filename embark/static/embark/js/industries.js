@@ -94,7 +94,7 @@ $(function () {
                 text: 'JOB RATIOS'
             },
             subtitle: {
-                text: 'Ratio of Jobs in Industry to Total Jobs in each State'
+                text: 'Ratio of Jobs in Industry to Total Jobs in Each State'
             },
             legend: {
                 layout: 'horizontal',
@@ -228,7 +228,7 @@ $(function () {
                 text: 'JOB RATIOS'
             },
             subtitle: {
-                text: 'Ratio of Jobs in Industry to Total Jobs in each State'
+                text: 'Ratio of Jobs in Industry to Total Jobs in Each State'
             },
             legend: {
                 layout: 'horizontal',
@@ -363,7 +363,7 @@ $(function () {
                 text: 'JOB RATIOS'
             },
             subtitle: {
-                text: 'Ratio of Jobs in Industry to Total Jobs in each State'
+                text: 'Ratio of Jobs in Industry to Total Jobs in Each State'
             },
             legend: {
                 layout: 'horizontal',
