@@ -188,6 +188,18 @@
     text-decoration: none;
     font-size: .7rem; }
 
+.poweredBy {
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 53.5%; }
+  .poweredBy a {
+    color: white;
+    text-decoration: none;
+    font-size: .7rem; }
+    .poweredBy a img {
+      height: 13px; }
+
 @media (max-width: 630px) {
   .mediaMessage {
     display: block; }
