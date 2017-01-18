@@ -1,3 +1,7 @@
+.mediaMessage {
+  display: none;
+}
+
 .landingLeft {
   float: left;
   width: 78%;
@@ -41,11 +45,6 @@
         display: block;
         margin: 0 auto;
       }
-      // .landingBlurb {
-      //   text-align: center;
-      //   margin-top: 0;
-      //   font-size: 1.2rem;
-      // }
     }
   }
 }
@@ -238,5 +237,38 @@
     text-decoration: none;
     font-size: .7rem;
 
+  }
+}
+
+.poweredBy {
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 53.5%;
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: .7rem;
+    img {
+      height: 13px;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+.mediaMessage {
+  display: block;
+}
+.containerMainGone {
+    display: none;
+  }
+}
+
+@media (min-width: 631px) and (max-width: 1024px) {
+.mediaMessage {
+  display: block;
+}
+.containerMainGone {
+    display: none;
   }
 }

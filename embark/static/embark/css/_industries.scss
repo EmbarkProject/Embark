@@ -6,14 +6,9 @@
   height: 20%;
   background-color: white;
   border-bottom: 13px solid #5299d3;
-    .quizEmbarkLogo {
-      padding: 2% 2%;
-    }
     h1 {
       margin: 0;
-      position: relative;
-      top: -10px;
-      padding-bottom: 3%;
+      padding-bottom: 3.8%;
       text-align: center;
     }
     .industriesNav {
@@ -41,10 +36,11 @@
   }
 
 .industriesEmbarkLogo {
-    height: 70px;
-    padding: 1%;
-    padding-top: 0;
-    padding-left: 1.5%;
+  height: 70px;
+  padding: 0;
+  position: relative;
+  top: 0;
+  left: 20px;
 }
 
 .industryFeatures {

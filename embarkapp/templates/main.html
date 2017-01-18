@@ -15,9 +15,11 @@
         <link rel="stylesheet" href="{% static 'embark/css/style.css' %}">
     </head>
     <body>
-
+      <div class="mediaMessage">
+        <p>SHOW SHOW SHOW SHOW</p>
+      </div>
+      <div class="containerMainGone">
             <div class="landingLeft">
-
               <div class="landingHero">
                 <div class="landingHeroOverlay">
                   <div class="landingHeroTitle">
@@ -52,8 +54,8 @@
 
 
             <p class="footer">&copy; Embark! 2017   Created by <a href="http://www.linabreslav.com" target= "_blank">Lina Breslav</a> | <a href="http://www.sanchithkuttappa.com"target= "_blank">Sanchith Kuttappa</a> | <a href="https://jdbower0525.github.io/" target= "_blank">John Bower</a></p>
-            <a href='https://www.glassdoor.com/index.htm'>powered by <img src='https://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' /></a><br>
-            <span id="indeed_at"><a title="Job Search" href="https://www.indeed.com">jobs by <img alt=Indeed src="https://www.indeed.com/p/jobsearch.gif" style="border: 0; vertical-align: middle;"></a></span>
+            <!-- <a href='https://www.glassdoor.com/index.htm'>powered by <img src='https://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' /></a><br>
+            <span id="indeed_at"><a title="Job Search" href="https://www.indeed.com">jobs by <img alt=Indeed src="https://www.indeed.com/p/jobsearch.gif" style="border: 0; vertical-align: middle;"></a></span> -->
             </div>
             <!-- end of left column -->
 
@@ -99,10 +101,20 @@
                   <button id="createUser" class="registerButton" type="submit">register</button>
                   </form>
 
-                </div>
               </div>
+             </div>
+
+             <!-- glassdoor and indeed logos -->
+             <div class="poweredBy">
+             <a href='https://www.glassdoor.com/index.htm'>powered by <img src='https://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' /></a><br>
+             <span id="indeed_at"><a title="Job Search" href="https://www.indeed.com">jobs by <img alt=Indeed src="https://www.indeed.com/p/jobsearch.gif" style="border: 0; vertical-align: middle;"></a></span>
+           </div>
 
             </div>
+            <!-- end of landingRight -->
+          </div>
+
+
 
 
         <div id='handlebars'></div>
