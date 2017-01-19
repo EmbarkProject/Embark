@@ -1,5 +1,12 @@
 .mediaMessage {
-  display: none; }
+  display: none;
+  text-align: center;
+  padding: 5%; }
+  .mediaMessage .mediaEmbarkLogo {
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    padding-top: 15%; }
 
 .landingLeft {
   float: left;
@@ -1158,12 +1165,5 @@ p, a {
   font-weight: 400;
   line-height: 1.5;
   color: #2b303a; }
-
-@media (max-width: 630px) {
-  body {
-    display: none; } }
-@media (min-width: 631px) and (max-width: 1024px) {
-  body {
-    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
