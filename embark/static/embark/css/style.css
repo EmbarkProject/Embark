@@ -1159,11 +1159,4 @@ p, a {
   line-height: 1.5;
   color: #2b303a; }
 
-@media (max-width: 630px) {
-  body {
-    display: none; } }
-@media (min-width: 631px) and (max-width: 1024px) {
-  body {
-    display: none; } }
-
 /*# sourceMappingURL=style.css.map */
