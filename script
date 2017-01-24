@@ -1,4 +1,4 @@
-10s
+15s
 User Story - Mia
 ARROW CLICK @ TO GUIDE AND INSPIRE
 SCROLL UP @ TODAY OUR USER MAYA
@@ -35,10 +35,9 @@ GO THROUGH MAPS @ MAYA CAN CHOOSE BETWEEN
 2:45 - 
 
 3:00 - Lead in to John
-	‘Thank you Sanchyth, my name is John Bower and I’ve had the pleasure of being the back end engineer on team Embark!’
-
+	
 3:15 - Jobs List Page
-	‘Our jobs list page takes all of Mia’s culture preferences, uses jQuery and Ajax to filter companies out using Glassdoor’s API, then searches Indeed’s API for the companies, industries, and locations.  
+	‘Thank you Sanchyth, Our jobs list page takes all of Mia’s culture preferences, uses jQuery and Ajax to filter companies out using Glassdoor’s API, then searches Indeed’s API for the companies, industries, and locations.  
 
 	<href click> This report gives Mia the opportunity to take a look at what is available and allows her to see what skillsets she’ll need to pursue a career in these industries.’ 
 
@@ -51,6 +50,8 @@ GO THROUGH MAPS @ MAYA CAN CHOOSE BETWEEN
 
 4:00 - Dashboard - User Story
 	‘After taking a look at a few resources to help her move forward, Mia finally lands on the Dashboard page, which compiles all of the information from the rest of the site into one easy to navigate place.  From here she can also revisit parts of the site to update or change preferences.
+
+
 	The goal we have with Embark is to take someone like Maya and give them information to make career changing seem less daunting and more within reach.  From here, Maya will now be able to move forward with her career change feeling inspired.
 	
 	Here’s a little bit about Team Embark and our design/development process.  Thank you so much for coming in and allowing us to show you our work, we’d love to speak with you after the presentations and answer any questions.
