@@ -1,5 +1,5 @@
 // industry1 heat map
-function get_button1(){
+function get_button(industry){
     var id = document.getElementById('userId').value
     $.ajax({
         url: '/api/GetEmbarker/' + id + '/',
@@ -7,64 +7,23 @@ function get_button1(){
         datatype: 'json',
     }).done(function(results){
         var industryList = results.industryPrefs.split(',');
-        var jobid = industryList[0]
-        console.log(results)
+        var jobid = industryList[industry]
         $.ajax({
             url: '/api/Industry/' + jobid + '/',
             type: 'GET',
             datatype: 'json',
         }).done(function(results){
-            var source = $('#post-template1').html();
+            var source = $('#post-template' + industry).html();
             var template = Handlebars.compile(source);
             var html = template(results);
-            $('#industry1').append(html);
-            console.log(html)
-        })})}
-function get_button2(){
-    var id = document.getElementById('userId').value
-    $.ajax({
-        url: '/api/GetEmbarker/' + id + '/',
-        type: 'GET',
-        datatype: 'json',
-    }).done(function(results){
-        var industryList = results.industryPrefs.split(',');
-        var jobid = industryList[1]
-        $.ajax({
-            url: '/api/Industry/' + jobid + '/',
-            type: 'GET',
-            datatype: 'json',
-        }).done(function(results){
-            var source = $('#post-template2').html();
-            var template = Handlebars.compile(source);
-            var html = template(results);
-            $('#industry2').append(html);
-        })})}
-function get_button3(){
-    var id = document.getElementById('userId').value
-    $.ajax({
-        url: '/api/GetEmbarker/' + id + '/',
-        type: 'GET',
-        datatype: 'json',
-    }).done(function(results){
-        var industryList = results.industryPrefs.split(',');
-        var jobid = industryList[2]
-        $.ajax({
-            url: '/api/Industry/' + jobid + '/',
-            type: 'GET',
-            datatype: 'json',
-        }).done(function(results){
-            var source = $('#post-template3').html();
-            var template = Handlebars.compile(source);
-            var html = template(results);
-            $('#industry3').append(html);
+            $('#industry' + industry).append(html);
         })})}
 
+get_button(0)
+get_button(1)
+get_button(2)
 
-
-get_button1()
-get_button2()
-get_button3()
-$(function () {
+function draw_maps(map) {
     $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=us-population-density.json&callback=?', function (data) {
         $.each(data, function () {
             this.code = this.code.toUpperCase();
@@ -76,7 +35,7 @@ $(function () {
             type: 'GET',
         }).done(function(results){
         var industryList = results.industryPrefs.split(',')
-        var jobid = industryList[0]
+        var jobid = industryList[map]
         var url = 'http://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&action=jobs-stats&returnStates=true&admLevelRequested=1&jc=' + jobid
         $.ajax({
             url: url,
@@ -190,8 +149,9 @@ $(function () {
             }]
         });
     })});
-})});
+})};
 
+draw_maps(0)
 // industry2 heat map
 $(function () {
 
