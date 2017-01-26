@@ -41,10 +41,6 @@ $(document).ready(function() {
   });
 });
 
-function print_selections() {
-    console.log($('#industrySelection').val())
-}
-
 var manualIndustry = document.getElementById('manualIndustry');
 var industries = []
 manualIndustry.onclick = function() {
@@ -54,7 +50,6 @@ manualIndustry.onclick = function() {
         url: url,
         type: 'GET',
     }).done(function(results){
-    console.log(results)
     var industries = []
     industries.push($('#industrySelection').val());
     var jobTitle = results.jobTitle
@@ -65,7 +60,6 @@ manualIndustry.onclick = function() {
         traditional: true,
         type: 'PUT'
     }
-    console.log(ajaxdata)
     $.ajax(ajaxdata).done(function(results){
         quizredirect()
     })
