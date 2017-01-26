@@ -43,7 +43,6 @@ function draw_maps(map, max, step) {
             dataType: 'jsonp',
         }).done(function(results){
             state = results.response.states
-            console.log(state)
         Highcharts.mapChart('container' + map, {
             chart: {
                 backgroundColor: '#ededed',

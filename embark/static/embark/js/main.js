@@ -47,7 +47,6 @@ function createUser(e){
         type: 'POST',
         data: context
     }).done(function(results){
-        console.log(results)
         createEmbarker(results.id)
     })
 }
@@ -61,7 +60,6 @@ function createEmbarker(id){
         jobTitle: jobTitle,
         user: userId,
     }
-    console.log(context)
     $.ajax({
         url: '/api/PostEmbarker/',
         type: 'POST',

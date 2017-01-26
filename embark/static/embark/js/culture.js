@@ -30,7 +30,7 @@ $.ajaxSetup({
 
 // company culture slider
 $( function() {
-  $( "#slider-range-max" ).slider({
+$( "#slider-range-max" ).slider({
     range: "max",
     min: 1,
     max: 5,
@@ -43,8 +43,8 @@ $( function() {
   $( "#amount" ).val( $( "#slider-range-max" ).slider( "value" ) );
 } );
 
-  $( function() {
-  $( "#slider-range-2" ).slider({
+$( function() {
+$( "#slider-range-2" ).slider({
     range: "max",
     min: 1,
     max: 5,
@@ -117,7 +117,6 @@ culturePrefs.onclick = function(e) {
     slidervalues.push($("#slider-range-4").slider("value"))
     slidervalues.push($("#slider-range-5").slider("value"))
     var values = slidervalues.toString();
-    console.log(values)
     var ajaxdata = {
         url: '/api/PostEmbarker/' + id + '/',
         data: { "user": id, "culturePrefs": values, "jobTitle": jobTitle},

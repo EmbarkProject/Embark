@@ -46,7 +46,6 @@ function get_locations(){
 get_locations()
 
 function filter_headers(column){
-    console.log(column)
     var id = document.getElementById('userId').value
     $.ajax({
         url: '/api/GetEmbarker/' + id + '/',
@@ -140,7 +139,6 @@ $(function () {
         type: 'GET',
     }).done(function(results){
         var jobTitle = results.jobTitle
-        console.log(jobTitle)
         var glassurl = 'https://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&action=jobs-prog&countryId=1&jobTitle=' + jobTitle
         $.ajax({
             url: glassurl,
@@ -233,7 +231,6 @@ $(function () {
             dataType: 'jsonp',
         }).done(function(results){
             state = results.response.states
-            console.log(state)
         Highcharts.mapChart('dashboardmap', {
             chart: {
                 spacingTop: -350,

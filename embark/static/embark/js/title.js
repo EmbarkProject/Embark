@@ -7,18 +7,15 @@ function filter_headers1(){
     }).done(function(results){
         var industryList = results.industryPrefs.split(',');
         var jobid = industryList[0]
-        console.log(jobid)
         $.ajax({
             url: '/api/Industry/' + jobid + '/',
             type: 'GET',
             datatype: 'json',
         }).done(function(results){
             var resourceList = results.resources.split(',');
-            console.log(results)
             var source = $('#post-template1').html();
             var template = Handlebars.compile(source);
             var html = template(results);
-            console.log(resourceList[1])
             $('#resource1').append(html)
             $('#link1').html('<a href="' + resourceList[0] + '"target="_blank"><p>' + resourceList[1] + '</p></a>')
             $('#link2').html('<a href="' + resourceList[2] + '"target="_blank"><p>' + resourceList[3] + '</p></a>')
@@ -45,11 +42,9 @@ function filter_headers2(){
             datatype: 'json',
         }).done(function(results){
             var resourceList = results.resources.split(',');
-            console.log(resourceList)
             var source = $('#post-template2').html();
             var template = Handlebars.compile(source);
             var html = template(results);
-            console.log(resourceList[1])
             $('#resource2').prepend(html)
             $('#link4').html('<a href="' + resourceList[0] + '"target="_blank"><p>' + resourceList[1] + '</p></a>')
             $('#link5').html('<a href="' + resourceList[2] + '"target="_blank"><p>' + resourceList[3] + '</p></a>')
@@ -76,11 +71,9 @@ function filter_headers3(){
             datatype: 'json',
         }).done(function(results){
             var resourceList = results.resources.split(',');
-            console.log(resourceList)
             var source = $('#post-template3').html();
             var template = Handlebars.compile(source);
             var html = template(results);
-            console.log(resourceList[1])
             $('#resource3').append(html)
             $('#link7').prepend('<a href="' + resourceList[0] + '"target="_blank"><p>' + resourceList[1] + '</p></a>')
             $('#link8').prepend('<a href="' + resourceList[2] + '"target="_blank"><p>' + resourceList[3] + '</p></a>')
@@ -100,7 +93,6 @@ $(function () {
         type: 'GET',
     }).done(function(results){
         var jobTitle = results.jobTitle
-        console.log(jobTitle)
         var glassurl = 'https://api.glassdoor.com/api/api.htm?t.p=112563&t.k=fKBkymF6I8W&userip=0.0.0.0&useragent=&format=json&v=1&action=jobs-prog&countryId=1&jobTitle=' + jobTitle
         $.ajax({
             url: glassurl,
